@@ -65,6 +65,44 @@ This situation helps learners build confidence in:
 - reaching agreement
 - thanking
 
+<<<<<<< HEAD
+=======
+## Pattern Inventory
+
+| Pattern | Importance |
+| --- | --- |
+| Questions | Very High |
+| Giving Reasons | Very High |
+| Opinions | High |
+| Suggestions | High |
+| Agreement / Disagreement | Medium |
+| Formal and Polite Language | Medium |
+| Storytelling / Explaining Context | Medium |
+| Support Requests | High |
+
+## Situation Complexity
+
+| Dimension | Complexity |
+| --- | --- |
+| Social Complexity | High |
+| Emotional Complexity | High |
+| Vocabulary Complexity | Medium |
+| Grammar Complexity | Medium |
+| Cultural Complexity | Medium to High |
+| Real-Life Pressure | High |
+
+## Real-Life Variations
+
+- General class Elternabend
+- One-on-one parent-teacher conversation
+- Support meeting for a child
+- Behaviour or participation discussion
+- Academic progress discussion
+- School absence or attendance discussion
+- Praktikum or future planning discussion
+- Meeting about accommodations or special support
+
+>>>>>>> e861b5e (Refine Elternabend situation model)
 ## Foundation Reference Connections
 
 | Foundation Reference Section | How It Appears In This Situation |
