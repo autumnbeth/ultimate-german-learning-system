@@ -259,6 +259,128 @@ Apotheke should reuse patterns from other situations:
 - comparing options from shopping and housing lessons
 - repair language from first-day-at-work and government office lessons
 
+## Practice Dialogues
+
+### Dialogue 1: Typical Situation
+
+**Apotheker/Apothekerin:** Guten Tag. Wie kann ich Ihnen helfen?
+*Pharmacist:* Good day. How can I help you?
+
+**Kunde/Kundin:** Guten Tag. Ich habe Halsschmerzen.
+*Customer:* Good day. I have a sore throat.
+
+**Apotheker/Apothekerin:** Seit wann haben Sie die Schmerzen?
+*Pharmacist:* Since when have you had the pain?
+
+**Kunde/Kundin:** Seit gestern Abend. Ich habe auch etwas Husten.
+*Customer:* Since yesterday evening. I also have a bit of a cough.
+
+**Apotheker/Apothekerin:** Haben Sie Fieber?
+*Pharmacist:* Do you have a fever?
+
+**Kunde/Kundin:** Nein, kein Fieber. Nur Halsschmerzen und Husten.
+*Customer:* No, no fever. Only a sore throat and cough.
+
+**Apotheker/Apothekerin:** Dann kann ich Ihnen diese Lutschtabletten empfehlen.
+*Pharmacist:* Then I can recommend these lozenges.
+
+**Kunde/Kundin:** Wie oft soll ich sie nehmen?
+*Customer:* How often should I take them?
+
+**Apotheker/Apothekerin:** Alle zwei bis drei Stunden eine Tablette.
+*Pharmacist:* One tablet every two to three hours.
+
+**Kunde/Kundin:** Danke. Dann nehme ich die.
+*Customer:* Thank you. Then I will take those.
+
+Communication Functions Practiced
+
+- Greeting politely
+- Describing a symptom
+- Answering health questions
+- Asking about dosage
+- Making a purchase decision
+
+### Dialogue 2: Common Variation
+
+**Kunde/Kundin:** Entschuldigung, ich habe eine Frage zu diesem Medikament.
+*Customer:* Excuse me, I have a question about this medicine.
+
+**Apotheker/Apothekerin:** Ja, gern. Was möchten Sie wissen?
+*Pharmacist:* Yes, gladly. What would you like to know?
+
+**Kunde/Kundin:** Wie oft muss ich das nehmen?
+*Customer:* How often do I have to take this?
+
+**Apotheker/Apothekerin:** Zweimal am Tag, morgens und abends.
+*Pharmacist:* Twice a day, morning and evening.
+
+**Kunde/Kundin:** Vor dem Essen oder nach dem Essen?
+*Customer:* Before food or after food?
+
+**Apotheker/Apothekerin:** Bitte nach dem Essen und mit viel Wasser.
+*Pharmacist:* Please after food and with plenty of water.
+
+**Kunde/Kundin:** Macht das Medikament müde?
+*Customer:* Does the medicine make you tired?
+
+**Apotheker/Apothekerin:** Normalerweise nicht. Aber lesen Sie bitte die Packungsbeilage.
+*Pharmacist:* Normally not. But please read the package leaflet.
+
+**Kunde/Kundin:** Gut. Wenn es nicht besser wird, was soll ich tun?
+*Customer:* Good. If it does not get better, what should I do?
+
+**Apotheker/Apothekerin:** Dann gehen Sie bitte zum Arzt.
+*Pharmacist:* Then please go to the doctor.
+
+Communication Functions Practiced
+
+- Asking for information
+- Understanding instructions
+- Asking about timing
+- Asking about side effects
+- Clarifying next steps
+
+### Dialogue 3: Real-World Challenge
+
+**Apotheker/Apothekerin:** Guten Tag. Was kann ich für Sie tun?
+*Pharmacist:* Good day. What can I do for you?
+
+**Kunde/Kundin:** Ich brauche etwas gegen Kopfschmerzen, aber ich habe Allergien.
+*Customer:* I need something for headaches, but I have allergies.
+
+**Apotheker/Apothekerin:** Gegen welche Stoffe sind Sie allergisch?
+*Pharmacist:* Which substances are you allergic to?
+
+**Kunde/Kundin:** Ich bin gegen Ibuprofen allergisch.
+*Customer:* I am allergic to ibuprofen.
+
+**Apotheker/Apothekerin:** Danke für die Information. Nehmen Sie andere Medikamente?
+*Pharmacist:* Thank you for the information. Do you take other medicines?
+
+**Kunde/Kundin:** Nein, im Moment nicht. Aber ich möchte etwas gut Verträgliches.
+*Customer:* No, not at the moment. But I would like something well tolerated.
+
+**Apotheker/Apothekerin:** Dann zeige ich Ihnen eine andere Option.
+*Pharmacist:* Then I will show you another option.
+
+**Kunde/Kundin:** Ist das auch vegan und glutenfrei?
+*Customer:* Is that also vegan and gluten-free?
+
+**Apotheker/Apothekerin:** Ich prüfe das kurz. Ja, dieses Produkt passt.
+*Pharmacist:* I will check that briefly. Yes, this product is suitable.
+
+**Kunde/Kundin:** Vielen Dank. Das ist sehr hilfreich.
+*Customer:* Thank you very much. That is very helpful.
+
+Communication Functions Practiced
+
+- Explaining a health constraint
+- Asking about allergies
+- Asking about product needs
+- Comparing options
+- Thanking politely
+
 ## Real-World Challenges
 
 ### Low-Pressure

@@ -242,6 +242,128 @@ Elternabend should reuse patterns from other situations:
 - reaching agreement from work meeting lessons
 - storytelling with Perfekt from personal narrative lessons
 
+## Practice Dialogues
+
+### Dialogue 1: Typical Situation
+
+**Lehrerin:** Guten Abend. Schön, dass Sie da sind.
+*Teacher:* Good evening. Nice that you are here.
+
+**Elternteil:** Guten Abend. Vielen Dank für den Elternabend.
+*Parent:* Good evening. Thank you for the parent evening.
+
+**Lehrerin:** Ihr Kind arbeitet gut mit und ist freundlich in der Klasse.
+*Teacher:* Your child participates well and is friendly in class.
+
+**Elternteil:** Das freut mich. Gibt es etwas, das wir zu Hause üben sollen?
+*Parent:* I am happy to hear that. Is there anything we should practice at home?
+
+**Lehrerin:** Ja, Lesen wäre wichtig. Zehn Minuten am Tag helfen schon.
+*Teacher:* Yes, reading would be important. Ten minutes a day already helps.
+
+**Elternteil:** Gut. Können Sie uns ein Buch empfehlen?
+*Parent:* Good. Can you recommend a book for us?
+
+**Lehrerin:** Ja, ich schreibe Ihnen morgen eine kleine Liste.
+*Teacher:* Yes, I will write you a short list tomorrow.
+
+**Elternteil:** Vielen Dank. Das hilft uns sehr.
+*Parent:* Thank you very much. That helps us a lot.
+
+**Lehrerin:** Sehr gern. Wenn Sie Fragen haben, schreiben Sie mir bitte.
+*Teacher:* You are very welcome. If you have questions, please write to me.
+
+**Elternteil:** Das mache ich. Einen schönen Abend noch.
+*Parent:* I will do that. Have a nice evening.
+
+Communication Functions Practiced
+
+- Greeting politely
+- Asking about progress
+- Asking for advice
+- Clarifying next steps
+- Thanking
+
+### Dialogue 2: Common Variation
+
+**Elternteil:** Guten Abend. Ich habe eine Frage zu den Hausaufgaben.
+*Parent:* Good evening. I have a question about the homework.
+
+**Lehrerin:** Natürlich. Worum geht es genau?
+*Teacher:* Of course. What exactly is it about?
+
+**Elternteil:** Mein Kind braucht oft sehr lange. Ist das normal?
+*Parent:* My child often needs a very long time. Is that normal?
+
+**Lehrerin:** Manchmal ja. Im Moment sind die Aufgaben etwas schwerer.
+*Teacher:* Sometimes, yes. At the moment the assignments are a little harder.
+
+**Elternteil:** Es kann sich auch nicht so gut konzentrieren.
+*Parent:* They also cannot concentrate very well.
+
+**Lehrerin:** Dann machen Sie bitte kurze Pausen. Das kann helfen.
+*Teacher:* Then please take short breaks. That can help.
+
+**Elternteil:** Sollen wir jeden Tag üben?
+*Parent:* Should we practice every day?
+
+**Lehrerin:** Ja, aber nur kurz. Zehn Minuten reichen am Anfang.
+*Teacher:* Yes, but only briefly. Ten minutes is enough at the beginning.
+
+**Elternteil:** Danke. Dann probieren wir das diese Woche.
+*Parent:* Thank you. Then we will try that this week.
+
+**Lehrerin:** Sehr gut. Wir sprechen nächste Woche noch einmal.
+*Teacher:* Very good. We will speak again next week.
+
+Communication Functions Practiced
+
+- Asking about homework
+- Describing a concern
+- Asking for advice
+- Understanding a suggestion
+- Agreeing on a next step
+
+### Dialogue 3: Real-World Challenge
+
+**Elternteil:** Ich mache mir etwas Sorgen um mein Kind.
+*Parent:* I am a little worried about my child.
+
+**Lehrerin:** Das verstehe ich. Was beobachten Sie zu Hause?
+*Teacher:* I understand. What do you notice at home?
+
+**Elternteil:** Es ist oft müde und sagt, die Schule ist zu viel.
+*Parent:* They are often tired and say school is too much.
+
+**Lehrerin:** In der Klasse ist es auch manchmal sehr still.
+*Teacher:* In class they are also sometimes very quiet.
+
+**Elternteil:** Gibt es eine Möglichkeit für mehr Unterstützung?
+*Parent:* Is there a possibility for more support?
+
+**Lehrerin:** Ja, wir können einen kurzen Termin mit der Beratung machen.
+*Teacher:* Yes, we can make a short appointment with the counseling team.
+
+**Elternteil:** Das wäre gut, weil ich nicht genau weiß, was hilft.
+*Parent:* That would be good because I do not know exactly what helps.
+
+**Lehrerin:** Wir sammeln zuerst Beobachtungen und sprechen dann zusammen.
+*Teacher:* We will first collect observations and then talk together.
+
+**Elternteil:** Danke. Mir ist wichtig, dass mein Kind sich sicher fühlt.
+*Parent:* Thank you. It is important to me that my child feels safe.
+
+**Lehrerin:** Das ist auch unser Ziel. Wir bleiben in Kontakt.
+*Teacher:* That is our goal too. We will stay in contact.
+
+Communication Functions Practiced
+
+- Explaining a concern
+- Describing emotional difficulty
+- Asking for support
+- Giving a reason
+- Clarifying next steps
+
 ## Real-World Challenges
 
 ### Low-Pressure
