@@ -28,6 +28,7 @@ The goal is practical communication, confidence, and real-world usability.
 - `STYLE_GUIDE.md` keeps lessons clear, practical, encouraging, and consistent.
 - `design-system.html` provides the visual design system for learner-facing pages and components.
 - `index.html` contains the current bundled learner-facing prototype.
+- `situation-library.html` provides a clean browsable index of available situation files grouped by domain.
 - `levels/` organizes learning paths from A1 through C1.
 - `topics/` organizes practical communication areas such as travel, health, shopping, housing, and work.
 - `templates/` provides reusable formats for lessons, vocabulary, speaking, writing, and review.
