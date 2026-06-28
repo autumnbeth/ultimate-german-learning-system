@@ -29,7 +29,7 @@ Status values:
 | Supermarkt             | Daily Life | Planned  |
 | Termin vereinbaren     | Daily Life | Planned  |
 | Telefonanruf           | Daily Life | Planned  |
-| Vorstellungsgespräch   | Work       | Planned  |
+| Vorstellungsgespräch   | Work       | Complete |
 | Erster Arbeitstag      | Work       | Planned  |
 | Gespräch mit Lehrkraft | Education  | Planned  |
 | Notfall                | Emergency  | Planned  |
