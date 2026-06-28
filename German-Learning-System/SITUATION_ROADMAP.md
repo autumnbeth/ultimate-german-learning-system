@@ -21,7 +21,7 @@ Status values:
 | Apotheke               | Healthcare | Complete |
 | Elternabend            | Education  | Complete |
 | Arzttermin             | Healthcare | Planned  |
-| Bürgeramt              | Government | Planned  |
+| Bürgeramt              | Government | Complete |
 | Anmeldung              | Government | Planned  |
 | Wohnungssuche          | Housing    | Planned  |
 | Vermieter kontaktieren | Housing    | Planned  |
