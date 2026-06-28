@@ -26,6 +26,22 @@ The tone should make learners feel capable without pretending German is effortle
 - Use bullet lists for steps, examples, and practice prompts.
 - Keep German examples accurate and natural.
 
+## Visual Design
+
+Use `design-system.html` as the visual reference for learner-facing pages and prototypes.
+
+The design system defines reusable presentation patterns for:
+
+- situation pages
+- CEFR badges
+- vocabulary cards
+- gender-color treatment for der, die, das, and plural forms
+- dialogue blocks
+- grammar-in-context examples
+- writing tasks
+- confidence milestones
+- real-world challenge callouts
+
 ## Learner Experience
 
 Learners should feel:

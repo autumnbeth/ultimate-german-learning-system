@@ -28,6 +28,793 @@ This document organizes German around five major systems:
 
 Each system helps learners connect scattered grammar knowledge into a usable mental model.
 
+## German Structure Map
+
+This map is the foundation layer for the whole system. It shows German as one connected structure rather than separate grammar chapters.
+
+Learners can enter from any point:
+
+- a sentence they do not understand
+- a situation they need to handle
+- a grammar pattern they keep seeing
+- a communication function they want to use
+- a writing or speaking task that feels difficult
+
+```text
+German Language System
+├── Sentence Architecture
+│   ├── Hauptsatz
+│   │   ├── verb in position 2
+│   │   ├── flexible position 1
+│   │   └── foundation for statements, updates, and answers
+│   ├── Questions
+│   │   ├── yes-no questions: verb in position 1
+│   │   ├── W-questions: question word + verb in position 2
+│   │   └── repair questions for real conversation
+│   ├── Nebensatz
+│   │   ├── introduced by subordinating connectors
+│   │   ├── conjugated verb at the end
+│   │   └── used for reasons, conditions, time, and reported ideas
+│   ├── Relative Clauses
+│   │   ├── add information about nouns
+│   │   ├── use relative pronouns with gender, number, and case
+│   │   └── use verb-final word order
+│   └── Information Flow
+│       ├── position 1 shows what the sentence is about
+│       ├── position 2 anchors the conjugated verb
+│       └── end field carries infinitives, participles, and prefixes
+├── Verb System
+│   ├── Präsens
+│   │   ├── present meaning
+│   │   ├── routines and facts
+│   │   └── future meaning with time context
+│   ├── Modal Verbs
+│   │   ├── können, müssen, dürfen, sollen, wollen, möchten
+│   │   └── modal bracket: modal in position 2 + infinitive at the end
+│   ├── Perfekt
+│   │   ├── haben/sein + Partizip II
+│   │   └── spoken past events and experiences
+│   ├── werden
+│   │   ├── future meaning
+│   │   ├── passive voice
+│   │   └── Konjunktiv II with würde
+│   └── Verb Brackets
+│       ├── modal verbs
+│       ├── separable verbs
+│       ├── Perfekt
+│       ├── Futur
+│       └── passive voice
+├── Connector System
+│   ├── Coordinating Connectors
+│   │   ├── und, aber, oder, denn, sondern
+│   │   └── connect equal parts or main clauses
+│   ├── Subordinating Connectors
+│   │   ├── weil, dass, wenn, obwohl, damit, bevor, nachdem
+│   │   └── send the conjugated verb to the end
+│   ├── Adverbial Connectors
+│   │   ├── deshalb, trotzdem, dann, danach, zuerst, außerdem
+│   │   └── often occupy position 1 and trigger verb-second order
+│   └── Discourse Markers
+│       ├── meiner Meinung nach, zum Beispiel, einerseits, andererseits
+│       └── organize opinions, arguments, and longer speech
+├── Noun System
+│   ├── Gender
+│   │   ├── der
+│   │   ├── die
+│   │   └── das
+│   ├── Number
+│   │   ├── singular
+│   │   ├── plural
+│   │   └── plural-only or mostly singular nouns
+│   ├── Articles
+│   │   ├── definite: der, die, das
+│   │   ├── indefinite: ein, eine
+│   │   ├── negative: kein, keine
+│   │   └── possessive: mein, dein, Ihr
+│   ├── Cases
+│   │   ├── Nominativ: subject
+│   │   ├── Akkusativ: direct object
+│   │   ├── Dativ: recipient, indirect object, many locations
+│   │   └── Genitiv: possession and formal relationships
+│   ├── Pronouns
+│   │   ├── personal pronouns
+│   │   ├── accusative and dative forms
+│   │   ├── reflexive pronouns
+│   │   └── relative pronouns
+│   └── Adjectives
+│       ├── describing
+│       ├── comparing
+│       └── adjective endings inside noun phrases
+└── Communication Building Blocks
+    ├── Asking questions
+    ├── Asking for help
+    ├── Explaining problems
+    ├── Giving reasons
+    ├── Expressing opinions
+    ├── Telling stories
+    ├── Making suggestions
+    ├── Agreeing and disagreeing
+    └── Reaching agreement
+```
+
+## Structure Map Reference Matrix
+
+This matrix shows how each foundation concept works, where it typically enters, what it depends on, and where learners reuse it.
+
+| Foundation Concept | What It Controls | Typical Entry Level | Prerequisites | Expands Into | High-Value Situations |
+| --- | --- | --- | --- | --- | --- |
+| Hauptsatz | Basic statements and verb-second order | A1 | Verb meaning, subject pronouns | Information flow, adverbial connectors, narrative updates | Introductions, restaurant, supermarket, work updates |
+| Yes-no questions | Confirming whether something is true | A1 | Present tense, verb position | Polite clarification, appointment questions | Arzttermin, Bürgeramt, Supermarkt, first day at work |
+| W-questions | Asking for specific information | A1 | Question words, verb-second order | Follow-up questions, interview questions, school questions | Apotheke, public transport, Elternabend, job interview |
+| Modal verbs | Ability, need, permission, advice, intention | A1-A2 | Present tense, verb bracket | Polite requests, suggestions, obligations, advice | Appointments, work, housing, emergency instructions |
+| Verb bracket | Split verb structures | A2 | Main clause word order | Perfekt, separable verbs, future, passive | Instructions, storytelling, appointments, office language |
+| Perfekt | Spoken past events | A2 | haben/sein, participles, verb bracket | Storytelling, problem explanation, reports | Doctor visit, workplace update, travel problems, Notfall |
+| Nebensatz | Dependent ideas with verb-final order | A2-B1 | Connectors, verb position | reasons, conditions, reported content, contrast | TELC writing, complaints, school emails, meetings |
+| Connector system | How ideas relate | A1-B2 | Main clauses, subordinate clauses | argumentation, discourse flow, complex writing | TELC, workplace discussion, Elternabend, complaints |
+| Cases | Noun roles in sentences | A1-B1 | Nouns, articles, sentence roles | prepositions, pronouns, adjective endings | Shopping, offices, housing, giving information |
+| Articles and gender | Noun identity and grammar signals | A1 | Vocabulary | case forms, adjective endings, pronouns | All vocabulary work and all situation files |
+| Pronouns | Reference to people and things | A1-B2 | Cases, noun phrases | relative pronouns, cohesion, storytelling | Conversations, emails, explanations, narratives |
+| Relative clauses | Extra information about nouns | B1 | pronouns, cases, verb-final order | precise descriptions, formal writing | Housing, products, documents, work responsibilities |
+| Passive voice | Process and formal action focus | B1-B2 | werden, participles, tense system | formal instructions, bureaucracy, academic style | Bürgeramt, work processes, official letters |
+| Konjunktiv II | Politeness, wishes, hypothetical meaning | B1-B2 | modal verbs, würde, hätte, wäre | diplomacy, advice, negotiation | requests, complaints, interviews, meetings |
+| Information flow | Emphasis, topic, sequence, contrast | B1-C1 | verb-second order | professional writing, storytelling, argumentation | presentations, emails, discussions, narratives |
+
+## Foundation Verb Map
+
+The verbs `haben`, `sein`, and `werden` are system verbs. They are ordinary verbs, but they also build major grammar structures.
+
+```text
+haben
+├── lexical verb: Ich habe einen Termin.
+├── Perfekt auxiliary: Ich habe einen Termin gemacht.
+├── Plusquamperfekt auxiliary: Ich hatte den Termin gemacht.
+└── Konjunktiv II: Ich hätte eine Frage.
+
+sein
+├── lexical verb: Ich bin krank.
+├── Perfekt auxiliary for movement/change: Ich bin gegangen.
+├── Plusquamperfekt auxiliary: Ich war gegangen.
+├── state passive helper: Die Tür ist geschlossen.
+└── Konjunktiv II: Ich wäre gern dabei.
+
+werden
+├── lexical verb: Es wird besser.
+├── Futur I: Ich werde morgen anrufen.
+├── Futur II: Ich werde es gemacht haben.
+├── process passive: Das Formular wird geprüft.
+└── Konjunktiv II helper: Ich würde gern kommen.
+```
+
+Why these matter:
+
+- `haben` opens spoken past for most verbs.
+- `sein` opens identity, state, movement, change, and some passive structures.
+- `werden` opens future meaning, passive voice, and polite/hypothetical language.
+- Together, they connect everyday speech to advanced written and formal German.
+
+## Sentence Architecture Control Panel
+
+German word order becomes easier when learners identify the sentence type first.
+
+| Sentence Type | Trigger | Verb Position | Example | Communication Use |
+| --- | --- | --- | --- | --- |
+| Hauptsatz | independent idea | position 2 | Ich brauche einen Termin. | stating, answering, explaining simply |
+| Yes-no question | confirmation needed | position 1 | Haben Sie heute Zeit? | checking, confirming, asking for help |
+| W-question | information needed | question word + position 2 | Wann haben Sie Zeit? | asking for details |
+| Modal sentence | modal verb | modal in position 2, infinitive at end | Ich muss morgen arbeiten. | needs, obligations, advice |
+| Separable verb | separable prefix | stem in position 2, prefix at end | Ich rufe morgen an. | daily actions, appointments |
+| Perfekt sentence | spoken past | haben/sein in position 2, participle at end | Ich habe angerufen. | stories, updates, explanations |
+| Nebensatz | subordinating connector | verb at end | weil ich krank bin | reasons, conditions, reports |
+| Relative clause | relative pronoun | verb at end | der mir hilft | describing and identifying |
+
+## Case System Map
+
+Cases are not just endings. They are role signals.
+
+```text
+Nominativ
+├── Who or what is the subject?
+├── First appears: A1
+└── Example: Der Termin ist morgen.
+
+Akkusativ
+├── Who or what receives the direct action?
+├── First appears: A1
+└── Example: Ich brauche den Termin.
+
+Dativ
+├── To whom, for whom, where, or with whom?
+├── First appears: A2
+└── Example: Ich helfe dem Kind.
+
+Genitiv
+├── Whose? Of what?
+├── First appears: B1 awareness, B2 formal control
+└── Example: die Adresse des Arztes
+```
+
+The case system connects to:
+
+- articles: der, den, dem, des
+- pronouns: ich, mich, mir
+- prepositions: mit + Dativ, für + Akkusativ
+- adjective endings: ein guter Termin, einen guten Termin
+- relative clauses: der Mann, dem ich helfe
+
+## Connector Control Panel
+
+Connectors are grammar switches. They do not only add meaning; they often choose the sentence architecture.
+
+| Connector Type | Examples | Word Order Effect | Communication Function |
+| --- | --- | --- | --- |
+| Coordinating | und, aber, oder, denn, sondern | main-clause order stays stable | add, contrast, choose, give simple reasons |
+| Subordinating | weil, dass, wenn, obwohl, damit | conjugated verb goes to the end | explain, report, condition, concede, give purpose |
+| Adverbial | deshalb, trotzdem, danach, zuerst, außerdem | connector often takes position 1, verb stays position 2 | show result, contrast, sequence, organization |
+| Discourse markers | meiner Meinung nach, zum Beispiel, einerseits, andererseits | organize flow; often phrase-level or position-1 patterns | express opinion, give examples, structure arguments |
+
+Core contrast:
+
+```text
+denn     -> main clause + main clause
+Ich lerne Deutsch, denn ich wohne in Deutschland.
+
+weil     -> main clause + subordinate clause
+Ich lerne Deutsch, weil ich in Deutschland wohne.
+
+deshalb  -> sentence adverb + verb-second main clause
+Ich wohne in Deutschland. Deshalb lerne ich Deutsch.
+```
+
+## A1-B1 Complete Grammar Structure Map
+
+This section turns the foundation into a structure map for A1 through B1. It is not a lesson order. It is a reference model that shows which parts of German remain stable while new layers are added.
+
+Core principle:
+
+```text
+Auxiliary engine
+→ sentence frame
+→ tense stack
+→ clause control
+→ passive system
+→ mood layer
+→ modal stacking
+→ B1 expression layer
+```
+
+### Level 1: The Engine - Auxiliary Verbs
+
+The first engine of German is `haben`, `sein`, and `werden`.
+
+These three verbs must become automatic because they build past, future, passive, conditional, and modal-like structures.
+
+| Verb | Core Meaning | System Function | Key Forms |
+| --- | --- | --- | --- |
+| haben | to have | Perfekt with most verbs; Plusquamperfekt; Konjunktiv II with hätte | ich habe, du hast, er/sie/es hat, wir haben |
+| sein | to be | Perfekt with movement/change verbs; Plusquamperfekt; Zustandspassiv; Konjunktiv II with wäre | ich bin, du bist, er/sie/es ist, wir sind |
+| werden | to become | Futur I; Futur II; Vorgangspassiv; Konjunktiv II with würde | ich werde, du wirst, er/sie/es wird, wir werden |
+
+Reference:
+
+```text
+Perfekt with haben:
+Ich habe gelernt.
+
+Perfekt with sein:
+Ich bin gegangen.
+
+Future/passive with werden:
+Ich werde anrufen.
+Das Formular wird geprüft.
+```
+
+### Level 2: The Frame Never Changes
+
+German sentence architecture is stable. New grammar layers are added into the same frame.
+
+#### Hauptsatz Frame
+
+```text
+Position 1  +  Verb in position 2  +  middle field  +  verb element at the end
+
+Ich             habe                    gestern Deutsch     gelernt.
+Ich             werde                   morgen Deutsch      lernen.
+```
+
+Rule:
+
+```text
+One conjugated verb only = always position 2.
+Extra verb pieces go to the end.
+```
+
+#### Nebensatz Frame
+
+```text
+Connector  +  subject  +  middle field  +  all verb elements at the end
+
+weil          ich        Deutsch            lerne
+weil          ich        Deutsch            gelernt habe
+weil          ich        Deutsch            lernen möchte
+```
+
+Rule:
+
+```text
+Nebensatz = comma + connector + verb at the end.
+```
+
+### Level 3: The Tense Stack
+
+German tenses follow one structural idea:
+
+```text
+Only one conjugated verb appears early.
+Everything else stacks at the end.
+```
+
+| Tense | Structure | Example | What Changes |
+| --- | --- | --- | --- |
+| Präsens | conjugated verb only | Ich lerne. | one verb |
+| Perfekt | haben/sein + Partizip II | Ich habe gelernt. | auxiliary in position 2; participle at end |
+| Präteritum | past stem form | Ich lernte. / Ich war. | one past verb, common with sein/haben/modals |
+| Plusquamperfekt | hatte/war + Partizip II | Ich hatte gelernt. | past auxiliary + participle |
+| Futur I | werden + Infinitiv | Ich werde lernen. | werden in position 2; infinitive at end |
+| Futur II | werden + Partizip II + haben/sein | Ich werde gelernt haben. | future frame around completed action |
+
+Reference ladder:
+
+```text
+Präsens:          Ich lerne.
+Perfekt:          Ich habe gelernt.
+Präteritum:       Ich lernte. / Ich war.
+Plusquamperfekt:  Ich hatte gelernt.
+Futur I:          Ich werde lernen.
+Futur II:         Ich werde gelernt haben.
+```
+
+### Auxiliary Choice: haben vs sein
+
+| Auxiliary | Usually With | Examples |
+| --- | --- | --- |
+| sein | motion, change of state, a small set of core verbs | gehen, kommen, fahren, werden, aufwachen, sterben |
+| haben | most other verbs | lernen, essen, arbeiten, schreiben, kaufen, sehen |
+
+Reference:
+
+```text
+Ich bin nach Hause gegangen.
+Ich habe einen Brief geschrieben.
+```
+
+### Block A: Clause Control
+
+Clause control explains which words control the structure of the sentence.
+
+#### Konjunktionen: Verb To The End
+
+These connectors introduce a subordinate clause.
+
+| Connector | Function | Example |
+| --- | --- | --- |
+| weil | because | Ich übe, weil ich besser sprechen möchte. |
+| dass | that | Ich glaube, dass der Termin morgen ist. |
+| obwohl | although | Ich gehe, obwohl ich müde bin. |
+| wenn | if/when, repeated | Wenn ich Zeit habe, rufe ich an. |
+| als | when, one past moment | Als ich klein war, ... |
+| nachdem | after | Nachdem ich gegessen hatte, ... |
+| sobald | as soon as | Sobald ich Zeit habe, melde ich mich. |
+| sodass | so that/as consequence | Es war laut, sodass wir nichts gehört haben. |
+| damit | so that, purpose | Ich lerne, damit ich sicherer spreche. |
+
+Pattern:
+
+```text
+Connector + subject + middle field + verb at end
+weil        ich       Deutsch       lerne
+```
+
+#### Konnektoren: Verb Stays Position 2
+
+These connectors often occupy position 1 in a main clause. The conjugated verb stays in position 2.
+
+| Connector | Function | Example |
+| --- | --- | --- |
+| also | so/therefore | Also bleibe ich zu Hause. |
+| deshalb | that is why | Deshalb schlafe ich früher. |
+| trotzdem | nevertheless | Trotzdem gehen wir. |
+| außerdem | moreover | Außerdem brauche ich eine Kopie. |
+
+Pattern:
+
+```text
+Connector + verb + subject + rest
+Deshalb     lerne   ich       Deutsch.
+```
+
+#### Relativsatz
+
+Relative clauses add information about a noun. The relative pronoun agrees with the noun in gender and number, but its case comes from its role inside the relative clause.
+
+| Gender | Nominativ | Akkusativ | Dativ |
+| --- | --- | --- | --- |
+| der | der | den | dem |
+| die | die | die | der |
+| das | das | das | dem |
+| plural | die | die | denen |
+
+Examples:
+
+```text
+Der Mann, der dort sitzt, ist mein Lehrer.
+Das Formular, das ich brauche, liegt hier.
+Die Frau, der ich geholfen habe, ist nett.
+```
+
+#### Finalsatz: Purpose
+
+German uses two common purpose structures.
+
+| Structure | Use | Example |
+| --- | --- | --- |
+| damit + subject + verb at end | different subject or explicit subject | Ich lerne, damit er mich versteht. |
+| um ... zu + infinitive | same subject | Ich lerne, um zu bestehen. |
+
+### Block B: Passive System
+
+Passive is not a separate world. It uses the same tense ladder and the same verb-position rules.
+
+#### Vorgangspassiv: Process Passive
+
+Formula:
+
+```text
+werden + Partizip II
+```
+
+| Tense | Example |
+| --- | --- |
+| Präsens | Das Haus wird gebaut. |
+| Präteritum | Das Haus wurde gebaut. |
+| Perfekt | Das Haus ist gebaut worden. |
+| Plusquamperfekt | Das Haus war gebaut worden. |
+| Futur I | Das Haus wird gebaut werden. |
+
+Meaning:
+
+```text
+Object becomes subject in passive.
+The focus is on the action or process.
+```
+
+#### Passiv With Modal Verb
+
+Pattern:
+
+```text
+Modal in position 2 + Partizip II + werden at the end
+```
+
+Examples:
+
+```text
+Das Haus muss gebaut werden.
+Das Formular kann geprüft werden.
+Der Termin soll bestätigt werden.
+```
+
+Rule:
+
+```text
+werden stays before the final modal-like infinitive stack.
+```
+
+#### Zustandspassiv: State Passive
+
+Formula:
+
+```text
+sein + Partizip II
+```
+
+Examples:
+
+```text
+Die Tür ist geschlossen.
+Das Haus war gebaut.
+```
+
+Meaning:
+
+```text
+Vorgangspassiv = action happening
+Zustandspassiv = result or state
+```
+
+#### lassen + Infinitiv
+
+`lassen + Infinitiv` often creates a passive-adjacent meaning.
+
+| Meaning | Example |
+| --- | --- |
+| I have something done | Ich lasse mein Auto reparieren. |
+| something can be done/explained | Das lässt sich erklären. |
+
+Related structure:
+
+```text
+haben + Infinitiv + Modal
+
+Ich habe kommen müssen.
+Ich habe arbeiten sollen.
+```
+
+Rule:
+
+```text
+No Partizip II here. The infinitive stack stays infinitive.
+```
+
+### Block C: Konjunktiv System
+
+Konjunktiv is a mood layer, not a new time layer.
+
+It changes stance:
+
+- hypothetical
+- conditional
+- polite
+- unreal
+- reported
+- journalistic or formal distance
+
+#### Konjunktiv II: Hypothetical / Conditional
+
+Most common spoken form:
+
+```text
+würde + Infinitiv
+
+Ich würde gern kommen.
+Er würde das kaufen.
+```
+
+Common strong forms:
+
+| Infinitive | Konjunktiv II |
+| --- | --- |
+| sein | wäre |
+| haben | hätte |
+| können | könnte |
+| müssen | müsste |
+| werden | würde |
+| wollen | wollte |
+
+Examples:
+
+```text
+Ich hätte gern einen Termin.
+Es wäre gut, wenn wir früher anfangen.
+Könnten Sie mir helfen?
+```
+
+Past hypothetical:
+
+```text
+hätte/wäre + Partizip II
+
+Ich hätte das gemacht.
+Er wäre gegangen.
+```
+
+#### Konjunktiv I: Reported Speech
+
+Konjunktiv I reports what someone says while creating distance.
+
+Common pattern:
+
+```text
+Er sagt, er sei krank.
+Sie meint, sie habe keine Zeit.
+Er behauptet, er komme später.
+```
+
+Quick reference:
+
+| Verb | Konjunktiv I Signal |
+| --- | --- |
+| sein | er sei |
+| haben | er habe |
+| kommen | er komme |
+| gehen | er gehe |
+
+### Block D: Modal Stacking
+
+Modal stacking means a modal combines with another verb layer.
+
+The foundation is always the same:
+
+```text
+Modal in position 2.
+Everything else goes to the end.
+```
+
+| Construction | Formula | Example |
+| --- | --- | --- |
+| Präsens + modal | Modal + Infinitiv | Ich kann kommen. |
+| Perfekt + modal | haben + Infinitiv + Modal | Ich habe kommen können. |
+| Plusquamperfekt + modal | hatte + Infinitiv + Modal | Ich hatte kommen können. |
+| Futur + modal | werden + Infinitiv + Modal | Ich werde kommen müssen. |
+| Passive + modal | Modal + Partizip II + werden | Es muss gemacht werden. |
+| Konjunktiv II + modal | könnte/müsste/sollte + Infinitiv | Das könnte sein. |
+
+Modal quick reference:
+
+| Modal | Meaning | Example |
+| --- | --- | --- |
+| müssen | must, have to | Ich muss arbeiten. |
+| können | can, be able to | Ich kann schwimmen. |
+| dürfen | may, be allowed to | Du darfst hier parken. |
+| wollen | want to | Ich will reisen. |
+| sollen | should, be supposed to | Du sollst das machen. |
+| mögen/möchten | like / would like | Ich möchte einen Kaffee. |
+
+### B1 Layer: Time Logic And Expression
+
+B1 adds nuance. The grammar is still built on the same structure, but learners can now show time relationships, sequence, consequence, degree, and stance more clearly.
+
+#### Plusquamperfekt: Time Anchor
+
+Use Plusquamperfekt to show one past event before another past event.
+
+```text
+Nachdem ich gegessen hatte, ging ich spazieren.
+```
+
+Map:
+
+```text
+Past event 1: hatte gegessen
+Past event 2: ging spazieren
+```
+
+#### Temporal Connectors
+
+| Connector | Meaning | Time Logic |
+| --- | --- | --- |
+| nachdem | after | earlier action first |
+| sobald | as soon as | immediate sequence |
+| als | when | one past moment |
+| wenn | when/if | repeated, future, or conditional |
+
+#### Konsekutiv: Consequence
+
+| Connector | Structure | Example |
+| --- | --- | --- |
+| sodass | Nebensatz with verb at end | Es war kalt, sodass wir zu Hause blieben. |
+| also | Hauptsatz connector | Es war kalt. Also blieben wir zu Hause. |
+
+#### Gradual Meaning
+
+Useful expression markers:
+
+```text
+sehr
+besonders
+extrem
+völlig
+total
+ziemlich
+ganz
+eher
+kaum
+```
+
+#### Redepartikeln
+
+These are emotional or conversational particles. They are common in spoken German and should be recognized before learners try to overuse them.
+
+```text
+doch
+ja
+wohl
+eben
+halt
+```
+
+#### Futur I: Prognosis, Promise, Assumption
+
+Formula:
+
+```text
+werden + Infinitiv
+```
+
+Uses:
+
+```text
+Ich werde kommen.       -> promise
+Er wird es schaffen.    -> prediction or encouragement
+Er wird zu Hause sein.  -> assumption
+```
+
+In speech, Präsens is often preferred for practical future plans:
+
+```text
+Morgen rufe ich an.
+Nächste Woche komme ich vorbei.
+```
+
+#### Prognosis And Assumption Patterns
+
+```text
+Ich vermute, dass ...
+Wahrscheinlich wird ...
+Es könnte sein, dass ...
+Es scheint, als ob ...
+```
+
+Reminder:
+
+```text
+dass + conjugated verb at the end
+```
+
+### Quick Reference: Verb Position Rules
+
+```text
+Hauptsatz
+Position 1      Verb position 2      Middle       End
+Ich             lerne                 Deutsch.
+Ich             habe                  Deutsch      gelernt.
+
+Nebensatz
+Connector       Subject               Middle       Verb end
+weil            ich                   Deutsch      lerne
+dass            er                    es           kann
+
+Connector as position 1
+Connector       Verb position 2       Subject      Rest
+Also            bleiben               wir          hier.
+Deshalb         lernten               wir          mehr.
+```
+
+### A1-B1 Grammar Architecture Summary
+
+```text
+Memorize:
+haben + sein + werden
+
+Stabilize:
+Hauptsatz frame
+Nebensatz frame
+question frames
+
+Stack:
+Perfekt
+Plusquamperfekt
+Futur I
+Futur II
+modal combinations
+
+Control:
+coordinating connectors
+subordinating connectors
+adverbial connectors
+relative clauses
+purpose clauses
+
+Expand:
+passive
+Konjunktiv II
+Konjunktiv I recognition
+modal stacking
+time logic
+consequence
+gradation
+discourse particles
+```
+
 ## How To Use This Reference
 
 Use this file when a learner asks:
@@ -364,8 +1151,8 @@ Reference pattern:
 ```text
 Subject + modal verb + middle field + infinitive at the end
 
-Ich     moechte      einen Termin        machen.
-Wir     muessen      morgen frueh        arbeiten.
+Ich     möchte       einen Termin        machen.
+Wir     müssen       morgen früh         arbeiten.
 Kann    ich          Ihnen               helfen?
 ```
 
@@ -540,8 +1327,8 @@ Reference examples:
 
 ```text
 und      Ich trinke Kaffee und ich esse Kuchen.
-aber     Ich moechte kommen, aber ich habe keine Zeit.
-oder     Moechtest du Tee oder Kaffee?
+aber     Ich möchte kommen, aber ich habe keine Zeit.
+oder     Möchtest du Tee oder Kaffee?
 denn     Ich lerne Deutsch, denn ich wohne in Deutschland.
 sondern  Ich trinke keinen Kaffee, sondern Tee.
 ```
@@ -842,7 +1629,7 @@ Related communication functions:
 Reference examples:
 
 ```text
-Das Zimmer ist gross.
+Das Zimmer ist groß.
 Ich suche eine kleine Wohnung.
 Diese Option ist besser.
 Das ist der wichtigste Punkt.
@@ -888,7 +1675,7 @@ Related communication functions:
 Useful patterns:
 
 ```text
-Koennen Sie mir helfen?
+Können Sie mir helfen?
 Was bedeutet das?
 Wann ist der Termin?
 Wo finde ich...?
@@ -1054,10 +1841,10 @@ Related communication functions:
 Useful patterns:
 
 ```text
-Wir koennen...
+Wir können...
 Vielleicht sollten wir...
 Ich schlage vor, dass...
-Es waere sinnvoll, ...
+Es wäre sinnvoll, ...
 ```
 
 ### Agreeing And Disagreeing

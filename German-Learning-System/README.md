@@ -26,10 +26,28 @@ The goal is practical communication, confidence, and real-world usability.
 - `VISION.md` defines the mission, learner promise, philosophy, and long-term direction.
 - `CURRICULUM.md` outlines the learning architecture across CEFR levels and real-life topics.
 - `STYLE_GUIDE.md` keeps lessons clear, practical, encouraging, and consistent.
+- `design-system.html` provides the visual design system for learner-facing pages and components.
+- `index.html` contains the current bundled learner-facing prototype.
 - `levels/` organizes learning paths from A1 through C1.
 - `topics/` organizes practical communication areas such as travel, health, shopping, housing, and work.
 - `templates/` provides reusable formats for lessons, vocabulary, speaking, writing, and review.
 - `notes/` stores learner stories, ideas, and future product thinking.
+
+## Design System
+
+The project includes `design-system.html` as the visual reference for future learner-facing pages.
+
+Use it to keep interface work consistent across:
+
+* typography
+* color
+* gender-color vocabulary treatment
+* CEFR level badges
+* situation cards
+* dialogue blocks
+* writing examples
+* confidence milestones
+* real-world challenge callouts
 
 ## Goal
 
