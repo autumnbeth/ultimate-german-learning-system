@@ -96,7 +96,7 @@ The situation can grow across levels:
 | heute Abend | this evening | Hast du heute Abend Zeit? |
 | am Wochenende | on the weekend | Am Wochenende passt es mir. |
 | um 18 Uhr | at 6 p.m. | Treffen wir uns um 18 Uhr? |
-| der Treffpunkt | meeting point | Wo ist der Treffpunkt? |
+| der Treffpunkt, die Treffpunkte | meeting point | Wo ist der Treffpunkt? |
 | in der Nähe | nearby | Das Café ist in der Nähe. |
 | draußen | outside | Wollen wir draußen sitzen? |
 
@@ -106,8 +106,8 @@ The situation can grow across levels:
 | --- | --- | --- |
 | Wie geht es dir? | How are you? | Wie geht es dir heute? |
 | Was gibt es Neues? | What's new? | Was gibt es Neues bei dir? |
-| die Arbeit | work | Wie läuft die Arbeit? |
-| das Wochenende | weekend | Wie war dein Wochenende? |
+| die Arbeit, die Arbeiten | work | Wie läuft die Arbeit? |
+| das Wochenende, die Wochenenden | weekend | Wie war dein Wochenende? |
 | erzählen | to tell | Erzähl mal! |
 | schön | nice | Das klingt schön. |
 

@@ -124,15 +124,17 @@ Design principles:
 
 - Keep the word count limited.
 - Group vocabulary by use.
-- Include articles and plurals when helpful.
+- For every German noun, include gender and plural form as a standard rule.
+- Use the format `der Termin, die Termine`, `die Adresse, die Adressen`, or `das Formular, die Formulare`.
+- For nouns that are normally plural-only or mostly singular, mark them clearly, such as `die Schmerzen (Plural)` or `das Wasser, meist Singular`.
 - Put words inside phrases or example sentences.
 - Separate required vocabulary from optional expansion.
 
 Examples:
 
-- Apotheke: die Halsschmerzen, der Husten, das Fieber, etwas gegen...
-- Appointment: der Termin, verschieben, absagen, frei, passen
-- Housing: die Heizung, kaputt, reparieren, der Vermieter, dringend
+- Apotheke: die Halsschmerzen (Plural), der Husten, meist Singular, das Fieber, meist Singular, etwas gegen...
+- Appointment: der Termin, die Termine, verschieben, absagen, frei, passen
+- Housing: die Heizung, die Heizungen, reparieren, der Vermieter, die Vermieter, dringend
 
 ### Phrase Pattern Layer
 
@@ -366,6 +368,8 @@ Examples:
 ## Vocabulary In Context
 
 Group vocabulary by real use inside the situation, not as an isolated list.
+
+Every noun should show gender and plural form in the German column.
 
 Examples:
 

@@ -70,7 +70,7 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| der Termin | appointment | Ich brauche einen Termin. |
+| der Termin, die Termine | appointment | Ich brauche einen Termin. |
 | vereinbaren | to arrange | Ich möchte einen Termin vereinbaren. |
 | verschieben | to reschedule | Ich möchte den Termin verschieben. |
 | absagen | to cancel | Ich muss den Termin absagen. |
@@ -103,12 +103,12 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| die Bestätigung | confirmation | Ich brauche eine Bestätigung. |
-| die E-Mail | email | Können Sie mir eine E-Mail schicken? |
-| die Telefonnummer | phone number | Meine Telefonnummer ist ... |
-| die Adresse | address | Wie ist die Adresse? |
-| die Unterlagen | documents | Muss ich Unterlagen mitbringen? |
-| der Kalender | calendar | Ich schaue kurz in meinen Kalender. |
+| die Bestätigung, die Bestätigungen | confirmation | Ich brauche eine Bestätigung. |
+| die E-Mail, die E-Mails | email | Können Sie mir eine E-Mail schicken? |
+| die Telefonnummer, die Telefonnummern | phone number | Meine Telefonnummer ist ... |
+| die Adresse, die Adressen | address | Wie ist die Adresse? |
+| die Unterlage, die Unterlagen | documents | Muss ich Unterlagen mitbringen? |
+| der Kalender, die Kalender | calendar | Ich schaue kurz in meinen Kalender. |
 
 ### Polite Phone Language
 

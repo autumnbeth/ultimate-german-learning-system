@@ -72,9 +72,9 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| der Kollege / die Kollegin | colleague | Das ist meine Kollegin Frau Weber. |
-| das Team | team | Ich arbeite ab heute in Ihrem Team. |
-| die Abteilung | department | In welcher Abteilung arbeiten Sie? |
+| der Kollege, die Kollegen / die Kollegin, die Kolleginnen | colleague | Das ist meine Kollegin Frau Weber. |
+| das Team, die Teams | team | Ich arbeite ab heute in Ihrem Team. |
+| die Abteilung, die Abteilungen | department | In welcher Abteilung arbeiten Sie? |
 | neu | new | Ich bin neu hier. |
 | kennenlernen | to get to know | Schön, Sie kennenzulernen. |
 | sich vorstellen | to introduce oneself | Ich möchte mich kurz vorstellen. |
@@ -83,29 +83,29 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| der Arbeitsplatz | workplace/desk | Wo ist mein Arbeitsplatz? |
-| das Büro | office | Das Büro ist im zweiten Stock. |
-| der Pausenraum | break room | Wo ist der Pausenraum? |
-| die Küche | kitchen | Die Küche ist neben dem Eingang. |
-| die Toilette | restroom | Wo ist die Toilette? |
-| der Besprechungsraum | meeting room | Das Treffen ist im Besprechungsraum. |
+| der Arbeitsplatz, die Arbeitsplätze | workplace/desk | Wo ist mein Arbeitsplatz? |
+| das Büro, die Büros | office | Das Büro ist im zweiten Stock. |
+| der Pausenraum, die Pausenräume | break room | Wo ist der Pausenraum? |
+| die Küche, die Küchen | kitchen | Die Küche ist neben dem Eingang. |
+| die Toilette, die Toiletten | restroom | Wo ist die Toilette? |
+| der Besprechungsraum, die Besprechungsräume | meeting room | Das Treffen ist im Besprechungsraum. |
 
 ### Processes
 
 | German | English | Example |
 | --- | --- | --- |
 | sich einloggen | to log in | Wie kann ich mich einloggen? |
-| das Passwort | password | Ich brauche ein Passwort. |
-| das System | system | Wie funktioniert das System? |
-| die E-Mail-Adresse | email address | Habe ich schon eine E-Mail-Adresse? |
-| die Zeiterfassung | time tracking | Wo ist die Zeiterfassung? |
-| die Einarbeitung | onboarding | Wer macht heute meine Einarbeitung? |
+| das Passwort, die Passwörter | password | Ich brauche ein Passwort. |
+| das System, die Systeme | system | Wie funktioniert das System? |
+| die E-Mail-Adresse, die E-Mail-Adressen | email address | Habe ich schon eine E-Mail-Adresse? |
+| die Zeiterfassung, die Zeiterfassungen | time tracking | Wo ist die Zeiterfassung? |
+| die Einarbeitung, die Einarbeitungen | onboarding | Wer macht heute meine Einarbeitung? |
 
 ### Tasks
 
 | German | English | Example |
 | --- | --- | --- |
-| die Aufgabe | task | Was ist meine erste Aufgabe? |
+| die Aufgabe, die Aufgaben | task | Was ist meine erste Aufgabe? |
 | anfangen | to begin | Soll ich jetzt anfangen? |
 | vorbereiten | to prepare | Ich bereite die Unterlagen vor. |
 | prüfen | to check | Soll ich die Liste prüfen? |
@@ -127,11 +127,11 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| die Besprechung | meeting | Wann ist die Besprechung? |
-| die Pause | break | Wann ist die Pause? |
-| die Arbeitszeit | working time | Wie sind die Arbeitszeiten? |
-| die Schicht | shift | Meine Schicht beginnt um acht Uhr. |
-| die Rückmeldung | feedback/response | Ich gebe Ihnen später Rückmeldung. |
+| die Besprechung, die Besprechungen | meeting | Wann ist die Besprechung? |
+| die Pause, die Pausen | break | Wann ist die Pause? |
+| die Arbeitszeit, die Arbeitszeiten | working time | Wie sind die Arbeitszeiten? |
+| die Schicht, die Schichten | shift | Meine Schicht beginnt um acht Uhr. |
+| die Rückmeldung, die Rückmeldungen | feedback/response | Ich gebe Ihnen später Rückmeldung. |
 | Bescheid geben | to let someone know | Ich gebe Ihnen Bescheid. |
 
 ## Practice Dialogues

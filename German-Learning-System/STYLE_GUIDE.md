@@ -20,6 +20,9 @@ The tone should make learners feel capable without pretending German is effortle
 - Use descriptive headings.
 - Keep paragraphs short.
 - Use tables for vocabulary when helpful.
+- In vocabulary tables, every German noun must include gender and plural form.
+- Use learner-readable noun formatting: `der Termin, die Termine`, `die Adresse, die Adressen`, `das Formular, die Formulare`.
+- Mark plural-only or mostly singular nouns clearly, such as `die Schmerzen (Plural)` or `das Wasser, meist Singular`.
 - Use bullet lists for steps, examples, and practice prompts.
 - Keep German examples accurate and natural.
 

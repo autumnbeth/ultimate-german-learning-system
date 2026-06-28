@@ -70,26 +70,26 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| die Schmerzen | pain | Ich habe starke Schmerzen. |
-| das Fieber | fever | Ich habe Fieber. |
-| der Husten | cough | Ich habe seit drei Tagen Husten. |
-| die Halsschmerzen | sore throat | Ich habe Halsschmerzen. |
-| die Kopfschmerzen | headache | Ich habe Kopfschmerzen. |
-| die Übelkeit | nausea | Mir ist übel. |
-| der Schwindel | dizziness | Mir ist schwindelig. |
-| die Müdigkeit | tiredness | Ich bin sehr müde. |
+| die Schmerzen (Plural) | pain | Ich habe starke Schmerzen. |
+| das Fieber, meist Singular | fever | Ich habe Fieber. |
+| der Husten, meist Singular | cough | Ich habe seit drei Tagen Husten. |
+| die Halsschmerzen (Plural) | sore throat | Ich habe Halsschmerzen. |
+| die Kopfschmerzen (Plural) | headache | Ich habe Kopfschmerzen. |
+| die Übelkeit, meist Singular | nausea | Mir ist übel. |
+| der Schwindel, meist Singular | dizziness | Mir ist schwindelig. |
+| die Müdigkeit, meist Singular | tiredness | Ich bin sehr müde. |
 
 ### Body Parts
 
 | German | English | Example |
 | --- | --- | --- |
-| der Kopf | head | Mein Kopf tut weh. |
-| der Hals | throat/neck | Mein Hals tut weh. |
-| der Rücken | back | Ich habe Rückenschmerzen. |
-| der Bauch | stomach/belly | Mein Bauch tut weh. |
-| das Bein | leg | Mein Bein tut weh. |
-| der Arm | arm | Mein Arm tut weh. |
-| die Brust | chest | Ich habe Schmerzen in der Brust. |
+| der Kopf, die Köpfe | head | Mein Kopf tut weh. |
+| der Hals, die Hälse | throat/neck | Mein Hals tut weh. |
+| der Rücken, die Rücken | back | Ich habe Rückenschmerzen. |
+| der Bauch, die Bäuche | stomach/belly | Mein Bauch tut weh. |
+| das Bein, die Beine | leg | Mein Bein tut weh. |
+| der Arm, die Arme | arm | Mein Arm tut weh. |
+| die Brust, die Brüste | chest | Ich habe Schmerzen in der Brust. |
 
 ### Medical Actions
 
@@ -106,22 +106,22 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| der Termin | appointment | Ich habe einen Termin um zehn Uhr. |
-| die Sprechstunde | consultation hours | Wann ist die Sprechstunde? |
-| die Versichertenkarte | insurance card | Ich habe meine Versichertenkarte dabei. |
-| die Überweisung | referral | Brauche ich eine Überweisung? |
-| die Krankschreibung | sick note | Ich brauche eine Krankschreibung. |
+| der Termin, die Termine | appointment | Ich habe einen Termin um zehn Uhr. |
+| die Sprechstunde, die Sprechstunden | consultation hours | Wann ist die Sprechstunde? |
+| die Versichertenkarte, die Versichertenkarten | insurance card | Ich habe meine Versichertenkarte dabei. |
+| die Überweisung, die Überweisungen | referral | Brauche ich eine Überweisung? |
+| die Krankschreibung, die Krankschreibungen | sick note | Ich brauche eine Krankschreibung. |
 
 ### Treatment
 
 | German | English | Example |
 | --- | --- | --- |
-| das Medikament | medicine | Ich nehme das Medikament morgens. |
-| die Tablette | tablet | Nehmen Sie eine Tablette. |
-| die Salbe | ointment | Tragen Sie die Salbe zweimal täglich auf. |
-| die Ruhe | rest | Sie brauchen Ruhe. |
-| die Untersuchung | examination | Die Untersuchung dauert kurz. |
-| die Behandlung | treatment | Die Behandlung hilft gegen die Schmerzen. |
+| das Medikament, die Medikamente | medicine | Ich nehme das Medikament morgens. |
+| die Tablette, die Tabletten | tablet | Nehmen Sie eine Tablette. |
+| die Salbe, die Salben | ointment | Tragen Sie die Salbe zweimal täglich auf. |
+| die Ruhe, meist Singular | rest | Sie brauchen Ruhe. |
+| die Untersuchung, die Untersuchungen | examination | Die Untersuchung dauert kurz. |
+| die Behandlung, die Behandlungen | treatment | Die Behandlung hilft gegen die Schmerzen. |
 
 ### Instructions
 

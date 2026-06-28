@@ -69,21 +69,21 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| der Bus | bus | Ich nehme den Bus. |
-| die Straßenbahn | tram | Die Straßenbahn fährt alle zehn Minuten. |
-| die U-Bahn | subway | Wo ist die U-Bahn? |
-| die S-Bahn | city train | Die S-Bahn fährt zum Flughafen. |
-| der Zug | train | Der Zug fährt von Gleis 4. |
-| der Regionalzug | regional train | Der Regionalzug hält in Bonn. |
+| der Bus, die Busse | bus | Ich nehme den Bus. |
+| die Straßenbahn, die Straßenbahnen | tram | Die Straßenbahn fährt alle zehn Minuten. |
+| die U-Bahn, die U-Bahnen | subway | Wo ist die U-Bahn? |
+| die S-Bahn, die S-Bahnen | city train | Die S-Bahn fährt zum Flughafen. |
+| der Zug, die Züge | train | Der Zug fährt von Gleis 4. |
+| der Regionalzug, die Regionalzüge | regional train | Der Regionalzug hält in Bonn. |
 
 ### Tickets
 
 | German | English | Example |
 | --- | --- | --- |
-| das Ticket | ticket | Ich brauche ein Ticket. |
-| die Fahrkarte | ticket | Ist diese Fahrkarte gültig? |
-| der Automat | ticket machine | Wo ist der Fahrkartenautomat? |
-| die Zone | zone | Welche Zone brauche ich? |
+| das Ticket, die Tickets | ticket | Ich brauche ein Ticket. |
+| die Fahrkarte, die Fahrkarten | ticket | Ist diese Fahrkarte gültig? |
+| der Automat, die Automaten | ticket machine | Wo ist der Fahrkartenautomat? |
+| die Zone, die Zonen | zone | Welche Zone brauche ich? |
 | entwerten | to validate | Muss ich das Ticket entwerten? |
 | gültig | valid | Ist das Ticket heute gültig? |
 
@@ -91,23 +91,23 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| die Haltestelle | stop | Wo ist die Haltestelle? |
-| das Gleis | platform/track | Von welchem Gleis fährt der Zug? |
-| der Bahnsteig | platform | Der Bahnsteig ist dort links. |
+| die Haltestelle, die Haltestellen | stop | Wo ist die Haltestelle? |
+| das Gleis, die Gleise | platform/track | Von welchem Gleis fährt der Zug? |
+| der Bahnsteig, die Bahnsteige | platform | Der Bahnsteig ist dort links. |
 | umsteigen | to change | Muss ich umsteigen? |
-| die Verbindung | connection | Gibt es eine bessere Verbindung? |
-| die Richtung | direction | Welche Richtung brauche ich? |
+| die Verbindung, die Verbindungen | connection | Gibt es eine bessere Verbindung? |
+| die Richtung, die Richtungen | direction | Welche Richtung brauche ich? |
 
 ### Delays and Changes
 
 | German | English | Example |
 | --- | --- | --- |
-| die Verspätung | delay | Der Zug hat Verspätung. |
+| die Verspätung, die Verspätungen | delay | Der Zug hat Verspätung. |
 | verspätet | delayed | Der Bus ist verspätet. |
 | fällt aus | is cancelled | Der Zug fällt aus. |
-| die Gleisänderung | platform change | Es gibt eine Gleisänderung. |
+| die Gleisänderung, die Gleisänderungen | platform change | Es gibt eine Gleisänderung. |
 | statt | instead of | Gleis 5 statt Gleis 3. |
-| der Ersatzverkehr | replacement service | Es gibt Ersatzverkehr mit Bussen. |
+| der Ersatzverkehr, meist Singular | replacement service | Es gibt Ersatzverkehr mit Bussen. |
 
 ### Help and Clarification
 

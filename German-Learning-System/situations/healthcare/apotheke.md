@@ -163,8 +163,8 @@ Ich suche etwas, das nicht muede macht.
 
 ## Core Vocabulary Themes
 
-- symptoms: der Husten, die Halsschmerzen, die Kopfschmerzen, das Fieber, die Bauchschmerzen, die Erkältung
-- medicine forms: die Tabletten, der Saft, das Spray, die Tropfen, die Salbe, der Tee
+- symptoms: der Husten, meist Singular; die Halsschmerzen (Plural); die Kopfschmerzen (Plural); das Fieber, meist Singular; die Bauchschmerzen (Plural); die Erkältung, die Erkältungen
+- medicine forms: die Tablette, die Tabletten; der Saft, die Säfte; das Spray, die Sprays; der Tropfen, die Tropfen; die Salbe, die Salben; der Tee, die Tees
 - pharmacy actions: helfen, nehmen, einnehmen, empfehlen, brauchen, suchen, kaufen
 - dosage and timing: einmal, zweimal, dreimal, täglich, morgens, abends, vor dem Essen, nach dem Essen
 - people: für mich, für mein Kind, für meinen Mann, für meine Frau

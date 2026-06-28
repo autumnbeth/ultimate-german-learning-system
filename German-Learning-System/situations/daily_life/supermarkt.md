@@ -70,40 +70,40 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| der Eingang | entrance | Die Körbe sind am Eingang. |
-| die Kasse | checkout | Die Kasse ist dort vorne. |
-| das Regal | shelf | Der Reis steht im Regal links. |
-| die Kühlung | refrigerated section | Joghurt ist in der Kühlung. |
-| die Bäckerei | bakery | Brot gibt es in der Bäckerei. |
-| die Obstabteilung | fruit section | Äpfel sind in der Obstabteilung. |
+| der Eingang, die Eingänge | entrance | Die Körbe sind am Eingang. |
+| die Kasse, die Kassen | checkout | Die Kasse ist dort vorne. |
+| das Regal, die Regale | shelf | Der Reis steht im Regal links. |
+| die Kühlung, die Kühlungen | refrigerated section | Joghurt ist in der Kühlung. |
+| die Bäckerei, die Bäckereien | bakery | Brot gibt es in der Bäckerei. |
+| die Obstabteilung, die Obstabteilungen | fruit section | Äpfel sind in der Obstabteilung. |
 
 ### Products
 
 | German | English | Example |
 | --- | --- | --- |
-| das Brot | bread | Ich brauche Brot. |
-| die Milch | milk | Haben Sie Hafermilch? |
-| die Eier | eggs | Wo finde ich Eier? |
-| das Gemüse | vegetables | Das Gemüse ist frisch. |
-| das Obst | fruit | Ich kaufe Obst. |
-| der Reis | rice | Ich suche Reis. |
+| das Brot, die Brote | bread | Ich brauche Brot. |
+| die Milch, meist Singular | milk | Haben Sie Hafermilch? |
+| das Ei, die Eier | eggs | Wo finde ich Eier? |
+| das Gemüse, meist Singular | vegetables | Das Gemüse ist frisch. |
+| das Obst, meist Singular | fruit | Ich kaufe Obst. |
+| der Reis, meist Singular | rice | Ich suche Reis. |
 
 ### Prices and Offers
 
 | German | English | Example |
 | --- | --- | --- |
-| der Preis | price | Wie hoch ist der Preis? |
+| der Preis, die Preise | price | Wie hoch ist der Preis? |
 | kosten | to cost | Was kostet das? |
-| das Angebot | special offer | Ist das im Angebot? |
-| der Rabatt | discount | Wurde der Rabatt abgezogen? |
+| das Angebot, die Angebote | special offer | Ist das im Angebot? |
+| der Rabatt, die Rabatte | discount | Wurde der Rabatt abgezogen? |
 | gültig | valid | Ist das Angebot noch gültig? |
-| der Kassenzettel | receipt | Den Kassenzettel bitte. |
+| der Kassenzettel, die Kassenzettel | receipt | Den Kassenzettel bitte. |
 
 ### Labels
 
 | German | English | Example |
 | --- | --- | --- |
-| die Zutaten | ingredients | Wo stehen die Zutaten? |
+| die Zutat, die Zutaten | ingredients | Wo stehen die Zutaten? |
 | glutenfrei | gluten-free | Ist das glutenfrei? |
 | laktosefrei | lactose-free | Ich suche laktosefreie Milch. |
 | vegan | vegan | Haben Sie vegane Produkte? |
@@ -114,12 +114,12 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| die Tüte | bag | Ich brauche eine Tüte. |
-| die Kundenkarte | customer card | Haben Sie eine Kundenkarte? |
+| die Tüte, die Tüten | bag | Ich brauche eine Tüte. |
+| die Kundenkarte, die Kundenkarten | customer card | Haben Sie eine Kundenkarte? |
 | bar | cash | Ich zahle bar. |
 | mit Karte | by card | Mit Karte, bitte. |
-| die PIN | PIN | Bitte geben Sie Ihre PIN ein. |
-| der Bon | receipt | Möchten Sie den Bon? |
+| die PIN, die PINs | PIN | Bitte geben Sie Ihre PIN ein. |
+| der Bon, die Bons | receipt | Möchten Sie den Bon? |
 
 ## Practice Dialogues
 

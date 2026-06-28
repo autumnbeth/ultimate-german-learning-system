@@ -72,22 +72,22 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| der Notfall | emergency | Es ist ein Notfall. |
-| die Hilfe | help | Ich brauche Hilfe. |
-| der Krankenwagen | ambulance | Bitte rufen Sie einen Krankenwagen. |
-| die Polizei | police | Wir brauchen die Polizei. |
-| die Feuerwehr | fire department | Rufen Sie die Feuerwehr. |
-| die Notaufnahme | emergency room | Wo ist die Notaufnahme? |
+| der Notfall, die Notfälle | emergency | Es ist ein Notfall. |
+| die Hilfe, die Hilfen | help | Ich brauche Hilfe. |
+| der Krankenwagen, die Krankenwagen | ambulance | Bitte rufen Sie einen Krankenwagen. |
+| die Polizei, meist Singular | police | Wir brauchen die Polizei. |
+| die Feuerwehr, die Feuerwehren | fire department | Rufen Sie die Feuerwehr. |
+| die Notaufnahme, die Notaufnahmen | emergency room | Wo ist die Notaufnahme? |
 
 ### Location
 
 | German | English | Example |
 | --- | --- | --- |
-| die Adresse | address | Die Adresse ist ... |
-| die Straße | street | Ich bin in der Bahnhofstraße. |
-| die Kreuzung | intersection | Ich bin an der Kreuzung. |
-| der Eingang | entrance | Wir sind am Eingang. |
-| die Haltestelle | stop | Ich bin an der Haltestelle. |
+| die Adresse, die Adressen | address | Die Adresse ist ... |
+| die Straße, die Straßen | street | Ich bin in der Bahnhofstraße. |
+| die Kreuzung, die Kreuzungen | intersection | Ich bin an der Kreuzung. |
+| der Eingang, die Eingänge | entrance | Wir sind am Eingang. |
+| die Haltestelle, die Haltestellen | stop | Ich bin an der Haltestelle. |
 | in der Nähe von | near | Ich bin in der Nähe vom Supermarkt. |
 
 ### Injuries and Symptoms
@@ -105,12 +105,12 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| das Feuer | fire | Es gibt ein Feuer. |
+| das Feuer, die Feuer | fire | Es gibt ein Feuer. |
 | brennen | to burn | Es brennt in der Küche. |
-| der Rauch | smoke | Es gibt viel Rauch. |
+| der Rauch, meist Singular | smoke | Es gibt viel Rauch. |
 | gefährlich | dangerous | Die Situation ist gefährlich. |
-| der Unfall | accident | Es gab einen Unfall. |
-| die Gefahr | danger | Bitte gehen Sie aus der Gefahr. |
+| der Unfall, die Unfälle | accident | Es gab einen Unfall. |
+| die Gefahr, die Gefahren | danger | Bitte gehen Sie aus der Gefahr. |
 
 ### Instructions
 
@@ -121,7 +121,7 @@ The situation can grow across levels:
 | drücken | press | Drücken Sie auf die Wunde. |
 | nicht bewegen | do not move | Bewegen Sie die Person nicht. |
 | am Telefon bleiben | stay on the phone | Bleiben Sie bitte am Telefon. |
-| die Tür öffnen | open the door | Öffnen Sie bitte die Tür. |
+| die Tür, die Türen | door | Öffnen Sie bitte die Tür. |
 
 ## Practice Dialogues
 

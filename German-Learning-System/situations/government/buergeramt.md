@@ -72,11 +72,11 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| der Termin | appointment | Ich habe einen Termin um zehn Uhr. |
-| die Terminbestätigung | appointment confirmation | Hier ist meine Terminbestätigung. |
-| die Wartenummer | waiting number | Wo bekomme ich eine Wartenummer? |
-| der Schalter | counter | Bitte gehen Sie zu Schalter drei. |
-| die Sprechzeit | office hour | Die Sprechzeit beginnt um neun Uhr. |
+| der Termin, die Termine | appointment | Ich habe einen Termin um zehn Uhr. |
+| die Terminbestätigung, die Terminbestätigungen | appointment confirmation | Hier ist meine Terminbestätigung. |
+| die Wartenummer, die Wartenummern | waiting number | Wo bekomme ich eine Wartenummer? |
+| der Schalter, die Schalter | counter | Bitte gehen Sie zu Schalter drei. |
+| die Sprechzeit, die Sprechzeiten | office hour | Die Sprechzeit beginnt um neun Uhr. |
 | verschieben | to reschedule | Ich möchte meinen Termin verschieben. |
 | absagen | to cancel | Ich muss den Termin leider absagen. |
 
@@ -84,25 +84,25 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| der Ausweis | ID card | Ich habe meinen Ausweis dabei. |
-| der Reisepass | passport | Brauche ich meinen Reisepass? |
-| die Meldebescheinigung | registration certificate | Ich brauche eine Meldebescheinigung. |
-| die Wohnungsgeberbestätigung | landlord confirmation | Mir fehlt die Wohnungsgeberbestätigung. |
-| die Geburtsurkunde | birth certificate | Brauche ich die Geburtsurkunde im Original? |
-| das Passfoto | passport photo | Ich habe ein biometrisches Passfoto. |
-| die Kopie | copy | Reicht eine Kopie? |
+| der Ausweis, die Ausweise | ID card | Ich habe meinen Ausweis dabei. |
+| der Reisepass, die Reisepässe | passport | Brauche ich meinen Reisepass? |
+| die Meldebescheinigung, die Meldebescheinigungen | registration certificate | Ich brauche eine Meldebescheinigung. |
+| die Wohnungsgeberbestätigung, die Wohnungsgeberbestätigungen | landlord confirmation | Mir fehlt die Wohnungsgeberbestätigung. |
+| die Geburtsurkunde, die Geburtsurkunden | birth certificate | Brauche ich die Geburtsurkunde im Original? |
+| das Passfoto, die Passfotos | passport photo | Ich habe ein biometrisches Passfoto. |
+| die Kopie, die Kopien | copy | Reicht eine Kopie? |
 
 ### Personal Information
 
 | German | English | Example |
 | --- | --- | --- |
-| der Name | name | Mein Name ist ... |
-| die Adresse | address | Meine neue Adresse ist ... |
-| das Geburtsdatum | date of birth | Mein Geburtsdatum ist der ... |
-| der Geburtsort | place of birth | Mein Geburtsort ist ... |
-| die Staatsangehörigkeit | nationality | Meine Staatsangehörigkeit ist ... |
-| der Familienstand | marital status | Mein Familienstand ist ledig. |
-| die Telefonnummer | phone number | Meine Telefonnummer ist ... |
+| der Name, die Namen | name | Mein Name ist ... |
+| die Adresse, die Adressen | address | Meine neue Adresse ist ... |
+| das Geburtsdatum, die Geburtsdaten | date of birth | Mein Geburtsdatum ist der ... |
+| der Geburtsort, die Geburtsorte | place of birth | Mein Geburtsort ist ... |
+| die Staatsangehörigkeit, die Staatsangehörigkeiten | nationality | Meine Staatsangehörigkeit ist ... |
+| der Familienstand, die Familienstände | marital status | Mein Familienstand ist ledig. |
+| die Telefonnummer, die Telefonnummern | phone number | Meine Telefonnummer ist ... |
 
 ### Official Procedures
 
@@ -119,10 +119,10 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| das Formular | form | Wo finde ich das Formular? |
-| der Antrag | application | Ich möchte den Antrag abgeben. |
-| das Feld | field | Was muss ich in dieses Feld schreiben? |
-| die Unterschrift | signature | Hier fehlt Ihre Unterschrift. |
+| das Formular, die Formulare | form | Wo finde ich das Formular? |
+| der Antrag, die Anträge | application | Ich möchte den Antrag abgeben. |
+| das Feld, die Felder | field | Was muss ich in dieses Feld schreiben? |
+| die Unterschrift, die Unterschriften | signature | Hier fehlt Ihre Unterschrift. |
 | ausfüllen | to fill out | Bitte füllen Sie das Formular aus. |
 | unterschreiben | to sign | Bitte unterschreiben Sie hier. |
 

@@ -70,12 +70,12 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| die Heizung | heating | Die Heizung funktioniert nicht. |
-| das Fenster | window | Das Fenster ist undicht. |
-| der Wasserhahn | tap/faucet | Der Wasserhahn tropft. |
-| der Strom | electricity | Der Strom ist ausgefallen. |
-| der Schimmel | mold | Im Bad ist Schimmel. |
-| der Lärm | noise | Es gibt nachts viel Lärm. |
+| die Heizung, die Heizungen | heating | Die Heizung funktioniert nicht. |
+| das Fenster, die Fenster | window | Das Fenster ist undicht. |
+| der Wasserhahn, die Wasserhähne | tap/faucet | Der Wasserhahn tropft. |
+| der Strom, meist Singular | electricity | Der Strom ist ausgefallen. |
+| der Schimmel, meist Singular | mold | Im Bad ist Schimmel. |
+| der Lärm, meist Singular | noise | Es gibt nachts viel Lärm. |
 
 ### Requests
 
@@ -92,9 +92,9 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| der Termin | appointment | Wann ist der Termin? |
-| der Handwerker | repair worker | Wann kommt der Handwerker? |
-| die Uhrzeit | time | Welche Uhrzeit passt Ihnen? |
+| der Termin, die Termine | appointment | Wann ist der Termin? |
+| der Handwerker, die Handwerker | repair worker | Wann kommt der Handwerker? |
+| die Uhrzeit, die Uhrzeiten | time | Welche Uhrzeit passt Ihnen? |
 | vormittags | in the morning | Vormittags bin ich zu Hause. |
 | nachmittags | in the afternoon | Nachmittags passt es mir besser. |
 | erreichbar | reachable | Ich bin telefonisch erreichbar. |
@@ -103,12 +103,12 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| der Mietvertrag | rental contract | Ich habe eine Frage zum Mietvertrag. |
-| die Miete | rent | Ich habe eine Frage zur Miete. |
-| die Nebenkosten | additional costs | Sind die Nebenkosten gestiegen? |
-| die Kaution | deposit | Wann bekomme ich die Kaution zurück? |
-| die Bescheinigung | confirmation | Ich brauche eine Bescheinigung. |
-| die Kündigung | notice/termination | Ich möchte über die Kündigung sprechen. |
+| der Mietvertrag, die Mietverträge | rental contract | Ich habe eine Frage zum Mietvertrag. |
+| die Miete, die Mieten | rent | Ich habe eine Frage zur Miete. |
+| die Nebenkosten (Plural) | additional costs | Sind die Nebenkosten gestiegen? |
+| die Kaution, die Kautionen | deposit | Wann bekomme ich die Kaution zurück? |
+| die Bescheinigung, die Bescheinigungen | confirmation | Ich brauche eine Bescheinigung. |
+| die Kündigung, die Kündigungen | notice/termination | Ich möchte über die Kündigung sprechen. |
 
 ### Polite Tone
 

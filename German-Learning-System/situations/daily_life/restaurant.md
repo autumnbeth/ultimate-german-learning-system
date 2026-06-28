@@ -70,23 +70,23 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| die Speisekarte | menu | Können wir bitte die Speisekarte haben? |
+| die Speisekarte, die Speisekarten | menu | Können wir bitte die Speisekarte haben? |
 | bestellen | to order | Ich möchte bestellen. |
-| das Gericht | dish | Welches Gericht empfehlen Sie? |
-| die Vorspeise | starter | Ich nehme eine Vorspeise. |
-| das Hauptgericht | main course | Als Hauptgericht nehme ich Fisch. |
-| die Nachspeise | dessert | Haben Sie Nachspeisen? |
+| das Gericht, die Gerichte | dish | Welches Gericht empfehlen Sie? |
+| die Vorspeise, die Vorspeisen | starter | Ich nehme eine Vorspeise. |
+| das Hauptgericht, die Hauptgerichte | main course | Als Hauptgericht nehme ich Fisch. |
+| die Nachspeise, die Nachspeisen | dessert | Haben Sie Nachspeisen? |
 
 ### Food and Drinks
 
 | German | English | Example |
 | --- | --- | --- |
-| das Wasser | water | Ich nehme ein stilles Wasser. |
-| der Kaffee | coffee | Einen Kaffee, bitte. |
-| die Suppe | soup | Ist die Suppe vegetarisch? |
-| der Salat | salad | Ich nehme den Salat. |
-| das Fleisch | meat | Ich esse kein Fleisch. |
-| der Fisch | fish | Ist der Fisch frisch? |
+| das Wasser, meist Singular | water | Ich nehme ein stilles Wasser. |
+| der Kaffee, die Kaffees | coffee | Einen Kaffee, bitte. |
+| die Suppe, die Suppen | soup | Ist die Suppe vegetarisch? |
+| der Salat, die Salate | salad | Ich nehme den Salat. |
+| das Fleisch, meist Singular | meat | Ich esse kein Fleisch. |
+| der Fisch, die Fische | fish | Ist der Fisch frisch? |
 
 ### Dietary Restrictions
 
@@ -96,7 +96,7 @@ The situation can grow across levels:
 | vegan | vegan | Haben Sie vegane Gerichte? |
 | glutenfrei | gluten-free | Gibt es glutenfreie Nudeln? |
 | laktosefrei | lactose-free | Ist die Soße laktosefrei? |
-| die Allergie | allergy | Ich habe eine Nussallergie. |
+| die Allergie, die Allergien | allergy | Ich habe eine Nussallergie. |
 | nicht vertragen | not tolerate | Ich vertrage Milch nicht. |
 
 ### Taste and Preferences
@@ -115,7 +115,7 @@ The situation can grow across levels:
 | German | English | Example |
 | --- | --- | --- |
 | zahlen | to pay | Können wir bitte zahlen? |
-| die Rechnung | bill | Die Rechnung, bitte. |
+| die Rechnung, die Rechnungen | bill | Die Rechnung, bitte. |
 | getrennt | separately | Wir zahlen getrennt. |
 | zusammen | together | Wir zahlen zusammen. |
 | bar | cash | Ich zahle bar. |

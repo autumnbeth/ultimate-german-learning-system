@@ -69,54 +69,54 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| die Wohnung | apartment | Ich suche eine Wohnung. |
-| das Zimmer | room | Die Wohnung hat zwei Zimmer. |
-| die Küche | kitchen | Gibt es eine Einbauküche? |
-| das Bad | bathroom | Das Bad hat eine Dusche. |
-| der Balkon | balcony | Hat die Wohnung einen Balkon? |
-| der Aufzug | elevator | Gibt es einen Aufzug? |
+| die Wohnung, die Wohnungen | apartment | Ich suche eine Wohnung. |
+| das Zimmer, die Zimmer | room | Die Wohnung hat zwei Zimmer. |
+| die Küche, die Küchen | kitchen | Gibt es eine Einbauküche? |
+| das Bad, die Bäder | bathroom | Das Bad hat eine Dusche. |
+| der Balkon, die Balkone | balcony | Hat die Wohnung einen Balkon? |
+| der Aufzug, die Aufzüge | elevator | Gibt es einen Aufzug? |
 
 ### Rent and Costs
 
 | German | English | Example |
 | --- | --- | --- |
-| die Miete | rent | Wie hoch ist die Miete? |
-| die Kaltmiete | rent without utilities | Die Kaltmiete beträgt 800 Euro. |
-| die Warmmiete | rent with utilities | Ist das die Warmmiete? |
-| die Nebenkosten | additional costs | Sind die Nebenkosten enthalten? |
-| die Kaution | deposit | Wie hoch ist die Kaution? |
+| die Miete, die Mieten | rent | Wie hoch ist die Miete? |
+| die Kaltmiete, die Kaltmieten | rent without utilities | Die Kaltmiete beträgt 800 Euro. |
+| die Warmmiete, die Warmmieten | rent with utilities | Ist das die Warmmiete? |
+| die Nebenkosten (Plural) | additional costs | Sind die Nebenkosten enthalten? |
+| die Kaution, die Kautionen | deposit | Wie hoch ist die Kaution? |
 | bezahlbar | affordable | Die Wohnung ist bezahlbar. |
 
 ### Location
 
 | German | English | Example |
 | --- | --- | --- |
-| die Lage | location | Die Lage ist sehr gut. |
-| die Nähe | nearby area | Die Wohnung ist in der Nähe vom Bahnhof. |
+| die Lage, die Lagen | location | Die Lage ist sehr gut. |
+| die Nähe, meist Singular | nearby area | Die Wohnung ist in der Nähe vom Bahnhof. |
 | ruhig | quiet | Ich suche eine ruhige Wohnung. |
 | zentral | central | Die Wohnung liegt zentral. |
-| die Haltestelle | stop/station | Die Haltestelle ist fünf Minuten entfernt. |
-| die Umgebung | surroundings | Die Umgebung ist familienfreundlich. |
+| die Haltestelle, die Haltestellen | stop/station | Die Haltestelle ist fünf Minuten entfernt. |
+| die Umgebung, die Umgebungen | surroundings | Die Umgebung ist familienfreundlich. |
 
 ### Application Documents
 
 | German | English | Example |
 | --- | --- | --- |
-| die Unterlagen | documents | Welche Unterlagen brauchen Sie? |
-| die Gehaltsnachweise | salary statements | Ich kann Gehaltsnachweise schicken. |
-| die Schufa-Auskunft | credit report | Brauchen Sie eine Schufa-Auskunft? |
-| die Mieterselbstauskunft | tenant self-disclosure | Ich fülle die Mieterselbstauskunft aus. |
-| der Arbeitsvertrag | work contract | Ich habe einen festen Arbeitsvertrag. |
-| die Bescheinigung | certificate/confirmation | Ich habe eine Bescheinigung vom Arbeitgeber. |
+| die Unterlage, die Unterlagen | documents | Welche Unterlagen brauchen Sie? |
+| der Gehaltsnachweis, die Gehaltsnachweise | salary statements | Ich kann Gehaltsnachweise schicken. |
+| die Schufa-Auskunft, die Schufa-Auskünfte | credit report | Brauchen Sie eine Schufa-Auskunft? |
+| die Mieterselbstauskunft, die Mieterselbstauskünfte | tenant self-disclosure | Ich fülle die Mieterselbstauskunft aus. |
+| der Arbeitsvertrag, die Arbeitsverträge | work contract | Ich habe einen festen Arbeitsvertrag. |
+| die Bescheinigung, die Bescheinigungen | certificate/confirmation | Ich habe eine Bescheinigung vom Arbeitgeber. |
 
 ### Viewing
 
 | German | English | Example |
 | --- | --- | --- |
-| die Besichtigung | viewing | Wann ist die Besichtigung? |
+| die Besichtigung, die Besichtigungen | viewing | Wann ist die Besichtigung? |
 | besichtigen | to view | Ich möchte die Wohnung besichtigen. |
 | frei sein | to be available | Ab wann ist die Wohnung frei? |
-| der Termin | appointment | Passt Ihnen ein Termin am Freitag? |
+| der Termin, die Termine | appointment | Passt Ihnen ein Termin am Freitag? |
 | pünktlich | on time | Ich komme pünktlich zur Besichtigung. |
 | zusagen | to accept/confirm | Ich möchte den Termin zusagen. |
 

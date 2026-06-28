@@ -71,12 +71,12 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| der Name | name | Mein Name ist ... |
-| die Adresse | address | Meine Adresse ist ... |
-| das Geburtsdatum | date of birth | Mein Geburtsdatum ist der ... |
-| der Geburtsort | place of birth | Mein Geburtsort ist ... |
-| die Staatsangehörigkeit | nationality | Meine Staatsangehörigkeit ist ... |
-| der Familienstand | marital status | Mein Familienstand ist ledig. |
+| der Name, die Namen | name | Mein Name ist ... |
+| die Adresse, die Adressen | address | Meine Adresse ist ... |
+| das Geburtsdatum, die Geburtsdaten | date of birth | Mein Geburtsdatum ist der ... |
+| der Geburtsort, die Geburtsorte | place of birth | Mein Geburtsort ist ... |
+| die Staatsangehörigkeit, die Staatsangehörigkeiten | nationality | Meine Staatsangehörigkeit ist ... |
+| der Familienstand, die Familienstände | marital status | Mein Familienstand ist ledig. |
 
 ### Address and Moving
 
@@ -84,29 +84,29 @@ The situation can grow across levels:
 | --- | --- | --- |
 | einziehen | to move in | Ich bin am ersten Juni eingezogen. |
 | umziehen | to move | Ich bin nach Köln umgezogen. |
-| die Wohnung | apartment | Die Wohnung ist in der Nähe vom Bahnhof. |
-| der Mietvertrag | rental contract | Ich habe den Mietvertrag dabei. |
-| der Vermieter | landlord | Mein Vermieter hat das Formular unterschrieben. |
-| die Wohnungsgeberbestätigung | landlord confirmation | Ich brauche die Wohnungsgeberbestätigung. |
+| die Wohnung, die Wohnungen | apartment | Die Wohnung ist in der Nähe vom Bahnhof. |
+| der Mietvertrag, die Mietverträge | rental contract | Ich habe den Mietvertrag dabei. |
+| der Vermieter, die Vermieter | landlord | Mein Vermieter hat das Formular unterschrieben. |
+| die Wohnungsgeberbestätigung, die Wohnungsgeberbestätigungen | landlord confirmation | Ich brauche die Wohnungsgeberbestätigung. |
 
 ### Documents
 
 | German | English | Example |
 | --- | --- | --- |
-| der Ausweis | ID card | Ich habe meinen Ausweis dabei. |
-| der Reisepass | passport | Reicht mein Reisepass? |
-| das Formular | form | Muss ich dieses Formular ausfüllen? |
-| die Kopie | copy | Brauchen Sie eine Kopie? |
-| die Unterschrift | signature | Hier fehlt die Unterschrift. |
-| die Meldebescheinigung | registration certificate | Wann bekomme ich die Meldebescheinigung? |
+| der Ausweis, die Ausweise | ID card | Ich habe meinen Ausweis dabei. |
+| der Reisepass, die Reisepässe | passport | Reicht mein Reisepass? |
+| das Formular, die Formulare | form | Muss ich dieses Formular ausfüllen? |
+| die Kopie, die Kopien | copy | Brauchen Sie eine Kopie? |
+| die Unterschrift, die Unterschriften | signature | Hier fehlt die Unterschrift. |
+| die Meldebescheinigung, die Meldebescheinigungen | registration certificate | Wann bekomme ich die Meldebescheinigung? |
 
 ### Official Process
 
 | German | English | Example |
 | --- | --- | --- |
-| die Anmeldung | registration | Ich habe einen Termin für die Anmeldung. |
+| die Anmeldung, die Anmeldungen | registration | Ich habe einen Termin für die Anmeldung. |
 | sich anmelden | to register | Ich möchte mich anmelden. |
-| die Meldeadresse | registered address | Das ist meine neue Meldeadresse. |
+| die Meldeadresse, die Meldeadressen | registered address | Das ist meine neue Meldeadresse. |
 | nachreichen | to submit later | Kann ich das Dokument nachreichen? |
 | prüfen | to check | Ich prüfe Ihre Unterlagen. |
 | bestätigen | to confirm | Können Sie den Termin bestätigen? |

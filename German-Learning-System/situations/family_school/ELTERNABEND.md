@@ -150,10 +150,10 @@ Aus meiner Sicht braucht mein Kind mehr Zeit fuer die Aufgaben.
 ## Core Vocabulary Themes
 
 - school subjects: Mathe, Deutsch, Englisch, Sachkunde
-- school roles: die Lehrerin, der Lehrer, die Eltern, das Kind, die Klasse
-- school activities: die Hausaufgaben, der Test, die Klassenarbeit, der Ausflug, das Projekt
+- school roles: die Lehrerin, die Lehrerinnen; der Lehrer, die Lehrer; die Eltern (Plural); das Kind, die Kinder; die Klasse, die Klassen
+- school activities: die Hausaufgabe, die Hausaufgaben; der Test, die Tests; die Klassenarbeit, die Klassenarbeiten; der Ausflug, die Ausflüge; das Projekt, die Projekte
 - progress and difficulty: verstehen, üben, verbessern, schwierig, leichter, besser
-- support: die Hilfe, die Unterstützung, die Rückmeldung, die Übung, der Termin
+- support: die Hilfe, die Hilfen; die Unterstützung, die Unterstützungen; die Rückmeldung, die Rückmeldungen; die Übung, die Übungen; der Termin, die Termine
 - communication: fragen, erklären, besprechen, vorschlagen, vereinbaren
 
 ## Useful Phrase Patterns
@@ -523,10 +523,10 @@ Aus meiner Sicht braucht mein Kind mehr Zeit fuer die Aufgaben.
 ## Core Vocabulary Themes
 
 - school subjects: Mathe, Deutsch, Englisch, Sachkunde
-- school roles: die Lehrerin, der Lehrer, die Eltern, das Kind, die Klasse
-- school activities: die Hausaufgaben, der Test, die Klassenarbeit, der Ausflug, das Projekt
+- school roles: die Lehrerin, die Lehrerinnen; der Lehrer, die Lehrer; die Eltern (Plural); das Kind, die Kinder; die Klasse, die Klassen
+- school activities: die Hausaufgabe, die Hausaufgaben; der Test, die Tests; die Klassenarbeit, die Klassenarbeiten; der Ausflug, die Ausflüge; das Projekt, die Projekte
 - progress and difficulty: verstehen, üben, verbessern, schwierig, leichter, besser
-- support: die Hilfe, die Unterstützung, die Rückmeldung, die Übung, der Termin
+- support: die Hilfe, die Hilfen; die Unterstützung, die Unterstützungen; die Rückmeldung, die Rückmeldungen; die Übung, die Übungen; der Termin, die Termine
 - communication: fragen, erklären, besprechen, vorschlagen, vereinbaren
 
 ## Useful Phrase Patterns

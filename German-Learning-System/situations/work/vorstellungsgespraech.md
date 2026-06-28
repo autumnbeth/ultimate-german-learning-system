@@ -73,31 +73,31 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| die Erfahrung | experience | Ich habe Erfahrung im Kundenservice. |
-| die Berufserfahrung | professional experience | Ich habe drei Jahre Berufserfahrung. |
-| das Praktikum | internship | Ich habe ein Praktikum in einer Schule gemacht. |
-| die Ausbildung | vocational training | Ich habe eine Ausbildung als Verkäufer gemacht. |
-| die Stelle | position/job | Ich interessiere mich für diese Stelle. |
+| die Erfahrung, die Erfahrungen | experience | Ich habe Erfahrung im Kundenservice. |
+| die Berufserfahrung, die Berufserfahrungen | professional experience | Ich habe drei Jahre Berufserfahrung. |
+| das Praktikum, die Praktika | internship | Ich habe ein Praktikum in einer Schule gemacht. |
+| die Ausbildung, die Ausbildungen | vocational training | Ich habe eine Ausbildung als Verkäufer gemacht. |
+| die Stelle, die Stellen | position/job | Ich interessiere mich für diese Stelle. |
 | gearbeitet haben | to have worked | Ich habe als Küchenhilfe gearbeitet. |
 
 ### Education
 
 | German | English | Example |
 | --- | --- | --- |
-| der Abschluss | degree/qualification | Ich habe einen Abschluss in ... |
-| die Schule | school | Ich habe die Schule in ... besucht. |
-| das Studium | university studies | Ich habe ein Studium begonnen. |
-| der Kurs | course | Ich habe einen Deutschkurs gemacht. |
-| das Zertifikat | certificate | Ich habe ein B1-Zertifikat. |
-| die Weiterbildung | further training | Ich möchte eine Weiterbildung machen. |
+| der Abschluss, die Abschlüsse | degree/qualification | Ich habe einen Abschluss in ... |
+| die Schule, die Schulen | school | Ich habe die Schule in ... besucht. |
+| das Studium, die Studien | university studies | Ich habe ein Studium begonnen. |
+| der Kurs, die Kurse | course | Ich habe einen Deutschkurs gemacht. |
+| das Zertifikat, die Zertifikate | certificate | Ich habe ein B1-Zertifikat. |
+| die Weiterbildung, die Weiterbildungen | further training | Ich möchte eine Weiterbildung machen. |
 
 ### Skills
 
 | German | English | Example |
 | --- | --- | --- |
-| die Fähigkeit | skill/ability | Diese Fähigkeit ist für die Stelle wichtig. |
-| die Deutschkenntnisse | German skills | Meine Deutschkenntnisse sind auf B1-Niveau. |
-| die Computerkenntnisse | computer skills | Ich habe gute Computerkenntnisse. |
+| die Fähigkeit, die Fähigkeiten | skill/ability | Diese Fähigkeit ist für die Stelle wichtig. |
+| die Deutschkenntnisse (Plural) | German skills | Meine Deutschkenntnisse sind auf B1-Niveau. |
+| die Computerkenntnisse (Plural) | computer skills | Ich habe gute Computerkenntnisse. |
 | organisieren | to organize | Ich kann Termine gut organisieren. |
 | kommunizieren | to communicate | Ich kommuniziere gern mit Kunden. |
 | zuverlässig | reliable | Ich bin zuverlässig und pünktlich. |
@@ -106,7 +106,7 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| die Stärke | strength | Meine Stärke ist Geduld. |
+| die Stärke, die Stärken | strength | Meine Stärke ist Geduld. |
 | freundlich | friendly | Ich bin freundlich im Kontakt mit Kunden. |
 | belastbar | resilient | Ich bin belastbar, auch wenn viel los ist. |
 | sorgfältig | careful | Ich arbeite sorgfältig. |
@@ -117,7 +117,7 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| die Aufgabe | task | Welche Aufgaben gehören zur Stelle? |
+| die Aufgabe, die Aufgaben | task | Welche Aufgaben gehören zur Stelle? |
 | verantwortlich sein für | to be responsible for | Ich war verantwortlich für Bestellungen. |
 | betreuen | to support/take care of | Ich habe Kunden betreut. |
 | vorbereiten | to prepare | Ich habe Termine vorbereitet. |
@@ -128,7 +128,7 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| das Ziel | goal | Mein Ziel ist eine feste Stelle. |
+| das Ziel, die Ziele | goal | Mein Ziel ist eine feste Stelle. |
 | sich entwickeln | to develop | Ich möchte mich beruflich entwickeln. |
 | lernen | to learn | Ich möchte neue Aufgaben lernen. |
 | Verantwortung übernehmen | to take responsibility | Ich möchte mehr Verantwortung übernehmen. |
@@ -139,12 +139,12 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| das Team | team | Wie groß ist das Team? |
-| die Arbeitszeit | working hours | Wie sind die Arbeitszeiten? |
-| die Einarbeitung | onboarding/training period | Gibt es eine Einarbeitung? |
-| der Vertrag | contract | Wann beginnt der Vertrag? |
-| die Probezeit | probation period | Wie lange ist die Probezeit? |
-| der Arbeitsplatz | workplace | Der Arbeitsplatz ist gut erreichbar. |
+| das Team, die Teams | team | Wie groß ist das Team? |
+| die Arbeitszeit, die Arbeitszeiten | working hours | Wie sind die Arbeitszeiten? |
+| die Einarbeitung, die Einarbeitungen | onboarding/training period | Gibt es eine Einarbeitung? |
+| der Vertrag, die Verträge | contract | Wann beginnt der Vertrag? |
+| die Probezeit, die Probezeiten | probation period | Wie lange ist die Probezeit? |
+| der Arbeitsplatz, die Arbeitsplätze | workplace | Der Arbeitsplatz ist gut erreichbar. |
 
 ## Practice Dialogues
 

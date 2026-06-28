@@ -68,18 +68,18 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| der Fortschritt | progress | Ich möchte über den Fortschritt sprechen. |
-| die Note | grade | Wie sind die Noten in Deutsch? |
-| die Leistung | performance | Die Leistung ist besser geworden. |
-| die Mitarbeit | participation | Wie ist die Mitarbeit im Unterricht? |
-| die Hausaufgaben | homework | Gibt es Probleme mit den Hausaufgaben? |
-| die Konzentration | concentration | Die Konzentration ist manchmal schwierig. |
+| der Fortschritt, die Fortschritte | progress | Ich möchte über den Fortschritt sprechen. |
+| die Note, die Noten | grade | Wie sind die Noten in Deutsch? |
+| die Leistung, die Leistungen | performance | Die Leistung ist besser geworden. |
+| die Mitarbeit, meist Singular | participation | Wie ist die Mitarbeit im Unterricht? |
+| die Hausaufgabe, die Hausaufgaben | homework | Gibt es Probleme mit den Hausaufgaben? |
+| die Konzentration, meist Singular | concentration | Die Konzentration ist manchmal schwierig. |
 
 ### Concerns
 
 | German | English | Example |
 | --- | --- | --- |
-| die Sorge | concern | Ich habe eine Sorge. |
+| die Sorge, die Sorgen | concern | Ich habe eine Sorge. |
 | überfordert | overwhelmed | Mein Kind wirkt überfordert. |
 | unsicher | unsure | Mein Kind ist oft unsicher. |
 | müde | tired | Mein Kind ist morgens sehr müde. |
@@ -90,19 +90,19 @@ The situation can grow across levels:
 
 | German | English | Example |
 | --- | --- | --- |
-| die Unterstützung | support | Welche Unterstützung gibt es? |
+| die Unterstützung, die Unterstützungen | support | Welche Unterstützung gibt es? |
 | helfen | to help | Wie können wir helfen? |
 | üben | to practice | Was sollen wir zu Hause üben? |
 | fördern | to support/develop | Wie können wir mein Kind fördern? |
-| der Förderplan | support plan | Gibt es einen Förderplan? |
-| der nächste Schritt | next step | Was ist der nächste Schritt? |
+| der Förderplan, die Förderpläne | support plan | Gibt es einen Förderplan? |
+| der nächste Schritt, die nächsten Schritte | next step | Was ist der nächste Schritt? |
 
 ### Communication
 
 | German | English | Example |
 | --- | --- | --- |
-| die Rückmeldung | feedback | Danke für Ihre Rückmeldung. |
-| das Gespräch | conversation/meeting | Vielen Dank für das Gespräch. |
+| die Rückmeldung, die Rückmeldungen | feedback | Danke für Ihre Rückmeldung. |
+| das Gespräch, die Gespräche | conversation/meeting | Vielen Dank für das Gespräch. |
 | erklären | to explain | Können Sie das bitte erklären? |
 | besprechen | to discuss | Können wir das besprechen? |
 | vereinbaren | to agree on | Was können wir vereinbaren? |
