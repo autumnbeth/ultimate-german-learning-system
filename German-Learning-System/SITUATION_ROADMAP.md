@@ -25,12 +25,13 @@ Status values:
 | Anmeldung              | Government | Complete |
 | Wohnungssuche          | Housing    | Complete |
 | Vermieter kontaktieren | Housing    | Complete |
-| Restaurant             | Daily Life | Planned  |
-| Supermarkt             | Daily Life | Planned  |
+| Restaurant             | Daily Life | Complete |
+| Supermarkt             | Daily Life | Complete |
 | Termin vereinbaren     | Daily Life | Complete |
 | Telefonanruf           | Daily Life | Planned  |
 | Vorstellungsgespräch   | Work       | Complete |
 | Erster Arbeitstag      | Work       | Complete |
+| Freunde treffen        | Social     | Complete |
 | Gespräch mit Lehrkraft | Education  | Planned  |
 | Notfall                | Emergency  | Planned  |
 
@@ -91,7 +92,6 @@ Status values:
 * Geburtstag
 * Familienfeier
 * Hochzeit
-* Freunde treffen
 * Verein oder Hobbygruppe
 
 ## Travel
