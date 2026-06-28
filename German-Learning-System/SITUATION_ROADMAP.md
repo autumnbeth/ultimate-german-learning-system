@@ -30,7 +30,7 @@ Status values:
 | Termin vereinbaren     | Daily Life | Complete |
 | Telefonanruf           | Daily Life | Planned  |
 | Vorstellungsgespräch   | Work       | Complete |
-| Erster Arbeitstag      | Work       | Planned  |
+| Erster Arbeitstag      | Work       | Complete |
 | Gespräch mit Lehrkraft | Education  | Planned  |
 | Notfall                | Emergency  | Planned  |
 
