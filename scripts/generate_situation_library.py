@@ -147,6 +147,47 @@ def render_table(lines):
     return f"<table><thead><tr>{head_cells}</tr></thead><tbody>{body_rows}</tbody></table>"
 
 
+def code_block_class(code_lang, code_text):
+    normalized_lang = code_lang.strip().lower()
+    lines = [line for line in code_text.splitlines() if line.strip()]
+    has_tree = any(marker in code_text for marker in ("├", "└", "│", "→", "↓"))
+    has_metadata = any(
+        marker in code_text
+        for marker in (
+            "Situation Name:",
+            "Situation Category:",
+            "Description:",
+            "Typical Participants:",
+            "Confidence Outcome:",
+        )
+    )
+    has_sentence_slots = any(
+        marker in code_text
+        for marker in ("Hauptsatz", "Nebensatz", "W-question", "Yes-no", "Modal verb", "Perfekt")
+    )
+
+    if normalized_lang in ("text", "txt", ""):
+        if has_metadata:
+            return "metadata-block"
+        if has_tree or len(lines) >= 10:
+            return "system-map"
+        if has_sentence_slots or len(lines) <= 8:
+            return "pattern-block"
+        return "reference-block"
+    return "code-block"
+
+
+def render_code_block(code_lang, code_lines):
+    code_text = chr(10).join(code_lines)
+    block_class = code_block_class(code_lang, code_text)
+    lang_class = f" language-{esc(code_lang)}" if code_lang else ""
+    return (
+        f'<pre class="{block_class}"><code class="{lang_class.strip()}">'
+        f"{esc(code_text)}"
+        "</code></pre>"
+    )
+
+
 def markdown_to_html(markdown):
     html_parts = []
     lines = markdown.splitlines()
@@ -175,9 +216,7 @@ def markdown_to_html(markdown):
             close_table()
             close_list()
             if in_code:
-                html_parts.append(
-                    f'<pre><code class="language-{esc(code_lang)}">{esc(chr(10).join(code_lines))}</code></pre>'
-                )
+                html_parts.append(render_code_block(code_lang, code_lines))
                 in_code = False
                 code_lang = ""
                 code_lines = []
@@ -223,7 +262,7 @@ def markdown_to_html(markdown):
     close_table()
     close_list()
     if in_code:
-        html_parts.append(f"<pre><code>{esc(chr(10).join(code_lines))}</code></pre>")
+        html_parts.append(render_code_block(code_lang, code_lines))
     return "\n".join(part for part in html_parts if part)
 
 
@@ -390,7 +429,7 @@ def render_situation_page(item):
   </style>
   <link rel="stylesheet" href="../../styles/design-system.css">
 </head>
-<body>
+<body class="situation-page">
   <main class="shell">
     <nav class="topbar" aria-label="Situation navigation">
       <a class="back" href="../../situation-library.html">Back to Situation Library</a>

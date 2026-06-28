@@ -302,7 +302,11 @@ pre {
 
 .reference-page pre.system-map,
 .reference-page pre.pattern-block,
-.reference-page pre.reference-block {
+.reference-page pre.reference-block,
+.situation-page pre.system-map,
+.situation-page pre.pattern-block,
+.situation-page pre.reference-block,
+.situation-page pre.metadata-block {
   background: var(--surface-soft) !important;
   border: 1px solid var(--line) !important;
   border-left: 5px solid var(--accent) !important;
@@ -316,31 +320,47 @@ pre {
   box-shadow: var(--shadow-card) !important;
 }
 
-.reference-page pre.system-map {
+.reference-page pre.system-map,
+.situation-page pre.system-map {
   background:
     linear-gradient(90deg, rgba(17, 181, 164, 0.08), rgba(17, 181, 164, 0) 34%),
     var(--surface-soft) !important;
 }
 
-.reference-page pre.pattern-block {
+.reference-page pre.pattern-block,
+.situation-page pre.pattern-block {
   background: #ffffff !important;
   border-left-color: var(--der) !important;
 }
 
-.reference-page pre.reference-block {
+.reference-page pre.reference-block,
+.situation-page pre.reference-block {
   border-left-color: var(--purple) !important;
+}
+
+.situation-page pre.metadata-block {
+  background: #ffffff !important;
+  border-left-color: var(--die) !important;
 }
 
 .reference-page pre.system-map code,
 .reference-page pre.pattern-block code,
-.reference-page pre.reference-block code {
+.reference-page pre.reference-block code,
+.situation-page pre.system-map code,
+.situation-page pre.pattern-block code,
+.situation-page pre.reference-block code,
+.situation-page pre.metadata-block code {
   color: var(--ink) !important;
   font-size: 13px;
 }
 
 .reference-page pre.system-map::before,
 .reference-page pre.pattern-block::before,
-.reference-page pre.reference-block::before {
+.reference-page pre.reference-block::before,
+.situation-page pre.system-map::before,
+.situation-page pre.pattern-block::before,
+.situation-page pre.reference-block::before,
+.situation-page pre.metadata-block::before {
   display: block;
   font-family: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
   font-size: 11px;
@@ -350,19 +370,27 @@ pre {
   text-transform: uppercase;
 }
 
-.reference-page pre.system-map::before {
+.reference-page pre.system-map::before,
+.situation-page pre.system-map::before {
   color: var(--accent);
   content: "System Map";
 }
 
-.reference-page pre.pattern-block::before {
+.reference-page pre.pattern-block::before,
+.situation-page pre.pattern-block::before {
   color: var(--der);
   content: "Reference Pattern";
 }
 
-.reference-page pre.reference-block::before {
+.reference-page pre.reference-block::before,
+.situation-page pre.reference-block::before {
   color: var(--purple);
   content: "Reference";
+}
+
+.situation-page pre.metadata-block::before {
+  color: var(--die);
+  content: "Situation Metadata";
 }
 
 p code,
