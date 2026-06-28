@@ -29,11 +29,12 @@ Status values:
 | Supermarkt             | Daily Life | Complete |
 | Termin vereinbaren     | Daily Life | Complete |
 | Telefonanruf           | Daily Life | Planned  |
+| Öffentliche Verkehrsmittel | Transport  | Complete |
 | Vorstellungsgespräch   | Work       | Complete |
 | Erster Arbeitstag      | Work       | Complete |
 | Freunde treffen        | Social     | Complete |
-| Gespräch mit Lehrkraft | Education  | Planned  |
-| Notfall                | Emergency  | Planned  |
+| Gespräch mit Lehrkraft | Education  | Complete |
+| Notfall                | Emergency  | Complete |
 
 ---
 
