@@ -22,12 +22,12 @@ Status values:
 | Elternabend            | Education  | Complete |
 | Arzttermin             | Healthcare | Planned  |
 | Bürgeramt              | Government | Complete |
-| Anmeldung              | Government | Planned  |
-| Wohnungssuche          | Housing    | Planned  |
-| Vermieter kontaktieren | Housing    | Planned  |
+| Anmeldung              | Government | Complete |
+| Wohnungssuche          | Housing    | Complete |
+| Vermieter kontaktieren | Housing    | Complete |
 | Restaurant             | Daily Life | Planned  |
 | Supermarkt             | Daily Life | Planned  |
-| Termin vereinbaren     | Daily Life | Planned  |
+| Termin vereinbaren     | Daily Life | Complete |
 | Telefonanruf           | Daily Life | Planned  |
 | Vorstellungsgespräch   | Work       | Complete |
 | Erster Arbeitstag      | Work       | Planned  |
