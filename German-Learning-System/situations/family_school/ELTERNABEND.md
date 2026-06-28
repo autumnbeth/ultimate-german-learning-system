@@ -41,10 +41,10 @@ This situation helps learners build confidence in:
 | Level | Learner Capability | Example Language |
 | --- | --- | --- |
 | A1 | Introduce yourself and understand simple information. | Ich bin Beth. Ich bin die Mutter von Sam. Wann ist der Ausflug? |
-| A2 | Ask simple questions and explain basic concerns. | Mein Kind braucht Hilfe in Mathe. Gibt es extra Uebungen? |
-| B1 | Explain a problem, give reasons, and ask for support. | Ich mache mir Sorgen, weil mein Kind die Hausaufgaben oft nicht versteht. Was koennen wir zu Hause ueben? |
-| B2 | Discuss progress, compare options, and advocate politely. | Aus meiner Sicht waere es hilfreich, wenn wir regelmaessiger Rueckmeldung zum Lernstand bekommen koennten. |
-| C1 | Participate in nuanced educational discussions with confidence. | Ich wuerde gern gemeinsam klaeren, welche Unterstuetzung langfristig sinnvoll ist und wie wir Schule und Zuhause besser verbinden koennen. |
+| A2 | Ask simple questions and explain basic concerns. | Mein Kind braucht Hilfe in Mathe. Gibt es extra Übungen? |
+| B1 | Explain a problem, give reasons, and ask for support. | Ich mache mir Sorgen, weil mein Kind die Hausaufgaben oft nicht versteht. Was können wir zu Hause üben? |
+| B2 | Discuss progress, compare options, and advocate politely. | Aus meiner Sicht wäre es hilfreich, wenn wir regelmäßiger Rückmeldung zum Lernstand bekommen könnten. |
+| C1 | Participate in nuanced educational discussions with confidence. | Ich würde gern gemeinsam klären, welche Unterstützung langfristig sinnvoll ist und wie wir Schule und Zuhause besser verbinden können. |
 
 ## Communication Functions
 
@@ -117,7 +117,7 @@ This situation helps learners build confidence in:
 ## Common Grammar
 
 - present tense for current school life and routines
-- modal verbs: koennen, muessen, sollen, moechte
+- modal verbs: können, müssen, sollen, möchte
 - Perfekt for what happened recently
 - weil clauses for reasons
 - dass clauses for reported information or concerns
@@ -152,9 +152,9 @@ Aus meiner Sicht braucht mein Kind mehr Zeit fuer die Aufgaben.
 - school subjects: Mathe, Deutsch, Englisch, Sachkunde
 - school roles: die Lehrerin, der Lehrer, die Eltern, das Kind, die Klasse
 - school activities: die Hausaufgaben, der Test, die Klassenarbeit, der Ausflug, das Projekt
-- progress and difficulty: verstehen, ueben, verbessern, schwierig, leichter, besser
-- support: die Hilfe, die Unterstuetzung, die Rueckmeldung, die Uebung, der Termin
-- communication: fragen, erklaeren, besprechen, vorschlagen, vereinbaren
+- progress and difficulty: verstehen, üben, verbessern, schwierig, leichter, besser
+- support: die Hilfe, die Unterstützung, die Rückmeldung, die Übung, der Termin
+- communication: fragen, erklären, besprechen, vorschlagen, vereinbaren
 
 ## Useful Phrase Patterns
 
@@ -449,10 +449,10 @@ This situation helps learners build confidence in:
 | Level | Learner Capability | Example Language |
 | --- | --- | --- |
 | A1 | Introduce yourself and understand simple information. | Ich bin Beth. Ich bin die Mutter von Sam. Wann ist der Ausflug? |
-| A2 | Ask simple questions and explain basic concerns. | Mein Kind braucht Hilfe in Mathe. Gibt es extra Uebungen? |
-| B1 | Explain a problem, give reasons, and ask for support. | Ich mache mir Sorgen, weil mein Kind die Hausaufgaben oft nicht versteht. Was koennen wir zu Hause ueben? |
-| B2 | Discuss progress, compare options, and advocate politely. | Aus meiner Sicht waere es hilfreich, wenn wir regelmaessiger Rueckmeldung zum Lernstand bekommen koennten. |
-| C1 | Participate in nuanced educational discussions with confidence. | Ich wuerde gern gemeinsam klaeren, welche Unterstuetzung langfristig sinnvoll ist und wie wir Schule und Zuhause besser verbinden koennen. |
+| A2 | Ask simple questions and explain basic concerns. | Mein Kind braucht Hilfe in Mathe. Gibt es extra Übungen? |
+| B1 | Explain a problem, give reasons, and ask for support. | Ich mache mir Sorgen, weil mein Kind die Hausaufgaben oft nicht versteht. Was können wir zu Hause üben? |
+| B2 | Discuss progress, compare options, and advocate politely. | Aus meiner Sicht wäre es hilfreich, wenn wir regelmäßiger Rückmeldung zum Lernstand bekommen könnten. |
+| C1 | Participate in nuanced educational discussions with confidence. | Ich würde gern gemeinsam klären, welche Unterstützung langfristig sinnvoll ist und wie wir Schule und Zuhause besser verbinden können. |
 
 ## Communication Functions
 
@@ -490,7 +490,7 @@ This situation helps learners build confidence in:
 ## Common Grammar
 
 - present tense for current school life and routines
-- modal verbs: koennen, muessen, sollen, moechte
+- modal verbs: können, müssen, sollen, möchte
 - Perfekt for what happened recently
 - weil clauses for reasons
 - dass clauses for reported information or concerns
@@ -525,9 +525,9 @@ Aus meiner Sicht braucht mein Kind mehr Zeit fuer die Aufgaben.
 - school subjects: Mathe, Deutsch, Englisch, Sachkunde
 - school roles: die Lehrerin, der Lehrer, die Eltern, das Kind, die Klasse
 - school activities: die Hausaufgaben, der Test, die Klassenarbeit, der Ausflug, das Projekt
-- progress and difficulty: verstehen, ueben, verbessern, schwierig, leichter, besser
-- support: die Hilfe, die Unterstuetzung, die Rueckmeldung, die Uebung, der Termin
-- communication: fragen, erklaeren, besprechen, vorschlagen, vereinbaren
+- progress and difficulty: verstehen, üben, verbessern, schwierig, leichter, besser
+- support: die Hilfe, die Unterstützung, die Rückmeldung, die Übung, der Termin
+- communication: fragen, erklären, besprechen, vorschlagen, vereinbaren
 
 ## Useful Phrase Patterns
 

@@ -534,7 +534,7 @@ Common grammar:
 Common sentence architecture:
 
 - main clauses
-- Nebensaetze
+- Nebensätze
 - email paragraph structure
 - discussion turns
 - connector contrasts
@@ -555,39 +555,39 @@ The same situation develops across levels. The learner does not finish the situa
 | --- | --- | --- |
 | A1 | Introduce yourself and understand basic information. | Ich bin Beth. Ich bin die Mutter von Sam. |
 | A2 | Ask simple questions and explain basic concerns. | Wann ist der Ausflug? Mein Kind braucht Hilfe in Mathe. |
-| B1 | Explain a problem, give reasons, and ask for support. | Ich mache mir Sorgen, weil mein Kind die Hausaufgaben oft nicht versteht. Was koennen wir zu Hause ueben? |
-| B2 | Discuss progress, compare options, and advocate politely. | Aus meiner Sicht waere es hilfreich, wenn wir regelmaessiger Rueckmeldung zum Lernstand bekommen koennten. |
-| C1 | Participate in nuanced educational discussions with confidence. | Ich wuerde gern gemeinsam klaeren, welche Unterstuetzung langfristig sinnvoll ist und wie wir Schule und Zuhause besser verbinden koennen. |
+| B1 | Explain a problem, give reasons, and ask for support. | Ich mache mir Sorgen, weil mein Kind die Hausaufgaben oft nicht versteht. Was können wir zu Hause üben? |
+| B2 | Discuss progress, compare options, and advocate politely. | Aus meiner Sicht wäre es hilfreich, wenn wir regelmäßiger Rückmeldung zum Lernstand bekommen könnten. |
+| C1 | Participate in nuanced educational discussions with confidence. | Ich würde gern gemeinsam klären, welche Unterstützung langfristig sinnvoll ist und wie wir Schule und Zuhause besser verbinden können. |
 
 ### B. Apotheke
 
 | Level | Learner Capability | Example Language |
 | --- | --- | --- |
-| A1 | Ask for help and name one basic need. | Koennen Sie mir helfen? Ich habe Husten. |
+| A1 | Ask for help and name one basic need. | Können Sie mir helfen? Ich habe Husten. |
 | A2 | Describe simple symptoms and ask for medicine. | Ich habe seit gestern Halsschmerzen. Haben Sie etwas dagegen? |
 | B1 | Explain what happened, ask follow-up questions, and understand advice. | Ich habe schon Tee getrunken, aber es ist nicht besser geworden. Wie oft soll ich das nehmen? |
-| B2 | Compare options and explain constraints politely. | Ich suche etwas, das nicht muede macht, weil ich heute noch arbeiten muss. |
-| C1 | Discuss health needs with nuance and confidence. | Ich wuerde gern eine Option waehlen, die gut vertraeglich ist und sich mit meinen anderen Medikamenten vereinbaren laesst. |
+| B2 | Compare options and explain constraints politely. | Ich suche etwas, das nicht müde macht, weil ich heute noch arbeiten muss. |
+| C1 | Discuss health needs with nuance and confidence. | Ich würde gern eine Option wählen, die gut verträglich ist und sich mit meinen anderen Medikamenten vereinbaren lässt. |
 
 ### C. Meeting A New Team
 
 | Level | Learner Capability | Example Language |
 | --- | --- | --- |
-| A1 | Say your name, origin, and simple personal information. | Ich heisse Beth. Ich komme aus den USA. |
+| A1 | Say your name, origin, and simple personal information. | Ich heiße Beth. Ich komme aus den USA. |
 | A2 | Say your role and basic work information. | Ich arbeite als UX Designerin. Ich arbeite gern im Team. |
-| B1 | Describe experience and current responsibilities. | Ich bin seit mehreren Jahren im Bereich UX taetig und arbeite vor allem an Produktkonzepten. |
+| B1 | Describe experience and current responsibilities. | Ich bin seit mehreren Jahren im Bereich UX tätig und arbeite vor allem an Produktkonzepten. |
 | B2 | Explain professional focus and collaboration style. | Mein Schwerpunkt liegt auf Produktstrategie und Nutzerforschung, deshalb arbeite ich eng mit Produktteams zusammen. |
-| C1 | Present nuanced professional identity and contribution. | Ich leite komplexe Designinitiativen und verbinde Nutzerforschung, Produktstrategie und teamuebergreifende Abstimmung. |
+| C1 | Present nuanced professional identity and contribution. | Ich leite komplexe Designinitiativen und verbinde Nutzerforschung, Produktstrategie und teamübergreifende Abstimmung. |
 
 ### D. TELC B1 Writing Email
 
 | Level | Learner Capability | Example Language |
 | --- | --- | --- |
-| A1 | Write basic personal information and simple needs. | Ich heisse Beth. Ich brauche einen Termin. |
+| A1 | Write basic personal information and simple needs. | Ich heiße Beth. Ich brauche einen Termin. |
 | A2 | Write a short message with a simple reason. | Ich kann morgen nicht kommen, weil ich arbeiten muss. |
-| B1 | Write a structured email explaining a problem and asking for a solution. | Leider kann ich den Termin nicht wahrnehmen, weil mein Kind krank ist. Koennten wir bitte einen neuen Termin vereinbaren? |
-| B2 | Write a clear formal message with context, reason, and request. | Aufgrund einer kurzfristigen familiaeren Situation muss ich den Termin leider verschieben und bitte Sie um einen alternativen Vorschlag. |
-| C1 | Write a polished formal email with nuance and appropriate register. | Ich waere Ihnen dankbar, wenn wir angesichts der kurzfristigen Situation eine passende Alternative finden koennten. Fuer Ihre Flexibilitaet danke ich Ihnen im Voraus. |
+| B1 | Write a structured email explaining a problem and asking for a solution. | Leider kann ich den Termin nicht wahrnehmen, weil mein Kind krank ist. Könnten wir bitte einen neuen Termin vereinbaren? |
+| B2 | Write a clear formal message with context, reason, and request. | Aufgrund einer kurzfristigen familiären Situation muss ich den Termin leider verschieben und bitte Sie um einen alternativen Vorschlag. |
+| C1 | Write a polished formal email with nuance and appropriate register. | Ich wäre Ihnen dankbar, wenn wir angesichts der kurzfristigen Situation eine passende Alternative finden könnten. Für Ihre Flexibilität danke ich Ihnen im Voraus. |
 
 ## 5. Situation To Foundation Mapping
 
@@ -595,16 +595,16 @@ This matrix shows how situations reuse the same foundation patterns from `FOUNDA
 
 | Situation | Related Foundation Reference Sections | Communication Functions | Typical Grammar | Sentence Architecture | Confidence Outcome |
 | --- | --- | --- | --- | --- | --- |
-| Apotheke | Questions; Modal Verbs; Cases; Pronouns; Verb Brackets | asking for help, describing symptoms, making requests | haben, brauchen, koennen, accusative objects, dative pronouns | yes-no questions, W-questions, modal verb bracket | I can ask for help at an Apotheke without translating every sentence first. |
+| Apotheke | Questions; Modal Verbs; Cases; Pronouns; Verb Brackets | asking for help, describing symptoms, making requests | haben, brauchen, können, accusative objects, dative pronouns | yes-no questions, W-questions, modal verb bracket | I can ask for help at an Apotheke without translating every sentence first. |
 | Doctor Appointment | Questions; Perfekt; Giving Reasons; Information Flow | describing symptoms, explaining problems, asking questions | present tense, Perfekt, seit, weil, modal verbs | W-questions, main clauses, reason clauses, Perfekt bracket | I can explain basic symptoms and understand next steps. |
 | Reporting A Child's Absence | Perfekt; Giving Reasons; Subordinate Clauses; Pronouns | explaining absence, apologizing, giving reasons | Perfekt, weil, modal verbs, school vocabulary | email structure, main clause + Nebensatz | I can write a short message explaining why my child is absent. |
 | Elternabend | Questions; Giving Reasons; Opinions; Agreeing/Disagreeing | asking questions, expressing concerns, requesting support | present tense, weil, dass, modals, Konjunktiv II | discussion turns, W-questions, reason clauses | I can participate in a school discussion and ask for support. |
 | Speaking With A Teacher | Questions; Opinions; Subordinate Clauses; Making Suggestions | asking for information, explaining concerns, making requests | dass, weil, modal verbs, comparatives | W-questions, polite requests, subordinate clauses | I can ask a teacher clear questions about learning progress. |
 | Meeting A New Team | Hauptsatz; Questions; Present Tense; Information Flow | introducing yourself, small talk, asking questions | sein, arbeiten als, seit, present tense, Perfekt | main clauses, W-questions, information flow | I can introduce myself professionally and ask simple follow-up questions. |
-| First Day At Work | Questions; Modal Verbs; Repair Phrases; Verb Brackets | asking clarifying questions, understanding instructions | koennen, muessen, sollen, imperative chunks | W-questions, yes-no questions, modal bracket | I can ask practical questions when I do not understand a task. |
+| First Day At Work | Questions; Modal Verbs; Repair Phrases; Verb Brackets | asking clarifying questions, understanding instructions | können, müssen, sollen, imperative chunks | W-questions, yes-no questions, modal bracket | I can ask practical questions when I do not understand a task. |
 | Giving A Work Update | Perfekt; Future Meaning; Connectors; Information Flow | giving updates, explaining blockers, next steps | Perfekt, present for future, weil, deshalb | sequence connectors, reason clauses, position 1 time phrases | I can explain what I did, what is blocked, and what I will do next. |
-| Restaurant | Questions; Modal Verbs; Articles; Accusative Objects | ordering food, asking questions, making requests | moechte, nehmen, accusative, kein/nicht | yes-no questions, main clauses, request patterns | I can order food and ask one follow-up question. |
-| Making An Appointment | Questions; Future Meaning; Modal Verbs; Giving Reasons | scheduling, changing plans, giving reasons | time phrases, moechte, koennen, weil | W-questions, modal bracket, reason clauses | I can make or change an appointment and explain why. |
+| Restaurant | Questions; Modal Verbs; Articles; Accusative Objects | ordering food, asking questions, making requests | möchte, nehmen, accusative, kein/nicht | yes-no questions, main clauses, request patterns | I can order food and ask one follow-up question. |
+| Making An Appointment | Questions; Future Meaning; Modal Verbs; Giving Reasons | scheduling, changing plans, giving reasons | time phrases, möchte, können, weil | W-questions, modal bracket, reason clauses | I can make or change an appointment and explain why. |
 | Reporting A Repair | Explaining Problems; Perfekt; Making Requests; Cases | explaining a problem, requesting action, giving reasons | kaputt, funktionieren, Perfekt, dative/accusative | main clauses, reason clauses, polite questions | I can report a repair problem and ask for help. |
 | Returning An Item | Perfekt; Giving Reasons; Polite Requests; Cases | explaining a problem, complaining politely, requesting solution | Perfekt, weil, nicht/kein, Konjunktiv II | main clause + reason clause, polite request | I can return an item and explain what is wrong. |
 | Train Station | Questions; Information Flow; Comparatives; Prepositions | asking for information, comparing options, understanding instructions | wann, wohin, fahren, time, comparatives | W-questions, time in position 1, main clauses | I can ask about train times, platforms, and ticket options. |

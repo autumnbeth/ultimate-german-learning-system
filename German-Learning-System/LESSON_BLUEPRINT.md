@@ -149,11 +149,11 @@ Design principles:
 
 Examples:
 
-- Koennen Sie mir bitte helfen?
+- Können Sie mir bitte helfen?
 - Ich habe ein Problem mit...
-- Ich moechte einen Termin...
+- Ich möchte einen Termin...
 - Ich kann leider nicht kommen, weil...
-- Waere es moeglich, ...?
+- Wäre es möglich, ...?
 
 ### Speaking Layer
 
@@ -235,7 +235,7 @@ Design principles:
 Examples:
 
 - W-question: Wo ist die Apotheke?
-- Modal verb bracket: Ich moechte einen Termin machen.
+- Modal verb bracket: Ich möchte einen Termin machen.
 - Nebensatz: Ich kann nicht kommen, weil ich krank bin.
 - Relative clause: Das ist der Kurs, der mir hilft.
 
@@ -512,7 +512,7 @@ Typical sentence architecture:
 - W-questions
 - formal email structure
 - connector contrasts: weil, denn, deshalb
-- verb-final word order in Nebensaetze
+- verb-final word order in Nebensätze
 
 Typical CEFR levels:
 
@@ -689,7 +689,7 @@ Typical grammar:
 Typical sentence architecture:
 
 - Perfekt verb bracket
-- sequence connectors: zuerst, dann, danach, spaeter
+- sequence connectors: zuerst, dann, danach, später
 - subordinate clauses with nachdem, bevor, als, weil
 - complex sentence chains at higher levels
 

@@ -113,7 +113,7 @@ A Nebensatz is a subordinate clause. It depends on another clause and usually se
 
 Why it matters:
 
-Nebensaetze let learners give reasons, explain conditions, report information, add context, and connect ideas. They are essential for emails, opinions, apologies, explanations, and exams.
+Nebensätze let learners give reasons, explain conditions, report information, add context, and connect ideas. They are essential for emails, opinions, apologies, explanations, and exams.
 
 Common learner difficulties:
 
@@ -338,7 +338,7 @@ Modal verbs unlock high-value communication early: I can, I need to, I would lik
 Common learner difficulties:
 
 - Forgetting that the modal verb is conjugated and the main verb goes to the end.
-- Confusing moechte, will, soll, muss, darf, and kann.
+- Confusing möchte, will, soll, muss, darf, and kann.
 - Using modal verbs without a clear infinitive.
 - Forgetting subject-verb changes: ich kann, du kannst, er kann.
 

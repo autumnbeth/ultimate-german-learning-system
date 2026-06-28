@@ -41,10 +41,10 @@ This situation helps learners build confidence in:
 
 | Level | Learner Capability | Example Language |
 | --- | --- | --- |
-| A1 | Ask for help and name one basic symptom or need. | Koennen Sie mir helfen? Ich habe Husten. |
+| A1 | Ask for help and name one basic symptom or need. | Können Sie mir helfen? Ich habe Husten. |
 | A2 | Describe simple symptoms, duration, and ask for something. | Ich habe seit gestern Halsschmerzen. Haben Sie etwas dagegen? |
 | B1 | Explain what happened, ask how to take medicine, and understand basic advice. | Ich habe schon Tee getrunken, aber es ist nicht besser geworden. Wie oft soll ich das nehmen? |
-| B2 | Compare options, explain constraints, and ask for a suitable recommendation. | Ich suche etwas, das nicht muede macht, weil ich heute noch arbeiten muss. |
+| B2 | Compare options, explain constraints, and ask for a suitable recommendation. | Ich suche etwas, das nicht müde macht, weil ich heute noch arbeiten muss. |
 
 ## Communication Functions
 
@@ -125,10 +125,10 @@ This situation helps learners build confidence in:
 
 - present tense for current symptoms and needs
 - haben for symptoms: Ich habe Kopfschmerzen.
-- brauchen and moechte for requests
-- modal verbs: koennen, sollen, muessen, duerfen
+- brauchen and möchte for requests
+- modal verbs: können, sollen, müssen, dürfen
 - accusative objects: etwas gegen Husten, einen Hustensaft
-- dative pronouns: Koennen Sie mir helfen?
+- dative pronouns: Können Sie mir helfen?
 - seit for duration: seit gestern, seit drei Tagen
 - Perfekt for previous actions: Ich habe schon etwas genommen.
 - weil clauses for reasons: weil ich arbeiten muss
@@ -163,12 +163,12 @@ Ich suche etwas, das nicht muede macht.
 
 ## Core Vocabulary Themes
 
-- symptoms: der Husten, die Halsschmerzen, die Kopfschmerzen, das Fieber, die Bauchschmerzen, die Erkaeltung
+- symptoms: der Husten, die Halsschmerzen, die Kopfschmerzen, das Fieber, die Bauchschmerzen, die Erkältung
 - medicine forms: die Tabletten, der Saft, das Spray, die Tropfen, die Salbe, der Tee
 - pharmacy actions: helfen, nehmen, einnehmen, empfehlen, brauchen, suchen, kaufen
-- dosage and timing: einmal, zweimal, dreimal, taeglich, morgens, abends, vor dem Essen, nach dem Essen
-- people: fuer mich, fuer mein Kind, fuer meinen Mann, fuer meine Frau
-- constraints: muede machen, allergisch sein, schwanger sein, arbeiten muessen, Auto fahren muessen
+- dosage and timing: einmal, zweimal, dreimal, täglich, morgens, abends, vor dem Essen, nach dem Essen
+- people: für mich, für mein Kind, für meinen Mann, für meine Frau
+- constraints: müde machen, allergisch sein, schwanger sein, arbeiten müssen, Auto fahren müssen
 - instructions: mit Wasser, nicht zu viel, bei Bedarf, wenn es schlimmer wird
 
 ## Useful Phrase Patterns

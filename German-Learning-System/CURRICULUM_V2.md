@@ -59,7 +59,7 @@ A1 helps learners enter German-speaking environments with basic confidence. The 
 - Definite and indefinite articles in nominative and accusative.
 - Basic noun gender and plural awareness.
 - Negation with nicht and kein.
-- Modal verbs for simple needs: moechte, kann, muss.
+- Modal verbs for simple needs: möchte, kann, muss.
 - Separable verbs in daily routines.
 - Basic prepositions for place and time.
 - Numbers, dates, times, and prices.

@@ -151,16 +151,16 @@ Asking for help is one of the earliest confidence-building functions. It allows 
 
 | Level | Sample Phrases |
 | --- | --- |
-| A1 | Entschuldigung, koennen Sie mir helfen? Ich brauche Hilfe. Ich verstehe das nicht. |
-| A2 | Koennen Sie mir bitte kurz helfen? Ich suche die Apotheke. Ich habe ein Problem mit dem Termin. |
-| B1 | Ich bin mir nicht sicher, was ich machen soll. Koennten Sie mir erklaeren, wie das funktioniert? |
-| B2 | Ich waere Ihnen dankbar, wenn Sie mir bei diesem Anliegen weiterhelfen koennten. |
-| C1 | Waere es moeglich, dass Sie mir kurz einordnen, welche Schritte in dieser Situation sinnvoll waeren? |
+| A1 | Entschuldigung, können Sie mir helfen? Ich brauche Hilfe. Ich verstehe das nicht. |
+| A2 | Können Sie mir bitte kurz helfen? Ich suche die Apotheke. Ich habe ein Problem mit dem Termin. |
+| B1 | Ich bin mir nicht sicher, was ich machen soll. Könnten Sie mir erklären, wie das funktioniert? |
+| B2 | Ich wäre Ihnen dankbar, wenn Sie mir bei diesem Anliegen weiterhelfen könnten. |
+| C1 | Wäre es möglich, dass Sie mir kurz einordnen, welche Schritte in dieser Situation sinnvoll wären? |
 
 #### Grammar That Supports It
 
-- Modal verbs: koennen, muessen, sollen
-- Polite Konjunktiv II: koennten, wuerden, waere
+- Modal verbs: können, müssen, sollen
+- Polite Konjunktiv II: könnten, würden, wäre
 - Dative pronouns: mir, Ihnen
 - Question formation
 - Infinitive clauses with zu for more advanced requests
@@ -210,8 +210,8 @@ Adult learners often need German most when something is not working: a medical i
 | A1 | Ich habe ein Problem. Das funktioniert nicht. Ich bin krank. |
 | A2 | Meine Heizung ist kaputt. Ich habe seit gestern Halsschmerzen. Der Termin passt leider nicht. |
 | B1 | Ich wollte den Termin wahrnehmen, aber ich konnte nicht kommen, weil mein Kind krank war. |
-| B2 | Das Problem besteht seit mehreren Tagen und beeintraechtigt meinen Alltag erheblich. |
-| C1 | Aus meiner Sicht liegt das Problem darin, dass die vereinbarte Leistung bisher nicht vollstaendig erbracht wurde. |
+| B2 | Das Problem besteht seit mehreren Tagen und beeinträchtigt meinen Alltag erheblich. |
+| C1 | Aus meiner Sicht liegt das Problem darin, dass die vereinbarte Leistung bisher nicht vollständig erbracht wurde. |
 
 #### Grammar That Supports It
 
@@ -265,9 +265,9 @@ Giving reasons helps learners move from isolated statements to connected communi
 | --- | --- |
 | A1 | Ich lerne Deutsch. Ich wohne in Hamburg. |
 | A2 | Ich lerne Deutsch, weil ich in Hamburg wohne. |
-| B1 | Ich lerne Deutsch, weil ich mich im Alltag sicherer fuehlen moechte. |
-| B2 | Ich lerne Deutsch, da ich beruflich und privat selbststaendiger kommunizieren moechte. |
-| C1 | Ich lerne Deutsch nicht nur aus praktischen Gruenden, sondern auch, weil Sprache ein wichtiger Teil gesellschaftlicher Teilhabe ist. |
+| B1 | Ich lerne Deutsch, weil ich mich im Alltag sicherer fühlen möchte. |
+| B2 | Ich lerne Deutsch, da ich beruflich und privat selbstständiger kommunizieren möchte. |
+| C1 | Ich lerne Deutsch nicht nur aus praktischen Gründen, sondern auch, weil Sprache ein wichtiger Teil gesellschaftlicher Teilhabe ist. |
 
 #### Grammar That Supports It
 
@@ -321,9 +321,9 @@ Opinion language helps learners move beyond survival German into social, workpla
 | --- | --- |
 | A1 | Ich finde das gut. Das ist interessant. Ich mag Kaffee. |
 | A2 | Ich finde den Kurs gut, weil ich viel spreche. |
-| B1 | Meiner Meinung nach ist es wichtig, jeden Tag ein bisschen zu ueben. |
-| B2 | Aus meiner Sicht ueberwiegen die Vorteile, auch wenn es einige Nachteile gibt. |
-| C1 | Ich wuerde die Frage differenzierter betrachten, weil sowohl praktische als auch gesellschaftliche Aspekte eine Rolle spielen. |
+| B1 | Meiner Meinung nach ist es wichtig, jeden Tag ein bisschen zu üben. |
+| B2 | Aus meiner Sicht überwiegen die Vorteile, auch wenn es einige Nachteile gibt. |
+| C1 | Ich würde die Frage differenzierter betrachten, weil sowohl praktische als auch gesellschaftliche Aspekte eine Rolle spielen. |
 
 #### Grammar That Supports It
 
@@ -365,7 +365,7 @@ Suggestions are central to social life, problem solving, teamwork, appointments,
 #### CEFR Progression From A1 To C1
 
 - A1: Suggest a simple activity or time.
-- A2: Suggest plans using koennen or wollen.
+- A2: Suggest plans using können or wollen.
 - B1: Make suggestions with reasons and alternatives.
 - B2: Recommend a solution in practical or professional contexts.
 - C1: Frame suggestions diplomatically and strategically.
@@ -375,14 +375,14 @@ Suggestions are central to social life, problem solving, teamwork, appointments,
 | Level | Sample Phrases |
 | --- | --- |
 | A1 | Wir trinken Kaffee. Gehen wir? |
-| A2 | Wir koennen morgen telefonieren. Vielleicht treffen wir uns um drei. |
-| B1 | Ich schlage vor, dass wir zuerst den Termin klaeren. |
-| B2 | Es waere sinnvoll, zunaechst die wichtigsten Punkte zu sammeln. |
-| C1 | Aus meiner Sicht waere es zielfuehrend, die Optionen zu priorisieren und anschliessend gemeinsam eine Entscheidung zu treffen. |
+| A2 | Wir können morgen telefonieren. Vielleicht treffen wir uns um drei. |
+| B1 | Ich schlage vor, dass wir zuerst den Termin klären. |
+| B2 | Es wäre sinnvoll, zunächst die wichtigsten Punkte zu sammeln. |
+| C1 | Aus meiner Sicht wäre es zielführend, die Optionen zu priorisieren und anschließend gemeinsam eine Entscheidung zu treffen. |
 
 #### Grammar That Supports It
 
-- Modal verbs: koennen, sollen
+- Modal verbs: können, sollen
 - Imperative and suggestion forms
 - dass clauses
 - Infinitive clauses with zu
@@ -394,7 +394,7 @@ Suggestions are central to social life, problem solving, teamwork, appointments,
 - Yes-no questions
 - dass subordinate clauses
 - Infinitive clauses
-- Discourse markers for sequencing: zuerst, danach, anschliessend
+- Discourse markers for sequencing: zuerst, danach, anschließend
 
 #### Real-Life Scenarios
 
@@ -433,7 +433,7 @@ Agreement and disagreement help learners participate in real conversation instea
 | A2 | Ich bin einverstanden, aber ich habe keine Zeit. |
 | B1 | Ich verstehe deinen Punkt, aber ich sehe das anders, weil... |
 | B2 | Da stimme ich teilweise zu; allerdings sollte man auch beachten, dass... |
-| C1 | Dem kann ich grundsaetzlich zustimmen, dennoch wuerde ich den Aspekt der Umsetzbarkeit staerker gewichten. |
+| C1 | Dem kann ich grundsätzlich zustimmen, dennoch würde ich den Aspekt der Umsetzbarkeit stärker gewichten. |
 
 #### Grammar That Supports It
 
@@ -489,7 +489,7 @@ Past events appear in daily life constantly: what happened at the doctor, why so
 | A2 | Gestern habe ich einen Termin gemacht. Dann bin ich nach Hause gefahren. |
 | B1 | Zuerst habe ich angerufen, aber niemand hat geantwortet. Danach habe ich eine E-Mail geschrieben. |
 | B2 | Nachdem ich mehrere Tage gewartet hatte, habe ich mich erneut an den Kundenservice gewandt. |
-| C1 | Rueckblickend war entscheidend, dass die Kommunikation zu Beginn unklar war und dadurch mehrere Missverstaendnisse entstanden sind. |
+| C1 | Rückblickend war entscheidend, dass die Kommunikation zu Beginn unklar war und dadurch mehrere Missverständnisse entstanden sind. |
 
 #### Grammar That Supports It
 
@@ -505,7 +505,7 @@ Past events appear in daily life constantly: what happened at the doctor, why so
 - Perfekt verb bracket
 - Main clauses in sequence
 - Subordinate clauses with nachdem, bevor, als, weil
-- Adverbial connectors: zuerst, dann, danach, spaeter
+- Adverbial connectors: zuerst, dann, danach, später
 
 #### Real-Life Scenarios
 
@@ -542,10 +542,10 @@ Appointments are a high-frequency adult-life function across healthcare, work, h
 | Level | Sample Phrases |
 | --- | --- |
 | A1 | Ich brauche einen Termin. Haben Sie am Montag Zeit? |
-| A2 | Ich moechte meinen Termin verschieben, weil ich arbeiten muss. |
-| B1 | Der Termin am Dienstag passt mir leider nicht. Waere ein Termin am Freitag moeglich? |
-| B2 | Aufgrund eines beruflichen Termins muesste ich unseren Termin leider verschieben. |
-| C1 | Ich waere Ihnen dankbar, wenn wir einen alternativen Termin finden koennten, da sich kurzfristig eine terminliche Ueberschneidung ergeben hat. |
+| A2 | Ich möchte meinen Termin verschieben, weil ich arbeiten muss. |
+| B1 | Der Termin am Dienstag passt mir leider nicht. Wäre ein Termin am Freitag möglich? |
+| B2 | Aufgrund eines beruflichen Termins müsste ich unseren Termin leider verschieben. |
+| C1 | Ich wäre Ihnen dankbar, wenn wir einen alternativen Termin finden könnten, da sich kurzfristig eine terminliche Überschneidung ergeben hat. |
 
 #### Grammar That Supports It
 
@@ -599,10 +599,10 @@ Polite complaints help learners advocate for themselves in shops, housing, servi
 | Level | Sample Phrases |
 | --- | --- |
 | A1 | Das ist nicht richtig. Das funktioniert nicht. |
-| A2 | Ich habe ein Problem mit der Bestellung. Koennen Sie mir bitte helfen? |
+| A2 | Ich habe ein Problem mit der Bestellung. Können Sie mir bitte helfen? |
 | B1 | Leider bin ich mit dem Produkt nicht zufrieden, weil es nach zwei Tagen kaputt war. |
-| B2 | Ich moechte Sie bitten, den Fall zu pruefen und mir eine angemessene Loesung anzubieten. |
-| C1 | Vor diesem Hintergrund bitte ich um eine zeitnahe Klaerung sowie um eine nachvollziehbare Rueckmeldung zu den weiteren Schritten. |
+| B2 | Ich möchte Sie bitten, den Fall zu prüfen und mir eine angemessene Lösung anzubieten. |
+| C1 | Vor diesem Hintergrund bitte ich um eine zeitnahe Klärung sowie um eine nachvollziehbare Rückmeldung zu den weiteren Schritten. |
 
 #### Grammar That Supports It
 
@@ -656,10 +656,10 @@ Reaching agreement is essential for social planning, family life, teamwork, hous
 | Level | Sample Phrases |
 | --- | --- |
 | A1 | Ja, das passt. Okay, um drei. |
-| A2 | Freitag passt mir besser. Wir koennen uns um vier treffen. |
+| A2 | Freitag passt mir besser. Wir können uns um vier treffen. |
 | B1 | Dann machen wir es so: Ich rufe morgen an, und du schreibst die E-Mail. |
-| B2 | Wenn alle einverstanden sind, koennen wir diesen Vorschlag als naechsten Schritt festhalten. |
-| C1 | Damit scheinen wir eine Loesung gefunden zu haben, die sowohl praktikabel ist als auch die wichtigsten Bedenken beruecksichtigt. |
+| B2 | Wenn alle einverstanden sind, können wir diesen Vorschlag als nächsten Schritt festhalten. |
+| C1 | Damit scheinen wir eine Lösung gefunden zu haben, die sowohl praktikabel ist als auch die wichtigsten Bedenken berücksichtigt. |
 
 #### Grammar That Supports It
 
@@ -741,16 +741,16 @@ C1: practical reason + social meaning + abstract participation
 
 | Function | A1 Version | A2 Version | B1 Version | B2 Version | C1 Version | Key Grammar | Key Sentence Structure | Common Real-Life Contexts |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Asking for help | Ich brauche Hilfe. | Koennen Sie mir bitte helfen? | Koennten Sie mir erklaeren, wie das funktioniert? | Ich waere Ihnen dankbar, wenn Sie mir weiterhelfen koennten. | Waere es moeglich, die naechsten Schritte kurz einzuordnen? | Modals, dative pronouns, Konjunktiv II | Questions, wenn clauses | Shops, Apotheke, offices, work |
-| Explaining a problem | Ich habe ein Problem. | Die Heizung ist kaputt. | Ich konnte nicht kommen, weil mein Kind krank war. | Das Problem besteht seit mehreren Tagen. | Aus meiner Sicht liegt das Problem darin, dass... | Present, Perfekt, subordinate clauses, passive | Main clauses, Nebensaetze | Housing, health, work, customer service |
-| Giving reasons | Ich wohne in Hamburg. | Ich lerne Deutsch, weil ich in Hamburg wohne. | Ich moechte mich sicherer fuehlen. | Da ich selbststaendiger kommunizieren moechte... | Nicht nur aus praktischen Gruenden, sondern auch... | weil, da, deshalb, modal verbs | Hauptsatz, Nebensatz, verb-final | Appointments, opinions, exams, work |
-| Expressing an opinion | Ich finde das gut. | Ich finde das gut, weil... | Meiner Meinung nach ist... | Aus meiner Sicht ueberwiegen... | Ich wuerde die Frage differenzierter betrachten. | finden, dass, comparison, Konjunktiv II | Opinion frame, reason clause | Social talk, exams, meetings |
-| Making a suggestion | Wir trinken Kaffee. | Wir koennen morgen telefonieren. | Ich schlage vor, dass... | Es waere sinnvoll, zuerst... | Es waere zielfuehrend, die Optionen zu priorisieren. | Modals, dass, zu-infinitive, Konjunktiv II | Main clause, dass clause, Infinitivsatz | Planning, work, problem solving |
-| Agreeing and disagreeing | Ja, das stimmt. | Ich bin einverstanden, aber... | Ich sehe das anders, weil... | Ich stimme teilweise zu; allerdings... | Dem kann ich grundsaetzlich zustimmen, dennoch... | Negation, contrast connectors, Konjunktiv II | Main clause, adverbial connectors | Discussions, meetings, social decisions |
-| Telling a past event | Gestern Arbeit. | Ich habe angerufen. | Zuerst habe ich angerufen, danach... | Nachdem ich gewartet hatte... | Rueckblickend war entscheidend, dass... | Perfekt, Prateritum, Plusquamperfekt | Verb bracket, sequence connectors | Stories, appointments, reports |
-| Making an appointment | Ich brauche einen Termin. | Ich moechte den Termin verschieben. | Waere Freitag moeglich? | Aufgrund eines Termins muesste ich verschieben. | Ich waere Ihnen dankbar, wenn wir eine Alternative finden koennten. | Time, modal verbs, Konjunktiv II | Questions, reason clauses, formal email | Doctors, schools, services, work |
-| Complaining politely | Das ist nicht richtig. | Ich habe ein Problem mit der Bestellung. | Leider bin ich nicht zufrieden, weil... | Ich bitte Sie, den Fall zu pruefen. | Vor diesem Hintergrund bitte ich um eine zeitnahe Klaerung. | Negation, Perfekt, passive, formal phrases | Facts, reasons, requests | Shops, housing, institutions |
-| Reaching agreement | Ja, das passt. | Freitag passt besser. | Dann machen wir es so: ... | Wenn alle einverstanden sind, koennen wir... | Damit haben wir eine praktikable Loesung gefunden. | Modals, wenn, future meaning | Conditions, summary markers | Meetings, planning, negotiation |
+| Asking for help | Ich brauche Hilfe. | Können Sie mir bitte helfen? | Könnten Sie mir erklären, wie das funktioniert? | Ich wäre Ihnen dankbar, wenn Sie mir weiterhelfen könnten. | Wäre es möglich, die nächsten Schritte kurz einzuordnen? | Modals, dative pronouns, Konjunktiv II | Questions, wenn clauses | Shops, Apotheke, offices, work |
+| Explaining a problem | Ich habe ein Problem. | Die Heizung ist kaputt. | Ich konnte nicht kommen, weil mein Kind krank war. | Das Problem besteht seit mehreren Tagen. | Aus meiner Sicht liegt das Problem darin, dass... | Present, Perfekt, subordinate clauses, passive | Main clauses, Nebensätze | Housing, health, work, customer service |
+| Giving reasons | Ich wohne in Hamburg. | Ich lerne Deutsch, weil ich in Hamburg wohne. | Ich möchte mich sicherer fühlen. | Da ich selbstständiger kommunizieren möchte... | Nicht nur aus praktischen Gründen, sondern auch... | weil, da, deshalb, modal verbs | Hauptsatz, Nebensatz, verb-final | Appointments, opinions, exams, work |
+| Expressing an opinion | Ich finde das gut. | Ich finde das gut, weil... | Meiner Meinung nach ist... | Aus meiner Sicht überwiegen... | Ich würde die Frage differenzierter betrachten. | finden, dass, comparison, Konjunktiv II | Opinion frame, reason clause | Social talk, exams, meetings |
+| Making a suggestion | Wir trinken Kaffee. | Wir können morgen telefonieren. | Ich schlage vor, dass... | Es wäre sinnvoll, zuerst... | Es wäre zielführend, die Optionen zu priorisieren. | Modals, dass, zu-infinitive, Konjunktiv II | Main clause, dass clause, Infinitivsatz | Planning, work, problem solving |
+| Agreeing and disagreeing | Ja, das stimmt. | Ich bin einverstanden, aber... | Ich sehe das anders, weil... | Ich stimme teilweise zu; allerdings... | Dem kann ich grundsätzlich zustimmen, dennoch... | Negation, contrast connectors, Konjunktiv II | Main clause, adverbial connectors | Discussions, meetings, social decisions |
+| Telling a past event | Gestern Arbeit. | Ich habe angerufen. | Zuerst habe ich angerufen, danach... | Nachdem ich gewartet hatte... | Rückblickend war entscheidend, dass... | Perfekt, Prateritum, Plusquamperfekt | Verb bracket, sequence connectors | Stories, appointments, reports |
+| Making an appointment | Ich brauche einen Termin. | Ich möchte den Termin verschieben. | Wäre Freitag möglich? | Aufgrund eines Termins müsste ich verschieben. | Ich wäre Ihnen dankbar, wenn wir eine Alternative finden könnten. | Time, modal verbs, Konjunktiv II | Questions, reason clauses, formal email | Doctors, schools, services, work |
+| Complaining politely | Das ist nicht richtig. | Ich habe ein Problem mit der Bestellung. | Leider bin ich nicht zufrieden, weil... | Ich bitte Sie, den Fall zu prüfen. | Vor diesem Hintergrund bitte ich um eine zeitnahe Klärung. | Negation, Perfekt, passive, formal phrases | Facts, reasons, requests | Shops, housing, institutions |
+| Reaching agreement | Ja, das passt. | Freitag passt besser. | Dann machen wir es so: ... | Wenn alle einverstanden sind, können wir... | Damit haben wir eine praktikable Lösung gefunden. | Modals, wenn, future meaning | Conditions, summary markers | Meetings, planning, negotiation |
 
 ## Design Implication
 
