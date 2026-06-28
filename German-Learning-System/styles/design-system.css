@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&display=swap");
+
+:root {
+  --bg: #faf9f5;
+  --surface: #ffffff;
+  --surface-soft: #fafafb;
+  --ink: #18181b;
+  --text: #3f3f46;
+  --muted: #71717a;
+  --faint: #a1a1aa;
+  --line: #eeeeee;
+  --line-strong: #e4e4e7;
+  --accent: #11b5a4;
+  --teal: #11b5a4;
+  --der: #2563eb;
+  --die: #db2777;
+  --das: #16a34a;
+  --plural: #ea580c;
+  --purple: #7c3aed;
+  --warning-bg: #fffbeb;
+  --warning-line: #fde8b0;
+  --warning-text: #d97706;
+  --success-bg: #dcfce7;
+  --success-text: #15803d;
+  --info-bg: #dbeafe;
+  --info-text: #2563eb;
+  --purple-bg: #ede9fe;
+  --purple-text: #7c3aed;
+  --shadow-card: 0 1px 2px rgba(24, 24, 27, 0.04);
+  --shadow-lift: 0 8px 40px rgba(24, 24, 27, 0.07);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg) !important;
+  color: var(--ink);
+  font-family: "Hanken Grotesk", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+a {
+  color: inherit;
+}
+
+.shell {
+  max-width: 1180px !important;
+  padding: 56px 36px 80px !important;
+}
+
+.topbar {
+  margin-bottom: 56px !important;
+}
+
+.brand,
+.nav,
+.toplinks,
+.navlink,
+.back,
+.source {
+  font-family: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+.mark {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 10px !important;
+  background: var(--accent) !important;
+  font-family: "Newsreader", Georgia, serif !important;
+  font-weight: 700 !important;
+}
+
+.eyebrow,
+.feature-kicker,
+.panel-title,
+.domain-meta,
+.meta,
+.level,
+.tag,
+.path,
+h4 {
+  font-family: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.13em !important;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+article h1,
+article h2 {
+  font-family: "Newsreader", Georgia, "Times New Roman", serif !important;
+  font-weight: 600 !important;
+  color: var(--ink);
+}
+
+h1,
+article h1 {
+  letter-spacing: -0.025em !important;
+}
+
+h2,
+article h2 {
+  letter-spacing: -0.012em !important;
+}
+
+h3 {
+  color: var(--ink);
+  font-family: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0 !important;
+}
+
+p,
+li,
+td,
+th {
+  color: var(--text);
+}
+
+.lead {
+  color: var(--text) !important;
+  line-height: 1.6 !important;
+}
+
+.feature,
+.doc,
+.summary-item,
+.card,
+.panel,
+article {
+  background: var(--surface) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 20px !important;
+  box-shadow: var(--shadow-card);
+}
+
+.feature,
+.doc,
+.card {
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.feature:hover,
+.doc:hover,
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent) !important;
+  box-shadow: var(--shadow-lift) !important;
+}
+
+.summary-item {
+  padding: 20px 22px !important;
+}
+
+.summary-number {
+  font-family: "Newsreader", Georgia, serif !important;
+  font-weight: 600;
+}
+
+.card {
+  min-height: 230px !important;
+  padding: 24px !important;
+}
+
+.tag {
+  background: #f4f5f7 !important;
+  color: #3f3f46 !important;
+  border-radius: 999px !important;
+  padding: 7px 11px !important;
+  font-size: 11px !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.level {
+  border-radius: 8px !important;
+  padding: 5px 10px !important;
+  font-size: 11px !important;
+}
+
+.path,
+.source,
+pre,
+code {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+}
+
+.path {
+  font-weight: 700;
+}
+
+.note {
+  background: var(--warning-bg) !important;
+  border: 1px solid var(--warning-line) !important;
+  border-radius: 18px !important;
+  color: var(--text) !important;
+}
+
+.note strong {
+  color: var(--warning-text) !important;
+}
+
+.layout {
+  align-items: start;
+}
+
+.sidebar {
+  gap: 18px !important;
+}
+
+.doc-link,
+.toc-link {
+  border-radius: 10px !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.doc-link.active {
+  background: var(--accent) !important;
+}
+
+article {
+  border-radius: 28px !important;
+  padding: 44px !important;
+  box-shadow: var(--shadow-lift);
+}
+
+article h1 {
+  border-bottom: 1px solid #f4f4f6;
+  padding-bottom: 22px;
+}
+
+article h2 {
+  border-top: 1px solid #f4f4f6 !important;
+  margin-top: 48px !important;
+}
+
+article h3 {
+  margin-top: 30px !important;
+}
+
+article h4 {
+  color: var(--accent) !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+}
+
+article p {
+  max-width: 72ch;
+}
+
+article ul {
+  background: var(--surface-soft);
+  border-radius: 16px;
+  padding: 18px 22px 18px 38px !important;
+}
+
+article li + li {
+  margin-top: 6px;
+}
+
+table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+th,
+td {
+  border: 0 !important;
+  border-bottom: 1px solid #f4f4f6 !important;
+  padding: 14px 16px !important;
+}
+
+tr:last-child td {
+  border-bottom: 0 !important;
+}
+
+th {
+  background: var(--surface-soft) !important;
+  color: var(--ink) !important;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+pre {
+  background: #18181b !important;
+  border-radius: 16px !important;
+  color: #fafafa !important;
+  padding: 20px 22px !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.reference-page pre.system-map,
+.reference-page pre.pattern-block,
+.reference-page pre.reference-block {
+  background: var(--surface-soft) !important;
+  border: 1px solid var(--line) !important;
+  border-left: 5px solid var(--accent) !important;
+  border-radius: 18px !important;
+  color: var(--ink) !important;
+  line-height: 1.62;
+  margin: 18px 0 28px;
+  overflow-x: auto;
+  padding: 22px 24px !important;
+  white-space: pre;
+  box-shadow: var(--shadow-card) !important;
+}
+
+.reference-page pre.system-map {
+  background:
+    linear-gradient(90deg, rgba(17, 181, 164, 0.08), rgba(17, 181, 164, 0) 34%),
+    var(--surface-soft) !important;
+}
+
+.reference-page pre.pattern-block {
+  background: #ffffff !important;
+  border-left-color: var(--der) !important;
+}
+
+.reference-page pre.reference-block {
+  border-left-color: var(--purple) !important;
+}
+
+.reference-page pre.system-map code,
+.reference-page pre.pattern-block code,
+.reference-page pre.reference-block code {
+  color: var(--ink) !important;
+  font-size: 13px;
+}
+
+.reference-page pre.system-map::before,
+.reference-page pre.pattern-block::before,
+.reference-page pre.reference-block::before {
+  display: block;
+  font-family: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.reference-page pre.system-map::before {
+  color: var(--accent);
+  content: "System Map";
+}
+
+.reference-page pre.pattern-block::before {
+  color: var(--der);
+  content: "Reference Pattern";
+}
+
+.reference-page pre.reference-block::before {
+  color: var(--purple);
+  content: "Reference";
+}
+
+p code,
+li code {
+  background: #f4f5f7 !important;
+  border-radius: 7px !important;
+  color: var(--ink) !important;
+  padding: 3px 6px !important;
+}
+
+article strong {
+  color: var(--ink);
+}
+
+article em {
+  color: var(--muted);
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic;
+}
+
+article p:has(strong) {
+  margin-top: 16px;
+}
+
+article p strong:first-child {
+  color: var(--der);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .shell {
+    padding: 34px 20px 58px !important;
+  }
+
+  article {
+    padding: 28px 20px !important;
+  }
+}

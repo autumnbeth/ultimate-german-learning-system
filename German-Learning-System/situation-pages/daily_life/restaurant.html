@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant | German Learning System</title>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --ink: #18181b;
+      --muted: #71717a;
+      --line: #e8e4dc;
+      --card: #ffffff;
+      --accent: var(--green);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 38px 24px 80px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+
+    .back {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back:hover { color: var(--accent); }
+
+    .source {
+      color: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      text-align: right;
+      word-break: break-word;
+    }
+
+    article {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 44px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(40px, 8vw, 68px);
+      line-height: 0.95;
+      margin: 0 0 28px;
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      line-height: 1.1;
+      margin: 46px 0 16px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    h3 {
+      font-size: 21px;
+      line-height: 1.2;
+      margin: 30px 0 12px;
+    }
+
+    h4 {
+      font-size: 16px;
+      margin: 24px 0 10px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    p, li {
+      color: #3f3f46;
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding-left: 22px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 26px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #f4f4f5;
+      color: #27272a;
+    }
+
+    pre {
+      overflow-x: auto;
+      background: #18181b;
+      color: #fafafa;
+      border-radius: 8px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      line-height: 1.5;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    p code, li code {
+      background: #f4f4f5;
+      color: #27272a;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+
+    strong { color: #18181b; }
+    em { color: #52525b; }
+
+    @media (max-width: 680px) {
+      .shell { padding: 24px 14px 52px; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .source { text-align: left; }
+      article { padding: 26px 18px; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+  <link rel="stylesheet" href="../../styles/design-system.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="topbar" aria-label="Situation navigation">
+      <a class="back" href="../../situation-library.html">Back to Situation Library</a>
+      <div class="source">situations/daily_life/restaurant.md</div>
+    </nav>
+    <article>
+<h1>Restaurant</h1>
+<h2>Overview</h2>
+<p>Restaurant is a common daily-life situation in Germany. Learners encounter it when they reserve a table, read a menu, order food and drinks, ask about ingredients, explain dietary restrictions, and pay.</p>
+<p>This situation matters because restaurant interactions are social, practical, and often fast. Learners need to ask questions politely, make choices, explain what they cannot eat, understand server questions, and handle payment with confidence.</p>
+<p>The situation can grow across levels:</p>
+<table><thead><tr><th>Level</th><th>Learner Capability</th><th>Example</th></tr></thead><tbody><tr><td>A1</td><td>Order simple food and drinks.</td><td>Ich nehme eine Suppe und ein Wasser.</td></tr>
+<tr><td>A2</td><td>Ask basic questions about the menu.</td><td>Ist das mit Fleisch?</td></tr>
+<tr><td>B1</td><td>Explain dietary restrictions and ask for changes.</td><td>Ich vertrage keine Milchprodukte. Gibt es eine Alternative?</td></tr>
+<tr><td>B2</td><td>Discuss ingredients, recommendations, and payment details politely.</td><td>Könnten Sie mir sagen, ob das Gericht Spuren von Nüssen enthält?</td></tr></tbody></table>
+<h2>Communication Functions Practiced</h2>
+<ul>
+<li>Ordering food and drinks</li>
+<li>Asking questions</li>
+<li>Expressing preferences</li>
+<li>Explaining dietary restrictions</li>
+<li>Making polite requests</li>
+<li>Asking for recommendations</li>
+<li>Clarifying ingredients</li>
+<li>Paying</li>
+<li>Thanking politely</li>
+</ul>
+<h2>Key Language Patterns</h2>
+<h3>Core Patterns</h3>
+<ul>
+<li>Ich hätte gern ...</li>
+<li>Ich nehme ...</li>
+<li>Was empfehlen Sie?</li>
+<li>Ist das vegetarisch?</li>
+<li>Ist das ohne ...?</li>
+<li>Ich esse kein ...</li>
+<li>Ich vertrage ... nicht.</li>
+<li>Könnte ich bitte ... bekommen?</li>
+<li>Können wir bitte zahlen?</li>
+<li>Getrennt oder zusammen?</li>
+<li>Mit Karte, bitte.</li>
+<li>Es war sehr lecker.</li>
+</ul>
+<h3>CEFR Progression</h3>
+<table><thead><tr><th>Level</th><th>Pattern Focus</th><th>Example</th></tr></thead><tbody><tr><td>A1</td><td>Simple ordering</td><td>Ich nehme eine Pizza.</td></tr>
+<tr><td>A2</td><td>Menu questions and payment</td><td>Ist das scharf? Können wir zahlen?</td></tr>
+<tr><td>B1</td><td>Restrictions and reasons</td><td>Ich esse kein Schweinefleisch, weil ich es nicht vertrage.</td></tr>
+<tr><td>B2</td><td>Detailed clarification</td><td>Könnten Sie bitte in der Küche fragen, ob das Gericht glutenfrei ist?</td></tr></tbody></table>
+<h3>Foundation Reference Connections</h3>
+<table><thead><tr><th>Foundation Reference Section</th><th>How It Appears In This Situation</th></tr></thead><tbody><tr><td>Questions</td><td>Ask about ingredients, recommendations, and payment.</td></tr>
+<tr><td>Hauptsatz</td><td>Order clearly: &quot;Ich nehme den Salat.&quot;</td></tr>
+<tr><td>Nebensatz</td><td>Explain restrictions with weil and dass.</td></tr>
+<tr><td>Modal Verbs</td><td>Use können, möchten, and dürfen for polite requests.</td></tr>
+<tr><td>Cases and Pronouns</td><td>Use den Salat, die Suppe, ein Wasser, and mit Karte.</td></tr>
+<tr><td>Information Flow</td><td>Put the dietary restriction first when it matters.</td></tr></tbody></table>
+<h2>Vocabulary In Context</h2>
+<h3>Ordering</h3>
+<table><thead><tr><th>German</th><th>English</th><th>Example</th></tr></thead><tbody><tr><td>die Speisekarte, die Speisekarten</td><td>menu</td><td>Können wir bitte die Speisekarte haben?</td></tr>
+<tr><td>bestellen</td><td>to order</td><td>Ich möchte bestellen.</td></tr>
+<tr><td>das Gericht, die Gerichte</td><td>dish</td><td>Welches Gericht empfehlen Sie?</td></tr>
+<tr><td>die Vorspeise, die Vorspeisen</td><td>starter</td><td>Ich nehme eine Vorspeise.</td></tr>
+<tr><td>das Hauptgericht, die Hauptgerichte</td><td>main course</td><td>Als Hauptgericht nehme ich Fisch.</td></tr>
+<tr><td>die Nachspeise, die Nachspeisen</td><td>dessert</td><td>Haben Sie Nachspeisen?</td></tr></tbody></table>
+<h3>Food and Drinks</h3>
+<table><thead><tr><th>German</th><th>English</th><th>Example</th></tr></thead><tbody><tr><td>das Wasser, meist Singular</td><td>water</td><td>Ich nehme ein stilles Wasser.</td></tr>
+<tr><td>der Kaffee, die Kaffees</td><td>coffee</td><td>Einen Kaffee, bitte.</td></tr>
+<tr><td>die Suppe, die Suppen</td><td>soup</td><td>Ist die Suppe vegetarisch?</td></tr>
+<tr><td>der Salat, die Salate</td><td>salad</td><td>Ich nehme den Salat.</td></tr>
+<tr><td>das Fleisch, meist Singular</td><td>meat</td><td>Ich esse kein Fleisch.</td></tr>
+<tr><td>der Fisch, die Fische</td><td>fish</td><td>Ist der Fisch frisch?</td></tr></tbody></table>
+<h3>Dietary Restrictions</h3>
+<table><thead><tr><th>German</th><th>English</th><th>Example</th></tr></thead><tbody><tr><td>vegetarisch</td><td>vegetarian</td><td>Ist das vegetarisch?</td></tr>
+<tr><td>vegan</td><td>vegan</td><td>Haben Sie vegane Gerichte?</td></tr>
+<tr><td>glutenfrei</td><td>gluten-free</td><td>Gibt es glutenfreie Nudeln?</td></tr>
+<tr><td>laktosefrei</td><td>lactose-free</td><td>Ist die Soße laktosefrei?</td></tr>
+<tr><td>die Allergie, die Allergien</td><td>allergy</td><td>Ich habe eine Nussallergie.</td></tr>
+<tr><td>nicht vertragen</td><td>not tolerate</td><td>Ich vertrage Milch nicht.</td></tr></tbody></table>
+<h3>Taste and Preferences</h3>
+<table><thead><tr><th>German</th><th>English</th><th>Example</th></tr></thead><tbody><tr><td>scharf</td><td>spicy</td><td>Ist das sehr scharf?</td></tr>
+<tr><td>mild</td><td>mild</td><td>Ich hätte gern etwas Mildes.</td></tr>
+<tr><td>süß</td><td>sweet</td><td>Die Nachspeise ist süß.</td></tr>
+<tr><td>salzig</td><td>salty</td><td>Die Suppe ist sehr salzig.</td></tr>
+<tr><td>lecker</td><td>delicious</td><td>Das Essen war lecker.</td></tr>
+<tr><td>empfehlen</td><td>to recommend</td><td>Was empfehlen Sie?</td></tr></tbody></table>
+<h3>Payment</h3>
+<table><thead><tr><th>German</th><th>English</th><th>Example</th></tr></thead><tbody><tr><td>zahlen</td><td>to pay</td><td>Können wir bitte zahlen?</td></tr>
+<tr><td>die Rechnung, die Rechnungen</td><td>bill</td><td>Die Rechnung, bitte.</td></tr>
+<tr><td>getrennt</td><td>separately</td><td>Wir zahlen getrennt.</td></tr>
+<tr><td>zusammen</td><td>together</td><td>Wir zahlen zusammen.</td></tr>
+<tr><td>bar</td><td>cash</td><td>Ich zahle bar.</td></tr>
+<tr><td>mit Karte</td><td>by card</td><td>Ich zahle mit Karte.</td></tr></tbody></table>
+<h2>Practice Dialogues</h2>
+<h3>Dialogue 1: Typical Situation</h3>
+<p><strong>Kellnerin:</strong> Guten Abend. Haben Sie schon gewählt?</p>
+<p><em>Server:</em> Good evening. Have you already chosen?</p>
+<p><strong>Gast:</strong> Ja, ich nehme den Salat und ein stilles Wasser.</p>
+<p><em>Guest:</em> Yes, I will take the salad and still water.</p>
+<p><strong>Kellnerin:</strong> Sehr gern. Möchten Sie Brot dazu?</p>
+<p><em>Server:</em> Certainly. Would you like bread with that?</p>
+<p><strong>Gast:</strong> Ja, bitte.</p>
+<p><em>Guest:</em> Yes, please.</p>
+<p><strong>Kellnerin:</strong> Sonst noch etwas?</p>
+<p><em>Server:</em> Anything else?</p>
+<p><strong>Gast:</strong> Nein, danke. Das ist alles.</p>
+<p><em>Guest:</em> No, thank you. That is all.</p>
+<p><strong>Kellnerin:</strong> Gut, ich bringe es gleich.</p>
+<p><em>Server:</em> Good, I will bring it right away.</p>
+<p><strong>Gast:</strong> Vielen Dank.</p>
+<p><em>Guest:</em> Thank you very much.</p>
+<p><strong>Kellnerin:</strong> Guten Appetit.</p>
+<p><em>Server:</em> Enjoy your meal.</p>
+<p><strong>Gast:</strong> Danke schön.</p>
+<p><em>Guest:</em> Thank you.</p>
+<p>Communication Functions Practiced</p>
+<ul>
+<li>Ordering food and drinks</li>
+<li>Responding to server questions</li>
+<li>Saying yes or no politely</li>
+<li>Thanking</li>
+<li>Understanding common restaurant phrases</li>
+</ul>
+<h3>Dialogue 2: Common Variation</h3>
+<p><strong>Kellner:</strong> Was möchten Sie bestellen?</p>
+<p><em>Server:</em> What would you like to order?</p>
+<p><strong>Gast:</strong> Ich habe eine Frage. Ist die Suppe vegetarisch?</p>
+<p><em>Guest:</em> I have a question. Is the soup vegetarian?</p>
+<p><strong>Kellner:</strong> Ja, sie ist vegetarisch, aber sie enthält Sahne.</p>
+<p><em>Server:</em> Yes, it is vegetarian, but it contains cream.</p>
+<p><strong>Gast:</strong> Ich vertrage keine Milchprodukte. Gibt es eine Alternative?</p>
+<p><em>Guest:</em> I cannot tolerate dairy products. Is there an alternative?</p>
+<p><strong>Kellner:</strong> Ja, der Tomatensalat ist vegan.</p>
+<p><em>Server:</em> Yes, the tomato salad is vegan.</p>
+<p><strong>Gast:</strong> Gut, dann nehme ich den Tomatensalat.</p>
+<p><em>Guest:</em> Good, then I will take the tomato salad.</p>
+<p><strong>Kellner:</strong> Möchten Sie etwas trinken?</p>
+<p><em>Server:</em> Would you like something to drink?</p>
+<p><strong>Gast:</strong> Ja, ein Mineralwasser, bitte.</p>
+<p><em>Guest:</em> Yes, mineral water, please.</p>
+<p><strong>Kellner:</strong> Sehr gern.</p>
+<p><em>Server:</em> Certainly.</p>
+<p><strong>Gast:</strong> Vielen Dank für die Hilfe.</p>
+<p><em>Guest:</em> Thank you very much for the help.</p>
+<p>Communication Functions Practiced</p>
+<ul>
+<li>Asking about ingredients</li>
+<li>Explaining a dietary restriction</li>
+<li>Asking for an alternative</li>
+<li>Ordering safely</li>
+<li>Thanking politely</li>
+</ul>
+<h3>Dialogue 3: Real-World Challenge</h3>
+<p><strong>Kellnerin:</strong> Hat alles geschmeckt?</p>
+<p><em>Server:</em> Did everything taste good?</p>
+<p><strong>Gast:</strong> Ja, danke. Es war sehr lecker. Können wir bitte zahlen?</p>
+<p><em>Guest:</em> Yes, thank you. It was very delicious. Could we pay, please?</p>
+<p><strong>Kellnerin:</strong> Natürlich. Zahlen Sie getrennt oder zusammen?</p>
+<p><em>Server:</em> Of course. Are you paying separately or together?</p>
+<p><strong>Gast:</strong> Entschuldigung, können Sie das bitte wiederholen?</p>
+<p><em>Guest:</em> Excuse me, could you please repeat that?</p>
+<p><strong>Kellnerin:</strong> Zahlen Sie getrennt oder zusammen?</p>
+<p><em>Server:</em> Are you paying separately or together?</p>
+<p><strong>Gast:</strong> Ah, getrennt bitte.</p>
+<p><em>Guest:</em> Ah, separately please.</p>
+<p><strong>Kellnerin:</strong> Bar oder mit Karte?</p>
+<p><em>Server:</em> Cash or card?</p>
+<p><strong>Gast:</strong> Mit Karte, bitte.</p>
+<p><em>Guest:</em> By card, please.</p>
+<p><strong>Kellnerin:</strong> Das macht 18,50 Euro.</p>
+<p><em>Server:</em> That comes to 18.50 euros.</p>
+<p><strong>Gast:</strong> Danke. Stimmt so.</p>
+<p><em>Guest:</em> Thank you. Keep the change.</p>
+<p>Communication Functions Practiced</p>
+<ul>
+<li>Asking to pay</li>
+<li>Asking for repetition</li>
+<li>Choosing separate payment</li>
+<li>Paying by card</li>
+<li>Using a common tipping phrase</li>
+</ul>
+<h2>Writing Task</h2>
+<p>Write a short message to reserve a table at a restaurant.</p>
+<p>Include:</p>
+<ul>
+<li>date and time</li>
+<li>number of people</li>
+<li>one special request</li>
+<li>a polite closing</li>
+</ul>
+<h3>A2 Example</h3>
+<p>Guten Tag,</p>
+<p>ich möchte einen Tisch für zwei Personen reservieren. Wir möchten am Samstag um 19 Uhr kommen. Haben Sie noch einen Tisch frei?</p>
+<p>Vielen Dank.</p>
+<p>Mit freundlichen Grüßen</p>
+<p>[Name]</p>
+<h3>B1 Example</h3>
+<p>Guten Tag,</p>
+<p>ich möchte gern für Samstag um 19 Uhr einen Tisch für vier Personen reservieren. Eine Person isst vegetarisch. Wäre es möglich, einen ruhigen Tisch zu bekommen?</p>
+<p>Vielen Dank für Ihre Rückmeldung.</p>
+<p>Mit freundlichen Grüßen</p>
+<p>[Name]</p>
+<h2>Real-Life Challenge</h2>
+<h3>Beginner</h3>
+<p>Practice ordering one food item and one drink with &quot;Ich nehme ...&quot; and &quot;Ich hätte gern ...&quot;.</p>
+<h3>Intermediate</h3>
+<p>Ask two questions about the menu and explain one preference or restriction.</p>
+<h3>Advanced</h3>
+<p>Reserve a table, ask about dietary restrictions, and handle payment with a clarification question if needed.</p>
+<h2>Related Situations</h2>
+<ul>
+<li>Supermarkt</li>
+<li>Freunde treffen</li>
+<li>Geburtstag</li>
+<li>Hotel Check-In</li>
+<li>Termin vereinbaren</li>
+</ul>
+    </article>
+  </main>
+</body>
+</html>

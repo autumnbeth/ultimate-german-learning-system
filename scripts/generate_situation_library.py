@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PROJECT = ROOT / "German-Learning-System"
 SITUATIONS = PROJECT / "situations"
 OUTPUT = PROJECT / "situation-library.html"
+PAGES = PROJECT / "situation-pages"
 
 DOMAIN_CONFIG = {
     "healthcare": ("Healthcare", "var(--pink)", 10),
@@ -63,6 +64,11 @@ def extract_level_range(content):
     return f"{unique[0]}-{unique[-1]}"
 
 
+def page_path_for(source_path):
+    relative = source_path.relative_to(SITUATIONS).with_suffix(".html")
+    return PAGES / relative
+
+
 def title_from_filename(path):
     return path.stem.replace("_", " ").title()
 
@@ -74,12 +80,17 @@ def read_situation(path):
     domain, color, order = DOMAIN_CONFIG.get(folder, ("Other", "var(--teal)", 999))
     title_match = re.search(r"^#\s+(.+)$", content, flags=re.MULTILINE)
     title = title_match.group(1).strip() if title_match else title_from_filename(path)
+    page_path = page_path_for(path)
     return {
         "title": title,
         "domain": domain,
         "domain_order": order,
         "color": color,
         "href": relative,
+        "page_href": page_path.relative_to(PROJECT).as_posix(),
+        "source_path": path,
+        "page_path": page_path,
+        "content": content,
         "level": extract_level_range(content),
         "description": extract_description(content),
         "tags": extract_tags(content),
@@ -88,7 +99,7 @@ def read_situation(path):
 
 def render_card(item):
     tags = "".join(f'<span class="tag">{esc(tag)}</span>' for tag in item["tags"])
-    return f'''        <a class="card" href="{esc(item["href"])}">
+    return f'''        <a class="card" href="{esc(item["page_href"])}">
           <div>
             <div class="card-top"><h3>{esc(item["title"])}</h3><span class="level">{esc(item["level"])}</span></div>
             <p class="desc">{esc(item["description"])}</p>
@@ -96,6 +107,302 @@ def render_card(item):
           </div>
           <div class="path">{esc(item["href"])}</div>
         </a>'''
+
+
+def render_inline(text):
+    escaped = esc(text)
+    code_chunks = []
+
+    def hold_code(match):
+        code_chunks.append(match.group(1))
+        return f"@@CODE{len(code_chunks) - 1}@@"
+
+    escaped = re.sub(r"`([^`]+)`", hold_code, escaped)
+    escaped = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", escaped)
+    escaped = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"<em>\1</em>", escaped)
+
+    for index, chunk in enumerate(code_chunks):
+        escaped = escaped.replace(f"@@CODE{index}@@", f"<code>{chunk}</code>")
+    return escaped
+
+
+def split_table_row(line):
+    cells = line.strip().strip("|").split("|")
+    return [cell.strip() for cell in cells]
+
+
+def render_table(lines):
+    rows = [split_table_row(line) for line in lines if line.strip()]
+    rows = [row for row in rows if not all(re.fullmatch(r":?-{3,}:?", cell) for cell in row)]
+    if not rows:
+        return ""
+
+    header = rows[0]
+    body = rows[1:]
+    head_cells = "".join(f"<th>{render_inline(cell)}</th>" for cell in header)
+    body_rows = "\n".join(
+        "<tr>" + "".join(f"<td>{render_inline(cell)}</td>" for cell in row) + "</tr>"
+        for row in body
+    )
+    return f"<table><thead><tr>{head_cells}</tr></thead><tbody>{body_rows}</tbody></table>"
+
+
+def markdown_to_html(markdown):
+    html_parts = []
+    lines = markdown.splitlines()
+    in_code = False
+    code_lang = ""
+    code_lines = []
+    list_open = False
+    table_lines = []
+
+    def close_list():
+        nonlocal list_open
+        if list_open:
+            html_parts.append("</ul>")
+            list_open = False
+
+    def close_table():
+        nonlocal table_lines
+        if table_lines:
+            html_parts.append(render_table(table_lines))
+            table_lines = []
+
+    for line in lines:
+        stripped = line.strip()
+
+        if stripped.startswith("```"):
+            close_table()
+            close_list()
+            if in_code:
+                html_parts.append(
+                    f'<pre><code class="language-{esc(code_lang)}">{esc(chr(10).join(code_lines))}</code></pre>'
+                )
+                in_code = False
+                code_lang = ""
+                code_lines = []
+            else:
+                in_code = True
+                code_lang = stripped[3:].strip()
+            continue
+
+        if in_code:
+            code_lines.append(line)
+            continue
+
+        if not stripped:
+            close_table()
+            close_list()
+            continue
+
+        if stripped.startswith("|") and stripped.endswith("|"):
+            close_list()
+            table_lines.append(stripped)
+            continue
+
+        close_table()
+
+        heading = re.match(r"^(#{1,6})\s+(.+)$", stripped)
+        if heading:
+            close_list()
+            level = len(heading.group(1))
+            text = render_inline(heading.group(2))
+            html_parts.append(f"<h{level}>{text}</h{level}>")
+            continue
+
+        if stripped.startswith("- "):
+            if not list_open:
+                html_parts.append("<ul>")
+                list_open = True
+            html_parts.append(f"<li>{render_inline(stripped[2:].strip())}</li>")
+            continue
+
+        close_list()
+        html_parts.append(f"<p>{render_inline(stripped)}</p>")
+
+    close_table()
+    close_list()
+    if in_code:
+        html_parts.append(f"<pre><code>{esc(chr(10).join(code_lines))}</code></pre>")
+    return "\n".join(part for part in html_parts if part)
+
+
+def render_situation_page(item):
+    content = markdown_to_html(item["content"])
+    return f'''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{esc(item["title"])} | German Learning System</title>
+  <style>
+    :root {{
+      --bg: #faf9f5;
+      --ink: #18181b;
+      --muted: #71717a;
+      --line: #e8e4dc;
+      --card: #ffffff;
+      --accent: {item["color"]};
+    }}
+
+    * {{ box-sizing: border-box; }}
+
+    body {{
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }}
+
+    a {{ color: inherit; }}
+
+    .shell {{
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 38px 24px 80px;
+    }}
+
+    .topbar {{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 44px;
+    }}
+
+    .back {{
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }}
+
+    .back:hover {{ color: var(--accent); }}
+
+    .source {{
+      color: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      text-align: right;
+      word-break: break-word;
+    }}
+
+    article {{
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 44px;
+    }}
+
+    h1 {{
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(40px, 8vw, 68px);
+      line-height: 0.95;
+      margin: 0 0 28px;
+      letter-spacing: -0.025em;
+    }}
+
+    h2 {{
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      line-height: 1.1;
+      margin: 46px 0 16px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }}
+
+    h3 {{
+      font-size: 21px;
+      line-height: 1.2;
+      margin: 30px 0 12px;
+    }}
+
+    h4 {{
+      font-size: 16px;
+      margin: 24px 0 10px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }}
+
+    p, li {{
+      color: #3f3f46;
+      font-size: 16px;
+    }}
+
+    ul {{
+      margin: 0 0 20px;
+      padding-left: 22px;
+    }}
+
+    table {{
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 26px;
+      font-size: 14px;
+    }}
+
+    th, td {{
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+    }}
+
+    th {{
+      background: #f4f4f5;
+      color: #27272a;
+    }}
+
+    pre {{
+      overflow-x: auto;
+      background: #18181b;
+      color: #fafafa;
+      border-radius: 8px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      line-height: 1.5;
+    }}
+
+    code {{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }}
+
+    p code, li code {{
+      background: #f4f4f5;
+      color: #27272a;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }}
+
+    strong {{ color: #18181b; }}
+    em {{ color: #52525b; }}
+
+    @media (max-width: 680px) {{
+      .shell {{ padding: 24px 14px 52px; }}
+      .topbar {{ align-items: flex-start; flex-direction: column; }}
+      .source {{ text-align: left; }}
+      article {{ padding: 26px 18px; }}
+      table {{ display: block; overflow-x: auto; }}
+    }}
+  </style>
+  <link rel="stylesheet" href="../../styles/design-system.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="topbar" aria-label="Situation navigation">
+      <a class="back" href="../../situation-library.html">Back to Situation Library</a>
+      <div class="source">{esc(item["href"])}</div>
+    </nav>
+    <article>
+{content}
+    </article>
+  </main>
+</body>
+</html>
+'''
 
 
 def render_domain(domain, items):
@@ -207,6 +514,12 @@ def render_page(situations):
     .navlink:hover {{
       color: var(--ink);
       border-bottom-color: var(--teal);
+    }}
+
+    .toplinks {{
+      display: flex;
+      align-items: center;
+      gap: 16px;
     }}
 
     .hero {{
@@ -403,6 +716,7 @@ def render_page(situations):
       .grid {{ grid-template-columns: 1fr; }}
     }}
   </style>
+  <link rel="stylesheet" href="styles/design-system.css">
 </head>
 <body>
   <main class="shell">
@@ -411,7 +725,10 @@ def render_page(situations):
         <span class="mark">D</span>
         <span>German Learning System</span>
       </a>
-      <a class="navlink" href="design-system.html">Design System</a>
+      <div class="toplinks">
+        <a class="navlink" href="foundation-reference.html">Foundation</a>
+        <a class="navlink" href="design-system.html">Design System</a>
+      </div>
     </nav>
 
     <section class="hero">
@@ -452,8 +769,11 @@ def render_page(situations):
 
 def main():
     situations = [read_situation(path) for path in sorted(SITUATIONS.rglob("*.md"))]
+    for item in situations:
+        item["page_path"].parent.mkdir(parents=True, exist_ok=True)
+        item["page_path"].write_text(render_situation_page(item), encoding="utf-8")
     OUTPUT.write_text(render_page(situations), encoding="utf-8")
-    print(f"Generated {OUTPUT.relative_to(ROOT)} from {len(situations)} situation files.")
+    print(f"Generated {OUTPUT.relative_to(ROOT)} and {len(situations)} situation pages.")
 
 
 if __name__ == "__main__":

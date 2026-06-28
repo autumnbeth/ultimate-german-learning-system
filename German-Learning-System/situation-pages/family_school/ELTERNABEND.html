@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elternabend | German Learning System</title>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --ink: #18181b;
+      --muted: #71717a;
+      --line: #e8e4dc;
+      --card: #ffffff;
+      --accent: var(--blue);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 38px 24px 80px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+
+    .back {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back:hover { color: var(--accent); }
+
+    .source {
+      color: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      text-align: right;
+      word-break: break-word;
+    }
+
+    article {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 44px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(40px, 8vw, 68px);
+      line-height: 0.95;
+      margin: 0 0 28px;
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      line-height: 1.1;
+      margin: 46px 0 16px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    h3 {
+      font-size: 21px;
+      line-height: 1.2;
+      margin: 30px 0 12px;
+    }
+
+    h4 {
+      font-size: 16px;
+      margin: 24px 0 10px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    p, li {
+      color: #3f3f46;
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding-left: 22px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 26px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #f4f4f5;
+      color: #27272a;
+    }
+
+    pre {
+      overflow-x: auto;
+      background: #18181b;
+      color: #fafafa;
+      border-radius: 8px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      line-height: 1.5;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    p code, li code {
+      background: #f4f4f5;
+      color: #27272a;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+
+    strong { color: #18181b; }
+    em { color: #52525b; }
+
+    @media (max-width: 680px) {
+      .shell { padding: 24px 14px 52px; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .source { text-align: left; }
+      article { padding: 26px 18px; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+  <link rel="stylesheet" href="../../styles/design-system.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="topbar" aria-label="Situation navigation">
+      <a class="back" href="../../situation-library.html">Back to Situation Library</a>
+      <div class="source">situations/family_school/ELTERNABEND.md</div>
+    </nav>
+    <article>
+<h1>Elternabend</h1>
+<h2>Situation Metadata</h2>
+<pre><code class="language-text">Situation Name: Elternabend
+Situation Category: Family and School
+Description: A parent or caregiver participates in a school parent evening, understands classroom information, asks questions, explains concerns, and discusses support options.
+Typical Participants: parent/caregiver, teacher, other parents, class representative, school staff
+Typical Communication Functions: introducing yourself, asking questions, explaining concerns, giving reasons, expressing opinions, agreeing and disagreeing, requesting support, reaching agreement
+Typical Grammar: present tense, modal verbs, weil clauses, dass clauses, wenn clauses, Perfekt, comparatives, Konjunktiv II for polite requests
+Typical Sentence Architecture: Hauptsatz, W-questions, yes-no questions, Nebensatz, opinion frames, discussion turns, polite request structures
+Typical CEFR Range: A1-C1
+Related Foundation Reference Sections: Questions; Hauptsatz; Nebensatz; Modal Verbs; Giving Reasons; Expressing Opinions; Making Suggestions; Agreeing And Disagreeing; Information Flow
+Possible Lesson Topics: introducing yourself at a parent evening; asking about homework; explaining a concern; requesting support; discussing grades; agreeing on next steps
+Confidence Outcome: I can participate in an Elternabend with enough confidence to understand key information, ask questions, and advocate politely for my child.</code></pre>
+<h2>Purpose</h2>
+<p>Elternabend is a high-value school and family situation because it combines listening, social participation, practical questions, and advocacy.</p>
+<p>This situation is not one lesson. It can appear repeatedly across levels. At lower levels, the learner may only introduce themselves and understand basic dates or activities. At higher levels, the learner can explain concerns, compare support options, and participate in nuanced educational discussions.</p>
+<h2>Why This Situation Matters</h2>
+<p>Adult learners often need German not only for themselves, but for family life. Elternabend can feel socially and emotionally demanding because the learner may need to understand information about a child, ask questions in front of others, and speak politely with teachers or parents.</p>
+<p>This situation helps learners build confidence in:</p>
+<ul>
+<li>asking questions in a group</li>
+<li>understanding school information</li>
+<li>explaining concerns</li>
+<li>giving reasons</li>
+<li>requesting support</li>
+<li>responding to other people&#x27;s ideas</li>
+<li>agreeing on next steps</li>
+</ul>
+<h2>CEFR Progression</h2>
+<table><thead><tr><th>Level</th><th>Learner Capability</th><th>Example Language</th></tr></thead><tbody><tr><td>A1</td><td>Introduce yourself and understand simple information.</td><td>Ich bin Beth. Ich bin die Mutter von Sam. Wann ist der Ausflug?</td></tr>
+<tr><td>A2</td><td>Ask simple questions and explain basic concerns.</td><td>Mein Kind braucht Hilfe in Mathe. Gibt es extra Übungen?</td></tr>
+<tr><td>B1</td><td>Explain a problem, give reasons, and ask for support.</td><td>Ich mache mir Sorgen, weil mein Kind die Hausaufgaben oft nicht versteht. Was können wir zu Hause üben?</td></tr>
+<tr><td>B2</td><td>Discuss progress, compare options, and advocate politely.</td><td>Aus meiner Sicht wäre es hilfreich, wenn wir regelmäßiger Rückmeldung zum Lernstand bekommen könnten.</td></tr>
+<tr><td>C1</td><td>Participate in nuanced educational discussions with confidence.</td><td>Ich würde gern gemeinsam klären, welche Unterstützung langfristig sinnvoll ist und wie wir Schule und Zuhause besser verbinden können.</td></tr></tbody></table>
+<h2>Communication Functions</h2>
+<h3>Primary Functions</h3>
+<ul>
+<li>asking questions</li>
+<li>explaining concerns</li>
+<li>giving reasons</li>
+<li>requesting support</li>
+<li>expressing opinions</li>
+</ul>
+<h3>Supporting Functions</h3>
+<ul>
+<li>introducing yourself</li>
+<li>asking for clarification</li>
+<li>agreeing and disagreeing</li>
+<li>making suggestions</li>
+<li>reaching agreement</li>
+<li>thanking</li>
+</ul>
+<h2>Pattern Inventory</h2>
+<table><thead><tr><th>Pattern</th><th>Importance</th></tr></thead><tbody><tr><td>Questions</td><td>Very High</td></tr>
+<tr><td>Giving Reasons</td><td>Very High</td></tr>
+<tr><td>Opinions</td><td>High</td></tr>
+<tr><td>Suggestions</td><td>High</td></tr>
+<tr><td>Agreement / Disagreement</td><td>Medium</td></tr>
+<tr><td>Formal and Polite Language</td><td>Medium</td></tr>
+<tr><td>Storytelling / Explaining Context</td><td>Medium</td></tr>
+<tr><td>Support Requests</td><td>High</td></tr></tbody></table>
+<h2>Situation Complexity</h2>
+<table><thead><tr><th>Dimension</th><th>Complexity</th></tr></thead><tbody><tr><td>Social Complexity</td><td>High</td></tr>
+<tr><td>Emotional Complexity</td><td>High</td></tr>
+<tr><td>Vocabulary Complexity</td><td>Medium</td></tr>
+<tr><td>Grammar Complexity</td><td>Medium</td></tr>
+<tr><td>Cultural Complexity</td><td>Medium to High</td></tr>
+<tr><td>Real-Life Pressure</td><td>High</td></tr></tbody></table>
+<h2>Real-Life Variations</h2>
+<ul>
+<li>General class Elternabend</li>
+<li>One-on-one parent-teacher conversation</li>
+<li>Support meeting for a child</li>
+<li>Behaviour or participation discussion</li>
+<li>Academic progress discussion</li>
+<li>School absence or attendance discussion</li>
+<li>Praktikum or future planning discussion</li>
+<li>Meeting about accommodations or special support</li>
+</ul>
+<h2>Foundation Reference Connections</h2>
+<table><thead><tr><th>Foundation Reference Section</th><th>How It Appears In This Situation</th></tr></thead><tbody><tr><td>Hauptsatz</td><td>State basic facts: &quot;Mein Kind braucht Hilfe.&quot;</td></tr>
+<tr><td>Questions</td><td>Ask about homework, grades, support, dates, and expectations.</td></tr>
+<tr><td>Nebensatz</td><td>Explain reasons and concerns with weil, dass, and wenn.</td></tr>
+<tr><td>Modal Verbs</td><td>Ask what the child can, should, or must do.</td></tr>
+<tr><td>Giving Reasons</td><td>Explain why support is needed or why something is difficult.</td></tr>
+<tr><td>Expressing Opinions</td><td>Share a parent perspective politely.</td></tr>
+<tr><td>Making Suggestions</td><td>Propose next steps or support options.</td></tr>
+<tr><td>Agreeing And Disagreeing</td><td>Respond to teacher or parent suggestions without ending the conversation.</td></tr>
+<tr><td>Information Flow</td><td>Put time, concern, or next step first to guide attention.</td></tr></tbody></table>
+<h2>Common Grammar</h2>
+<ul>
+<li>present tense for current school life and routines</li>
+<li>modal verbs: können, müssen, sollen, möchte</li>
+<li>Perfekt for what happened recently</li>
+<li>weil clauses for reasons</li>
+<li>dass clauses for reported information or concerns</li>
+<li>wenn clauses for conditions and support plans</li>
+<li>comparatives for discussing improvement or difficulty</li>
+<li>Konjunktiv II for polite requests and suggestions</li>
+</ul>
+<h2>Common Sentence Architecture</h2>
+<pre><code class="language-text">Hauptsatz:
+Mein Kind braucht Hilfe in Mathe.
+
+W-question:
+Was koennen wir zu Hause ueben?
+
+Yes-no question:
+Gibt es extra Uebungen?
+
+Nebensatz with weil:
+Ich mache mir Sorgen, weil mein Kind die Hausaufgaben oft nicht versteht.
+
+Polite request with wenn:
+Es waere hilfreich, wenn wir regelmaessiger Rueckmeldung bekommen koennten.
+
+Opinion frame:
+Aus meiner Sicht braucht mein Kind mehr Zeit fuer die Aufgaben.</code></pre>
+<h2>Core Vocabulary Themes</h2>
+<ul>
+<li>school subjects: Mathe, Deutsch, Englisch, Sachkunde</li>
+<li>school roles: die Lehrerin, die Lehrerinnen; der Lehrer, die Lehrer; die Eltern (Plural); das Kind, die Kinder; die Klasse, die Klassen</li>
+<li>school activities: die Hausaufgabe, die Hausaufgaben; der Test, die Tests; die Klassenarbeit, die Klassenarbeiten; der Ausflug, die Ausflüge; das Projekt, die Projekte</li>
+<li>progress and difficulty: verstehen, üben, verbessern, schwierig, leichter, besser</li>
+<li>support: die Hilfe, die Hilfen; die Unterstützung, die Unterstützungen; die Rückmeldung, die Rückmeldungen; die Übung, die Übungen; der Termin, die Termine</li>
+<li>communication: fragen, erklären, besprechen, vorschlagen, vereinbaren</li>
+</ul>
+<h2>Useful Phrase Patterns</h2>
+<h3>A1-A2</h3>
+<pre><code class="language-text">Ich bin die Mutter / der Vater von ...
+Wann ist ...?
+Wo ist ...?
+Mein Kind braucht Hilfe.
+Ich verstehe das nicht.
+Koennen Sie das bitte wiederholen?</code></pre>
+<h3>B1</h3>
+<pre><code class="language-text">Ich mache mir Sorgen, weil ...
+Mein Kind sagt, dass ...
+Was koennen wir zu Hause ueben?
+Koennten Sie mir bitte erklaeren, ...?
+Ich moechte gern wissen, ob ...</code></pre>
+<h3>B2-C1</h3>
+<pre><code class="language-text">Aus meiner Sicht waere es hilfreich, wenn ...
+Ich wuerde gern gemeinsam klaeren, ...
+Welche Moeglichkeiten sehen Sie, um ...?
+Mir ist wichtig, dass ...
+Koennen wir einen konkreten naechsten Schritt vereinbaren?</code></pre>
+<h2>Possible Lesson Topics</h2>
+<table><thead><tr><th>Lesson Topic</th><th>Level Range</th><th>Communication Goal</th></tr></thead><tbody><tr><td>Introducing Yourself At Elternabend</td><td>A1</td><td>I can introduce myself as a parent and understand basic class information.</td></tr>
+<tr><td>Asking About Dates And Activities</td><td>A1-A2</td><td>I can ask when and where a school activity happens.</td></tr>
+<tr><td>Asking About Homework</td><td>A2</td><td>I can ask what my child should practice at home.</td></tr>
+<tr><td>Explaining A Basic Concern</td><td>A2-B1</td><td>I can say what is difficult for my child and ask for advice.</td></tr>
+<tr><td>Giving Reasons For A Concern</td><td>B1</td><td>I can explain why I am concerned and ask for support.</td></tr>
+<tr><td>Discussing Grades Or Progress</td><td>B1-B2</td><td>I can ask about progress and understand teacher feedback.</td></tr>
+<tr><td>Requesting Support Politely</td><td>B1-B2</td><td>I can ask for extra support using polite language.</td></tr>
+<tr><td>Comparing Support Options</td><td>B2</td><td>I can compare possible next steps and explain my preference.</td></tr>
+<tr><td>Advocating For A Child</td><td>B2-C1</td><td>I can express concerns clearly and diplomatically in a group setting.</td></tr>
+<tr><td>Reaching Agreement With A Teacher</td><td>B2-C1</td><td>I can summarize the decision and agree on a next step.</td></tr></tbody></table>
+<h2>Lesson Blueprint Notes</h2>
+<p>Every Elternabend lesson should begin with a concrete real-life moment, not a grammar topic.</p>
+<p>Strong lesson situations:</p>
+<ul>
+<li>You arrive at Elternabend and introduce yourself to another parent.</li>
+<li>The teacher explains an upcoming class trip and you need to ask one question.</li>
+<li>You are concerned about homework and want to ask what to practice.</li>
+<li>You want to understand why your child is struggling in one subject.</li>
+<li>You and the teacher need to agree on a support plan.</li>
+</ul>
+<p>Each lesson should include:</p>
+<ul>
+<li>Real-life situation</li>
+<li>Communication goal</li>
+<li>Communication functions</li>
+<li>Vocabulary layer</li>
+<li>Phrase pattern layer</li>
+<li>Speaking layer</li>
+<li>Writing layer when relevant</li>
+<li>Grammar in context</li>
+<li>Sentence architecture</li>
+<li>Retrieval practice</li>
+<li>Real-world challenge</li>
+<li>Confidence milestone</li>
+</ul>
+<h2>Retrieval Opportunities</h2>
+<p>Elternabend should reuse patterns from other situations:</p>
+<ul>
+<li>asking for help from Apotheke lessons</li>
+<li>giving reasons from appointment and email lessons</li>
+<li>polite requests from housing and administration lessons</li>
+<li>expressing opinions from discussion lessons</li>
+<li>reaching agreement from work meeting lessons</li>
+<li>storytelling with Perfekt from personal narrative lessons</li>
+</ul>
+<h2>Practice Dialogues</h2>
+<h3>Dialogue 1: Typical Situation</h3>
+<p><strong>Lehrerin:</strong> Guten Abend. Schön, dass Sie da sind.</p>
+<p><em>Teacher:</em> Good evening. Nice that you are here.</p>
+<p><strong>Elternteil:</strong> Guten Abend. Vielen Dank für den Elternabend.</p>
+<p><em>Parent:</em> Good evening. Thank you for the parent evening.</p>
+<p><strong>Lehrerin:</strong> Ihr Kind arbeitet gut mit und ist freundlich in der Klasse.</p>
+<p><em>Teacher:</em> Your child participates well and is friendly in class.</p>
+<p><strong>Elternteil:</strong> Das freut mich. Gibt es etwas, das wir zu Hause üben sollen?</p>
+<p><em>Parent:</em> I am happy to hear that. Is there anything we should practice at home?</p>
+<p><strong>Lehrerin:</strong> Ja, Lesen wäre wichtig. Zehn Minuten am Tag helfen schon.</p>
+<p><em>Teacher:</em> Yes, reading would be important. Ten minutes a day already helps.</p>
+<p><strong>Elternteil:</strong> Gut. Können Sie uns ein Buch empfehlen?</p>
+<p><em>Parent:</em> Good. Can you recommend a book for us?</p>
+<p><strong>Lehrerin:</strong> Ja, ich schreibe Ihnen morgen eine kleine Liste.</p>
+<p><em>Teacher:</em> Yes, I will write you a short list tomorrow.</p>
+<p><strong>Elternteil:</strong> Vielen Dank. Das hilft uns sehr.</p>
+<p><em>Parent:</em> Thank you very much. That helps us a lot.</p>
+<p><strong>Lehrerin:</strong> Sehr gern. Wenn Sie Fragen haben, schreiben Sie mir bitte.</p>
+<p><em>Teacher:</em> You are very welcome. If you have questions, please write to me.</p>
+<p><strong>Elternteil:</strong> Das mache ich. Einen schönen Abend noch.</p>
+<p><em>Parent:</em> I will do that. Have a nice evening.</p>
+<p>Communication Functions Practiced</p>
+<ul>
+<li>Greeting politely</li>
+<li>Asking about progress</li>
+<li>Asking for advice</li>
+<li>Clarifying next steps</li>
+<li>Thanking</li>
+</ul>
+<h3>Dialogue 2: Common Variation</h3>
+<p><strong>Elternteil:</strong> Guten Abend. Ich habe eine Frage zu den Hausaufgaben.</p>
+<p><em>Parent:</em> Good evening. I have a question about the homework.</p>
+<p><strong>Lehrerin:</strong> Natürlich. Worum geht es genau?</p>
+<p><em>Teacher:</em> Of course. What exactly is it about?</p>
+<p><strong>Elternteil:</strong> Mein Kind braucht oft sehr lange. Ist das normal?</p>
+<p><em>Parent:</em> My child often needs a very long time. Is that normal?</p>
+<p><strong>Lehrerin:</strong> Manchmal ja. Im Moment sind die Aufgaben etwas schwerer.</p>
+<p><em>Teacher:</em> Sometimes, yes. At the moment the assignments are a little harder.</p>
+<p><strong>Elternteil:</strong> Es kann sich auch nicht so gut konzentrieren.</p>
+<p><em>Parent:</em> They also cannot concentrate very well.</p>
+<p><strong>Lehrerin:</strong> Dann machen Sie bitte kurze Pausen. Das kann helfen.</p>
+<p><em>Teacher:</em> Then please take short breaks. That can help.</p>
+<p><strong>Elternteil:</strong> Sollen wir jeden Tag üben?</p>
+<p><em>Parent:</em> Should we practice every day?</p>
+<p><strong>Lehrerin:</strong> Ja, aber nur kurz. Zehn Minuten reichen am Anfang.</p>
+<p><em>Teacher:</em> Yes, but only briefly. Ten minutes is enough at the beginning.</p>
+<p><strong>Elternteil:</strong> Danke. Dann probieren wir das diese Woche.</p>
+<p><em>Parent:</em> Thank you. Then we will try that this week.</p>
+<p><strong>Lehrerin:</strong> Sehr gut. Wir sprechen nächste Woche noch einmal.</p>
+<p><em>Teacher:</em> Very good. We will speak again next week.</p>
+<p>Communication Functions Practiced</p>
+<ul>
+<li>Asking about homework</li>
+<li>Describing a concern</li>
+<li>Asking for advice</li>
+<li>Understanding a suggestion</li>
+<li>Agreeing on a next step</li>
+</ul>
+<h3>Dialogue 3: Real-World Challenge</h3>
+<p><strong>Elternteil:</strong> Ich mache mir etwas Sorgen um mein Kind.</p>
+<p><em>Parent:</em> I am a little worried about my child.</p>
+<p><strong>Lehrerin:</strong> Das verstehe ich. Was beobachten Sie zu Hause?</p>
+<p><em>Teacher:</em> I understand. What do you notice at home?</p>
+<p><strong>Elternteil:</strong> Es ist oft müde und sagt, die Schule ist zu viel.</p>
+<p><em>Parent:</em> They are often tired and say school is too much.</p>
+<p><strong>Lehrerin:</strong> In der Klasse ist es auch manchmal sehr still.</p>
+<p><em>Teacher:</em> In class they are also sometimes very quiet.</p>
+<p><strong>Elternteil:</strong> Gibt es eine Möglichkeit für mehr Unterstützung?</p>
+<p><em>Parent:</em> Is there a possibility for more support?</p>
+<p><strong>Lehrerin:</strong> Ja, wir können einen kurzen Termin mit der Beratung machen.</p>
+<p><em>Teacher:</em> Yes, we can make a short appointment with the counseling team.</p>
+<p><strong>Elternteil:</strong> Das wäre gut, weil ich nicht genau weiß, was hilft.</p>
+<p><em>Parent:</em> That would be good because I do not know exactly what helps.</p>
+<p><strong>Lehrerin:</strong> Wir sammeln zuerst Beobachtungen und sprechen dann zusammen.</p>
+<p><em>Teacher:</em> We will first collect observations and then talk together.</p>
+<p><strong>Elternteil:</strong> Danke. Mir ist wichtig, dass mein Kind sich sicher fühlt.</p>
+<p><em>Parent:</em> Thank you. It is important to me that my child feels safe.</p>
+<p><strong>Lehrerin:</strong> Das ist auch unser Ziel. Wir bleiben in Kontakt.</p>
+<p><em>Teacher:</em> That is our goal too. We will stay in contact.</p>
+<p>Communication Functions Practiced</p>
+<ul>
+<li>Explaining a concern</li>
+<li>Describing emotional difficulty</li>
+<li>Asking for support</li>
+<li>Giving a reason</li>
+<li>Clarifying next steps</li>
+</ul>
+<h2>Real-World Challenges</h2>
+<h3>Low-Pressure</h3>
+<p>Practice three questions you could ask at Elternabend.</p>
+<h3>Practical</h3>
+<p>Write a short note with one concern and one question for the teacher.</p>
+<h3>Real-World</h3>
+<p>Ask one prepared question at an actual parent-teacher or school meeting.</p>
+<h3>Stretch</h3>
+<p>Explain a concern, give a reason, and suggest one next step without reading from a script.</p>
+<h2>Confidence Milestones</h2>
+<table><thead><tr><th>Level</th><th>Confidence Milestone</th></tr></thead><tbody><tr><td>A1</td><td>I can introduce myself and understand one key piece of school information.</td></tr>
+<tr><td>A2</td><td>I can ask a simple question about homework, dates, or school activities.</td></tr>
+<tr><td>B1</td><td>I can explain one concern, give a reason, and ask for support.</td></tr>
+<tr><td>B2</td><td>I can discuss progress and compare possible support options politely.</td></tr>
+<tr><td>C1</td><td>I can participate in nuanced school discussions and advocate confidently for my child.</td></tr></tbody></table>
+<h2>Product Principle</h2>
+<p>Elternabend is not a topic to finish.</p>
+<p>It is a real-life situation where learners repeatedly reuse German patterns:</p>
+<ul>
+<li>questions</li>
+<li>reasons</li>
+<li>opinions</li>
+<li>polite requests</li>
+<li>support language</li>
+<li>agreement language</li>
+</ul>
+<p>The goal is for the learner to feel increasingly capable inside the situation each time it returns.</p>
+<h1>Elternabend</h1>
+<h2>Situation Metadata</h2>
+<pre><code class="language-text">Situation Name: Elternabend
+Situation Category: Family and School
+Description: A parent or caregiver participates in a school parent evening, understands classroom information, asks questions, explains concerns, and discusses support options.
+Typical Participants: parent/caregiver, teacher, other parents, class representative, school staff
+Typical Communication Functions: introducing yourself, asking questions, explaining concerns, giving reasons, expressing opinions, agreeing and disagreeing, requesting support, reaching agreement
+Typical Grammar: present tense, modal verbs, weil clauses, dass clauses, wenn clauses, Perfekt, comparatives, Konjunktiv II for polite requests
+Typical Sentence Architecture: Hauptsatz, W-questions, yes-no questions, Nebensatz, opinion frames, discussion turns, polite request structures
+Typical CEFR Range: A1-C1
+Related Foundation Reference Sections: Questions; Hauptsatz; Nebensatz; Modal Verbs; Giving Reasons; Expressing Opinions; Making Suggestions; Agreeing And Disagreeing; Information Flow
+Possible Lesson Topics: introducing yourself at a parent evening; asking about homework; explaining a concern; requesting support; discussing grades; agreeing on next steps
+Confidence Outcome: I can participate in an Elternabend with enough confidence to understand key information, ask questions, and advocate politely for my child.</code></pre>
+<h2>Purpose</h2>
+<p>Elternabend is a high-value school and family situation because it combines listening, social participation, practical questions, and advocacy.</p>
+<p>This situation is not one lesson. It can appear repeatedly across levels. At lower levels, the learner may only introduce themselves and understand basic dates or activities. At higher levels, the learner can explain concerns, compare support options, and participate in nuanced educational discussions.</p>
+<h2>Why This Situation Matters</h2>
+<p>Adult learners often need German not only for themselves, but for family life. Elternabend can feel socially and emotionally demanding because the learner may need to understand information about a child, ask questions in front of others, and speak politely with teachers or parents.</p>
+<p>This situation helps learners build confidence in:</p>
+<ul>
+<li>asking questions in a group</li>
+<li>understanding school information</li>
+<li>explaining concerns</li>
+<li>giving reasons</li>
+<li>requesting support</li>
+<li>responding to other people&#x27;s ideas</li>
+<li>agreeing on next steps</li>
+</ul>
+<h2>CEFR Progression</h2>
+<table><thead><tr><th>Level</th><th>Learner Capability</th><th>Example Language</th></tr></thead><tbody><tr><td>A1</td><td>Introduce yourself and understand simple information.</td><td>Ich bin Beth. Ich bin die Mutter von Sam. Wann ist der Ausflug?</td></tr>
+<tr><td>A2</td><td>Ask simple questions and explain basic concerns.</td><td>Mein Kind braucht Hilfe in Mathe. Gibt es extra Übungen?</td></tr>
+<tr><td>B1</td><td>Explain a problem, give reasons, and ask for support.</td><td>Ich mache mir Sorgen, weil mein Kind die Hausaufgaben oft nicht versteht. Was können wir zu Hause üben?</td></tr>
+<tr><td>B2</td><td>Discuss progress, compare options, and advocate politely.</td><td>Aus meiner Sicht wäre es hilfreich, wenn wir regelmäßiger Rückmeldung zum Lernstand bekommen könnten.</td></tr>
+<tr><td>C1</td><td>Participate in nuanced educational discussions with confidence.</td><td>Ich würde gern gemeinsam klären, welche Unterstützung langfristig sinnvoll ist und wie wir Schule und Zuhause besser verbinden können.</td></tr></tbody></table>
+<h2>Communication Functions</h2>
+<h3>Primary Functions</h3>
+<ul>
+<li>asking questions</li>
+<li>explaining concerns</li>
+<li>giving reasons</li>
+<li>requesting support</li>
+<li>expressing opinions</li>
+</ul>
+<h3>Supporting Functions</h3>
+<ul>
+<li>introducing yourself</li>
+<li>asking for clarification</li>
+<li>agreeing and disagreeing</li>
+<li>making suggestions</li>
+<li>reaching agreement</li>
+<li>thanking</li>
+</ul>
+<h2>Foundation Reference Connections</h2>
+<table><thead><tr><th>Foundation Reference Section</th><th>How It Appears In This Situation</th></tr></thead><tbody><tr><td>Hauptsatz</td><td>State basic facts: &quot;Mein Kind braucht Hilfe.&quot;</td></tr>
+<tr><td>Questions</td><td>Ask about homework, grades, support, dates, and expectations.</td></tr>
+<tr><td>Nebensatz</td><td>Explain reasons and concerns with weil, dass, and wenn.</td></tr>
+<tr><td>Modal Verbs</td><td>Ask what the child can, should, or must do.</td></tr>
+<tr><td>Giving Reasons</td><td>Explain why support is needed or why something is difficult.</td></tr>
+<tr><td>Expressing Opinions</td><td>Share a parent perspective politely.</td></tr>
+<tr><td>Making Suggestions</td><td>Propose next steps or support options.</td></tr>
+<tr><td>Agreeing And Disagreeing</td><td>Respond to teacher or parent suggestions without ending the conversation.</td></tr>
+<tr><td>Information Flow</td><td>Put time, concern, or next step first to guide attention.</td></tr></tbody></table>
+<h2>Common Grammar</h2>
+<ul>
+<li>present tense for current school life and routines</li>
+<li>modal verbs: können, müssen, sollen, möchte</li>
+<li>Perfekt for what happened recently</li>
+<li>weil clauses for reasons</li>
+<li>dass clauses for reported information or concerns</li>
+<li>wenn clauses for conditions and support plans</li>
+<li>comparatives for discussing improvement or difficulty</li>
+<li>Konjunktiv II for polite requests and suggestions</li>
+</ul>
+<h2>Common Sentence Architecture</h2>
+<pre><code class="language-text">Hauptsatz:
+Mein Kind braucht Hilfe in Mathe.
+
+W-question:
+Was koennen wir zu Hause ueben?
+
+Yes-no question:
+Gibt es extra Uebungen?
+
+Nebensatz with weil:
+Ich mache mir Sorgen, weil mein Kind die Hausaufgaben oft nicht versteht.
+
+Polite request with wenn:
+Es waere hilfreich, wenn wir regelmaessiger Rueckmeldung bekommen koennten.
+
+Opinion frame:
+Aus meiner Sicht braucht mein Kind mehr Zeit fuer die Aufgaben.</code></pre>
+<h2>Core Vocabulary Themes</h2>
+<ul>
+<li>school subjects: Mathe, Deutsch, Englisch, Sachkunde</li>
+<li>school roles: die Lehrerin, die Lehrerinnen; der Lehrer, die Lehrer; die Eltern (Plural); das Kind, die Kinder; die Klasse, die Klassen</li>
+<li>school activities: die Hausaufgabe, die Hausaufgaben; der Test, die Tests; die Klassenarbeit, die Klassenarbeiten; der Ausflug, die Ausflüge; das Projekt, die Projekte</li>
+<li>progress and difficulty: verstehen, üben, verbessern, schwierig, leichter, besser</li>
+<li>support: die Hilfe, die Hilfen; die Unterstützung, die Unterstützungen; die Rückmeldung, die Rückmeldungen; die Übung, die Übungen; der Termin, die Termine</li>
+<li>communication: fragen, erklären, besprechen, vorschlagen, vereinbaren</li>
+</ul>
+<h2>Useful Phrase Patterns</h2>
+<h3>A1-A2</h3>
+<pre><code class="language-text">Ich bin die Mutter / der Vater von ...
+Wann ist ...?
+Wo ist ...?
+Mein Kind braucht Hilfe.
+Ich verstehe das nicht.
+Koennen Sie das bitte wiederholen?</code></pre>
+<h3>B1</h3>
+<pre><code class="language-text">Ich mache mir Sorgen, weil ...
+Mein Kind sagt, dass ...
+Was koennen wir zu Hause ueben?
+Koennten Sie mir bitte erklaeren, ...?
+Ich moechte gern wissen, ob ...</code></pre>
+<h3>B2-C1</h3>
+<pre><code class="language-text">Aus meiner Sicht waere es hilfreich, wenn ...
+Ich wuerde gern gemeinsam klaeren, ...
+Welche Moeglichkeiten sehen Sie, um ...?
+Mir ist wichtig, dass ...
+Koennen wir einen konkreten naechsten Schritt vereinbaren?</code></pre>
+<h2>Possible Lesson Topics</h2>
+<table><thead><tr><th>Lesson Topic</th><th>Level Range</th><th>Communication Goal</th></tr></thead><tbody><tr><td>Introducing Yourself At Elternabend</td><td>A1</td><td>I can introduce myself as a parent and understand basic class information.</td></tr>
+<tr><td>Asking About Dates And Activities</td><td>A1-A2</td><td>I can ask when and where a school activity happens.</td></tr>
+<tr><td>Asking About Homework</td><td>A2</td><td>I can ask what my child should practice at home.</td></tr>
+<tr><td>Explaining A Basic Concern</td><td>A2-B1</td><td>I can say what is difficult for my child and ask for advice.</td></tr>
+<tr><td>Giving Reasons For A Concern</td><td>B1</td><td>I can explain why I am concerned and ask for support.</td></tr>
+<tr><td>Discussing Grades Or Progress</td><td>B1-B2</td><td>I can ask about progress and understand teacher feedback.</td></tr>
+<tr><td>Requesting Support Politely</td><td>B1-B2</td><td>I can ask for extra support using polite language.</td></tr>
+<tr><td>Comparing Support Options</td><td>B2</td><td>I can compare possible next steps and explain my preference.</td></tr>
+<tr><td>Advocating For A Child</td><td>B2-C1</td><td>I can express concerns clearly and diplomatically in a group setting.</td></tr>
+<tr><td>Reaching Agreement With A Teacher</td><td>B2-C1</td><td>I can summarize the decision and agree on a next step.</td></tr></tbody></table>
+<h2>Lesson Blueprint Notes</h2>
+<p>Every Elternabend lesson should begin with a concrete real-life moment, not a grammar topic.</p>
+<p>Strong lesson situations:</p>
+<ul>
+<li>You arrive at Elternabend and introduce yourself to another parent.</li>
+<li>The teacher explains an upcoming class trip and you need to ask one question.</li>
+<li>You are concerned about homework and want to ask what to practice.</li>
+<li>You want to understand why your child is struggling in one subject.</li>
+<li>You and the teacher need to agree on a support plan.</li>
+</ul>
+<p>Each lesson should include:</p>
+<ul>
+<li>Real-life situation</li>
+<li>Communication goal</li>
+<li>Communication functions</li>
+<li>Vocabulary layer</li>
+<li>Phrase pattern layer</li>
+<li>Speaking layer</li>
+<li>Writing layer when relevant</li>
+<li>Grammar in context</li>
+<li>Sentence architecture</li>
+<li>Retrieval practice</li>
+<li>Real-world challenge</li>
+<li>Confidence milestone</li>
+</ul>
+<h2>Retrieval Opportunities</h2>
+<p>Elternabend should reuse patterns from other situations:</p>
+<ul>
+<li>asking for help from Apotheke lessons</li>
+<li>giving reasons from appointment and email lessons</li>
+<li>polite requests from housing and administration lessons</li>
+<li>expressing opinions from discussion lessons</li>
+<li>reaching agreement from work meeting lessons</li>
+<li>storytelling with Perfekt from personal narrative lessons</li>
+</ul>
+<h2>Real-World Challenges</h2>
+<h3>Low-Pressure</h3>
+<p>Practice three questions you could ask at Elternabend.</p>
+<h3>Practical</h3>
+<p>Write a short note with one concern and one question for the teacher.</p>
+<h3>Real-World</h3>
+<p>Ask one prepared question at an actual parent-teacher or school meeting.</p>
+<h3>Stretch</h3>
+<p>Explain a concern, give a reason, and suggest one next step without reading from a script.</p>
+<h2>Confidence Milestones</h2>
+<table><thead><tr><th>Level</th><th>Confidence Milestone</th></tr></thead><tbody><tr><td>A1</td><td>I can introduce myself and understand one key piece of school information.</td></tr>
+<tr><td>A2</td><td>I can ask a simple question about homework, dates, or school activities.</td></tr>
+<tr><td>B1</td><td>I can explain one concern, give a reason, and ask for support.</td></tr>
+<tr><td>B2</td><td>I can discuss progress and compare possible support options politely.</td></tr>
+<tr><td>C1</td><td>I can participate in nuanced school discussions and advocate confidently for my child.</td></tr></tbody></table>
+<h2>Product Principle</h2>
+<p>Elternabend is not a topic to finish.</p>
+<p>It is a real-life situation where learners repeatedly reuse German patterns:</p>
+<ul>
+<li>questions</li>
+<li>reasons</li>
+<li>opinions</li>
+<li>polite requests</li>
+<li>support language</li>
+<li>agreement language</li>
+</ul>
+<p>The goal is for the learner to feel increasingly capable inside the situation each time it returns.</p>
+    </article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,1068 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Communication Functions | German Learning System</title>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --ink: #18181b;
+      --muted: #71717a;
+      --line: #e8e4dc;
+      --card: #ffffff;
+      --teal: #11b5a4;
+      --blue: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 34px 28px 80px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 42px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--teal);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-family: Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .toplinks {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .toplinks a {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .toplinks a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--teal);
+    }
+
+    .hero {
+      max-width: 840px;
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 0.94;
+      margin: 0 0 20px;
+      letter-spacing: -0.025em;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: #3f3f46;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 18px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .panel {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .panel-title {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .doc-link,
+    .toc-link {
+      display: block;
+      color: #52525b;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 10px;
+      border-radius: 7px;
+    }
+
+    .doc-link:hover,
+    .toc-link:hover {
+      color: var(--ink);
+      background: #f4f4f5;
+    }
+
+    .doc-link.active {
+      color: #fff;
+      background: var(--teal);
+    }
+
+    .toc-link.level-3 { padding-left: 22px; font-weight: 650; }
+    .toc-link.level-4 { padding-left: 34px; font-weight: 600; color: var(--muted); }
+
+    article {
+      min-width: 0;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 44px;
+    }
+
+    article h1 {
+      font-size: clamp(38px, 6vw, 62px);
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      line-height: 1.08;
+      margin: 50px 0 16px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 1.2;
+      margin: 34px 0 12px;
+    }
+
+    h4 {
+      color: var(--blue);
+      font-size: 16px;
+      margin: 26px 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    p, li {
+      color: #3f3f46;
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding-left: 22px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 28px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #f4f4f5;
+      color: #27272a;
+    }
+
+    pre {
+      overflow-x: auto;
+      background: #18181b;
+      color: #fafafa;
+      border-radius: 8px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      line-height: 1.5;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    p code, li code {
+      background: #f4f4f5;
+      color: #27272a;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+
+    strong { color: var(--ink); }
+
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .panel.toc { max-height: 280px; overflow: auto; }
+    }
+
+    @media (max-width: 680px) {
+      .shell { padding: 24px 14px 54px; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .toplinks { flex-wrap: wrap; }
+      article { padding: 26px 18px; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+  <link rel="stylesheet" href="styles/design-system.css">
+</head>
+<body class="reference-page">
+  <main class="shell">
+    <nav class="topbar" aria-label="Project navigation">
+      <a class="brand" href="index.html">
+        <span class="mark">D</span>
+        <span>German Learning System</span>
+      </a>
+      <div class="toplinks">
+        <a href="foundation-reference.html">Foundation</a>
+        <a href="situation-library.html">Situations</a>
+        <a href="design-system.html">Design System</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="eyebrow">Reference System</div>
+      <h1>Communication Functions</h1>
+      <p class="lead">What learners can do with German.</p>
+    </section>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section class="panel">
+          <div class="panel-title">Reference Docs</div>
+<a class="doc-link" href="foundation-reference.html">Foundation Reference</a>
+<a class="doc-link" href="grammar-map.html">Grammar Map</a>
+<a class="doc-link" href="sentence-architecture-map.html">Sentence Architecture Map</a>
+<a class="doc-link active" href="communication-functions.html">Communication Functions</a>
+<a class="doc-link" href="learning-model.html">Learning Model</a>
+<a class="doc-link" href="lesson-blueprint.html">Lesson Blueprint</a>
+        </section>
+        <section class="panel toc">
+          <div class="panel-title">On This Page</div>
+<a class="toc-link level-2" href="#purpose">Purpose</a>
+<a class="toc-link level-2" href="#big-picture">Big Picture</a>
+<a class="toc-link level-2" href="#function-blueprint">Function Blueprint</a>
+<a class="toc-link level-3" href="#blueprint-template">Blueprint Template</a>
+<a class="toc-link level-2" href="#detailed-function-examples">Detailed Function Examples</a>
+<a class="toc-link level-3" href="#1-asking-for-help">1. Asking For Help</a>
+<a class="toc-link level-4" href="#function">Function</a>
+<a class="toc-link level-4" href="#why-it-matters">Why It Matters</a>
+<a class="toc-link level-4" href="#cefr-progression-from-a1-to-c1">CEFR Progression From A1 To C1</a>
+<a class="toc-link level-4" href="#sample-phrases-by-level">Sample Phrases By Level</a>
+<a class="toc-link level-4" href="#grammar-that-supports-it">Grammar That Supports It</a>
+<a class="toc-link level-4" href="#sentence-architecture-that-supports-it">Sentence Architecture That Supports It</a>
+<a class="toc-link level-4" href="#real-life-scenarios">Real-Life Scenarios</a>
+<a class="toc-link level-4" href="#example-learner-goal">Example Learner Goal</a>
+<a class="toc-link level-3" href="#2-explaining-a-problem">2. Explaining A Problem</a>
+<a class="toc-link level-4" href="#function-2">Function</a>
+<a class="toc-link level-4" href="#why-it-matters-2">Why It Matters</a>
+<a class="toc-link level-4" href="#cefr-progression-from-a1-to-c1-2">CEFR Progression From A1 To C1</a>
+<a class="toc-link level-4" href="#sample-phrases-by-level-2">Sample Phrases By Level</a>
+<a class="toc-link level-4" href="#grammar-that-supports-it-2">Grammar That Supports It</a>
+<a class="toc-link level-4" href="#sentence-architecture-that-supports-it-2">Sentence Architecture That Supports It</a>
+<a class="toc-link level-4" href="#real-life-scenarios-2">Real-Life Scenarios</a>
+<a class="toc-link level-4" href="#example-learner-goal-2">Example Learner Goal</a>
+<a class="toc-link level-3" href="#3-giving-reasons">3. Giving Reasons</a>
+<a class="toc-link level-4" href="#function-3">Function</a>
+<a class="toc-link level-4" href="#why-it-matters-3">Why It Matters</a>
+<a class="toc-link level-4" href="#cefr-progression-from-a1-to-c1-3">CEFR Progression From A1 To C1</a>
+<a class="toc-link level-4" href="#sample-phrases-by-level-3">Sample Phrases By Level</a>
+<a class="toc-link level-4" href="#grammar-that-supports-it-3">Grammar That Supports It</a>
+<a class="toc-link level-4" href="#sentence-architecture-that-supports-it-3">Sentence Architecture That Supports It</a>
+<a class="toc-link level-4" href="#real-life-scenarios-3">Real-Life Scenarios</a>
+<a class="toc-link level-4" href="#example-learner-goal-3">Example Learner Goal</a>
+<a class="toc-link level-3" href="#4-expressing-an-opinion">4. Expressing An Opinion</a>
+<a class="toc-link level-4" href="#function-4">Function</a>
+<a class="toc-link level-4" href="#why-it-matters-4">Why It Matters</a>
+<a class="toc-link level-4" href="#cefr-progression-from-a1-to-c1-4">CEFR Progression From A1 To C1</a>
+<a class="toc-link level-4" href="#sample-phrases-by-level-4">Sample Phrases By Level</a>
+<a class="toc-link level-4" href="#grammar-that-supports-it-4">Grammar That Supports It</a>
+<a class="toc-link level-4" href="#sentence-architecture-that-supports-it-4">Sentence Architecture That Supports It</a>
+<a class="toc-link level-4" href="#real-life-scenarios-4">Real-Life Scenarios</a>
+<a class="toc-link level-4" href="#example-learner-goal-4">Example Learner Goal</a>
+<a class="toc-link level-3" href="#5-making-a-suggestion">5. Making A Suggestion</a>
+<a class="toc-link level-4" href="#function-5">Function</a>
+<a class="toc-link level-4" href="#why-it-matters-5">Why It Matters</a>
+<a class="toc-link level-4" href="#cefr-progression-from-a1-to-c1-5">CEFR Progression From A1 To C1</a>
+<a class="toc-link level-4" href="#sample-phrases-by-level-5">Sample Phrases By Level</a>
+<a class="toc-link level-4" href="#grammar-that-supports-it-5">Grammar That Supports It</a>
+<a class="toc-link level-4" href="#sentence-architecture-that-supports-it-5">Sentence Architecture That Supports It</a>
+<a class="toc-link level-4" href="#real-life-scenarios-5">Real-Life Scenarios</a>
+<a class="toc-link level-4" href="#example-learner-goal-5">Example Learner Goal</a>
+<a class="toc-link level-3" href="#6-agreeing-and-disagreeing">6. Agreeing And Disagreeing</a>
+<a class="toc-link level-4" href="#function-6">Function</a>
+<a class="toc-link level-4" href="#why-it-matters-6">Why It Matters</a>
+<a class="toc-link level-4" href="#cefr-progression-from-a1-to-c1-6">CEFR Progression From A1 To C1</a>
+<a class="toc-link level-4" href="#sample-phrases-by-level-6">Sample Phrases By Level</a>
+<a class="toc-link level-4" href="#grammar-that-supports-it-6">Grammar That Supports It</a>
+<a class="toc-link level-4" href="#sentence-architecture-that-supports-it-6">Sentence Architecture That Supports It</a>
+<a class="toc-link level-4" href="#real-life-scenarios-6">Real-Life Scenarios</a>
+<a class="toc-link level-4" href="#example-learner-goal-6">Example Learner Goal</a>
+<a class="toc-link level-3" href="#7-telling-a-past-event">7. Telling A Past Event</a>
+<a class="toc-link level-4" href="#function-7">Function</a>
+<a class="toc-link level-4" href="#why-it-matters-7">Why It Matters</a>
+<a class="toc-link level-4" href="#cefr-progression-from-a1-to-c1-7">CEFR Progression From A1 To C1</a>
+<a class="toc-link level-4" href="#sample-phrases-by-level-7">Sample Phrases By Level</a>
+<a class="toc-link level-4" href="#grammar-that-supports-it-7">Grammar That Supports It</a>
+<a class="toc-link level-4" href="#sentence-architecture-that-supports-it-7">Sentence Architecture That Supports It</a>
+<a class="toc-link level-4" href="#real-life-scenarios-7">Real-Life Scenarios</a>
+<a class="toc-link level-4" href="#example-learner-goal-7">Example Learner Goal</a>
+<a class="toc-link level-3" href="#8-making-an-appointment">8. Making An Appointment</a>
+<a class="toc-link level-4" href="#function-8">Function</a>
+<a class="toc-link level-4" href="#why-it-matters-8">Why It Matters</a>
+<a class="toc-link level-4" href="#cefr-progression-from-a1-to-c1-8">CEFR Progression From A1 To C1</a>
+<a class="toc-link level-4" href="#sample-phrases-by-level-8">Sample Phrases By Level</a>
+<a class="toc-link level-4" href="#grammar-that-supports-it-8">Grammar That Supports It</a>
+<a class="toc-link level-4" href="#sentence-architecture-that-supports-it-8">Sentence Architecture That Supports It</a>
+<a class="toc-link level-4" href="#real-life-scenarios-8">Real-Life Scenarios</a>
+<a class="toc-link level-4" href="#example-learner-goal-8">Example Learner Goal</a>
+<a class="toc-link level-3" href="#9-complaining-politely">9. Complaining Politely</a>
+<a class="toc-link level-4" href="#function-9">Function</a>
+<a class="toc-link level-4" href="#why-it-matters-9">Why It Matters</a>
+<a class="toc-link level-4" href="#cefr-progression-from-a1-to-c1-9">CEFR Progression From A1 To C1</a>
+<a class="toc-link level-4" href="#sample-phrases-by-level-9">Sample Phrases By Level</a>
+<a class="toc-link level-4" href="#grammar-that-supports-it-9">Grammar That Supports It</a>
+<a class="toc-link level-4" href="#sentence-architecture-that-supports-it-9">Sentence Architecture That Supports It</a>
+<a class="toc-link level-4" href="#real-life-scenarios-9">Real-Life Scenarios</a>
+<a class="toc-link level-4" href="#example-learner-goal-9">Example Learner Goal</a>
+<a class="toc-link level-3" href="#10-reaching-agreement">10. Reaching Agreement</a>
+<a class="toc-link level-4" href="#function-10">Function</a>
+<a class="toc-link level-4" href="#why-it-matters-10">Why It Matters</a>
+<a class="toc-link level-4" href="#cefr-progression-from-a1-to-c1-10">CEFR Progression From A1 To C1</a>
+<a class="toc-link level-4" href="#sample-phrases-by-level-10">Sample Phrases By Level</a>
+<a class="toc-link level-4" href="#grammar-that-supports-it-10">Grammar That Supports It</a>
+<a class="toc-link level-4" href="#sentence-architecture-that-supports-it-10">Sentence Architecture That Supports It</a>
+<a class="toc-link level-4" href="#real-life-scenarios-10">Real-Life Scenarios</a>
+<a class="toc-link level-4" href="#example-learner-goal-10">Example Learner Goal</a>
+<a class="toc-link level-2" href="#example-giving-reasons">Example: Giving Reasons</a>
+<a class="toc-link level-3" href="#progression">Progression</a>
+<a class="toc-link level-3" href="#system-connections">System Connections</a>
+<a class="toc-link level-3" href="#product-interpretation">Product Interpretation</a>
+<a class="toc-link level-2" href="#communication-function-matrix">Communication Function Matrix</a>
+<a class="toc-link level-2" href="#design-implication">Design Implication</a>
+<a class="toc-link level-3" href="#example-apotheke-lesson">Example: Apotheke Lesson</a>
+<a class="toc-link level-3" href="#example-telc-b1-writing-lesson">Example: TELC B1 Writing Lesson</a>
+<a class="toc-link level-2" href="#product-principle">Product Principle</a>
+        </section>
+      </aside>
+
+      <article>
+<h1 id="communication-functions">Communication Functions</h1>
+<h2 id="purpose">Purpose</h2>
+<p>Communication functions are the bridge between grammar knowledge and real-life use.</p>
+<p>Learners do not only need to know rules. They need to use German to do things:</p>
+<ul>
+<li>ask for help</li>
+<li>explain a problem</li>
+<li>give reasons</li>
+<li>express opinions</li>
+<li>make suggestions</li>
+<li>tell stories</li>
+<li>agree and disagree</li>
+<li>manage conversations</li>
+</ul>
+<p>This document connects the German Learning System&#x27;s major design layers:</p>
+<ul>
+<li><code>VISION.md</code> defines the promise: turning scattered knowledge into usable communication.</li>
+<li><code>LEARNING_MODEL.md</code> defines the lesson journey from real-life situation to confidence.</li>
+<li><code>GRAMMAR_MAP.md</code> defines the connected grammar system.</li>
+<li><code>SENTENCE_ARCHITECTURE_MAP.md</code> defines how ideas are built and connected in sentences.</li>
+</ul>
+<p>Communication functions explain what learners can actually do when these pieces work together.</p>
+<h2 id="big-picture">Big Picture</h2>
+<pre class="system-map"><code class="language-text">Communication Functions
+├── 1. Survival Functions
+│   ├── greeting
+│   ├── introducing yourself
+│   ├── asking simple questions
+│   ├── asking for repetition
+│   ├── asking for help
+│   ├── saying you do not understand
+│   ├── buying something
+│   ├── ordering food
+│   └── making simple appointments
+├── 2. Social Functions
+│   ├── talking about yourself
+│   ├── talking about family
+│   ├── talking about hobbies
+│   ├── inviting someone
+│   ├── accepting invitations
+│   ├── declining invitations
+│   ├── apologizing
+│   ├── thanking
+│   └── making small talk
+├── 3. Practical Life Functions
+│   ├── explaining a problem
+│   ├── describing symptoms
+│   ├── asking for information
+│   ├── making requests
+│   ├── complaining politely
+│   ├── solving problems
+│   ├── understanding instructions
+│   └── talking to doctors, schools, offices, shops, and landlords
+├── 4. Opinion and Reasoning Functions
+│   ├── expressing opinions
+│   ├── giving reasons
+│   ├── giving examples
+│   ├── comparing options
+│   ├── agreeing
+│   ├── disagreeing politely
+│   ├── making suggestions
+│   ├── giving advice
+│   └── explaining advantages and disadvantages
+├── 5. Narrative Functions
+│   ├── talking about the past
+│   ├── telling a story
+│   ├── describing a sequence of events
+│   ├── explaining what happened first, next, and later
+│   ├── describing experiences
+│   └── reporting what someone said
+├── 6. Argument and Discussion Functions
+│   ├── presenting a position
+│   ├── supporting an argument
+│   ├── contrasting ideas
+│   ├── conceding a point
+│   ├── persuading
+│   ├── negotiating
+│   ├── summarizing
+│   └── reaching agreement
+└── 7. Professional and Academic Functions
+    ├── writing formal emails
+    ├── participating in meetings
+    ├── giving feedback
+    ├── asking clarifying questions
+    ├── presenting information
+    ├── discussing data
+    ├── explaining a process
+    └── writing structured texts</code></pre>
+<h2 id="function-blueprint">Function Blueprint</h2>
+<p>Every communication function should be designed with the same product metadata.</p>
+<table><thead><tr><th>Blueprint Field</th><th>Product Purpose</th></tr></thead><tbody><tr><td>What the learner needs to do</td><td>Defines the real communicative action</td></tr>
+<tr><td>Typical real-life situations</td><td>Connects the function to lived adult contexts</td></tr>
+<tr><td>Useful German phrase patterns</td><td>Gives reusable language chunks</td></tr>
+<tr><td>Related grammar</td><td>Shows which grammar supports the function</td></tr>
+<tr><td>Related sentence architecture</td><td>Shows how the idea is built</td></tr>
+<tr><td>Related connector types</td><td>Shows how ideas connect</td></tr>
+<tr><td>Typical CEFR level</td><td>Supports curriculum sequencing</td></tr>
+<tr><td>Speaking use</td><td>Defines spoken performance</td></tr>
+<tr><td>Writing use</td><td>Defines written performance</td></tr>
+<tr><td>Confidence milestone</td><td>Makes learner progress visible</td></tr></tbody></table>
+<h3 id="blueprint-template">Blueprint Template</h3>
+<pre class="system-map"><code class="language-text">Function:
+What the learner needs to do:
+Typical real-life situations:
+Useful German phrase patterns:
+Related grammar:
+Related sentence architecture:
+Related connector types:
+Typical CEFR level:
+Speaking use:
+Writing use:
+Confidence milestone:</code></pre>
+<h2 id="detailed-function-examples">Detailed Function Examples</h2>
+<h3 id="1-asking-for-help">1. Asking For Help</h3>
+<h4 id="function">Function</h4>
+<p>The learner asks another person for practical support, clarification, or assistance.</p>
+<h4 id="why-it-matters">Why It Matters</h4>
+<p>Asking for help is one of the earliest confidence-building functions. It allows learners to participate even when they do not have complete language control.</p>
+<h4 id="cefr-progression-from-a1-to-c1">CEFR Progression From A1 To C1</h4>
+<ul>
+<li>A1: Ask for simple help with a memorized phrase.</li>
+<li>A2: Explain the basic situation and ask for a specific kind of help.</li>
+<li>B1: Describe the problem, ask follow-up questions, and clarify what is needed.</li>
+<li>B2: Ask for support in formal, workplace, institutional, or service contexts.</li>
+<li>C1: Ask diplomatically, precisely, and with appropriate register in complex situations.</li>
+</ul>
+<h4 id="sample-phrases-by-level">Sample Phrases By Level</h4>
+<table><thead><tr><th>Level</th><th>Sample Phrases</th></tr></thead><tbody><tr><td>A1</td><td>Entschuldigung, können Sie mir helfen? Ich brauche Hilfe. Ich verstehe das nicht.</td></tr>
+<tr><td>A2</td><td>Können Sie mir bitte kurz helfen? Ich suche die Apotheke. Ich habe ein Problem mit dem Termin.</td></tr>
+<tr><td>B1</td><td>Ich bin mir nicht sicher, was ich machen soll. Könnten Sie mir erklären, wie das funktioniert?</td></tr>
+<tr><td>B2</td><td>Ich wäre Ihnen dankbar, wenn Sie mir bei diesem Anliegen weiterhelfen könnten.</td></tr>
+<tr><td>C1</td><td>Wäre es möglich, dass Sie mir kurz einordnen, welche Schritte in dieser Situation sinnvoll wären?</td></tr></tbody></table>
+<h4 id="grammar-that-supports-it">Grammar That Supports It</h4>
+<ul>
+<li>Modal verbs: können, müssen, sollen</li>
+<li>Polite Konjunktiv II: könnten, würden, wäre</li>
+<li>Dative pronouns: mir, Ihnen</li>
+<li>Question formation</li>
+<li>Infinitive clauses with zu for more advanced requests</li>
+</ul>
+<h4 id="sentence-architecture-that-supports-it">Sentence Architecture That Supports It</h4>
+<ul>
+<li>Yes-no questions</li>
+<li>W-questions</li>
+<li>Main clauses with polite framing</li>
+<li>Subordinate clauses with wenn</li>
+<li>Infinitive clauses for complex requests</li>
+</ul>
+<h4 id="real-life-scenarios">Real-Life Scenarios</h4>
+<ul>
+<li>Asking a stranger for directions.</li>
+<li>Asking a pharmacist for help.</li>
+<li>Asking a colleague to explain a task.</li>
+<li>Asking an office which form is needed.</li>
+<li>Asking a landlord how to report a repair.</li>
+</ul>
+<h4 id="example-learner-goal">Example Learner Goal</h4>
+<p>I can ask for help politely, explain the basic situation, and understand the next step.</p>
+<h3 id="2-explaining-a-problem">2. Explaining A Problem</h3>
+<h4 id="function-2">Function</h4>
+<p>The learner describes what is wrong, what happened, and what they need.</p>
+<h4 id="why-it-matters-2">Why It Matters</h4>
+<p>Adult learners often need German most when something is not working: a medical issue, a broken appliance, a missed appointment, a school message, or a workplace misunderstanding.</p>
+<h4 id="cefr-progression-from-a1-to-c1-2">CEFR Progression From A1 To C1</h4>
+<ul>
+<li>A1: Name the problem with short phrases.</li>
+<li>A2: Describe the problem with simple details.</li>
+<li>B1: Explain what happened, when it happened, and what is needed.</li>
+<li>B2: Explain causes, consequences, and possible solutions.</li>
+<li>C1: Present complex problems with precision, diplomacy, and documentation.</li>
+</ul>
+<h4 id="sample-phrases-by-level-2">Sample Phrases By Level</h4>
+<table><thead><tr><th>Level</th><th>Sample Phrases</th></tr></thead><tbody><tr><td>A1</td><td>Ich habe ein Problem. Das funktioniert nicht. Ich bin krank.</td></tr>
+<tr><td>A2</td><td>Meine Heizung ist kaputt. Ich habe seit gestern Halsschmerzen. Der Termin passt leider nicht.</td></tr>
+<tr><td>B1</td><td>Ich wollte den Termin wahrnehmen, aber ich konnte nicht kommen, weil mein Kind krank war.</td></tr>
+<tr><td>B2</td><td>Das Problem besteht seit mehreren Tagen und beeinträchtigt meinen Alltag erheblich.</td></tr>
+<tr><td>C1</td><td>Aus meiner Sicht liegt das Problem darin, dass die vereinbarte Leistung bisher nicht vollständig erbracht wurde.</td></tr></tbody></table>
+<h4 id="grammar-that-supports-it-2">Grammar That Supports It</h4>
+<ul>
+<li>Present tense for current problems</li>
+<li>Perfekt and Prateritum for what happened</li>
+<li>Dative and accusative objects</li>
+<li>weil, dass, wenn, obwohl</li>
+<li>Passive voice for formal problem descriptions</li>
+</ul>
+<h4 id="sentence-architecture-that-supports-it-2">Sentence Architecture That Supports It</h4>
+<ul>
+<li>Main clauses for facts</li>
+<li>Perfekt verb bracket</li>
+<li>Subordinate clauses for reasons and context</li>
+<li>Connector chains for sequence and consequence</li>
+<li>Formal written sentence architecture at B2-C1</li>
+</ul>
+<h4 id="real-life-scenarios-2">Real-Life Scenarios</h4>
+<ul>
+<li>Reporting a repair to a landlord.</li>
+<li>Explaining symptoms to a doctor.</li>
+<li>Writing to a school about an absence.</li>
+<li>Contacting customer service.</li>
+<li>Explaining a workplace issue.</li>
+</ul>
+<h4 id="example-learner-goal-2">Example Learner Goal</h4>
+<p>I can explain a practical problem clearly enough that another person can help me.</p>
+<h3 id="3-giving-reasons">3. Giving Reasons</h3>
+<h4 id="function-3">Function</h4>
+<p>The learner explains why something is true, why they made a decision, or why something happened.</p>
+<h4 id="why-it-matters-3">Why It Matters</h4>
+<p>Giving reasons helps learners move from isolated statements to connected communication. It supports appointments, apologies, opinions, complaints, work conversations, and exam writing.</p>
+<h4 id="cefr-progression-from-a1-to-c1-3">CEFR Progression From A1 To C1</h4>
+<ul>
+<li>A1: Give two simple statements side by side.</li>
+<li>A2: Connect an action and a reason with weil.</li>
+<li>B1: Give personal reasons and goals with weil, deshalb, damit.</li>
+<li>B2: Use da, aus diesem Grund, deshalb, and structured justification.</li>
+<li>C1: Express layered reasons, social meaning, and abstract motivation.</li>
+</ul>
+<h4 id="sample-phrases-by-level-3">Sample Phrases By Level</h4>
+<table><thead><tr><th>Level</th><th>Sample Phrases</th></tr></thead><tbody><tr><td>A1</td><td>Ich lerne Deutsch. Ich wohne in Hamburg.</td></tr>
+<tr><td>A2</td><td>Ich lerne Deutsch, weil ich in Hamburg wohne.</td></tr>
+<tr><td>B1</td><td>Ich lerne Deutsch, weil ich mich im Alltag sicherer fühlen möchte.</td></tr>
+<tr><td>B2</td><td>Ich lerne Deutsch, da ich beruflich und privat selbstständiger kommunizieren möchte.</td></tr>
+<tr><td>C1</td><td>Ich lerne Deutsch nicht nur aus praktischen Gründen, sondern auch, weil Sprache ein wichtiger Teil gesellschaftlicher Teilhabe ist.</td></tr></tbody></table>
+<h4 id="grammar-that-supports-it-3">Grammar That Supports It</h4>
+<ul>
+<li>Present tense</li>
+<li>Modal verbs</li>
+<li>Subordinate clauses</li>
+<li>Infinitive structures</li>
+<li>Nouns and nominal phrases for abstract reasons</li>
+</ul>
+<h4 id="sentence-architecture-that-supports-it-3">Sentence Architecture That Supports It</h4>
+<ul>
+<li>Hauptsatz</li>
+<li>Nebensatz</li>
+<li>Verb-final word order</li>
+<li>Sentence adverbs in position 1</li>
+<li>Coordinating and subordinating connector contrast</li>
+</ul>
+<h4 id="real-life-scenarios-3">Real-Life Scenarios</h4>
+<ul>
+<li>Explaining why an appointment needs to change.</li>
+<li>Giving a reason for learning German.</li>
+<li>Explaining a decision at work.</li>
+<li>Writing an exam response.</li>
+<li>Justifying a request or complaint.</li>
+</ul>
+<h4 id="example-learner-goal-3">Example Learner Goal</h4>
+<p>I can connect what I say to a clear reason, using the right sentence structure.</p>
+<h3 id="4-expressing-an-opinion">4. Expressing An Opinion</h3>
+<h4 id="function-4">Function</h4>
+<p>The learner says what they think, feel, prefer, or believe about a topic.</p>
+<h4 id="why-it-matters-4">Why It Matters</h4>
+<p>Opinion language helps learners move beyond survival German into social, workplace, exam, and community participation.</p>
+<h4 id="cefr-progression-from-a1-to-c1-4">CEFR Progression From A1 To C1</h4>
+<ul>
+<li>A1: Say simple likes and dislikes.</li>
+<li>A2: Give a simple opinion with a reason.</li>
+<li>B1: Express opinions on familiar topics and respond to others.</li>
+<li>B2: Present a structured opinion with examples and counterpoints.</li>
+<li>C1: Express nuanced positions with register, qualification, and rhetorical control.</li>
+</ul>
+<h4 id="sample-phrases-by-level-4">Sample Phrases By Level</h4>
+<table><thead><tr><th>Level</th><th>Sample Phrases</th></tr></thead><tbody><tr><td>A1</td><td>Ich finde das gut. Das ist interessant. Ich mag Kaffee.</td></tr>
+<tr><td>A2</td><td>Ich finde den Kurs gut, weil ich viel spreche.</td></tr>
+<tr><td>B1</td><td>Meiner Meinung nach ist es wichtig, jeden Tag ein bisschen zu üben.</td></tr>
+<tr><td>B2</td><td>Aus meiner Sicht überwiegen die Vorteile, auch wenn es einige Nachteile gibt.</td></tr>
+<tr><td>C1</td><td>Ich würde die Frage differenzierter betrachten, weil sowohl praktische als auch gesellschaftliche Aspekte eine Rolle spielen.</td></tr></tbody></table>
+<h4 id="grammar-that-supports-it-4">Grammar That Supports It</h4>
+<ul>
+<li>finden + accusative</li>
+<li>weil and dass clauses</li>
+<li>Comparatives and superlatives</li>
+<li>Konjunktiv II for softening</li>
+<li>Nominal phrases for abstract ideas</li>
+</ul>
+<h4 id="sentence-architecture-that-supports-it-4">Sentence Architecture That Supports It</h4>
+<ul>
+<li>Main clauses for direct opinions</li>
+<li>Subordinate clauses for reasons</li>
+<li>Adverbial connectors for argument flow</li>
+<li>Discourse markers: meiner Meinung nach, aus meiner Sicht, einerseits, andererseits</li>
+</ul>
+<h4 id="real-life-scenarios-4">Real-Life Scenarios</h4>
+<ul>
+<li>Discussing a class, neighborhood, job, or service.</li>
+<li>Giving feedback.</li>
+<li>Participating in B1/B2 speaking exams.</li>
+<li>Discussing options with friends or coworkers.</li>
+<li>Writing an opinion text.</li>
+</ul>
+<h4 id="example-learner-goal-4">Example Learner Goal</h4>
+<p>I can state my opinion and support it with at least one clear reason.</p>
+<h3 id="5-making-a-suggestion">5. Making A Suggestion</h3>
+<h4 id="function-5">Function</h4>
+<p>The learner proposes an action, plan, solution, or next step.</p>
+<h4 id="why-it-matters-5">Why It Matters</h4>
+<p>Suggestions are central to social life, problem solving, teamwork, appointments, and negotiation.</p>
+<h4 id="cefr-progression-from-a1-to-c1-5">CEFR Progression From A1 To C1</h4>
+<ul>
+<li>A1: Suggest a simple activity or time.</li>
+<li>A2: Suggest plans using können or wollen.</li>
+<li>B1: Make suggestions with reasons and alternatives.</li>
+<li>B2: Recommend a solution in practical or professional contexts.</li>
+<li>C1: Frame suggestions diplomatically and strategically.</li>
+</ul>
+<h4 id="sample-phrases-by-level-5">Sample Phrases By Level</h4>
+<table><thead><tr><th>Level</th><th>Sample Phrases</th></tr></thead><tbody><tr><td>A1</td><td>Wir trinken Kaffee. Gehen wir?</td></tr>
+<tr><td>A2</td><td>Wir können morgen telefonieren. Vielleicht treffen wir uns um drei.</td></tr>
+<tr><td>B1</td><td>Ich schlage vor, dass wir zuerst den Termin klären.</td></tr>
+<tr><td>B2</td><td>Es wäre sinnvoll, zunächst die wichtigsten Punkte zu sammeln.</td></tr>
+<tr><td>C1</td><td>Aus meiner Sicht wäre es zielführend, die Optionen zu priorisieren und anschließend gemeinsam eine Entscheidung zu treffen.</td></tr></tbody></table>
+<h4 id="grammar-that-supports-it-5">Grammar That Supports It</h4>
+<ul>
+<li>Modal verbs: können, sollen</li>
+<li>Imperative and suggestion forms</li>
+<li>dass clauses</li>
+<li>Infinitive clauses with zu</li>
+<li>Konjunktiv II for polite proposals</li>
+</ul>
+<h4 id="sentence-architecture-that-supports-it-5">Sentence Architecture That Supports It</h4>
+<ul>
+<li>Main clauses</li>
+<li>Yes-no questions</li>
+<li>dass subordinate clauses</li>
+<li>Infinitive clauses</li>
+<li>Discourse markers for sequencing: zuerst, danach, anschließend</li>
+</ul>
+<h4 id="real-life-scenarios-5">Real-Life Scenarios</h4>
+<ul>
+<li>Planning a meeting with a friend.</li>
+<li>Suggesting a solution to a landlord or service provider.</li>
+<li>Participating in workplace planning.</li>
+<li>Offering advice in a course or family context.</li>
+</ul>
+<h4 id="example-learner-goal-5">Example Learner Goal</h4>
+<p>I can suggest a practical next step and make it sound appropriate for the situation.</p>
+<h3 id="6-agreeing-and-disagreeing">6. Agreeing And Disagreeing</h3>
+<h4 id="function-6">Function</h4>
+<p>The learner responds to another person&#x27;s idea with agreement, partial agreement, or polite disagreement.</p>
+<h4 id="why-it-matters-6">Why It Matters</h4>
+<p>Agreement and disagreement help learners participate in real conversation instead of only answering questions.</p>
+<h4 id="cefr-progression-from-a1-to-c1-6">CEFR Progression From A1 To C1</h4>
+<ul>
+<li>A1: Agree or disagree with simple phrases.</li>
+<li>A2: Add a short reason.</li>
+<li>B1: Disagree politely and explain why.</li>
+<li>B2: Partly agree, contrast ideas, and respond to counterpoints.</li>
+<li>C1: Manage disagreement with nuance, diplomacy, and rhetorical control.</li>
+</ul>
+<h4 id="sample-phrases-by-level-6">Sample Phrases By Level</h4>
+<table><thead><tr><th>Level</th><th>Sample Phrases</th></tr></thead><tbody><tr><td>A1</td><td>Ja, das stimmt. Nein, das stimmt nicht. Ich auch.</td></tr>
+<tr><td>A2</td><td>Ich bin einverstanden, aber ich habe keine Zeit.</td></tr>
+<tr><td>B1</td><td>Ich verstehe deinen Punkt, aber ich sehe das anders, weil...</td></tr>
+<tr><td>B2</td><td>Da stimme ich teilweise zu; allerdings sollte man auch beachten, dass...</td></tr>
+<tr><td>C1</td><td>Dem kann ich grundsätzlich zustimmen, dennoch würde ich den Aspekt der Umsetzbarkeit stärker gewichten.</td></tr></tbody></table>
+<h4 id="grammar-that-supports-it-6">Grammar That Supports It</h4>
+<ul>
+<li>Negation with nicht and kein</li>
+<li>aber, obwohl, trotzdem, allerdings</li>
+<li>dass clauses</li>
+<li>Modal verbs for perspective and advice</li>
+<li>Konjunktiv II for softening disagreement</li>
+</ul>
+<h4 id="sentence-architecture-that-supports-it-6">Sentence Architecture That Supports It</h4>
+<ul>
+<li>Main clauses</li>
+<li>Coordinating connectors</li>
+<li>Adverbial connectors in position 1</li>
+<li>Subordinate clauses for reasons and concessions</li>
+<li>Discourse markers for stance</li>
+</ul>
+<h4 id="real-life-scenarios-6">Real-Life Scenarios</h4>
+<ul>
+<li>Discussing plans with friends.</li>
+<li>Responding in a meeting.</li>
+<li>Negotiating household or work decisions.</li>
+<li>Participating in exam discussions.</li>
+<li>Giving feedback.</li>
+</ul>
+<h4 id="example-learner-goal-6">Example Learner Goal</h4>
+<p>I can agree or disagree without stopping the conversation.</p>
+<h3 id="7-telling-a-past-event">7. Telling A Past Event</h3>
+<h4 id="function-7">Function</h4>
+<p>The learner explains something that happened in the past.</p>
+<h4 id="why-it-matters-7">Why It Matters</h4>
+<p>Past events appear in daily life constantly: what happened at the doctor, why someone was late, how a trip went, what happened at work, or what someone said.</p>
+<h4 id="cefr-progression-from-a1-to-c1-7">CEFR Progression From A1 To C1</h4>
+<ul>
+<li>A1: Name simple past-like context with time words, mostly in present or memorized chunks.</li>
+<li>A2: Use Perfekt to describe common past events.</li>
+<li>B1: Tell connected stories using sequence and contrast.</li>
+<li>B2: Narrate events with cause, consequence, and perspective.</li>
+<li>C1: Report complex events with nuance, register, and implied meaning.</li>
+</ul>
+<h4 id="sample-phrases-by-level-7">Sample Phrases By Level</h4>
+<table><thead><tr><th>Level</th><th>Sample Phrases</th></tr></thead><tbody><tr><td>A1</td><td>Gestern: Arbeit. Heute: Deutschkurs.</td></tr>
+<tr><td>A2</td><td>Gestern habe ich einen Termin gemacht. Dann bin ich nach Hause gefahren.</td></tr>
+<tr><td>B1</td><td>Zuerst habe ich angerufen, aber niemand hat geantwortet. Danach habe ich eine E-Mail geschrieben.</td></tr>
+<tr><td>B2</td><td>Nachdem ich mehrere Tage gewartet hatte, habe ich mich erneut an den Kundenservice gewandt.</td></tr>
+<tr><td>C1</td><td>Rückblickend war entscheidend, dass die Kommunikation zu Beginn unklar war und dadurch mehrere Missverständnisse entstanden sind.</td></tr></tbody></table>
+<h4 id="grammar-that-supports-it-7">Grammar That Supports It</h4>
+<ul>
+<li>Perfekt</li>
+<li>Prateritum of sein, haben, modal verbs</li>
+<li>Plusquamperfekt</li>
+<li>Time expressions</li>
+<li>Connectors for sequence and contrast</li>
+<li>Reported speech at higher levels</li>
+</ul>
+<h4 id="sentence-architecture-that-supports-it-7">Sentence Architecture That Supports It</h4>
+<ul>
+<li>Perfekt verb bracket</li>
+<li>Main clauses in sequence</li>
+<li>Subordinate clauses with nachdem, bevor, als, weil</li>
+<li>Adverbial connectors: zuerst, dann, danach, später</li>
+</ul>
+<h4 id="real-life-scenarios-7">Real-Life Scenarios</h4>
+<ul>
+<li>Explaining why you missed an appointment.</li>
+<li>Describing a trip.</li>
+<li>Reporting a workplace problem.</li>
+<li>Talking about a doctor&#x27;s visit.</li>
+<li>Writing a B1 personal letter or email.</li>
+</ul>
+<h4 id="example-learner-goal-7">Example Learner Goal</h4>
+<p>I can tell someone what happened in a clear order.</p>
+<h3 id="8-making-an-appointment">8. Making An Appointment</h3>
+<h4 id="function-8">Function</h4>
+<p>The learner schedules, confirms, changes, or cancels an appointment.</p>
+<h4 id="why-it-matters-8">Why It Matters</h4>
+<p>Appointments are a high-frequency adult-life function across healthcare, work, housing, education, offices, and services.</p>
+<h4 id="cefr-progression-from-a1-to-c1-8">CEFR Progression From A1 To C1</h4>
+<ul>
+<li>A1: Ask for a simple appointment time.</li>
+<li>A2: Make, change, or cancel an appointment with a reason.</li>
+<li>B1: Explain availability, constraints, and preferences.</li>
+<li>B2: Handle formal scheduling and negotiate alternatives.</li>
+<li>C1: Manage complex scheduling diplomatically across professional or institutional contexts.</li>
+</ul>
+<h4 id="sample-phrases-by-level-8">Sample Phrases By Level</h4>
+<table><thead><tr><th>Level</th><th>Sample Phrases</th></tr></thead><tbody><tr><td>A1</td><td>Ich brauche einen Termin. Haben Sie am Montag Zeit?</td></tr>
+<tr><td>A2</td><td>Ich möchte meinen Termin verschieben, weil ich arbeiten muss.</td></tr>
+<tr><td>B1</td><td>Der Termin am Dienstag passt mir leider nicht. Wäre ein Termin am Freitag möglich?</td></tr>
+<tr><td>B2</td><td>Aufgrund eines beruflichen Termins müsste ich unseren Termin leider verschieben.</td></tr>
+<tr><td>C1</td><td>Ich wäre Ihnen dankbar, wenn wir einen alternativen Termin finden könnten, da sich kurzfristig eine terminliche Überschneidung ergeben hat.</td></tr></tbody></table>
+<h4 id="grammar-that-supports-it-8">Grammar That Supports It</h4>
+<ul>
+<li>Time expressions</li>
+<li>Modal verbs</li>
+<li>Accusative for einen Termin</li>
+<li>Separable verbs: anrufen, absagen</li>
+<li>Subordinate clauses with weil, da, wenn</li>
+<li>Konjunktiv II for politeness</li>
+</ul>
+<h4 id="sentence-architecture-that-supports-it-8">Sentence Architecture That Supports It</h4>
+<ul>
+<li>Questions</li>
+<li>Main clauses</li>
+<li>Modal verb brackets</li>
+<li>Subordinate reason clauses</li>
+<li>Formal email structure</li>
+</ul>
+<h4 id="real-life-scenarios-8">Real-Life Scenarios</h4>
+<ul>
+<li>Calling a doctor&#x27;s office.</li>
+<li>Booking a service appointment.</li>
+<li>Changing a work meeting.</li>
+<li>Confirming a school appointment.</li>
+<li>Writing to a landlord or government office.</li>
+</ul>
+<h4 id="example-learner-goal-8">Example Learner Goal</h4>
+<p>I can make or change an appointment and explain my availability.</p>
+<h3 id="9-complaining-politely">9. Complaining Politely</h3>
+<h4 id="function-9">Function</h4>
+<p>The learner expresses dissatisfaction, explains the issue, and requests a solution while maintaining appropriate tone.</p>
+<h4 id="why-it-matters-9">Why It Matters</h4>
+<p>Polite complaints help learners advocate for themselves in shops, housing, services, work, and institutions.</p>
+<h4 id="cefr-progression-from-a1-to-c1-9">CEFR Progression From A1 To C1</h4>
+<ul>
+<li>A1: Say something is wrong.</li>
+<li>A2: Explain the problem and ask for help.</li>
+<li>B1: Write or say a simple complaint with details.</li>
+<li>B2: Structure a formal complaint with evidence, expectation, and request.</li>
+<li>C1: Escalate or negotiate a complaint diplomatically and precisely.</li>
+</ul>
+<h4 id="sample-phrases-by-level-9">Sample Phrases By Level</h4>
+<table><thead><tr><th>Level</th><th>Sample Phrases</th></tr></thead><tbody><tr><td>A1</td><td>Das ist nicht richtig. Das funktioniert nicht.</td></tr>
+<tr><td>A2</td><td>Ich habe ein Problem mit der Bestellung. Können Sie mir bitte helfen?</td></tr>
+<tr><td>B1</td><td>Leider bin ich mit dem Produkt nicht zufrieden, weil es nach zwei Tagen kaputt war.</td></tr>
+<tr><td>B2</td><td>Ich möchte Sie bitten, den Fall zu prüfen und mir eine angemessene Lösung anzubieten.</td></tr>
+<tr><td>C1</td><td>Vor diesem Hintergrund bitte ich um eine zeitnahe Klärung sowie um eine nachvollziehbare Rückmeldung zu den weiteren Schritten.</td></tr></tbody></table>
+<h4 id="grammar-that-supports-it-9">Grammar That Supports It</h4>
+<ul>
+<li>Negation</li>
+<li>Perfekt for what happened</li>
+<li>weil, da, obwohl</li>
+<li>Passive voice for formal descriptions</li>
+<li>Konjunktiv II for polite requests</li>
+<li>Formal noun phrases</li>
+</ul>
+<h4 id="sentence-architecture-that-supports-it-9">Sentence Architecture That Supports It</h4>
+<ul>
+<li>Main clause facts</li>
+<li>Subordinate clauses for reasons</li>
+<li>Adverbial connectors for consequence</li>
+<li>Formal paragraph structure</li>
+<li>Passive or impersonal constructions at B2-C1</li>
+</ul>
+<h4 id="real-life-scenarios-9">Real-Life Scenarios</h4>
+<ul>
+<li>Returning a broken item.</li>
+<li>Reporting a housing problem.</li>
+<li>Contacting customer service.</li>
+<li>Writing to an institution.</li>
+<li>Resolving a workplace or service issue.</li>
+</ul>
+<h4 id="example-learner-goal-9">Example Learner Goal</h4>
+<p>I can explain what is wrong and ask for a fair solution politely.</p>
+<h3 id="10-reaching-agreement">10. Reaching Agreement</h3>
+<h4 id="function-10">Function</h4>
+<p>The learner helps a conversation move toward a shared decision, compromise, or next step.</p>
+<h4 id="why-it-matters-10">Why It Matters</h4>
+<p>Reaching agreement is essential for social planning, family life, teamwork, housing, work, and community participation.</p>
+<h4 id="cefr-progression-from-a1-to-c1-10">CEFR Progression From A1 To C1</h4>
+<ul>
+<li>A1: Confirm a simple plan.</li>
+<li>A2: Choose between options.</li>
+<li>B1: Agree on a plan after discussing preferences.</li>
+<li>B2: Negotiate conditions and summarize decisions.</li>
+<li>C1: Facilitate consensus and articulate tradeoffs.</li>
+</ul>
+<h4 id="sample-phrases-by-level-10">Sample Phrases By Level</h4>
+<table><thead><tr><th>Level</th><th>Sample Phrases</th></tr></thead><tbody><tr><td>A1</td><td>Ja, das passt. Okay, um drei.</td></tr>
+<tr><td>A2</td><td>Freitag passt mir besser. Wir können uns um vier treffen.</td></tr>
+<tr><td>B1</td><td>Dann machen wir es so: Ich rufe morgen an, und du schreibst die E-Mail.</td></tr>
+<tr><td>B2</td><td>Wenn alle einverstanden sind, können wir diesen Vorschlag als nächsten Schritt festhalten.</td></tr>
+<tr><td>C1</td><td>Damit scheinen wir eine Lösung gefunden zu haben, die sowohl praktikabel ist als auch die wichtigsten Bedenken berücksichtigt.</td></tr></tbody></table>
+<h4 id="grammar-that-supports-it-10">Grammar That Supports It</h4>
+<ul>
+<li>Modal verbs</li>
+<li>Conditional clauses with wenn</li>
+<li>Future meaning with present tense or werden</li>
+<li>Connectors for sequence and result</li>
+<li>Konjunktiv II for diplomatic framing</li>
+</ul>
+<h4 id="sentence-architecture-that-supports-it-10">Sentence Architecture That Supports It</h4>
+<ul>
+<li>Main clauses for decisions</li>
+<li>wenn clauses for conditions</li>
+<li>Adverbial connectors: dann, deshalb, also</li>
+<li>Discourse markers: zusammenfassend, einerseits, andererseits</li>
+</ul>
+<h4 id="real-life-scenarios-10">Real-Life Scenarios</h4>
+<ul>
+<li>Planning with friends.</li>
+<li>Dividing tasks at work.</li>
+<li>Resolving a family schedule conflict.</li>
+<li>Negotiating with a landlord or service provider.</li>
+<li>Closing a meeting.</li>
+</ul>
+<h4 id="example-learner-goal-10">Example Learner Goal</h4>
+<p>I can help turn a discussion into a clear shared next step.</p>
+<h2 id="example-giving-reasons">Example: Giving Reasons</h2>
+<p>Giving reasons is a model function because it shows how grammar, sentence architecture, and communication grow together.</p>
+<h3 id="progression">Progression</h3>
+<pre class="system-map"><code class="language-text">A1:
+Ich lerne Deutsch.
+Ich wohne in Hamburg.
+
+A2:
+Ich lerne Deutsch, weil ich in Hamburg wohne.
+
+B1:
+Ich lerne Deutsch, weil ich mich im Alltag sicherer fuehlen moechte.
+
+B2:
+Ich lerne Deutsch, da ich beruflich und privat selbststaendiger kommunizieren moechte.
+
+C1:
+Ich lerne Deutsch nicht nur aus praktischen Gruenden, sondern auch, weil Sprache ein wichtiger Teil gesellschaftlicher Teilhabe ist.</code></pre>
+<h3 id="system-connections">System Connections</h3>
+<table><thead><tr><th>Element</th><th>Role In The Function</th></tr></thead><tbody><tr><td>weil</td><td>Introduces a reason in a Nebensatz; sends the conjugated verb to the end</td></tr>
+<tr><td>denn</td><td>Connects a reason as a main clause; verb stays in position 2</td></tr>
+<tr><td>deshalb</td><td>Points from cause to result; often position 1 with verb in position 2</td></tr>
+<tr><td>da</td><td>Introduces a reason; common in more formal or written contexts</td></tr>
+<tr><td>aus diesem Grund</td><td>Formal result phrase; supports B2-C1 written structure</td></tr>
+<tr><td>Hauptsatz</td><td>Carries the main statement or result</td></tr>
+<tr><td>Nebensatz</td><td>Carries the reason or explanation</td></tr>
+<tr><td>Verb-final word order</td><td>Required after subordinating connectors such as weil and da</td></tr></tbody></table>
+<h3 id="product-interpretation">Product Interpretation</h3>
+<p>Giving reasons turns simple statements into meaningful communication.</p>
+<pre class="pattern-block"><code class="language-text">A1: separate facts
+A2: fact + reason
+B1: reason + personal goal
+B2: formal reason + broader independence
+C1: practical reason + social meaning + abstract participation</code></pre>
+<h2 id="communication-function-matrix">Communication Function Matrix</h2>
+<table><thead><tr><th>Function</th><th>A1 Version</th><th>A2 Version</th><th>B1 Version</th><th>B2 Version</th><th>C1 Version</th><th>Key Grammar</th><th>Key Sentence Structure</th><th>Common Real-Life Contexts</th></tr></thead><tbody><tr><td>Asking for help</td><td>Ich brauche Hilfe.</td><td>Können Sie mir bitte helfen?</td><td>Könnten Sie mir erklären, wie das funktioniert?</td><td>Ich wäre Ihnen dankbar, wenn Sie mir weiterhelfen könnten.</td><td>Wäre es möglich, die nächsten Schritte kurz einzuordnen?</td><td>Modals, dative pronouns, Konjunktiv II</td><td>Questions, wenn clauses</td><td>Shops, Apotheke, offices, work</td></tr>
+<tr><td>Explaining a problem</td><td>Ich habe ein Problem.</td><td>Die Heizung ist kaputt.</td><td>Ich konnte nicht kommen, weil mein Kind krank war.</td><td>Das Problem besteht seit mehreren Tagen.</td><td>Aus meiner Sicht liegt das Problem darin, dass...</td><td>Present, Perfekt, subordinate clauses, passive</td><td>Main clauses, Nebensätze</td><td>Housing, health, work, customer service</td></tr>
+<tr><td>Giving reasons</td><td>Ich wohne in Hamburg.</td><td>Ich lerne Deutsch, weil ich in Hamburg wohne.</td><td>Ich möchte mich sicherer fühlen.</td><td>Da ich selbstständiger kommunizieren möchte...</td><td>Nicht nur aus praktischen Gründen, sondern auch...</td><td>weil, da, deshalb, modal verbs</td><td>Hauptsatz, Nebensatz, verb-final</td><td>Appointments, opinions, exams, work</td></tr>
+<tr><td>Expressing an opinion</td><td>Ich finde das gut.</td><td>Ich finde das gut, weil...</td><td>Meiner Meinung nach ist...</td><td>Aus meiner Sicht überwiegen...</td><td>Ich würde die Frage differenzierter betrachten.</td><td>finden, dass, comparison, Konjunktiv II</td><td>Opinion frame, reason clause</td><td>Social talk, exams, meetings</td></tr>
+<tr><td>Making a suggestion</td><td>Wir trinken Kaffee.</td><td>Wir können morgen telefonieren.</td><td>Ich schlage vor, dass...</td><td>Es wäre sinnvoll, zuerst...</td><td>Es wäre zielführend, die Optionen zu priorisieren.</td><td>Modals, dass, zu-infinitive, Konjunktiv II</td><td>Main clause, dass clause, Infinitivsatz</td><td>Planning, work, problem solving</td></tr>
+<tr><td>Agreeing and disagreeing</td><td>Ja, das stimmt.</td><td>Ich bin einverstanden, aber...</td><td>Ich sehe das anders, weil...</td><td>Ich stimme teilweise zu; allerdings...</td><td>Dem kann ich grundsätzlich zustimmen, dennoch...</td><td>Negation, contrast connectors, Konjunktiv II</td><td>Main clause, adverbial connectors</td><td>Discussions, meetings, social decisions</td></tr>
+<tr><td>Telling a past event</td><td>Gestern Arbeit.</td><td>Ich habe angerufen.</td><td>Zuerst habe ich angerufen, danach...</td><td>Nachdem ich gewartet hatte...</td><td>Rückblickend war entscheidend, dass...</td><td>Perfekt, Prateritum, Plusquamperfekt</td><td>Verb bracket, sequence connectors</td><td>Stories, appointments, reports</td></tr>
+<tr><td>Making an appointment</td><td>Ich brauche einen Termin.</td><td>Ich möchte den Termin verschieben.</td><td>Wäre Freitag möglich?</td><td>Aufgrund eines Termins müsste ich verschieben.</td><td>Ich wäre Ihnen dankbar, wenn wir eine Alternative finden könnten.</td><td>Time, modal verbs, Konjunktiv II</td><td>Questions, reason clauses, formal email</td><td>Doctors, schools, services, work</td></tr>
+<tr><td>Complaining politely</td><td>Das ist nicht richtig.</td><td>Ich habe ein Problem mit der Bestellung.</td><td>Leider bin ich nicht zufrieden, weil...</td><td>Ich bitte Sie, den Fall zu prüfen.</td><td>Vor diesem Hintergrund bitte ich um eine zeitnahe Klärung.</td><td>Negation, Perfekt, passive, formal phrases</td><td>Facts, reasons, requests</td><td>Shops, housing, institutions</td></tr>
+<tr><td>Reaching agreement</td><td>Ja, das passt.</td><td>Freitag passt besser.</td><td>Dann machen wir es so: ...</td><td>Wenn alle einverstanden sind, können wir...</td><td>Damit haben wir eine praktikable Lösung gefunden.</td><td>Modals, wenn, future meaning</td><td>Conditions, summary markers</td><td>Meetings, planning, negotiation</td></tr></tbody></table>
+<h2 id="design-implication">Design Implication</h2>
+<p>Every lesson in the German Learning System should be tagged by communication function.</p>
+<p>Function tags make lessons more useful because they reveal the real capability being built. A grammar point should never appear alone. It should be attached to something the learner can do.</p>
+<h3 id="example-apotheke-lesson">Example: Apotheke Lesson</h3>
+<p>A lesson about the Apotheke might include:</p>
+<ul>
+<li>asking for help</li>
+<li>describing symptoms</li>
+<li>making a request</li>
+<li>understanding advice</li>
+<li>thanking</li>
+</ul>
+<p>Possible system tags:</p>
+<pre class="pattern-block"><code class="language-text">Real-life situation: Apotheke
+Communication functions: asking for help, describing symptoms, making a request
+Grammar: modal verbs, accusative objects, dative pronouns
+Sentence architecture: yes-no questions, W-questions, main clauses
+CEFR level: A1-A2
+Confidence milestone: I can ask for basic help at the Apotheke without looking up every word before I leave the house.</code></pre>
+<h3 id="example-telc-b1-writing-lesson">Example: TELC B1 Writing Lesson</h3>
+<p>A lesson about TELC B1 writing might include:</p>
+<ul>
+<li>explaining a problem</li>
+<li>giving reasons</li>
+<li>making suggestions</li>
+<li>apologizing</li>
+<li>asking for information</li>
+</ul>
+<p>Possible system tags:</p>
+<pre class="pattern-block"><code class="language-text">Real-life situation: written exam email
+Communication functions: explaining a problem, giving reasons, making a suggestion
+Grammar: Perfekt, modal verbs, weil, dass, Konjunktiv II basics
+Sentence architecture: main clauses, subordinate clauses, connector contrast
+CEFR level: B1
+Confidence milestone: I can write a clear email that explains the situation, gives a reason, and asks for a practical next step.</code></pre>
+<h2 id="product-principle">Product Principle</h2>
+<p>Grammar explains how language works.</p>
+<p>Sentence architecture explains how ideas connect.</p>
+<p>Communication functions explain what learners can do.</p>
+<p>The goal is not to know more German.</p>
+<p>The goal is to use German with confidence.</p>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

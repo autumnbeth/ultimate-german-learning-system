@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Termin vereinbaren | German Learning System</title>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --ink: #18181b;
+      --muted: #71717a;
+      --line: #e8e4dc;
+      --card: #ffffff;
+      --accent: var(--green);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 38px 24px 80px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+
+    .back {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back:hover { color: var(--accent); }
+
+    .source {
+      color: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      text-align: right;
+      word-break: break-word;
+    }
+
+    article {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 44px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(40px, 8vw, 68px);
+      line-height: 0.95;
+      margin: 0 0 28px;
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      line-height: 1.1;
+      margin: 46px 0 16px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    h3 {
+      font-size: 21px;
+      line-height: 1.2;
+      margin: 30px 0 12px;
+    }
+
+    h4 {
+      font-size: 16px;
+      margin: 24px 0 10px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    p, li {
+      color: #3f3f46;
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding-left: 22px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 26px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #f4f4f5;
+      color: #27272a;
+    }
+
+    pre {
+      overflow-x: auto;
+      background: #18181b;
+      color: #fafafa;
+      border-radius: 8px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      line-height: 1.5;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    p code, li code {
+      background: #f4f4f5;
+      color: #27272a;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+
+    strong { color: #18181b; }
+    em { color: #52525b; }
+
+    @media (max-width: 680px) {
+      .shell { padding: 24px 14px 52px; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .source { text-align: left; }
+      article { padding: 26px 18px; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+  <link rel="stylesheet" href="../../styles/design-system.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="topbar" aria-label="Situation navigation">
+      <a class="back" href="../../situation-library.html">Back to Situation Library</a>
+      <div class="source">situations/daily_life/termin_vereinbaren.md</div>
+    </nav>
+    <article>
+<h1>Termin vereinbaren</h1>
+<h2>Overview</h2>
+<p>Termin vereinbaren is a core daily-life situation in Germany. Learners encounter it when they make appointments with doctors, offices, schools, landlords, repair services, hairdressers, banks, or language schools.</p>
+<p>This situation matters because appointments are everywhere. Learners need to ask for availability, give reasons, suggest times, understand dates and times, change appointments, and confirm next steps.</p>
+<p>The situation can grow across levels:</p>
+<table><thead><tr><th>Level</th><th>Learner Capability</th><th>Example</th></tr></thead><tbody><tr><td>A1</td><td>Ask for a simple appointment.</td><td>Ich brauche einen Termin.</td></tr>
+<tr><td>A2</td><td>Suggest and confirm a date or time.</td><td>Passt Montag um zehn Uhr?</td></tr>
+<tr><td>B1</td><td>Explain why the appointment is needed and reschedule politely.</td><td>Ich kann leider nicht kommen, weil ich arbeiten muss.</td></tr>
+<tr><td>B2</td><td>Clarify details, urgency, documents, and follow-up steps.</td><td>Könnten Sie mir bitte bestätigen, welche Unterlagen ich mitbringen soll?</td></tr></tbody></table>
+<h2>Communication Functions Practiced</h2>
+<ul>
+<li>Asking for an appointment</li>
+<li>Giving a reason</li>
+<li>Suggesting times</li>
+<li>Confirming dates and times</li>
+<li>Changing an appointment</li>
+<li>Cancelling politely</li>
+<li>Asking for clarification</li>
+<li>Understanding instructions</li>
+<li>Clarifying next steps</li>
+</ul>
+<h2>Key Language Patterns</h2>
+<h3>Core Patterns</h3>
+<ul>
+<li>Ich brauche einen Termin.</li>
+<li>Ich möchte einen Termin vereinbaren.</li>
+<li>Haben Sie einen Termin frei?</li>
+<li>Wann passt es Ihnen?</li>
+<li>Passt Ihnen ...?</li>
+<li>Ich kann am ... um ...</li>
+<li>Leider kann ich nicht kommen.</li>
+<li>Ich möchte den Termin verschieben.</li>
+<li>Ich muss den Termin absagen, weil ...</li>
+<li>Können Sie den Termin bitte bestätigen?</li>
+<li>Muss ich etwas mitbringen?</li>
+</ul>
+<h3>CEFR Progression</h3>
+<table><thead><tr><th>Level</th><th>Pattern Focus</th><th>Example</th></tr></thead><tbody><tr><td>A1</td><td>Simple appointment request</td><td>Ich brauche einen Termin.</td></tr>
+<tr><td>A2</td><td>Date and time coordination</td><td>Ich kann am Dienstag um 15 Uhr.</td></tr>
+<tr><td>B1</td><td>Rescheduling and reasons</td><td>Ich möchte den Termin verschieben, weil ich krank bin.</td></tr>
+<tr><td>B2</td><td>Formal clarification</td><td>Könnten Sie mir bitte bestätigen, ob ich Unterlagen mitbringen muss?</td></tr></tbody></table>
+<h3>Foundation Reference Connections</h3>
+<table><thead><tr><th>Foundation Reference Section</th><th>How It Appears In This Situation</th></tr></thead><tbody><tr><td>Questions</td><td>Ask when appointments are available and what to bring.</td></tr>
+<tr><td>Hauptsatz</td><td>State availability clearly.</td></tr>
+<tr><td>Nebensatz</td><td>Give reasons with weil and clarify with ob.</td></tr>
+<tr><td>Connector System</td><td>Use aber, oder, weil, deshalb, and dann.</td></tr>
+<tr><td>Modal Verbs</td><td>Use können, müssen, möchten, and sollen.</td></tr>
+<tr><td>Verb Brackets</td><td>Use modal structures: &quot;Ich möchte den Termin verschieben.&quot;</td></tr>
+<tr><td>Information Flow</td><td>Lead with date, urgency, or reason depending on the situation.</td></tr></tbody></table>
+<h2>Vocabulary In Context</h2>
+<h3>Appointment Basics</h3>
+<table><thead><tr><th>German</th><th>English</th><th>Example</th></tr></thead><tbody><tr><td>der Termin, die Termine</td><td>appointment</td><td>Ich brauche einen Termin.</td></tr>
+<tr><td>vereinbaren</td><td>to arrange</td><td>Ich möchte einen Termin vereinbaren.</td></tr>
+<tr><td>verschieben</td><td>to reschedule</td><td>Ich möchte den Termin verschieben.</td></tr>
+<tr><td>absagen</td><td>to cancel</td><td>Ich muss den Termin absagen.</td></tr>
+<tr><td>bestätigen</td><td>to confirm</td><td>Können Sie den Termin bestätigen?</td></tr>
+<tr><td>frei</td><td>available/free</td><td>Haben Sie am Freitag etwas frei?</td></tr></tbody></table>
+<h3>Time and Date</h3>
+<table><thead><tr><th>German</th><th>English</th><th>Example</th></tr></thead><tbody><tr><td>heute</td><td>today</td><td>Haben Sie heute einen Termin frei?</td></tr>
+<tr><td>morgen</td><td>tomorrow</td><td>Morgen passt mir gut.</td></tr>
+<tr><td>nächste Woche</td><td>next week</td><td>Ich kann nächste Woche.</td></tr>
+<tr><td>vormittags</td><td>in the morning</td><td>Vormittags passt es mir besser.</td></tr>
+<tr><td>nachmittags</td><td>in the afternoon</td><td>Nachmittags arbeite ich.</td></tr>
+<tr><td>um 14 Uhr</td><td>at 2 p.m.</td><td>Der Termin ist um 14 Uhr.</td></tr></tbody></table>
+<h3>Reasons</h3>
+<table><thead><tr><th>German</th><th>English</th><th>Example</th></tr></thead><tbody><tr><td>krank</td><td>sick</td><td>Ich bin krank.</td></tr>
+<tr><td>arbeiten müssen</td><td>to have to work</td><td>Ich muss arbeiten.</td></tr>
+<tr><td>keine Zeit haben</td><td>to not have time</td><td>Ich habe leider keine Zeit.</td></tr>
+<tr><td>dringend</td><td>urgent</td><td>Es ist dringend.</td></tr>
+<tr><td>ein Problem haben</td><td>to have a problem</td><td>Ich habe ein Problem.</td></tr>
+<tr><td>Hilfe brauchen</td><td>to need help</td><td>Ich brauche Hilfe.</td></tr></tbody></table>
+<h3>Confirmation</h3>
+<table><thead><tr><th>German</th><th>English</th><th>Example</th></tr></thead><tbody><tr><td>die Bestätigung, die Bestätigungen</td><td>confirmation</td><td>Ich brauche eine Bestätigung.</td></tr>
+<tr><td>die E-Mail, die E-Mails</td><td>email</td><td>Können Sie mir eine E-Mail schicken?</td></tr>
+<tr><td>die Telefonnummer, die Telefonnummern</td><td>phone number</td><td>Meine Telefonnummer ist ...</td></tr>
+<tr><td>die Adresse, die Adressen</td><td>address</td><td>Wie ist die Adresse?</td></tr>
+<tr><td>die Unterlage, die Unterlagen</td><td>documents</td><td>Muss ich Unterlagen mitbringen?</td></tr>
+<tr><td>der Kalender, die Kalender</td><td>calendar</td><td>Ich schaue kurz in meinen Kalender.</td></tr></tbody></table>
+<h3>Polite Phone Language</h3>
+<table><thead><tr><th>German</th><th>English</th><th>Example</th></tr></thead><tbody><tr><td>Guten Tag</td><td>Good day</td><td>Guten Tag, mein Name ist ...</td></tr>
+<tr><td>Ich rufe an, weil ...</td><td>I am calling because ...</td><td>Ich rufe an, weil ich einen Termin brauche.</td></tr>
+<tr><td>Einen Moment bitte</td><td>One moment, please</td><td>Einen Moment bitte.</td></tr>
+<tr><td>Das passt mir gut.</td><td>That works well for me.</td><td>Ja, das passt mir gut.</td></tr>
+<tr><td>Leider passt das nicht.</td><td>Unfortunately, that does not work.</td><td>Leider passt das nicht.</td></tr>
+<tr><td>Vielen Dank für Ihre Hilfe.</td><td>Thank you for your help.</td><td>Vielen Dank für Ihre Hilfe.</td></tr></tbody></table>
+<h2>Practice Dialogues</h2>
+<h3>Dialogue 1: Typical Situation</h3>
+<p><strong>Mitarbeiterin:</strong> Praxis Dr. Bauer, guten Tag.</p>
+<p><em>Staff member:</em> Dr. Bauer&#x27;s office, good day.</p>
+<p><strong>Kunde/Kundin:</strong> Guten Tag. Ich möchte einen Termin vereinbaren.</p>
+<p><em>Customer:</em> Good day. I would like to make an appointment.</p>
+<p><strong>Mitarbeiterin:</strong> Worum geht es?</p>
+<p><em>Staff member:</em> What is it about?</p>
+<p><strong>Kunde/Kundin:</strong> Ich habe seit zwei Tagen Halsschmerzen.</p>
+<p><em>Customer:</em> I have had a sore throat for two days.</p>
+<p><strong>Mitarbeiterin:</strong> Haben Sie morgen um 10 Uhr Zeit?</p>
+<p><em>Staff member:</em> Do you have time tomorrow at 10 a.m.?</p>
+<p><strong>Kunde/Kundin:</strong> Ja, das passt gut.</p>
+<p><em>Customer:</em> Yes, that works well.</p>
+<p><strong>Mitarbeiterin:</strong> Wie ist Ihr Name?</p>
+<p><em>Staff member:</em> What is your name?</p>
+<p><strong>Kunde/Kundin:</strong> Mein Name ist Daniel Weber.</p>
+<p><em>Customer:</em> My name is Daniel Weber.</p>
+<p><strong>Mitarbeiterin:</strong> Gut, Herr Weber. Der Termin ist morgen um 10 Uhr.</p>
+<p><em>Staff member:</em> Good, Mr. Weber. The appointment is tomorrow at 10 a.m.</p>
+<p><strong>Kunde/Kundin:</strong> Vielen Dank. Muss ich etwas mitbringen?</p>
+<p><em>Customer:</em> Thank you very much. Do I need to bring anything?</p>
+<p>Communication Functions Practiced</p>
+<ul>
+<li>Asking for an appointment</li>
+<li>Giving a reason</li>
+<li>Confirming a time</li>
+<li>Giving personal information</li>
+<li>Asking about requirements</li>
+</ul>
+<h3>Dialogue 2: Common Variation</h3>
+<p><strong>Mitarbeiter:</strong> Guten Tag. Wie kann ich Ihnen helfen?</p>
+<p><em>Staff member:</em> Good day. How can I help you?</p>
+<p><strong>Kunde/Kundin:</strong> Guten Tag. Ich möchte meinen Termin verschieben.</p>
+<p><em>Customer:</em> Good day. I would like to reschedule my appointment.</p>
+<p><strong>Mitarbeiter:</strong> Wann ist Ihr Termin?</p>
+<p><em>Staff member:</em> When is your appointment?</p>
+<p><strong>Kunde/Kundin:</strong> Am Mittwoch um 14 Uhr.</p>
+<p><em>Customer:</em> On Wednesday at 2 p.m.</p>
+<p><strong>Mitarbeiter:</strong> Warum möchten Sie den Termin verschieben?</p>
+<p><em>Staff member:</em> Why would you like to reschedule the appointment?</p>
+<p><strong>Kunde/Kundin:</strong> Ich kann leider nicht kommen, weil ich arbeiten muss.</p>
+<p><em>Customer:</em> Unfortunately, I cannot come because I have to work.</p>
+<p><strong>Mitarbeiter:</strong> Wir haben Freitag um 9 Uhr frei.</p>
+<p><em>Staff member:</em> We have Friday at 9 a.m. available.</p>
+<p><strong>Kunde/Kundin:</strong> Freitag um 9 Uhr passt.</p>
+<p><em>Customer:</em> Friday at 9 a.m. works.</p>
+<p><strong>Mitarbeiter:</strong> Gut, ich ändere den Termin.</p>
+<p><em>Staff member:</em> Good, I will change the appointment.</p>
+<p><strong>Kunde/Kundin:</strong> Danke. Können Sie mir das bitte per E-Mail bestätigen?</p>
+<p><em>Customer:</em> Thank you. Could you please confirm that by email?</p>
+<p>Communication Functions Practiced</p>
+<ul>
+<li>Rescheduling an appointment</li>
+<li>Giving a reason</li>
+<li>Confirming a new time</li>
+<li>Asking for confirmation</li>
+<li>Using polite phone language</li>
+</ul>
+<h3>Dialogue 3: Real-World Challenge</h3>
+<p><strong>Mitarbeiterin:</strong> Der nächste freie Termin ist erst in drei Wochen.</p>
+<p><em>Staff member:</em> The next available appointment is not until three weeks from now.</p>
+<p><strong>Kunde/Kundin:</strong> Oh, das ist schwierig. Es ist ziemlich dringend.</p>
+<p><em>Customer:</em> Oh, that is difficult. It is quite urgent.</p>
+<p><strong>Mitarbeiterin:</strong> Worum geht es genau?</p>
+<p><em>Staff member:</em> What exactly is it about?</p>
+<p><strong>Kunde/Kundin:</strong> Ich brauche das Dokument für meine Arbeit.</p>
+<p><em>Customer:</em> I need the document for my work.</p>
+<p><strong>Mitarbeiterin:</strong> Dann kann ich Sie auf die Warteliste setzen.</p>
+<p><em>Staff member:</em> Then I can put you on the waiting list.</p>
+<p><strong>Kunde/Kundin:</strong> Entschuldigung, was bedeutet Warteliste?</p>
+<p><em>Customer:</em> Excuse me, what does waiting list mean?</p>
+<p><strong>Mitarbeiterin:</strong> Wenn jemand absagt, rufen wir Sie an.</p>
+<p><em>Staff member:</em> If someone cancels, we call you.</p>
+<p><strong>Kunde/Kundin:</strong> Verstehe. Ja, bitte setzen Sie mich auf die Warteliste.</p>
+<p><em>Customer:</em> I understand. Yes, please put me on the waiting list.</p>
+<p><strong>Mitarbeiterin:</strong> Geben Sie mir bitte Ihre Telefonnummer.</p>
+<p><em>Staff member:</em> Please give me your phone number.</p>
+<p><strong>Kunde/Kundin:</strong> Gern. Meine Nummer ist ...</p>
+<p><em>Customer:</em> Gladly. My number is ...</p>
+<p>Communication Functions Practiced</p>
+<ul>
+<li>Explaining urgency</li>
+<li>Asking for clarification</li>
+<li>Understanding options</li>
+<li>Making a request</li>
+<li>Giving contact information</li>
+</ul>
+<h2>Writing Task</h2>
+<p>Write a short email to make or change an appointment.</p>
+<p>Include:</p>
+<ul>
+<li>why you are writing</li>
+<li>when you are available</li>
+<li>one reason if needed</li>
+<li>a polite request for confirmation</li>
+</ul>
+<h3>A2 Example</h3>
+<p>Guten Tag,</p>
+<p>ich möchte einen Termin vereinbaren. Ich kann am Dienstag oder Donnerstag am Vormittag. Können Sie mir bitte einen Termin geben?</p>
+<p>Vielen Dank.</p>
+<p>Mit freundlichen Grüßen</p>
+<p>[Name]</p>
+<h3>B1 Example</h3>
+<p>Guten Tag,</p>
+<p>ich möchte meinen Termin am Mittwoch um 14 Uhr verschieben, weil ich an diesem Tag arbeiten muss. Hätten Sie nächste Woche am Vormittag einen freien Termin?</p>
+<p>Könnten Sie mir den neuen Termin bitte per E-Mail bestätigen?</p>
+<p>Vielen Dank für Ihre Hilfe.</p>
+<p>Mit freundlichen Grüßen</p>
+<p>[Name]</p>
+<h2>Real-Life Challenge</h2>
+<h3>Beginner</h3>
+<p>Practice asking for an appointment and saying two times when you are available.</p>
+<h3>Intermediate</h3>
+<p>Role-play changing an appointment and giving one reason with weil.</p>
+<h3>Advanced</h3>
+<p>Call or write to request an urgent appointment, explain why it is urgent, and ask about alternatives such as a waiting list.</p>
+<h2>Related Situations</h2>
+<ul>
+<li>Arzttermin</li>
+<li>Bürgeramt</li>
+<li>Anmeldung</li>
+<li>Vermieter kontaktieren</li>
+<li>Friseur</li>
+</ul>
+    </article>
+  </main>
+</body>
+</html>

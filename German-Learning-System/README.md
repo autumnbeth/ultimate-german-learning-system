@@ -60,7 +60,19 @@ After adding or editing a situation file, run this from the repository root:
 python3 scripts/generate_situation_library.py
 ```
 
-This refreshes `German-Learning-System/situation-library.html` automatically.
+This refreshes `German-Learning-System/situation-library.html` and creates full browser-readable pages in `German-Learning-System/situation-pages/`.
+
+## Updating The Reference Pages
+
+The foundation and architecture pages are generated from the Markdown reference files.
+
+After editing a reference file, run this from the repository root:
+
+```bash
+python3 scripts/generate_reference_pages.py
+```
+
+This refreshes the browser-readable versions of `FOUNDATION_REFERENCE.md`, `GRAMMAR_MAP.md`, `SENTENCE_ARCHITECTURE_MAP.md`, `COMMUNICATION_FUNCTIONS.md`, `LEARNING_MODEL.md`, and `LESSON_BLUEPRINT.md`.
 
 ## Goal
 

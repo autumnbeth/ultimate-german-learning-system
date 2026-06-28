@@ -1,0 +1,1245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foundation Reference | German Learning System</title>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --ink: #18181b;
+      --muted: #71717a;
+      --line: #e8e4dc;
+      --card: #ffffff;
+      --teal: #11b5a4;
+      --blue: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 34px 28px 80px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 42px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--teal);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-family: Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .toplinks {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .toplinks a {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .toplinks a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--teal);
+    }
+
+    .hero {
+      max-width: 840px;
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 0.94;
+      margin: 0 0 20px;
+      letter-spacing: -0.025em;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: #3f3f46;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 18px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .panel {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .panel-title {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .doc-link,
+    .toc-link {
+      display: block;
+      color: #52525b;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 10px;
+      border-radius: 7px;
+    }
+
+    .doc-link:hover,
+    .toc-link:hover {
+      color: var(--ink);
+      background: #f4f4f5;
+    }
+
+    .doc-link.active {
+      color: #fff;
+      background: var(--teal);
+    }
+
+    .toc-link.level-3 { padding-left: 22px; font-weight: 650; }
+    .toc-link.level-4 { padding-left: 34px; font-weight: 600; color: var(--muted); }
+
+    article {
+      min-width: 0;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 44px;
+    }
+
+    article h1 {
+      font-size: clamp(38px, 6vw, 62px);
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      line-height: 1.08;
+      margin: 50px 0 16px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 1.2;
+      margin: 34px 0 12px;
+    }
+
+    h4 {
+      color: var(--blue);
+      font-size: 16px;
+      margin: 26px 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    p, li {
+      color: #3f3f46;
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding-left: 22px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 28px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #f4f4f5;
+      color: #27272a;
+    }
+
+    pre {
+      overflow-x: auto;
+      background: #18181b;
+      color: #fafafa;
+      border-radius: 8px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      line-height: 1.5;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    p code, li code {
+      background: #f4f4f5;
+      color: #27272a;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+
+    strong { color: var(--ink); }
+
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .panel.toc { max-height: 280px; overflow: auto; }
+    }
+
+    @media (max-width: 680px) {
+      .shell { padding: 24px 14px 54px; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .toplinks { flex-wrap: wrap; }
+      article { padding: 26px 18px; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+  <link rel="stylesheet" href="styles/design-system.css">
+</head>
+<body class="reference-page">
+  <main class="shell">
+    <nav class="topbar" aria-label="Project navigation">
+      <a class="brand" href="index.html">
+        <span class="mark">D</span>
+        <span>German Learning System</span>
+      </a>
+      <div class="toplinks">
+        <a href="foundation-reference.html">Foundation</a>
+        <a href="situation-library.html">Situations</a>
+        <a href="design-system.html">Design System</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="eyebrow">Reference System</div>
+      <h1>Foundation Reference</h1>
+      <p class="lead">The learner&#x27;s map of how German works.</p>
+    </section>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section class="panel">
+          <div class="panel-title">Reference Docs</div>
+<a class="doc-link active" href="foundation-reference.html">Foundation Reference</a>
+<a class="doc-link" href="grammar-map.html">Grammar Map</a>
+<a class="doc-link" href="sentence-architecture-map.html">Sentence Architecture Map</a>
+<a class="doc-link" href="communication-functions.html">Communication Functions</a>
+<a class="doc-link" href="learning-model.html">Learning Model</a>
+<a class="doc-link" href="lesson-blueprint.html">Lesson Blueprint</a>
+        </section>
+        <section class="panel toc">
+          <div class="panel-title">On This Page</div>
+<a class="toc-link level-2" href="#purpose">Purpose</a>
+<a class="toc-link level-2" href="#how-to-use-this-reference">How To Use This Reference</a>
+<a class="toc-link level-2" href="#1-sentence-architecture">1. Sentence Architecture</a>
+<a class="toc-link level-3" href="#hauptsatz">Hauptsatz</a>
+<a class="toc-link level-3" href="#nebensatz">Nebensatz</a>
+<a class="toc-link level-3" href="#questions">Questions</a>
+<a class="toc-link level-3" href="#relative-clauses">Relative Clauses</a>
+<a class="toc-link level-3" href="#information-flow">Information Flow</a>
+<a class="toc-link level-2" href="#2-verb-system">2. Verb System</a>
+<a class="toc-link level-3" href="#present-tense">Present Tense</a>
+<a class="toc-link level-3" href="#modal-verbs">Modal Verbs</a>
+<a class="toc-link level-3" href="#perfekt">Perfekt</a>
+<a class="toc-link level-3" href="#future-meaning">Future Meaning</a>
+<a class="toc-link level-3" href="#verb-brackets">Verb Brackets</a>
+<a class="toc-link level-2" href="#3-connector-system">3. Connector System</a>
+<a class="toc-link level-3" href="#coordinating-connectors">Coordinating Connectors</a>
+<a class="toc-link level-3" href="#subordinating-connectors">Subordinating Connectors</a>
+<a class="toc-link level-3" href="#adverbial-connectors">Adverbial Connectors</a>
+<a class="toc-link level-3" href="#discourse-markers">Discourse Markers</a>
+<a class="toc-link level-2" href="#4-noun-system">4. Noun System</a>
+<a class="toc-link level-3" href="#articles">Articles</a>
+<a class="toc-link level-3" href="#cases">Cases</a>
+<a class="toc-link level-3" href="#pronouns">Pronouns</a>
+<a class="toc-link level-3" href="#adjectives">Adjectives</a>
+<a class="toc-link level-2" href="#5-communication-building-blocks">5. Communication Building Blocks</a>
+<a class="toc-link level-3" href="#asking-questions">Asking Questions</a>
+<a class="toc-link level-3" href="#giving-reasons">Giving Reasons</a>
+<a class="toc-link level-3" href="#expressing-opinions">Expressing Opinions</a>
+<a class="toc-link level-3" href="#telling-stories">Telling Stories</a>
+<a class="toc-link level-3" href="#making-suggestions">Making Suggestions</a>
+<a class="toc-link level-3" href="#agreeing-and-disagreeing">Agreeing And Disagreeing</a>
+<a class="toc-link level-2" href="#reference-map">Reference Map</a>
+<a class="toc-link level-2" href="#product-principle">Product Principle</a>
+        </section>
+      </aside>
+
+      <article>
+<h1 id="foundation-reference">Foundation Reference</h1>
+<h2 id="purpose">Purpose</h2>
+<p><code>FOUNDATION_REFERENCE.md</code> is the learner&#x27;s map of the German language system.</p>
+<p>It is not a curriculum, a syllabus, or an ordered learning sequence. Learners do not need to study this file from top to bottom. They use it as a reference guide when they meet patterns in lessons, situations, conversations, writing tasks, or real life.</p>
+<p>The Foundation Reference answers:</p>
+<pre class="pattern-block"><code class="language-text">How does German work?</code></pre>
+<p>Situational lessons answer:</p>
+<pre class="pattern-block"><code class="language-text">How do I use German?</code></pre>
+<p>This document organizes German around five major systems:</p>
+<p>1. Sentence Architecture</p>
+<p>2. Verb System</p>
+<p>3. Connector System</p>
+<p>4. Noun System</p>
+<p>5. Communication Building Blocks</p>
+<p>Each system helps learners connect scattered grammar knowledge into a usable mental model.</p>
+<h2 id="how-to-use-this-reference">How To Use This Reference</h2>
+<p>Use this file when a learner asks:</p>
+<ul>
+<li>Why is the verb here?</li>
+<li>Why does the verb go to the end?</li>
+<li>Why is it den, dem, ihn, or mir?</li>
+<li>How do I connect these two ideas?</li>
+<li>How do I tell what happened?</li>
+<li>How do I sound more polite, clear, or confident?</li>
+</ul>
+<p>The reference should support lessons, not replace them. A lesson starts with a real-life situation and a communication goal. The Foundation Reference explains the pattern behind the language used in that lesson.</p>
+<pre class="system-map"><code class="language-text">FOUNDATION_REFERENCE
+├── Explains how German works
+├── Maps reusable patterns
+└── Helps learners recognize structure
+
+SITUATION_LIBRARY
+├── Shows where German is used
+└── Connects patterns to real-life contexts
+
+LESSONS
+├── Apply patterns in speaking and writing
+└── Build confidence through use
+
+REAL LIFE
+└── Learners participate with increasing independence</code></pre>
+<h2 id="1-sentence-architecture">1. Sentence Architecture</h2>
+<p>Sentence architecture explains how German sentences are built, how ideas connect, and where the conjugated verb goes.</p>
+<h3 id="hauptsatz">Hauptsatz</h3>
+<p>Purpose:</p>
+<p>A Hauptsatz is a main clause. It can stand alone and carry a complete idea.</p>
+<p>Why it matters:</p>
+<p>The Hauptsatz is the foundation for statements, answers, updates, descriptions, and many connected ideas. Learners need it for almost every situation.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Forgetting that the conjugated verb belongs in position 2.</li>
+<li>Thinking the subject must always come first.</li>
+<li>Moving the verb when a time phrase or connector begins the sentence.</li>
+<li>Building sentences word-by-word from English.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Introducing yourself</li>
+<li>Ordering food</li>
+<li>Talking about daily life</li>
+<li>Giving updates at work</li>
+<li>Describing a problem</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>stating facts</li>
+<li>describing needs</li>
+<li>answering questions</li>
+<li>giving updates</li>
+<li>explaining simple problems</li>
+</ul>
+<p>Reference pattern:</p>
+<pre class="pattern-block"><code class="language-text">Position 1 + conjugated verb + middle field + end field
+
+Ich        lerne              jeden Tag      Deutsch.
+Morgen     lerne              ich            Deutsch.</code></pre>
+<h3 id="nebensatz">Nebensatz</h3>
+<p>Purpose:</p>
+<p>A Nebensatz is a subordinate clause. It depends on another clause and usually sends the conjugated verb to the end.</p>
+<p>Why it matters:</p>
+<p>Nebensätze let learners give reasons, explain conditions, report information, add context, and connect ideas. They are essential for emails, opinions, apologies, explanations, and exams.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Keeping the verb in position 2 after weil, dass, or wenn.</li>
+<li>Forgetting that the conjugated verb moves to the end.</li>
+<li>Creating very long subordinate clauses before the basic pattern feels stable.</li>
+<li>Confusing weil with denn or deshalb.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Explaining why you missed an appointment</li>
+<li>Writing a school email</li>
+<li>Making a complaint</li>
+<li>TELC B1 writing</li>
+<li>Discussing concerns at an Elternabend</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>giving reasons</li>
+<li>explaining problems</li>
+<li>apologizing</li>
+<li>reporting information</li>
+<li>expressing opinions</li>
+</ul>
+<p>Reference pattern:</p>
+<pre class="pattern-block"><code class="language-text">Connector + subject + middle field + conjugated verb at the end
+
+weil      ich       heute arbeiten             muss
+dass      sie       morgen einen Termin        hat
+wenn      ich       Zeit                       habe</code></pre>
+<h3 id="questions">Questions</h3>
+<p>Purpose:</p>
+<p>Questions allow learners to get information, confirm understanding, ask for help, and participate in conversation.</p>
+<p>Why it matters:</p>
+<p>A learner who can ask questions can keep communication alive even with limited vocabulary.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Mixing yes-no question word order with W-question word order.</li>
+<li>Forgetting that yes-no questions begin with the conjugated verb.</li>
+<li>Forgetting that W-questions keep the conjugated verb in position 2.</li>
+<li>Not having repair questions ready when communication breaks down.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Apotheke</li>
+<li>Doctor appointment</li>
+<li>Public transport</li>
+<li>Government office</li>
+<li>First day at work</li>
+<li>School meeting</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>asking for help</li>
+<li>asking for information</li>
+<li>asking for repetition</li>
+<li>clarifying</li>
+<li>confirming plans</li>
+</ul>
+<p>Reference patterns:</p>
+<pre class="pattern-block"><code class="language-text">Yes-no question:
+Conjugated verb + subject + rest
+Haben Sie heute Zeit?
+
+W-question:
+Question word + conjugated verb + subject + rest
+Wann haben Sie Zeit?</code></pre>
+<h3 id="relative-clauses">Relative Clauses</h3>
+<p>Purpose:</p>
+<p>Relative clauses add information about a noun: a person, object, place, idea, or option.</p>
+<p>Why it matters:</p>
+<p>They help learners describe and identify things more precisely without starting a new sentence every time.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Choosing the correct relative pronoun.</li>
+<li>Understanding that the relative pronoun has gender, number, and case.</li>
+<li>Remembering verb-final word order.</li>
+<li>Making the clause too long before the basic pattern is stable.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Describing an apartment</li>
+<li>Describing a person</li>
+<li>Talking about products</li>
+<li>Explaining which document is needed</li>
+<li>Discussing work responsibilities</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>describing</li>
+<li>identifying</li>
+<li>clarifying</li>
+<li>comparing options</li>
+<li>expressing preferences</li>
+</ul>
+<p>Reference pattern:</p>
+<pre class="pattern-block"><code class="language-text">Noun + relative pronoun + middle field + conjugated verb at the end
+
+Das ist der Kurs, der mir hilft.
+Ich suche eine Wohnung, die nicht zu teuer ist.
+Das ist das Formular, das ich brauche.</code></pre>
+<h3 id="information-flow">Information Flow</h3>
+<p>Purpose:</p>
+<p>Information flow explains how German uses position 1 to guide attention while keeping the conjugated verb anchored in position 2.</p>
+<p>Why it matters:</p>
+<p>Learners often think German word order is random. Information flow shows that German can move time, place, contrast, result, or topic to the front while keeping a stable verb anchor.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Treating position 1 as always the subject.</li>
+<li>Forgetting subject-verb inversion after time phrases or adverbial connectors.</li>
+<li>Overusing English-style order.</li>
+<li>Not knowing how to emphasize what matters.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Telling stories</li>
+<li>Giving updates</li>
+<li>Writing emails</li>
+<li>Explaining problems</li>
+<li>Participating in meetings</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>sequencing events</li>
+<li>emphasizing</li>
+<li>contrasting</li>
+<li>summarizing</li>
+<li>giving updates</li>
+</ul>
+<p>Reference pattern:</p>
+<pre class="pattern-block"><code class="language-text">Chosen starting point + conjugated verb + subject + rest
+
+Heute                 habe              ich      einen Termin.
+Deshalb               lerne             ich      Deutsch.
+Im Alltag             brauche           ich      mehr Sicherheit.</code></pre>
+<h2 id="2-verb-system">2. Verb System</h2>
+<p>The verb system explains how German expresses action, time, possibility, obligation, plans, and sentence structure.</p>
+<h3 id="present-tense">Present Tense</h3>
+<p>Purpose:</p>
+<p>The present tense expresses current actions, general truths, routines, and often future plans.</p>
+<p>Why it matters:</p>
+<p>It is the base tense for daily communication. Learners can say a lot with the present tense before they master the full tense system.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Forgetting verb endings.</li>
+<li>Overusing infinitives.</li>
+<li>Translating English continuous forms directly.</li>
+<li>Not realizing present tense can express future meaning with a time phrase.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Introducing yourself</li>
+<li>Daily routines</li>
+<li>Work updates</li>
+<li>Making plans</li>
+<li>Small talk</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>describing routines</li>
+<li>stating facts</li>
+<li>talking about yourself</li>
+<li>making plans</li>
+<li>giving updates</li>
+</ul>
+<p>Reference patterns:</p>
+<pre class="pattern-block"><code class="language-text">Ich wohne in Berlin.
+Sie arbeitet heute.
+Morgen gehe ich zum Arzt.</code></pre>
+<h3 id="modal-verbs">Modal Verbs</h3>
+<p>Purpose:</p>
+<p>Modal verbs express ability, necessity, permission, desire, obligation, advice, and polite intention.</p>
+<p>Why it matters:</p>
+<p>Modal verbs unlock high-value communication early: I can, I need to, I would like to, should I, may I, can you.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Forgetting that the modal verb is conjugated and the main verb goes to the end.</li>
+<li>Confusing möchte, will, soll, muss, darf, and kann.</li>
+<li>Using modal verbs without a clear infinitive.</li>
+<li>Forgetting subject-verb changes: ich kann, du kannst, er kann.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Apotheke</li>
+<li>Restaurant</li>
+<li>Work tasks</li>
+<li>Appointments</li>
+<li>Asking for help</li>
+<li>Giving advice</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>asking for help</li>
+<li>making requests</li>
+<li>expressing needs</li>
+<li>giving advice</li>
+<li>making suggestions</li>
+</ul>
+<p>Reference pattern:</p>
+<pre class="pattern-block"><code class="language-text">Subject + modal verb + middle field + infinitive at the end
+
+Ich     moechte      einen Termin        machen.
+Wir     muessen      morgen frueh        arbeiten.
+Kann    ich          Ihnen               helfen?</code></pre>
+<h3 id="perfekt">Perfekt</h3>
+<p>Purpose:</p>
+<p>Perfekt expresses many spoken past events.</p>
+<p>Why it matters:</p>
+<p>Learners need Perfekt to tell what happened, explain why they missed something, describe experiences, report problems, and make social conversation.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Choosing haben or sein.</li>
+<li>Remembering the participle.</li>
+<li>Forgetting that the participle usually goes at the end.</li>
+<li>Mixing Perfekt word order with English past tense.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Talking about your weekend</li>
+<li>Explaining a missed appointment</li>
+<li>Reporting an accident</li>
+<li>Giving a workplace update</li>
+<li>Telling a travel story</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>telling stories</li>
+<li>explaining problems</li>
+<li>giving updates</li>
+<li>describing experiences</li>
+<li>apologizing</li>
+</ul>
+<p>Reference pattern:</p>
+<pre class="pattern-block"><code class="language-text">Subject + haben/sein + middle field + Partizip II at the end
+
+Ich     habe          gestern einen Termin       gemacht.
+Sie     ist           nach Berlin                gefahren.</code></pre>
+<h3 id="future-meaning">Future Meaning</h3>
+<p>Purpose:</p>
+<p>German can express future meaning with the present tense plus time context, or with werden + infinitive.</p>
+<p>Why it matters:</p>
+<p>Future meaning supports appointments, plans, goals, promises, predictions, and next steps.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Assuming every future idea needs werden.</li>
+<li>Forgetting that time phrases can make present tense future.</li>
+<li>Confusing werden as &quot;become&quot; with werden as a future auxiliary.</li>
+<li>Forgetting the infinitive at the end with werden.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Making appointments</li>
+<li>Weekend plans</li>
+<li>Work planning</li>
+<li>Travel booking</li>
+<li>Reaching agreement</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>talking about future plans</li>
+<li>making suggestions</li>
+<li>scheduling</li>
+<li>reaching agreement</li>
+<li>making commitments</li>
+</ul>
+<p>Reference patterns:</p>
+<pre class="pattern-block"><code class="language-text">Present tense with future meaning:
+Morgen rufe ich an.
+
+werden + infinitive:
+Ich werde morgen anrufen.</code></pre>
+<h3 id="verb-brackets">Verb Brackets</h3>
+<p>Purpose:</p>
+<p>Verb brackets explain why German often places one verb element early and another at the end.</p>
+<p>Why it matters:</p>
+<p>The verb bracket is one of the structures that makes German feel German. It connects modal verbs, separable verbs, Perfekt, future forms, and many complex sentences.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Losing track of the end-field verb.</li>
+<li>Forgetting separable prefixes.</li>
+<li>Putting the infinitive or participle too early.</li>
+<li>Not recognizing that the sentence is &quot;open&quot; until the final verb element appears.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Daily routines</li>
+<li>Appointments</li>
+<li>Storytelling</li>
+<li>Work updates</li>
+<li>Instructions</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>describing actions</li>
+<li>making requests</li>
+<li>telling past events</li>
+<li>explaining plans</li>
+<li>understanding instructions</li>
+</ul>
+<p>Reference patterns:</p>
+<pre class="pattern-block"><code class="language-text">Modal:
+Ich muss morgen arbeiten.
+
+Perfekt:
+Ich habe gestern gearbeitet.
+
+Separable verb:
+Ich rufe dich morgen an.</code></pre>
+<h2 id="3-connector-system">3. Connector System</h2>
+<p>Connectors explain how German links ideas: addition, reason, contrast, condition, time, sequence, result, and argument.</p>
+<h3 id="coordinating-connectors">Coordinating Connectors</h3>
+<p>Purpose:</p>
+<p>Coordinating connectors connect equal sentence parts or main clauses.</p>
+<p>Why it matters:</p>
+<p>They help learners move beyond one-sentence communication without changing the basic main-clause architecture.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Treating all connectors as if they cause verb-final word order.</li>
+<li>Confusing denn and weil.</li>
+<li>Overusing und when contrast, reason, or correction is needed.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Small talk</li>
+<li>Simple emails</li>
+<li>Explaining preferences</li>
+<li>Ordering and choosing</li>
+<li>Describing daily life</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>adding information</li>
+<li>contrasting</li>
+<li>choosing</li>
+<li>giving simple reasons</li>
+<li>correcting</li>
+</ul>
+<p>Reference examples:</p>
+<pre class="pattern-block"><code class="language-text">und      Ich trinke Kaffee und ich esse Kuchen.
+aber     Ich moechte kommen, aber ich habe keine Zeit.
+oder     Moechtest du Tee oder Kaffee?
+denn     Ich lerne Deutsch, denn ich wohne in Deutschland.
+sondern  Ich trinke keinen Kaffee, sondern Tee.</code></pre>
+<h3 id="subordinating-connectors">Subordinating Connectors</h3>
+<p>Purpose:</p>
+<p>Subordinating connectors introduce dependent clauses and send the conjugated verb to the end.</p>
+<p>Why it matters:</p>
+<p>They let learners explain reasons, conditions, content, time relationships, purpose, and contrast.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Forgetting verb-final word order.</li>
+<li>Confusing wenn and wann.</li>
+<li>Confusing weil, denn, and deshalb.</li>
+<li>Beginning too many sentences with subordinate clauses before the pattern is stable.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Appointment changes</li>
+<li>School emails</li>
+<li>Complaints</li>
+<li>TELC writing</li>
+<li>Explaining problems</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>giving reasons</li>
+<li>explaining conditions</li>
+<li>reporting information</li>
+<li>apologizing</li>
+<li>giving purpose</li>
+</ul>
+<p>Reference examples:</p>
+<pre class="pattern-block"><code class="language-text">weil     Ich lerne Deutsch, weil ich in Hamburg wohne.
+dass     Ich glaube, dass der Termin morgen ist.
+wenn     Wenn ich Zeit habe, rufe ich dich an.
+obwohl   Ich lerne weiter, obwohl es schwierig ist.
+damit    Ich uebe jeden Tag, damit ich sicherer spreche.</code></pre>
+<h3 id="adverbial-connectors">Adverbial Connectors</h3>
+<p>Purpose:</p>
+<p>Adverbial connectors act like sentence adverbs. They often stand in position 1, and the conjugated verb stays in position 2.</p>
+<p>Why it matters:</p>
+<p>They help learners show result, contrast, sequence, and organization while keeping main-clause word order.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Treating deshalb, trotzdem, dann, and danach like subordinating connectors.</li>
+<li>Forgetting that the verb comes immediately after an adverbial connector in position 1.</li>
+<li>Confusing trotzdem with obwohl.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Telling stories</li>
+<li>Explaining consequences</li>
+<li>Giving updates</li>
+<li>Writing emails</li>
+<li>Participating in discussions</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>sequencing</li>
+<li>showing result</li>
+<li>contrasting</li>
+<li>organizing information</li>
+<li>summarizing</li>
+</ul>
+<p>Reference examples:</p>
+<pre class="pattern-block"><code class="language-text">deshalb   Ich bin krank. Deshalb bleibe ich zu Hause.
+trotzdem  Es regnet. Trotzdem gehe ich spazieren.
+danach    Danach rufe ich dich an.
+zuerst    Zuerst lesen wir den Text.</code></pre>
+<h3 id="discourse-markers">Discourse Markers</h3>
+<p>Purpose:</p>
+<p>Discourse markers organize speaking and writing at the level of ideas, stance, and argument.</p>
+<p>Why it matters:</p>
+<p>They help learners sound more coherent, especially in opinions, discussions, presentations, emails, and exams.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Using advanced markers without enough sentence control.</li>
+<li>Overusing direct translations from English.</li>
+<li>Not knowing which markers are formal, conversational, or argumentative.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>TELC speaking</li>
+<li>Meetings</li>
+<li>Presentations</li>
+<li>Feedback conversations</li>
+<li>Opinion discussions</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>expressing opinions</li>
+<li>giving examples</li>
+<li>contrasting ideas</li>
+<li>summarizing</li>
+<li>structuring arguments</li>
+</ul>
+<p>Reference examples:</p>
+<pre class="pattern-block"><code class="language-text">meiner Meinung nach
+zum Beispiel
+ehrlich gesagt
+einerseits
+andererseits
+zusammenfassend</code></pre>
+<h2 id="4-noun-system">4. Noun System</h2>
+<p>The noun system explains how German marks gender, role, reference, description, and relationships inside noun phrases.</p>
+<h3 id="articles">Articles</h3>
+<p>Purpose:</p>
+<p>Articles mark noun gender, number, definiteness, and often case.</p>
+<p>Why it matters:</p>
+<p>Articles are one of the main signals German uses to show how nouns function in a sentence.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Remembering gender.</li>
+<li>Seeing articles as random rather than informational.</li>
+<li>Forgetting case changes: der, den, dem, des.</li>
+<li>Avoiding articles when German requires them.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Shopping</li>
+<li>Ordering food</li>
+<li>Describing housing</li>
+<li>Filling forms</li>
+<li>Talking about family</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>identifying objects</li>
+<li>buying something</li>
+<li>describing people or things</li>
+<li>asking for information</li>
+<li>comparing options</li>
+</ul>
+<p>Reference examples:</p>
+<pre class="pattern-block"><code class="language-text">der Termin
+die Apotheke
+das Formular
+ein Termin
+eine Frage
+kein Problem</code></pre>
+<h3 id="cases">Cases</h3>
+<p>Purpose:</p>
+<p>Cases show the role of a noun phrase in a sentence.</p>
+<p>Why it matters:</p>
+<p>Cases help learners understand who is doing something, what receives the action, who receives help or information, and how nouns relate to each other.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Trying to memorize case tables without meaning.</li>
+<li>Confusing accusative and dative.</li>
+<li>Not noticing that prepositions often control case.</li>
+<li>Forgetting pronoun case forms like mich, mir, ihn, ihm.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Asking for help</li>
+<li>Giving someone information</li>
+<li>Buying or ordering</li>
+<li>Talking about locations</li>
+<li>Writing formal emails</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>asking for help</li>
+<li>making requests</li>
+<li>giving information</li>
+<li>describing location</li>
+<li>explaining relationships</li>
+</ul>
+<p>Reference map:</p>
+<pre class="pattern-block"><code class="language-text">Nominativ  -&gt; subject
+Akkusativ  -&gt; direct object
+Dativ      -&gt; indirect object, recipient, many locations
+Genitiv    -&gt; possession, relationship, formal connection</code></pre>
+<h3 id="pronouns">Pronouns</h3>
+<p>Purpose:</p>
+<p>Pronouns replace or point back to people, objects, ideas, and relationships.</p>
+<p>Why it matters:</p>
+<p>Pronouns make communication faster and more natural. They also reveal case and sentence roles.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Confusing subject and object forms: ich/mich/mir.</li>
+<li>Forgetting polite Sie.</li>
+<li>Losing track of what pronouns refer to.</li>
+<li>Confusing possessive articles with pronouns.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Asking for help</li>
+<li>Talking with teachers or offices</li>
+<li>Discussing family</li>
+<li>Writing emails</li>
+<li>Telling stories</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>referring back</li>
+<li>asking for help</li>
+<li>explaining problems</li>
+<li>telling stories</li>
+<li>managing conversations</li>
+</ul>
+<p>Reference examples:</p>
+<pre class="pattern-block"><code class="language-text">ich / mich / mir
+du / dich / dir
+er / ihn / ihm
+sie / sie / ihr
+Sie / Sie / Ihnen</code></pre>
+<h3 id="adjectives">Adjectives</h3>
+<p>Purpose:</p>
+<p>Adjectives describe qualities, compare options, and make noun phrases more precise.</p>
+<p>Why it matters:</p>
+<p>Learners need adjectives to describe symptoms, apartments, products, people, experiences, preferences, and opinions.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Understanding why adjective endings change.</li>
+<li>Knowing when adjectives need endings and when they do not.</li>
+<li>Comparing things naturally.</li>
+<li>Building long noun phrases without losing clarity.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Apartment viewing</li>
+<li>Shopping</li>
+<li>Doctor appointment</li>
+<li>Describing people</li>
+<li>Comparing services</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>describing</li>
+<li>comparing</li>
+<li>expressing preferences</li>
+<li>giving opinions</li>
+<li>clarifying</li>
+</ul>
+<p>Reference examples:</p>
+<pre class="pattern-block"><code class="language-text">Das Zimmer ist gross.
+Ich suche eine kleine Wohnung.
+Diese Option ist besser.
+Das ist der wichtigste Punkt.</code></pre>
+<h2 id="5-communication-building-blocks">5. Communication Building Blocks</h2>
+<p>Communication building blocks connect grammar and sentence architecture to what learners can do in German.</p>
+<h3 id="asking-questions">Asking Questions</h3>
+<p>Purpose:</p>
+<p>Asking questions helps learners get information, ask for help, confirm understanding, and keep conversations moving.</p>
+<p>Why it matters:</p>
+<p>Questions give learners agency. They can participate even when they do not know everything.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Choosing between yes-no questions and W-questions.</li>
+<li>Forgetting verb position.</li>
+<li>Not having enough repair phrases.</li>
+<li>Asking questions too indirectly too early.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Apotheke</li>
+<li>Public transport</li>
+<li>School</li>
+<li>Work</li>
+<li>Government office</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>asking for help</li>
+<li>asking for information</li>
+<li>clarifying</li>
+<li>confirming</li>
+<li>managing conversations</li>
+</ul>
+<p>Useful patterns:</p>
+<pre class="pattern-block"><code class="language-text">Koennen Sie mir helfen?
+Was bedeutet das?
+Wann ist der Termin?
+Wo finde ich...?</code></pre>
+<h3 id="giving-reasons">Giving Reasons</h3>
+<p>Purpose:</p>
+<p>Giving reasons explains why something happens, why something matters, or why the learner needs something.</p>
+<p>Why it matters:</p>
+<p>Reasons connect facts into meaningful communication. They are essential for apologies, opinions, complaints, school emails, and exams.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Confusing weil, denn, deshalb, and da.</li>
+<li>Forgetting verb-final word order after weil and da.</li>
+<li>Giving too much information before the basic structure is stable.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Missed appointments</li>
+<li>TELC writing</li>
+<li>Complaints</li>
+<li>Elternabend</li>
+<li>Work meetings</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>explaining</li>
+<li>apologizing</li>
+<li>supporting opinions</li>
+<li>requesting help</li>
+<li>justifying decisions</li>
+</ul>
+<p>Useful patterns:</p>
+<pre class="pattern-block"><code class="language-text">Ich kann nicht kommen, weil ich krank bin.
+Ich lerne Deutsch, denn ich wohne in Deutschland.
+Ich bin krank. Deshalb bleibe ich zu Hause.</code></pre>
+<h3 id="expressing-opinions">Expressing Opinions</h3>
+<p>Purpose:</p>
+<p>Expressing opinions lets learners say what they think, prefer, value, or recommend.</p>
+<p>Why it matters:</p>
+<p>Opinions move learners beyond survival communication into social, professional, academic, and civic participation.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Giving an opinion without a reason.</li>
+<li>Overusing &quot;ich denke&quot; for every opinion.</li>
+<li>Not softening disagreement in polite contexts.</li>
+<li>Not connecting opinion language to examples.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>TELC speaking</li>
+<li>Workplace discussions</li>
+<li>Feedback conversations</li>
+<li>Social conversations</li>
+<li>Education and school meetings</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>giving reasons</li>
+<li>agreeing</li>
+<li>disagreeing</li>
+<li>comparing options</li>
+<li>giving examples</li>
+</ul>
+<p>Useful patterns:</p>
+<pre class="pattern-block"><code class="language-text">Ich finde das wichtig.
+Meiner Meinung nach ist...
+Aus meiner Sicht...
+Ich sehe das anders, weil...</code></pre>
+<h3 id="telling-stories">Telling Stories</h3>
+<p>Purpose:</p>
+<p>Telling stories allows learners to describe past events, experiences, problems, and sequences.</p>
+<p>Why it matters:</p>
+<p>Storytelling appears in daily life, work updates, doctor visits, travel conversations, school communication, and exams.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Forgetting Perfekt structure.</li>
+<li>Mixing sequence connectors.</li>
+<li>Telling events without time markers.</li>
+<li>Losing the listener because the order is unclear.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Talking about your weekend</li>
+<li>Describing a trip</li>
+<li>Reporting an accident</li>
+<li>Workplace update</li>
+<li>Doctor visit</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>talking about the past</li>
+<li>explaining problems</li>
+<li>giving updates</li>
+<li>describing experiences</li>
+<li>reporting incidents</li>
+</ul>
+<p>Useful patterns:</p>
+<pre class="pattern-block"><code class="language-text">Zuerst habe ich...
+Dann bin ich...
+Danach habe ich...
+Am Ende war...</code></pre>
+<h3 id="making-suggestions">Making Suggestions</h3>
+<p>Purpose:</p>
+<p>Making suggestions helps learners propose actions, plans, solutions, or next steps.</p>
+<p>Why it matters:</p>
+<p>Suggestions are essential for social planning, family life, work, problem solving, and group discussions.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Sounding too direct.</li>
+<li>Confusing suggestions with commands.</li>
+<li>Not using modal verbs or Konjunktiv II for softer phrasing.</li>
+<li>Not connecting the suggestion to a reason.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Planning activities</li>
+<li>Team meetings</li>
+<li>Family decisions</li>
+<li>TELC speaking</li>
+<li>Problem solving with a landlord or office</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>giving advice</li>
+<li>reaching agreement</li>
+<li>negotiating</li>
+<li>planning</li>
+<li>giving reasons</li>
+</ul>
+<p>Useful patterns:</p>
+<pre class="pattern-block"><code class="language-text">Wir koennen...
+Vielleicht sollten wir...
+Ich schlage vor, dass...
+Es waere sinnvoll, ...</code></pre>
+<h3 id="agreeing-and-disagreeing">Agreeing And Disagreeing</h3>
+<p>Purpose:</p>
+<p>Agreeing and disagreeing let learners respond to other people&#x27;s ideas and participate in real conversation.</p>
+<p>Why it matters:</p>
+<p>Learners need more than answers. They need ways to join, soften, contrast, and continue discussion.</p>
+<p>Common learner difficulties:</p>
+<ul>
+<li>Disagreeing too directly.</li>
+<li>Saying only yes or no without explanation.</li>
+<li>Not using contrast connectors.</li>
+<li>Not knowing partial agreement phrases.</li>
+</ul>
+<p>Related situations:</p>
+<ul>
+<li>Work meetings</li>
+<li>TELC speaking</li>
+<li>School discussions</li>
+<li>Family planning</li>
+<li>Feedback conversations</li>
+</ul>
+<p>Related communication functions:</p>
+<ul>
+<li>expressing opinions</li>
+<li>giving reasons</li>
+<li>contrasting ideas</li>
+<li>negotiating</li>
+<li>reaching agreement</li>
+</ul>
+<p>Useful patterns:</p>
+<pre class="pattern-block"><code class="language-text">Ja, das stimmt.
+Ich stimme teilweise zu.
+Ich verstehe deinen Punkt, aber...
+Da bin ich anderer Meinung, weil...</code></pre>
+<h2 id="reference-map">Reference Map</h2>
+<p>The systems are connected. Learners can enter the map from any situation or lesson.</p>
+<pre class="system-map"><code class="language-text">Real-life situation
+├── Communication function
+│   ├── Asking questions
+│   ├── Giving reasons
+│   ├── Expressing opinions
+│   ├── Telling stories
+│   ├── Making suggestions
+│   └── Agreeing and disagreeing
+├── Sentence architecture
+│   ├── Hauptsatz
+│   ├── Nebensatz
+│   ├── Questions
+│   ├── Relative clauses
+│   └── Information flow
+├── Verb system
+│   ├── Present tense
+│   ├── Modal verbs
+│   ├── Perfekt
+│   ├── Future meaning
+│   └── Verb brackets
+├── Connector system
+│   ├── Coordinating connectors
+│   ├── Subordinating connectors
+│   ├── Adverbial connectors
+│   └── Discourse markers
+└── Noun system
+    ├── Articles
+    ├── Cases
+    ├── Pronouns
+    └── Adjectives</code></pre>
+<h2 id="product-principle">Product Principle</h2>
+<p>The Foundation Reference teaches how German works.</p>
+<p>The Situation Library teaches where German is used.</p>
+<p>Lessons teach how to use German in speaking, writing, retrieval, and real-world challenges.</p>
+<p>The goal is not to complete a sequence.</p>
+<p>The goal is to recognize patterns, understand the system, and use German with confidence.</p>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

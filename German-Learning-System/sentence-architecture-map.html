@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sentence Architecture Map | German Learning System</title>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --ink: #18181b;
+      --muted: #71717a;
+      --line: #e8e4dc;
+      --card: #ffffff;
+      --teal: #11b5a4;
+      --blue: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 34px 28px 80px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 42px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--teal);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-family: Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .toplinks {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .toplinks a {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .toplinks a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--teal);
+    }
+
+    .hero {
+      max-width: 840px;
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 0.94;
+      margin: 0 0 20px;
+      letter-spacing: -0.025em;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: #3f3f46;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 18px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .panel {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .panel-title {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .doc-link,
+    .toc-link {
+      display: block;
+      color: #52525b;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 10px;
+      border-radius: 7px;
+    }
+
+    .doc-link:hover,
+    .toc-link:hover {
+      color: var(--ink);
+      background: #f4f4f5;
+    }
+
+    .doc-link.active {
+      color: #fff;
+      background: var(--teal);
+    }
+
+    .toc-link.level-3 { padding-left: 22px; font-weight: 650; }
+    .toc-link.level-4 { padding-left: 34px; font-weight: 600; color: var(--muted); }
+
+    article {
+      min-width: 0;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 44px;
+    }
+
+    article h1 {
+      font-size: clamp(38px, 6vw, 62px);
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      line-height: 1.08;
+      margin: 50px 0 16px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 1.2;
+      margin: 34px 0 12px;
+    }
+
+    h4 {
+      color: var(--blue);
+      font-size: 16px;
+      margin: 26px 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    p, li {
+      color: #3f3f46;
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding-left: 22px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 28px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #f4f4f5;
+      color: #27272a;
+    }
+
+    pre {
+      overflow-x: auto;
+      background: #18181b;
+      color: #fafafa;
+      border-radius: 8px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      line-height: 1.5;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    p code, li code {
+      background: #f4f4f5;
+      color: #27272a;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+
+    strong { color: var(--ink); }
+
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .panel.toc { max-height: 280px; overflow: auto; }
+    }
+
+    @media (max-width: 680px) {
+      .shell { padding: 24px 14px 54px; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .toplinks { flex-wrap: wrap; }
+      article { padding: 26px 18px; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+  <link rel="stylesheet" href="styles/design-system.css">
+</head>
+<body class="reference-page">
+  <main class="shell">
+    <nav class="topbar" aria-label="Project navigation">
+      <a class="brand" href="index.html">
+        <span class="mark">D</span>
+        <span>German Learning System</span>
+      </a>
+      <div class="toplinks">
+        <a href="foundation-reference.html">Foundation</a>
+        <a href="situation-library.html">Situations</a>
+        <a href="design-system.html">Design System</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="eyebrow">Reference System</div>
+      <h1>Sentence Architecture Map</h1>
+      <p class="lead">How German sentences are built and connected.</p>
+    </section>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section class="panel">
+          <div class="panel-title">Reference Docs</div>
+<a class="doc-link" href="foundation-reference.html">Foundation Reference</a>
+<a class="doc-link" href="grammar-map.html">Grammar Map</a>
+<a class="doc-link active" href="sentence-architecture-map.html">Sentence Architecture Map</a>
+<a class="doc-link" href="communication-functions.html">Communication Functions</a>
+<a class="doc-link" href="learning-model.html">Learning Model</a>
+<a class="doc-link" href="lesson-blueprint.html">Lesson Blueprint</a>
+        </section>
+        <section class="panel toc">
+          <div class="panel-title">On This Page</div>
+<a class="toc-link level-2" href="#purpose">Purpose</a>
+<a class="toc-link level-2" href="#big-picture">Big Picture</a>
+<a class="toc-link level-2" href="#core-principle">Core Principle</a>
+<a class="toc-link level-2" href="#sentence-types">Sentence Types</a>
+<a class="toc-link level-2" href="#connector-system">Connector System</a>
+<a class="toc-link level-3" href="#1-coordinating-connectors-nebenordnende-konnektoren">1. Coordinating Connectors / Nebenordnende Konnektoren</a>
+<a class="toc-link level-3" href="#2-subordinating-connectors-unterordnende-konnektoren-or-subjunktionen">2. Subordinating Connectors / Unterordnende Konnektoren or Subjunktionen</a>
+<a class="toc-link level-3" href="#3-adverbial-connectors-konjunktionaladverbien-or-adverbiale-konnektoren">3. Adverbial Connectors / Konjunktionaladverbien or Adverbiale Konnektoren</a>
+<a class="toc-link level-3" href="#4-discourse-markers-diskursmarker-or-redemittel">4. Discourse Markers / Diskursmarker or Redemittel</a>
+<a class="toc-link level-2" href="#hauptsatz-vs-nebensatz">Hauptsatz vs Nebensatz</a>
+<a class="toc-link level-3" href="#hauptsatz">Hauptsatz</a>
+<a class="toc-link level-3" href="#nebensatz">Nebensatz</a>
+<a class="toc-link level-2" href="#connector-contrasts-learners-need">Connector Contrasts Learners Need</a>
+<a class="toc-link level-3" href="#denn-vs-weil">denn vs weil</a>
+<a class="toc-link level-3" href="#deshalb-vs-weil">deshalb vs weil</a>
+<a class="toc-link level-3" href="#trotzdem-vs-obwohl">trotzdem vs obwohl</a>
+<a class="toc-link level-3" href="#dann-vs-wenn">dann vs wenn</a>
+<a class="toc-link level-2" href="#word-order-patterns">Word Order Patterns</a>
+<a class="toc-link level-3" href="#1-main-clause">1. Main Clause</a>
+<a class="toc-link level-3" href="#2-modal-verbs">2. Modal Verbs</a>
+<a class="toc-link level-3" href="#3-perfekt">3. Perfekt</a>
+<a class="toc-link level-3" href="#4-separable-verbs">4. Separable Verbs</a>
+<a class="toc-link level-3" href="#5-subordinate-clauses">5. Subordinate Clauses</a>
+<a class="toc-link level-3" href="#6-relative-clauses">6. Relative Clauses</a>
+<a class="toc-link level-2" href="#satzklammer-verb-bracket">Satzklammer / Verb Bracket</a>
+<a class="toc-link level-2" href="#informationsstruktur-information-flow">Informationsstruktur / Information Flow</a>
+<a class="toc-link level-2" href="#complexity-ladder-a1-c1">Complexity Ladder A1-C1</a>
+<a class="toc-link level-3" href="#a1-foundation">A1: Foundation</a>
+<a class="toc-link level-3" href="#a2-everyday-expansion">A2: Everyday Expansion</a>
+<a class="toc-link level-3" href="#b1-independent-connection">B1: Independent Connection</a>
+<a class="toc-link level-3" href="#b2-confident-structure">B2: Confident Structure</a>
+<a class="toc-link level-3" href="#c1-flexible-architecture">C1: Flexible Architecture</a>
+<a class="toc-link level-2" href="#example-progression">Example Progression</a>
+<a class="toc-link level-3" href="#product-interpretation">Product Interpretation</a>
+<a class="toc-link level-2" href="#sentence-architecture-knowledge-graph">Sentence Architecture Knowledge Graph</a>
+<a class="toc-link level-2" href="#design-implication">Design Implication</a>
+        </section>
+      </aside>
+
+      <article>
+<h1 id="sentence-architecture-map">Sentence Architecture Map</h1>
+<h2 id="purpose">Purpose</h2>
+<p>This document is part two of the German grammar system.</p>
+<p>Part one maps the grammar knowledge system: verbs, tenses, auxiliary verbs, cases, articles, pronouns, adjectives, and prepositions.</p>
+<p>Part two maps sentence architecture: how German sentences are built, how ideas connect, and where the verb goes.</p>
+<p>The purpose of this map is to help adult learners move from knowing individual words and grammar pieces to connecting ideas in real communication. German sentence structure should not feel like a list of isolated word-order rules. It should feel like a system learners can recognize, predict, and use.</p>
+<p>This document is designed as an information architecture blueprint for future diagrams, lessons, visual learning tools, and knowledge maps.</p>
+<h2 id="big-picture">Big Picture</h2>
+<p>German sentence architecture is built from several connected systems:</p>
+<pre class="system-map"><code class="language-text">German Sentence Architecture
+├── Hauptsatz / Main Clause
+│   ├── Verb in position 2
+│   ├── Flexible position 1
+│   └── Foundation for statements and many connected ideas
+├── Entscheidungsfrage / Yes-No Question
+│   ├── Verb in position 1
+│   └── Used to confirm or ask if something is true
+├── W-Frage / W-Question
+│   ├── Question word in position 1
+│   ├── Verb in position 2
+│   └── Used to ask for specific information
+├── Nebensatz / Subordinate Clause
+│   ├── Introduced by a subordinating connector
+│   ├── Conjugated verb at the end
+│   └── Used for reasons, conditions, time, contrast, purpose, and content
+├── Relativsatz / Relative Clause
+│   ├── Introduced by a relative pronoun
+│   ├── Conjugated verb at the end
+│   └── Used to add information about a noun
+├── Infinitivsatz / Infinitive Clause
+│   ├── Often built with zu + infinitive
+│   ├── No new subject in many common patterns
+│   └── Used for plans, intentions, preferences, and evaluations
+├── Satzklammer / Verb Bracket
+│   ├── Conjugated verb opens the bracket
+│   ├── Infinitive, participle, or prefix closes the bracket
+│   └── Creates the frame of many German sentences
+├── Konnektoren / Connectors
+│   ├── Coordinating connectors
+│   ├── Subordinating connectors
+│   ├── Adverbial connectors
+│   └── Discourse markers
+├── Wortstellung / Word Order
+│   ├── Verb-first
+│   ├── Verb-second
+│   ├── Verb-final
+│   └── End-field structures
+└── Informationsstruktur / Information Flow
+    ├── Known information
+    ├── New information
+    ├── Emphasis
+    └── Spoken and written flow</code></pre>
+<h2 id="core-principle">Core Principle</h2>
+<p>German sentence structure depends on three questions:</p>
+<p>1. What kind of sentence is it?</p>
+<p>2. Which connector is used?</p>
+<p>3. Where does the conjugated verb go?</p>
+<p>The conjugated verb is the anchor of the sentence. Once the learner knows where that verb belongs, the rest of the sentence becomes easier to organize.</p>
+<pre class="pattern-block"><code class="language-text">Sentence Type + Connector Type = Verb Position
+
+Main clause                 -&gt; conjugated verb in position 2
+Yes-no question             -&gt; conjugated verb in position 1
+W-question                  -&gt; conjugated verb in position 2
+Subordinate clause          -&gt; conjugated verb at the end
+Relative clause             -&gt; conjugated verb at the end
+Infinitive clause           -&gt; infinitive phrase often at the end</code></pre>
+<h2 id="sentence-types">Sentence Types</h2>
+<table><thead><tr><th>English Name</th><th>German Name</th><th>Verb Position</th><th>Simple Example</th><th>Used For</th><th>Typical CEFR Level</th></tr></thead><tbody><tr><td>Main clause</td><td>Hauptsatz</td><td>Conjugated verb in position 2</td><td>Ich lerne Deutsch.</td><td>Statements, independent ideas, basic communication</td><td>A1</td></tr>
+<tr><td>Yes-no question</td><td>Entscheidungsfrage</td><td>Conjugated verb in position 1</td><td>Lernst du Deutsch?</td><td>Asking if something is true</td><td>A1</td></tr>
+<tr><td>W-question</td><td>W-Frage</td><td>Question word in position 1, conjugated verb in position 2</td><td>Warum lernst du Deutsch?</td><td>Asking for specific information</td><td>A1</td></tr>
+<tr><td>Subordinate clause</td><td>Nebensatz</td><td>Conjugated verb at the end</td><td>Ich lerne Deutsch, weil ich in Deutschland wohne.</td><td>Reasons, conditions, time, contrast, purpose, reported content</td><td>A2</td></tr>
+<tr><td>Relative clause</td><td>Relativsatz</td><td>Conjugated verb at the end</td><td>Das ist der Kurs, der mir hilft.</td><td>Adding information about a noun</td><td>B1</td></tr>
+<tr><td>Infinitive clause</td><td>Infinitivsatz</td><td>zu + infinitive usually near the end</td><td>Ich versuche, jeden Tag Deutsch zu sprechen.</td><td>Intentions, plans, evaluations, connected actions</td><td>B1</td></tr></tbody></table>
+<h2 id="connector-system">Connector System</h2>
+<p>Connectors are one of the main control panels of German sentence architecture. The connector a learner chooses often determines the sentence structure that follows.</p>
+<h3 id="1-coordinating-connectors-nebenordnende-konnektoren">1. Coordinating Connectors / Nebenordnende Konnektoren</h3>
+<p>These usually connect main clauses or equal sentence parts. The conjugated verb stays in position 2 in each main clause.</p>
+<table><thead><tr><th>Connector</th><th>Core Function</th><th>Sentence Architecture</th></tr></thead><tbody><tr><td>und</td><td>addition</td><td>Main clause + und + main clause</td></tr>
+<tr><td>aber</td><td>contrast</td><td>Main clause + aber + main clause</td></tr>
+<tr><td>oder</td><td>alternative</td><td>Main clause + oder + main clause</td></tr>
+<tr><td>denn</td><td>reason</td><td>Main clause + denn + main clause</td></tr>
+<tr><td>sondern</td><td>correction after negation</td><td>Not this, but that</td></tr>
+<tr><td>also</td><td>result or conclusion</td><td>Often links to a main-clause result</td></tr>
+<tr><td>außerdem</td><td>addition</td><td>Can connect ideas; often also works adverbially</td></tr></tbody></table>
+<pre class="pattern-block"><code class="language-text">Ich lerne Deutsch, denn ich wohne in Deutschland.
+Main clause       + denn + main clause
+Verb position 2          Verb position 2</code></pre>
+<h3 id="2-subordinating-connectors-unterordnende-konnektoren-or-subjunktionen">2. Subordinating Connectors / Unterordnende Konnektoren or Subjunktionen</h3>
+<p>These introduce a Nebensatz. The conjugated verb moves to the end of the clause.</p>
+<table><thead><tr><th>Connector</th><th>Core Function</th><th>Sentence Architecture</th></tr></thead><tbody><tr><td>weil</td><td>reason</td><td>weil + subject + middle field + verb at end</td></tr>
+<tr><td>dass</td><td>content or reported idea</td><td>dass + subject + middle field + verb at end</td></tr>
+<tr><td>wenn</td><td>condition or repeated time</td><td>wenn + subject + middle field + verb at end</td></tr>
+<tr><td>obwohl</td><td>contrast or concession</td><td>obwohl + subject + middle field + verb at end</td></tr>
+<tr><td>bevor</td><td>before</td><td>bevor + subject + middle field + verb at end</td></tr>
+<tr><td>nachdem</td><td>after</td><td>nachdem + subject + middle field + verb at end</td></tr>
+<tr><td>während</td><td>while, whereas</td><td>während + subject + middle field + verb at end</td></tr>
+<tr><td>seit</td><td>since</td><td>seit + subject + middle field + verb at end</td></tr>
+<tr><td>bis</td><td>until</td><td>bis + subject + middle field + verb at end</td></tr>
+<tr><td>falls</td><td>in case, if</td><td>falls + subject + middle field + verb at end</td></tr>
+<tr><td>damit</td><td>purpose</td><td>damit + subject + middle field + verb at end</td></tr>
+<tr><td>sodass</td><td>result</td><td>sodass + subject + middle field + verb at end</td></tr></tbody></table>
+<pre class="pattern-block"><code class="language-text">Ich lerne Deutsch, weil ich besser sprechen möchte.
+Main clause       + weil + subject + middle field + verb at end</code></pre>
+<h3 id="3-adverbial-connectors-konjunktionaladverbien-or-adverbiale-konnektoren">3. Adverbial Connectors / Konjunktionaladverbien or Adverbiale Konnektoren</h3>
+<p>These act like sentence adverbs. They often stand in position 1, and the conjugated verb stays in position 2.</p>
+<table><thead><tr><th>Connector</th><th>Core Function</th><th>Sentence Architecture</th></tr></thead><tbody><tr><td>deshalb</td><td>result</td><td>Deshalb + verb + subject + rest</td></tr>
+<tr><td>deswegen</td><td>result</td><td>Deswegen + verb + subject + rest</td></tr>
+<tr><td>darum</td><td>result</td><td>Darum + verb + subject + rest</td></tr>
+<tr><td>daher</td><td>result</td><td>Daher + verb + subject + rest</td></tr>
+<tr><td>trotzdem</td><td>contrast</td><td>Trotzdem + verb + subject + rest</td></tr>
+<tr><td>dann</td><td>sequence</td><td>Dann + verb + subject + rest</td></tr>
+<tr><td>danach</td><td>sequence</td><td>Danach + verb + subject + rest</td></tr>
+<tr><td>vorher</td><td>sequence</td><td>Vorher + verb + subject + rest</td></tr>
+<tr><td>zuerst</td><td>sequence</td><td>Zuerst + verb + subject + rest</td></tr>
+<tr><td>außerdem</td><td>addition</td><td>Außerdem + verb + subject + rest</td></tr>
+<tr><td>jedoch</td><td>contrast</td><td>Jedoch + verb + subject + rest</td></tr>
+<tr><td>allerdings</td><td>limitation or contrast</td><td>Allerdings + verb + subject + rest</td></tr></tbody></table>
+<pre class="pattern-block"><code class="language-text">Ich wohne in Deutschland. Deshalb lerne ich Deutsch.
+Position 1: Deshalb
+Position 2: lerne</code></pre>
+<h3 id="4-discourse-markers-diskursmarker-or-redemittel">4. Discourse Markers / Diskursmarker or Redemittel</h3>
+<p>These help structure ideas, opinions, arguments, and spoken flow. They may not always control verb position in the same strict way as conjunctions, but they shape how the listener or reader follows the idea.</p>
+<table><thead><tr><th>Marker</th><th>Function</th><th>Typical Use</th></tr></thead><tbody><tr><td>meiner Meinung nach</td><td>opinion</td><td>Introduce a viewpoint</td></tr>
+<tr><td>zum Beispiel</td><td>example</td><td>Add evidence or illustration</td></tr>
+<tr><td>ehrlich gesagt</td><td>stance</td><td>Signal honesty or attitude</td></tr>
+<tr><td>eigentlich</td><td>nuance</td><td>Soften, contrast, or adjust expectation</td></tr>
+<tr><td>übrigens</td><td>topic shift</td><td>Add related information</td></tr>
+<tr><td>einerseits</td><td>first side of contrast</td><td>Structure two-sided argument</td></tr>
+<tr><td>andererseits</td><td>second side of contrast</td><td>Balance or contrast the first point</td></tr>
+<tr><td>zusammenfassend</td><td>summary</td><td>Conclude or synthesize</td></tr></tbody></table>
+<pre class="pattern-block"><code class="language-text">Meiner Meinung nach ist ein klares System wichtig.
+Zum Beispiel helfen wiederkehrende Satzmuster beim Sprechen.
+Zusammenfassend kann man sagen, dass Struktur Vertrauen schafft.</code></pre>
+<h2 id="hauptsatz-vs-nebensatz">Hauptsatz vs Nebensatz</h2>
+<p>The difference between Hauptsatz and Nebensatz is one of the central architectural shifts in German.</p>
+<h3 id="hauptsatz">Hauptsatz</h3>
+<pre class="pattern-block"><code class="language-text">Ich lerne Deutsch, deshalb spreche ich besser.
+
+Clause 1: Ich lerne Deutsch.
+Position 2 verb: lerne
+
+Clause 2: deshalb spreche ich besser.
+Position 1: deshalb
+Position 2 verb: spreche</code></pre>
+<p>In a Hauptsatz, the conjugated verb stays in position 2. Position 1 can hold the subject, a time phrase, a place phrase, or a connector-like adverb such as deshalb, trotzdem, dann, or außerdem.</p>
+<h3 id="nebensatz">Nebensatz</h3>
+<pre class="pattern-block"><code class="language-text">Ich lerne Deutsch, weil ich besser sprechen möchte.
+
+Main clause: Ich lerne Deutsch
+Subordinate connector: weil
+Subject: ich
+Middle field: besser sprechen
+Final conjugated verb: möchte</code></pre>
+<p>In a Nebensatz, the conjugated verb goes to the end. The connector creates a dependent idea that cannot stand alone in the same way as a main clause.</p>
+<h2 id="connector-contrasts-learners-need">Connector Contrasts Learners Need</h2>
+<h3 id="denn-vs-weil">denn vs weil</h3>
+<p>Both express a reason.</p>
+<pre class="pattern-block"><code class="language-text">Ich lerne Deutsch, denn ich wohne in Deutschland.
+denn + main clause -&gt; verb in position 2
+
+Ich lerne Deutsch, weil ich in Deutschland wohne.
+weil + subordinate clause -&gt; verb at the end</code></pre>
+<p>Design note: Teach this contrast as an architecture choice, not only as a vocabulary difference.</p>
+<h3 id="deshalb-vs-weil">deshalb vs weil</h3>
+<p>Both connect cause and result, but they point in different directions.</p>
+<pre class="pattern-block"><code class="language-text">Cause first, result second:
+Ich wohne in Deutschland. Deshalb lerne ich Deutsch.
+Deshalb is position 1, verb stays in position 2.
+
+Result first, cause second:
+Ich lerne Deutsch, weil ich in Deutschland wohne.
+Weil introduces the reason, verb goes to the end.</code></pre>
+<h3 id="trotzdem-vs-obwohl">trotzdem vs obwohl</h3>
+<p>Both express contrast against expectation.</p>
+<pre class="pattern-block"><code class="language-text">Es ist schwierig. Trotzdem lerne ich weiter.
+Trotzdem is adverbial, often position 1, verb stays in position 2.
+
+Ich lerne weiter, obwohl es schwierig ist.
+Obwohl introduces a subordinate clause, verb goes to the end.</code></pre>
+<h3 id="dann-vs-wenn">dann vs wenn</h3>
+<p>Both can connect time or condition, but they work differently.</p>
+<pre class="pattern-block"><code class="language-text">Ich habe Zeit. Dann rufe ich dich an.
+Dann shows sequence in a main clause. Verb stays in position 2.
+
+Wenn ich Zeit habe, rufe ich dich an.
+Wenn introduces a condition or repeated time. Verb goes to the end in the subordinate clause.</code></pre>
+<h2 id="word-order-patterns">Word Order Patterns</h2>
+<h3 id="1-main-clause">1. Main Clause</h3>
+<pre class="pattern-block"><code class="language-text">Position 1 + conjugated verb + middle field + end field
+
+Ich        lerne              jeden Tag      Deutsch.
+Morgen     lerne              ich            Deutsch.</code></pre>
+<p>Design rule: Position 1 is flexible, but the conjugated verb remains in position 2.</p>
+<h3 id="2-modal-verbs">2. Modal Verbs</h3>
+<pre class="pattern-block"><code class="language-text">Subject + modal verb + middle field + infinitive at the end
+
+Ich     möchte       heute in der Apotheke   etwas kaufen.
+Wir     müssen       morgen früh             arbeiten.</code></pre>
+<p>Design rule: The modal verb is conjugated and opens the verb bracket. The main verb stays in the infinitive at the end.</p>
+<h3 id="3-perfekt">3. Perfekt</h3>
+<pre class="pattern-block"><code class="language-text">Subject + haben/sein + middle field + Partizip II at the end
+
+Ich     habe          gestern einen Termin   gemacht.
+Sie     ist           am Morgen nach Berlin  gefahren.</code></pre>
+<p>Design rule: haben or sein is conjugated in position 2. The participle closes the verb bracket.</p>
+<h3 id="4-separable-verbs">4. Separable Verbs</h3>
+<pre class="pattern-block"><code class="language-text">Subject + verb stem + middle field + prefix at the end
+
+Ich     kaufe       heute im Supermarkt      ein.
+Er      ruft        morgen seine Mutter      an.</code></pre>
+<p>Design rule: The conjugated verb stem goes in position 2. The separable prefix goes to the end.</p>
+<h3 id="5-subordinate-clauses">5. Subordinate Clauses</h3>
+<pre class="pattern-block"><code class="language-text">Connector + subject + middle field + conjugated verb at the end
+
+weil      ich       in Deutschland            wohne
+dass      sie       morgen einen Termin       hat
+obwohl    es        heute sehr kalt           ist</code></pre>
+<p>Design rule: The connector marks the clause as dependent and sends the conjugated verb to the end.</p>
+<h3 id="6-relative-clauses">6. Relative Clauses</h3>
+<pre class="pattern-block"><code class="language-text">Noun + relative pronoun + middle field + conjugated verb at the end
+
+der Kurs, der                 mir sehr        hilft
+die Frau, die                 in Berlin       wohnt
+das Buch, das                 ich gekauft     habe</code></pre>
+<p>Design rule: The relative pronoun connects back to a noun and has its own role inside the relative clause. The conjugated verb goes to the end.</p>
+<h2 id="satzklammer-verb-bracket">Satzklammer / Verb Bracket</h2>
+<p>The Satzklammer is the sentence frame created when one verb element appears early and another verb element appears at the end.</p>
+<pre class="pattern-block"><code class="language-text">Opening bracket                    Closing bracket
+conjugated verb                    infinitive / participle / prefix
+
+Ich möchte heute Deutsch           lernen.
+Ich habe gestern Deutsch           gelernt.
+Ich rufe dich morgen               an.</code></pre>
+<p>The verb bracket helps learners understand why important meaning often appears late in a German sentence. This is not random delay. It is a structural feature of the language.</p>
+<h2 id="informationsstruktur-information-flow">Informationsstruktur / Information Flow</h2>
+<p>German word order is not only grammar. It also manages attention.</p>
+<p>Position 1 often carries the starting point of the sentence:</p>
+<ul>
+<li>the subject: Ich lerne heute Deutsch.</li>
+<li>time: Heute lerne ich Deutsch.</li>
+<li>place: In der Schule lerne ich Deutsch.</li>
+<li>reason or result connector: Deshalb lerne ich Deutsch.</li>
+<li>contrast: Trotzdem lerne ich weiter.</li>
+</ul>
+<p>The second position stays stable for the conjugated verb. This lets German move information around while keeping the sentence architecture recognizable.</p>
+<pre class="pattern-block"><code class="language-text">Known or chosen starting point + verb anchor + new or important information
+
+Heute                         lerne          ich Deutsch.
+Deutsch                       lerne          ich jeden Tag.
+Deshalb                       lerne          ich weiter.</code></pre>
+<h2 id="complexity-ladder-a1-c1">Complexity Ladder A1-C1</h2>
+<h3 id="a1-foundation">A1: Foundation</h3>
+<ul>
+<li>Main clauses</li>
+<li>Basic questions</li>
+<li>und, aber, oder</li>
+<li>Simple verb-second pattern</li>
+<li>Early awareness that German sentence order is structured</li>
+</ul>
+<p>Learner capability:</p>
+<ul>
+<li>I can make simple statements and ask basic questions.</li>
+</ul>
+<h3 id="a2-everyday-expansion">A2: Everyday Expansion</h3>
+<ul>
+<li>Modal verb sentences</li>
+<li>Perfekt sentences</li>
+<li>weil, dass, wenn</li>
+<li>Simple Nebensätze</li>
+<li>First clear experience with verb-final structure</li>
+</ul>
+<p>Learner capability:</p>
+<ul>
+<li>I can explain needs, past events, plans, and simple reasons.</li>
+</ul>
+<h3 id="b1-independent-connection">B1: Independent Connection</h3>
+<ul>
+<li>obwohl, damit, bevor, nachdem</li>
+<li>Relative clauses</li>
+<li>More complex connectors</li>
+<li>Combining opinions and reasons</li>
+<li>Storytelling with sequence and contrast</li>
+</ul>
+<p>Learner capability:</p>
+<ul>
+<li>I can connect ideas, explain situations, and add detail.</li>
+</ul>
+<h3 id="b2-confident-structure">B2: Confident Structure</h3>
+<ul>
+<li>Advanced connectors</li>
+<li>Argumentation</li>
+<li>Sentence emphasis</li>
+<li>More complex subordinate structures</li>
+<li>Controlled information flow in longer speech and writing</li>
+</ul>
+<p>Learner capability:</p>
+<ul>
+<li>I can explain, compare, argue, and adapt sentence structure to meaning.</li>
+</ul>
+<h3 id="c1-flexible-architecture">C1: Flexible Architecture</h3>
+<ul>
+<li>Rhetorical flow</li>
+<li>Nuanced connectors</li>
+<li>Embedded clauses</li>
+<li>Stylistic word order</li>
+<li>Formal and academic sentence architecture</li>
+<li>Dense but controlled written structures</li>
+</ul>
+<p>Learner capability:</p>
+<ul>
+<li>I can shape complex ideas with precision, emphasis, tone, and register.</li>
+</ul>
+<h2 id="example-progression">Example Progression</h2>
+<p>One idea can grow across the learning path without losing its core meaning.</p>
+<pre class="system-map"><code class="language-text">A1:
+Ich lerne Deutsch.
+
+A2:
+Ich lerne Deutsch, weil ich in Deutschland wohne.
+
+B1:
+Ich lerne Deutsch, obwohl es manchmal schwierig ist.
+
+B2:
+Obwohl Deutsch manchmal schwierig ist, lerne ich weiter, weil ich mich im Alltag sicherer fühlen möchte.
+
+C1:
+Auch wenn Deutsch eine komplexe Sprache ist, hilft mir ein klares System dabei, die Strukturen zu erkennen und sie im Alltag selbstbewusster zu verwenden.</code></pre>
+<h3 id="product-interpretation">Product Interpretation</h3>
+<p>The curriculum should not treat these as separate grammar topics. They are stages in the learner&#x27;s ability to connect ideas:</p>
+<pre class="pattern-block"><code class="language-text">A1: single idea
+A2: idea + reason
+B1: idea + contrast
+B2: contrast + continued action + purpose
+C1: concession + abstract concept + personal outcome + confident use</code></pre>
+<h2 id="sentence-architecture-knowledge-graph">Sentence Architecture Knowledge Graph</h2>
+<pre class="system-map"><code class="language-text">A1
+├── Hauptsatz
+│   ├── Verb in position 2
+│   ├── Subject in position 1
+│   └── Flexible position 1 begins
+├── Entscheidungsfrage
+│   └── Verb in position 1
+├── W-Frage
+│   └── W-word + verb in position 2
+└── Basic Connectors
+    ├── und
+    ├── aber
+    └── oder
+
+A2
+├── Satzklammer
+│   ├── Modal verb + infinitive
+│   ├── haben/sein + Partizip II
+│   └── Separable verb stem + prefix
+├── Nebensatz
+│   ├── weil
+│   ├── dass
+│   └── wenn
+└── First Connector Contrasts
+    ├── denn vs weil
+    ├── deshalb vs weil
+    └── dann vs wenn
+
+B1
+├── Expanded Nebensatz System
+│   ├── obwohl
+│   ├── damit
+│   ├── bevor
+│   └── nachdem
+├── Relativsatz
+│   ├── relative pronoun
+│   ├── case inside the relative clause
+│   └── verb-final structure
+├── Infinitivsatz
+│   └── zu + infinitive
+└── Opinion + Reason + Contrast
+
+B2
+├── Advanced Connectors
+│   ├── trotzdem
+│   ├── jedoch
+│   ├── allerdings
+│   ├── daher
+│   └── sodass
+├── Argumentation Architecture
+│   ├── claim
+│   ├── reason
+│   ├── example
+│   ├── contrast
+│   └── conclusion
+└── Information Flow
+    ├── emphasis
+    ├── fronting
+    └── sentence rhythm
+
+C1
+├── Embedded Clauses
+│   ├── subordinate clause inside larger sentence
+│   ├── relative clause inside argument
+│   └── infinitive clause for abstraction
+├── Rhetorical Flow
+│   ├── einerseits / andererseits
+│   ├── zusammenfassend
+│   └── nuanced discourse markers
+├── Stylistic Word Order
+│   ├── formal written architecture
+│   ├── academic density
+│   └── spoken emphasis
+└── Full Architecture Control
+    └── sentence type + connector type + verb position + information flow</code></pre>
+<h2 id="design-implication">Design Implication</h2>
+<p>Every lesson in the German Learning System should tag sentence structures by:</p>
+<ul>
+<li>Sentence type</li>
+<li>Connector type</li>
+<li>Verb position</li>
+<li>Communication function</li>
+<li>CEFR level</li>
+<li>Related grammar concepts</li>
+<li>Real-life use case</li>
+</ul>
+<p>These tags make sentence architecture visible across the curriculum. A lesson on visiting the Apotheke, writing to a landlord, joining a workplace conversation, or discussing an opinion should show not only vocabulary and grammar, but also how the sentence is built.</p>
+<p>The product goal is for learners to recognize the architecture behind communication:</p>
+<ul>
+<li>I know what kind of sentence I am building.</li>
+<li>I know what the connector does.</li>
+<li>I know where the conjugated verb goes.</li>
+<li>I can connect ideas with more confidence.</li>
+<li>I can make German feel structured instead of scattered.</li>
+</ul>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

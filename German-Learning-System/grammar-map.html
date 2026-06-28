@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grammar Map | German Learning System</title>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --ink: #18181b;
+      --muted: #71717a;
+      --line: #e8e4dc;
+      --card: #ffffff;
+      --teal: #11b5a4;
+      --blue: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 34px 28px 80px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 42px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--teal);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-family: Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .toplinks {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .toplinks a {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .toplinks a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--teal);
+    }
+
+    .hero {
+      max-width: 840px;
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 0.94;
+      margin: 0 0 20px;
+      letter-spacing: -0.025em;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: #3f3f46;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 18px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .panel {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .panel-title {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .doc-link,
+    .toc-link {
+      display: block;
+      color: #52525b;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 10px;
+      border-radius: 7px;
+    }
+
+    .doc-link:hover,
+    .toc-link:hover {
+      color: var(--ink);
+      background: #f4f4f5;
+    }
+
+    .doc-link.active {
+      color: #fff;
+      background: var(--teal);
+    }
+
+    .toc-link.level-3 { padding-left: 22px; font-weight: 650; }
+    .toc-link.level-4 { padding-left: 34px; font-weight: 600; color: var(--muted); }
+
+    article {
+      min-width: 0;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 44px;
+    }
+
+    article h1 {
+      font-size: clamp(38px, 6vw, 62px);
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      line-height: 1.08;
+      margin: 50px 0 16px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 1.2;
+      margin: 34px 0 12px;
+    }
+
+    h4 {
+      color: var(--blue);
+      font-size: 16px;
+      margin: 26px 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    p, li {
+      color: #3f3f46;
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding-left: 22px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 28px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #f4f4f5;
+      color: #27272a;
+    }
+
+    pre {
+      overflow-x: auto;
+      background: #18181b;
+      color: #fafafa;
+      border-radius: 8px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      line-height: 1.5;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    p code, li code {
+      background: #f4f4f5;
+      color: #27272a;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+
+    strong { color: var(--ink); }
+
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .panel.toc { max-height: 280px; overflow: auto; }
+    }
+
+    @media (max-width: 680px) {
+      .shell { padding: 24px 14px 54px; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .toplinks { flex-wrap: wrap; }
+      article { padding: 26px 18px; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+  <link rel="stylesheet" href="styles/design-system.css">
+</head>
+<body class="reference-page">
+  <main class="shell">
+    <nav class="topbar" aria-label="Project navigation">
+      <a class="brand" href="index.html">
+        <span class="mark">D</span>
+        <span>German Learning System</span>
+      </a>
+      <div class="toplinks">
+        <a href="foundation-reference.html">Foundation</a>
+        <a href="situation-library.html">Situations</a>
+        <a href="design-system.html">Design System</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="eyebrow">Reference System</div>
+      <h1>Grammar Map</h1>
+      <p class="lead">German grammar as a connected system.</p>
+    </section>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section class="panel">
+          <div class="panel-title">Reference Docs</div>
+<a class="doc-link" href="foundation-reference.html">Foundation Reference</a>
+<a class="doc-link active" href="grammar-map.html">Grammar Map</a>
+<a class="doc-link" href="sentence-architecture-map.html">Sentence Architecture Map</a>
+<a class="doc-link" href="communication-functions.html">Communication Functions</a>
+<a class="doc-link" href="learning-model.html">Learning Model</a>
+<a class="doc-link" href="lesson-blueprint.html">Lesson Blueprint</a>
+        </section>
+        <section class="panel toc">
+          <div class="panel-title">On This Page</div>
+<a class="toc-link level-2" href="#purpose">Purpose</a>
+<a class="toc-link level-2" href="#big-picture">Big Picture</a>
+<a class="toc-link level-2" href="#learning-path">Learning Path</a>
+<a class="toc-link level-3" href="#concept-progression-table">Concept Progression Table</a>
+<a class="toc-link level-2" href="#verb-system">Verb System</a>
+<a class="toc-link level-3" href="#foundation-verbs">Foundation Verbs</a>
+<a class="toc-link level-3" href="#how-haben-sein-and-werden-connect-the-verb-system">How haben, sein, and werden Connect the Verb System</a>
+<a class="toc-link level-3" href="#verb-system-by-cefr-level">Verb System by CEFR Level</a>
+<a class="toc-link level-2" href="#sentence-structure-system">Sentence Structure System</a>
+<a class="toc-link level-3" href="#visual-hierarchy">Visual Hierarchy</a>
+<a class="toc-link level-3" href="#word-order-patterns">Word Order Patterns</a>
+<a class="toc-link level-3" href="#sentence-structure-expansion">Sentence Structure Expansion</a>
+<a class="toc-link level-2" href="#case-system">Case System</a>
+<a class="toc-link level-3" href="#case-relationship-map">Case Relationship Map</a>
+<a class="toc-link level-3" href="#case-learning-path">Case Learning Path</a>
+<a class="toc-link level-3" href="#case-connections">Case Connections</a>
+<a class="toc-link level-2" href="#major-systems-as-map-nodes">Major Systems as Map Nodes</a>
+<a class="toc-link level-3" href="#sentence-structure">Sentence Structure</a>
+<a class="toc-link level-3" href="#verbs">Verbs</a>
+<a class="toc-link level-3" href="#tenses">Tenses</a>
+<a class="toc-link level-3" href="#auxiliary-verbs">Auxiliary Verbs</a>
+<a class="toc-link level-3" href="#nouns">Nouns</a>
+<a class="toc-link level-3" href="#articles">Articles</a>
+<a class="toc-link level-3" href="#cases">Cases</a>
+<a class="toc-link level-3" href="#pronouns">Pronouns</a>
+<a class="toc-link level-3" href="#adjectives">Adjectives</a>
+<a class="toc-link level-3" href="#prepositions">Prepositions</a>
+<a class="toc-link level-3" href="#connectors">Connectors</a>
+<a class="toc-link level-3" href="#relative-clauses">Relative Clauses</a>
+<a class="toc-link level-3" href="#passive-voice">Passive Voice</a>
+<a class="toc-link level-2" href="#knowledge-graph">Knowledge Graph</a>
+<a class="toc-link level-2" href="#design-implication">Design Implication</a>
+        </section>
+      </aside>
+
+      <article>
+<h1 id="grammar-map">Grammar Map</h1>
+<h2 id="purpose">Purpose</h2>
+<p>This document defines German grammar as a connected learning system for adult learners. It is designed as an information architecture blueprint for future diagrams, knowledge maps, curriculum planning, and lesson sequencing.</p>
+<p>The goal is not to teach every rule here. The goal is to show how the major grammar systems relate to one another, where they usually enter the learning path, and how they expand from A1 through C1.</p>
+<h2 id="big-picture">Big Picture</h2>
+<p>German grammar can be understood as a set of connected systems:</p>
+<pre class="system-map"><code class="language-text">German Grammar
+├── Sentence Structure
+│   ├── Main clauses
+│   ├── Questions
+│   ├── Verb position
+│   ├── Subordinate clauses
+│   └── Relative clauses
+├── Verbs
+│   ├── Verb conjugation
+│   ├── Modal verbs
+│   ├── Separable verbs
+│   ├── Reflexive verbs
+│   └── Verb complements
+├── Tenses
+│   ├── Präsens
+│   ├── Perfekt
+│   ├── Präteritum
+│   ├── Plusquamperfekt
+│   ├── Futur I
+│   └── Futur II
+├── Auxiliary Verbs
+│   ├── haben
+│   ├── sein
+│   └── werden
+├── Nouns
+│   ├── Gender
+│   ├── Number
+│   ├── Plural forms
+│   └── Compound nouns
+├── Articles
+│   ├── Definite articles
+│   ├── Indefinite articles
+│   ├── Negative articles
+│   └── Possessive articles
+├── Cases
+│   ├── Nominativ
+│   ├── Akkusativ
+│   ├── Dativ
+│   └── Genitiv
+├── Pronouns
+│   ├── Personal pronouns
+│   ├── Possessive pronouns
+│   ├── Reflexive pronouns
+│   ├── Demonstrative pronouns
+│   ├── Indefinite pronouns
+│   └── Relative pronouns
+├── Adjectives
+│   ├── Predicate adjectives
+│   ├── Attributive adjectives
+│   ├── Adjective endings
+│   └── Comparatives and superlatives
+├── Prepositions
+│   ├── Accusative prepositions
+│   ├── Dative prepositions
+│   ├── Two-way prepositions
+│   └── Genitive prepositions
+├── Connectors
+│   ├── Coordinating connectors
+│   ├── Subordinating connectors
+│   ├── Adverbial connectors
+│   └── Discourse markers
+├── Relative Clauses
+│   ├── Relative pronouns
+│   ├── Embedded verb-final structure
+│   └── Case inside relative clauses
+└── Passive Voice
+    ├── Process passive with werden
+    ├── State passive with sein
+    └── Passive alternatives</code></pre>
+<h2 id="learning-path">Learning Path</h2>
+<h3 id="concept-progression-table">Concept Progression Table</h3>
+<table><thead><tr><th>Concept</th><th>Typical CEFR Introduction</th><th>Prerequisite Concepts</th><th>Related Concepts</th><th>Expansion Across Levels</th></tr></thead><tbody><tr><td>Sentence Structure</td><td>A1</td><td>Verb meaning, subject pronouns</td><td>Verbs, questions, connectors</td><td>A1 verb-second main clauses; A2 expanded sentence fields; B1 subordinate clauses and connectors; B2 emphasis and complex ordering; C1 style and information flow</td></tr>
+<tr><td>Verbs</td><td>A1</td><td>Pronouns, basic sentence meaning</td><td>Tenses, modal verbs, auxiliaries</td><td>A1 present tense; A2 perfect tense and modals; B1 tense contrast and verb complements; B2 prepositional verbs and style; C1 precision and idiomatic control</td></tr>
+<tr><td>Tenses</td><td>A1</td><td>Verb conjugation, auxiliaries</td><td>haben, sein, werden, participles</td><td>A1 present; A2 Perfekt and common Präteritum; B1 Plusquamperfekt and future meaning; B2 tense choice in formal contexts; C1 nuance and register</td></tr>
+<tr><td>Auxiliary Verbs</td><td>A1</td><td>Common verbs, sentence structure</td><td>Tenses, passive, Konjunktiv</td><td>A1 haben and sein as lexical verbs; A2 haben and sein in Perfekt; B1 werden for future and passive; B2-C1 advanced passive, Futur II, and Konjunktiv</td></tr>
+<tr><td>Nouns</td><td>A1</td><td>Vocabulary, articles</td><td>Gender, plural, cases</td><td>A1 gender and basic plurals; A2 case-marked noun phrases; B1 compound nouns; B2 nominal style; C1 abstract and technical noun systems</td></tr>
+<tr><td>Articles</td><td>A1</td><td>Nouns, gender</td><td>Cases, adjective endings, pronouns</td><td>A1 der/die/das and ein/eine; A2 case forms; B1 article signals with adjective endings; B2-C1 precision, abstraction, and formal noun phrases</td></tr>
+<tr><td>Cases</td><td>A1</td><td>Articles, nouns, sentence roles</td><td>Prepositions, pronouns, adjective endings</td><td>A1 Nominativ and Akkusativ; A2 Dativ; B1 Genitiv awareness and expanded case control; B2 formal Genitiv and complex phrases; C1 high-precision case use</td></tr>
+<tr><td>Pronouns</td><td>A1</td><td>Person, number, sentence roles</td><td>Cases, reflexive verbs, relative clauses</td><td>A1 personal pronouns; A2 accusative, dative, possessive, reflexive; B1 relative pronouns; B2 demonstrative and indefinite pronouns; C1 reference and cohesion</td></tr>
+<tr><td>Adjectives</td><td>A1</td><td>Nouns, articles</td><td>Cases, comparisons, descriptions</td><td>A1 predicate adjectives; A2 comparisons; B1 adjective endings; B2 complex noun phrases; C1 nuanced description and register</td></tr>
+<tr><td>Prepositions</td><td>A1</td><td>Place, time, nouns, cases</td><td>Dativ, Akkusativ, Genitiv</td><td>A1 basic place/time phrases; A2 dative, accusative, two-way prepositions; B1 prepositional verbs; B2 formal prepositional style; C1 idiomatic precision</td></tr>
+<tr><td>Connectors</td><td>A1</td><td>Sentence structure</td><td>Subordinate clauses, argumentation</td><td>A1 und, aber, oder; A2 weil, dass, wenn; B1 obwohl, damit, deshalb; B2 argument structure; C1 discourse flow and rhetorical control</td></tr>
+<tr><td>Relative Clauses</td><td>B1</td><td>Cases, pronouns, subordinate word order</td><td>Nouns, adjective-like detail, connectors</td><td>B1 basic relative clauses; B2 case precision and prepositions; C1 dense written style and complex reference</td></tr>
+<tr><td>Passive Voice</td><td>B1</td><td>werden, participles, tense system</td><td>Tenses, formal language, process description</td><td>B1 process passive in present/past; B2 passive in formal texts and alternatives; C1 state/process contrast and stylistic choice</td></tr></tbody></table>
+<h2 id="verb-system">Verb System</h2>
+<h3 id="foundation-verbs">Foundation Verbs</h3>
+<p>The verbs haben, sein, and werden are foundational because they operate at three levels:</p>
+<p>1. Meaning verbs: They express possession, identity, state, becoming, or change.</p>
+<p>2. Auxiliary verbs: They help build major tense and voice structures.</p>
+<p>3. System connectors: They link present meaning to past, future, passive, and hypothetical forms.</p>
+<pre class="system-map"><code class="language-text">haben
+├── Lexical meaning: to have
+├── Perfekt auxiliary for many verbs
+├── Plusquamperfekt auxiliary for many verbs
+└── Konjunktiv II form: hätte
+
+sein
+├── Lexical meaning: to be
+├── Perfekt auxiliary for movement/change-of-state verbs
+├── Plusquamperfekt auxiliary for movement/change-of-state verbs
+├── State passive helper
+└── Konjunktiv II form: wäre
+
+werden
+├── Lexical meaning: to become
+├── Futur I auxiliary
+├── Futur II auxiliary
+├── Process passive auxiliary
+└── Konjunktiv II form: würde</code></pre>
+<h3 id="how-haben-sein-and-werden-connect-the-verb-system">How haben, sein, and werden Connect the Verb System</h3>
+<pre class="system-map"><code class="language-text">Verb System
+├── Präsens
+│   ├── Uses the main verb directly
+│   ├── ich habe, ich bin, ich werde
+│   └── Foundation for present meaning and near-future plans
+├── Perfekt
+│   ├── haben + Partizip II
+│   ├── sein + Partizip II
+│   └── Used for most spoken past events
+├── Präteritum
+│   ├── Common for sein, haben, modal verbs
+│   ├── Important in stories and written German
+│   └── Expands into narrative control
+├── Plusquamperfekt
+│   ├── hatte + Partizip II
+│   ├── war + Partizip II
+│   └── Shows one past event before another past event
+├── Futur I
+│   ├── werden + Infinitiv
+│   └── Used for future, prediction, or assumption
+├── Futur II
+│   ├── werden + Partizip II + haben/sein
+│   └── Used for completed future or assumptions about the past
+├── Passive Voice
+│   ├── werden + Partizip II for process passive
+│   └── sein + Partizip II for state passive
+└── Konjunktiv
+    ├── hätte for wishes, politeness, unreal conditions
+    ├── wäre for wishes, politeness, unreal conditions
+    └── würde + Infinitiv for many conditional forms</code></pre>
+<h3 id="verb-system-by-cefr-level">Verb System by CEFR Level</h3>
+<table><thead><tr><th>Level</th><th>Verb System Focus</th><th>Learner Capability</th></tr></thead><tbody><tr><td>A1</td><td>Präsens, haben, sein, common verbs, first modal verbs</td><td>Say basic needs, identity, routines, and simple preferences</td></tr>
+<tr><td>A2</td><td>Perfekt, more modal verbs, separable verbs, reflexive verbs</td><td>Talk about past events, plans, obligations, and daily situations</td></tr>
+<tr><td>B1</td><td>Präteritum, Plusquamperfekt, werden, Konjunktiv II basics</td><td>Tell stories, make polite requests, describe sequences, express wishes</td></tr>
+<tr><td>B2</td><td>Passive voice, prepositional verbs, tense choice, reported speech awareness</td><td>Explain processes, discuss complex situations, adapt tone</td></tr>
+<tr><td>C1</td><td>Advanced tense, mood, passive alternatives, idiomatic verb patterns</td><td>Control nuance, register, implication, and professional/academic style</td></tr></tbody></table>
+<h2 id="sentence-structure-system">Sentence Structure System</h2>
+<p>Sentence structure is the backbone of German communication. Learners need to see word order as a system of patterns rather than a set of surprises.</p>
+<h3 id="visual-hierarchy">Visual Hierarchy</h3>
+<pre class="system-map"><code class="language-text">Sentence Structure
+├── Main Clauses
+│   ├── Position 1: topic or subject
+│   ├── Position 2: conjugated verb
+│   └── End position: infinitive, participle, separable prefix
+├── Yes/No Questions
+│   ├── Position 1: conjugated verb
+│   └── Subject follows the verb
+├── W-Questions
+│   ├── Position 1: question word
+│   ├── Position 2: conjugated verb
+│   └── Subject usually follows the verb
+├── Modal Verbs
+│   ├── Position 2: conjugated modal verb
+│   └── End position: main verb infinitive
+├── Separable Verbs
+│   ├── Position 2: conjugated verb stem
+│   └── End position: separable prefix
+├── Subordinate Clauses
+│   ├── Introduced by subordinating connector
+│   └── Conjugated verb moves to the end
+└── Relative Clauses
+    ├── Introduced by relative pronoun
+    ├── Relative pronoun has gender, number, and case
+    └── Conjugated verb moves to the end</code></pre>
+<h3 id="word-order-patterns">Word Order Patterns</h3>
+<table><thead><tr><th>Structure</th><th>Pattern</th><th>Example Function</th><th>Typical Introduction</th></tr></thead><tbody><tr><td>Main clause</td><td>Topic/subject + verb + rest</td><td>Make statements</td><td>A1</td></tr>
+<tr><td>Yes/no question</td><td>Verb + subject + rest</td><td>Ask if something is true</td><td>A1</td></tr>
+<tr><td>W-question</td><td>Question word + verb + subject + rest</td><td>Ask for specific information</td><td>A1</td></tr>
+<tr><td>Modal verb clause</td><td>Subject + modal verb + rest + infinitive</td><td>Say can, must, want, should</td><td>A1-A2</td></tr>
+<tr><td>Separable verb clause</td><td>Subject + verb stem + rest + prefix</td><td>Describe daily actions</td><td>A1-A2</td></tr>
+<tr><td>Perfekt clause</td><td>Subject + haben/sein + rest + participle</td><td>Talk about the past</td><td>A2</td></tr>
+<tr><td>Subordinate clause</td><td>Connector + subject + rest + verb</td><td>Give reason, condition, content</td><td>A2-B1</td></tr>
+<tr><td>Relative clause</td><td>Noun + relative pronoun + rest + verb</td><td>Add detail to a noun</td><td>B1</td></tr>
+<tr><td>Complex sentence</td><td>Main clause + subordinate/relative clauses</td><td>Explain, argue, narrate</td><td>B1-C1</td></tr></tbody></table>
+<h3 id="sentence-structure-expansion">Sentence Structure Expansion</h3>
+<pre class="system-map"><code class="language-text">A1: I can make simple sentences and questions.
+├── Ich wohne in Berlin.
+├── Wohnst du in Berlin?
+└── Wo wohnst du?
+
+A2: I can combine actions, plans, and reasons.
+├── Ich muss morgen arbeiten.
+├── Ich habe einen Termin gemacht.
+└── Ich lerne Deutsch, weil ich in Deutschland wohne.
+
+B1: I can connect ideas and add detail.
+├── Ich suche eine Wohnung, die nicht zu teuer ist.
+└── Ich konnte nicht kommen, obwohl ich Zeit hatte.
+
+B2: I can structure complex explanations and arguments.
+└── Obwohl die Lösung teuer ist, halte ich sie langfristig für sinnvoll.
+
+C1: I can manage emphasis, register, and information flow.
+└── Entscheidend ist nicht nur, was vorgeschlagen wurde, sondern wie realistisch die Umsetzung ist.</code></pre>
+<h2 id="case-system">Case System</h2>
+<p>Cases show the role of noun phrases in a sentence. For adult learners, the case system should be taught as a meaning and function map, not only as article tables.</p>
+<h3 id="case-relationship-map">Case Relationship Map</h3>
+<pre class="system-map"><code class="language-text">Cases
+├── Nominativ
+│   ├── Core role: subject
+│   ├── Question: who or what is doing/being?
+│   ├── First appears: A1
+│   └── Foundation for articles, pronouns, and adjective endings
+├── Akkusativ
+│   ├── Core role: direct object
+│   ├── Question: who or what receives the action directly?
+│   ├── First appears: A1
+│   └── Expands through verbs, prepositions, time expressions
+├── Dativ
+│   ├── Core role: indirect object, recipient, location with many prepositions
+│   ├── Question: to whom, for whom, where?
+│   ├── First appears: A2
+│   └── Expands through dative verbs, prepositions, two-way prepositions
+└── Genitiv
+    ├── Core role: possession, relationship, formal connection
+    ├── Question: whose?
+    ├── First appears: B1 awareness, B2 active formal use
+    └── Expands through formal writing, nominal style, academic language</code></pre>
+<h3 id="case-learning-path">Case Learning Path</h3>
+<table><thead><tr><th>Level</th><th>Case Focus</th><th>Learner Capability</th></tr></thead><tbody><tr><td>A1</td><td>Nominativ and Akkusativ</td><td>Say who does something and what they need, buy, have, like, or see</td></tr>
+<tr><td>A2</td><td>Dativ with common verbs and prepositions</td><td>Talk about locations, recipients, help, appointments, and daily interactions</td></tr>
+<tr><td>B1</td><td>Case contrast and Genitiv awareness</td><td>Understand more complex noun phrases, relative pronouns, and formal written patterns</td></tr>
+<tr><td>B2</td><td>Genitiv and case precision in formal contexts</td><td>Read and write more precise formal, professional, and institutional German</td></tr>
+<tr><td>C1</td><td>Case as style and precision tool</td><td>Control complex noun phrases, register, and dense written expression</td></tr></tbody></table>
+<h3 id="case-connections">Case Connections</h3>
+<pre class="system-map"><code class="language-text">Cases connect to:
+├── Articles
+│   └── der, den, dem, des show case signals
+├── Pronouns
+│   └── ich/mich/mir; er/ihn/ihm
+├── Adjective Endings
+│   └── endings depend on article, gender, number, and case
+├── Prepositions
+│   └── many prepositions require a specific case
+├── Verbs
+│   └── some verbs strongly expect accusative or dative complements
+└── Relative Clauses
+    └── relative pronoun case depends on its role inside the relative clause</code></pre>
+<h2 id="major-systems-as-map-nodes">Major Systems as Map Nodes</h2>
+<h3 id="sentence-structure">Sentence Structure</h3>
+<ul>
+<li>Typical introduction: A1</li>
+<li>Prerequisites: Basic verbs, pronouns, simple vocabulary</li>
+<li>Related concepts: Verb position, questions, connectors, subordinate clauses</li>
+<li>Expansion: From simple main clauses to complex argument and information flow</li>
+</ul>
+<h3 id="verbs">Verbs</h3>
+<ul>
+<li>Typical introduction: A1</li>
+<li>Prerequisites: Pronouns, sentence meaning</li>
+<li>Related concepts: Tenses, auxiliaries, modals, separable verbs, reflexive verbs</li>
+<li>Expansion: From present-tense communication to nuanced tense, mood, and register</li>
+</ul>
+<h3 id="tenses">Tenses</h3>
+<ul>
+<li>Typical introduction: A1</li>
+<li>Prerequisites: Verb conjugation, auxiliary verbs</li>
+<li>Related concepts: haben, sein, werden, participles, word order</li>
+<li>Expansion: From Präsens to spoken past, narrative past, completed past, future, and assumptions</li>
+</ul>
+<h3 id="auxiliary-verbs">Auxiliary Verbs</h3>
+<ul>
+<li>Typical introduction: A1</li>
+<li>Prerequisites: Basic verb use</li>
+<li>Related concepts: Perfekt, Plusquamperfekt, Futur, Passive Voice, Konjunktiv</li>
+<li>Expansion: From meaning verbs to structural engines of the verb system</li>
+</ul>
+<h3 id="nouns">Nouns</h3>
+<ul>
+<li>Typical introduction: A1</li>
+<li>Prerequisites: Vocabulary</li>
+<li>Related concepts: Articles, gender, plural, cases, compounds</li>
+<li>Expansion: From concrete nouns to abstract, compound, and formal noun systems</li>
+</ul>
+<h3 id="articles">Articles</h3>
+<ul>
+<li>Typical introduction: A1</li>
+<li>Prerequisites: Nouns and gender</li>
+<li>Related concepts: Cases, adjective endings, pronouns</li>
+<li>Expansion: From basic der/die/das to article-case-adjective systems</li>
+</ul>
+<h3 id="cases">Cases</h3>
+<ul>
+<li>Typical introduction: A1</li>
+<li>Prerequisites: Nouns, articles, sentence roles</li>
+<li>Related concepts: Prepositions, pronouns, adjective endings, relative clauses</li>
+<li>Expansion: From subject/object contrast to formal precision and complex noun phrases</li>
+</ul>
+<h3 id="pronouns">Pronouns</h3>
+<ul>
+<li>Typical introduction: A1</li>
+<li>Prerequisites: Person, number, sentence roles</li>
+<li>Related concepts: Cases, reflexive verbs, possessives, relative clauses</li>
+<li>Expansion: From basic personal reference to cohesion and discourse control</li>
+</ul>
+<h3 id="adjectives">Adjectives</h3>
+<ul>
+<li>Typical introduction: A1</li>
+<li>Prerequisites: Nouns and simple descriptions</li>
+<li>Related concepts: Articles, cases, comparison, noun phrases</li>
+<li>Expansion: From simple descriptions to precise, case-marked, register-sensitive noun phrases</li>
+</ul>
+<h3 id="prepositions">Prepositions</h3>
+<ul>
+<li>Typical introduction: A1</li>
+<li>Prerequisites: Nouns, places, time expressions</li>
+<li>Related concepts: Cases, verbs, location/direction, formal style</li>
+<li>Expansion: From common place/time phrases to idiomatic and abstract prepositional patterns</li>
+</ul>
+<h3 id="connectors">Connectors</h3>
+<ul>
+<li>Typical introduction: A1</li>
+<li>Prerequisites: Main clauses</li>
+<li>Related concepts: Subordinate clauses, word order, argumentation</li>
+<li>Expansion: From simple linking to argument, contrast, concession, cause, and discourse flow</li>
+</ul>
+<h3 id="relative-clauses">Relative Clauses</h3>
+<ul>
+<li>Typical introduction: B1</li>
+<li>Prerequisites: Cases, pronouns, subordinate word order</li>
+<li>Related concepts: Noun detail, adjective-like information, sentence complexity</li>
+<li>Expansion: From identifying people/things to dense written precision</li>
+</ul>
+<h3 id="passive-voice">Passive Voice</h3>
+<ul>
+<li>Typical introduction: B1</li>
+<li>Prerequisites: werden, participles, tense system</li>
+<li>Related concepts: Formal writing, process description, state passive, passive alternatives</li>
+<li>Expansion: From basic process descriptions to formal, institutional, and academic style</li>
+</ul>
+<h2 id="knowledge-graph">Knowledge Graph</h2>
+<p>The following graph shows how grammar concepts build across levels. It is intended as a blueprint for future visual diagrams.</p>
+<pre class="system-map"><code class="language-text">A1 Foundation
+├── Pronouns
+│   └── Verb Conjugation
+│       ├── Präsens
+│       │   ├── Main Clauses
+│       │   │   ├── Yes/No Questions
+│       │   │   └── W-Questions
+│       │   └── Modal Verbs
+│       │       └── Infinitive at End
+│       └── haben / sein
+│           ├── Identity, possession, state
+│           └── Future tense foundations
+├── Nouns
+│   ├── Gender
+│   ├── Articles
+│   │   ├── Nominativ
+│   │   └── Akkusativ
+│   └── Plurals
+├── Basic Prepositions
+└── Simple Connectors
+    └── und / aber / oder
+
+A2 Everyday Expansion
+├── Perfekt
+│   ├── haben + Partizip II
+│   ├── sein + Partizip II
+│   └── Past-event communication
+├── Separable Verbs
+│   └── Verb bracket awareness
+├── Reflexive Verbs
+│   └── Reflexive Pronouns
+├── Dativ
+│   ├── Dative Articles
+│   ├── Dative Pronouns
+│   ├── Dative Prepositions
+│   └── Two-Way Prepositions
+├── Comparisons
+└── Subordinate Clauses
+    ├── weil
+    ├── dass
+    └── wenn
+
+B1 Independent Communication
+├── Expanded Past System
+│   ├── Präteritum
+│   └── Plusquamperfekt
+├── werden
+│   ├── Futur I
+│   └── Passive Voice Foundation
+├── Konjunktiv II Basics
+│   ├── hätte
+│   ├── wäre
+│   └── würde + Infinitiv
+├── Relative Clauses
+│   ├── Relative Pronouns
+│   ├── Case inside Relative Clause
+│   └── Verb-Final Structure
+├── Adjective Endings
+└── Connectors for Reason, Contrast, Result
+
+B2 Confident Participation
+├── Passive Voice Expansion
+│   ├── Process Passive
+│   ├── State Passive
+│   └── Passive Alternatives
+├── Advanced Connectors
+│   ├── Argumentation
+│   ├── Concession
+│   ├── Cause and Consequence
+│   └── Structured Discussion
+├── Genitiv Active Use
+│   ├── Formal Noun Phrases
+│   └── Institutional Language
+├── Prepositional Verbs
+├── Nominalization
+└── Reported Speech Awareness
+
+C1 Flexible Control
+├── Register Control
+│   ├── Formal
+│   ├── Professional
+│   ├── Academic
+│   └── Conversational
+├── Advanced Sentence Architecture
+│   ├── Information Flow
+│   ├── Emphasis
+│   └── Dense Written Style
+├── Konjunktiv and Reported Speech Refinement
+├── Advanced Passive and Impersonal Alternatives
+├── Idiomatic Verb and Preposition Patterns
+├── Modal Particles and Tone
+└── Editing for Precision, Naturalness, and Style</code></pre>
+<h2 id="design-implication">Design Implication</h2>
+<p>Future lessons, diagrams, and knowledge maps should avoid presenting grammar as isolated chapters. Each grammar concept should be tagged by:</p>
+<ul>
+<li>Communication function</li>
+<li>CEFR level</li>
+<li>Prerequisites</li>
+<li>Related concepts</li>
+<li>Example real-life situations</li>
+<li>Spoken use</li>
+<li>Written use</li>
+<li>Review links to earlier concepts</li>
+</ul>
+<p>This makes grammar visible as a connected system that supports the central promise of German Learning System: turning scattered knowledge into usable communication.</p>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

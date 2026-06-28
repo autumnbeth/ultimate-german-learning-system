@@ -79,6 +79,12 @@
       border-bottom-color: var(--teal);
     }
 
+    .toplinks {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
     .hero {
       max-width: 860px;
       margin-bottom: 42px;
@@ -273,6 +279,7 @@
       .grid { grid-template-columns: 1fr; }
     }
   </style>
+  <link rel="stylesheet" href="styles/design-system.css">
 </head>
 <body>
   <main class="shell">
@@ -281,7 +288,10 @@
         <span class="mark">D</span>
         <span>German Learning System</span>
       </a>
-      <a class="navlink" href="design-system.html">Design System</a>
+      <div class="toplinks">
+        <a class="navlink" href="foundation-reference.html">Foundation</a>
+        <a class="navlink" href="design-system.html">Design System</a>
+      </div>
     </nav>
 
     <section class="hero">
@@ -315,7 +325,7 @@
         <div class="domain-meta">2 situations</div>
       </div>
       <div class="grid">
-        <a class="card" href="situations/healthcare/apotheke.md">
+        <a class="card" href="situation-pages/healthcare/apotheke.html">
           <div>
             <div class="card-top"><h3>Apotheke</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -323,7 +333,7 @@
           </div>
           <div class="path">situations/healthcare/apotheke.md</div>
         </a>
-        <a class="card" href="situations/healthcare/arzttermin.md">
+        <a class="card" href="situation-pages/healthcare/arzttermin.html">
           <div>
             <div class="card-top"><h3>Arzttermin</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -340,7 +350,7 @@
         <div class="domain-meta">2 situations</div>
       </div>
       <div class="grid">
-        <a class="card" href="situations/government/anmeldung.md">
+        <a class="card" href="situation-pages/government/anmeldung.html">
           <div>
             <div class="card-top"><h3>Anmeldung</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -348,7 +358,7 @@
           </div>
           <div class="path">situations/government/anmeldung.md</div>
         </a>
-        <a class="card" href="situations/government/buergeramt.md">
+        <a class="card" href="situation-pages/government/buergeramt.html">
           <div>
             <div class="card-top"><h3>Bürgeramt</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -365,7 +375,7 @@
         <div class="domain-meta">2 situations</div>
       </div>
       <div class="grid">
-        <a class="card" href="situations/housing/vermieter_kontaktieren.md">
+        <a class="card" href="situation-pages/housing/vermieter_kontaktieren.html">
           <div>
             <div class="card-top"><h3>Vermieter kontaktieren</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -373,7 +383,7 @@
           </div>
           <div class="path">situations/housing/vermieter_kontaktieren.md</div>
         </a>
-        <a class="card" href="situations/housing/wohnungssuche.md">
+        <a class="card" href="situation-pages/housing/wohnungssuche.html">
           <div>
             <div class="card-top"><h3>Wohnungssuche</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -390,7 +400,7 @@
         <div class="domain-meta">3 situations</div>
       </div>
       <div class="grid">
-        <a class="card" href="situations/daily_life/restaurant.md">
+        <a class="card" href="situation-pages/daily_life/restaurant.html">
           <div>
             <div class="card-top"><h3>Restaurant</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -398,7 +408,7 @@
           </div>
           <div class="path">situations/daily_life/restaurant.md</div>
         </a>
-        <a class="card" href="situations/daily_life/supermarkt.md">
+        <a class="card" href="situation-pages/daily_life/supermarkt.html">
           <div>
             <div class="card-top"><h3>Supermarkt</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -406,7 +416,7 @@
           </div>
           <div class="path">situations/daily_life/supermarkt.md</div>
         </a>
-        <a class="card" href="situations/daily_life/termin_vereinbaren.md">
+        <a class="card" href="situation-pages/daily_life/termin_vereinbaren.html">
           <div>
             <div class="card-top"><h3>Termin vereinbaren</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -423,7 +433,7 @@
         <div class="domain-meta">2 situations</div>
       </div>
       <div class="grid">
-        <a class="card" href="situations/family_school/ELTERNABEND.md">
+        <a class="card" href="situation-pages/family_school/ELTERNABEND.html">
           <div>
             <div class="card-top"><h3>Elternabend</h3><span class="level">A1-C1</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -431,7 +441,7 @@
           </div>
           <div class="path">situations/family_school/ELTERNABEND.md</div>
         </a>
-        <a class="card" href="situations/education/gespraech_mit_lehrkraft.md">
+        <a class="card" href="situation-pages/education/gespraech_mit_lehrkraft.html">
           <div>
             <div class="card-top"><h3>Gespräch mit Lehrkraft</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -448,7 +458,7 @@
         <div class="domain-meta">2 situations</div>
       </div>
       <div class="grid">
-        <a class="card" href="situations/work/erster_arbeitstag.md">
+        <a class="card" href="situation-pages/work/erster_arbeitstag.html">
           <div>
             <div class="card-top"><h3>Erster Arbeitstag</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -456,7 +466,7 @@
           </div>
           <div class="path">situations/work/erster_arbeitstag.md</div>
         </a>
-        <a class="card" href="situations/work/vorstellungsgespraech.md">
+        <a class="card" href="situation-pages/work/vorstellungsgespraech.html">
           <div>
             <div class="card-top"><h3>Vorstellungsgespräch</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -473,7 +483,7 @@
         <div class="domain-meta">1 situation</div>
       </div>
       <div class="grid">
-        <a class="card" href="situations/social/freunde_treffen.md">
+        <a class="card" href="situation-pages/social/freunde_treffen.html">
           <div>
             <div class="card-top"><h3>Freunde treffen</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -490,7 +500,7 @@
         <div class="domain-meta">1 situation</div>
       </div>
       <div class="grid">
-        <a class="card" href="situations/transport/oeffentliche_verkehrsmittel.md">
+        <a class="card" href="situation-pages/transport/oeffentliche_verkehrsmittel.html">
           <div>
             <div class="card-top"><h3>Öffentliche Verkehrsmittel</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>
@@ -507,7 +517,7 @@
         <div class="domain-meta">1 situation</div>
       </div>
       <div class="grid">
-        <a class="card" href="situations/emergency/notfall.md">
+        <a class="card" href="situation-pages/emergency/notfall.html">
           <div>
             <div class="card-top"><h3>Notfall</h3><span class="level">A1-B2</span></div>
             <p class="desc">Open the situation file for dialogues, vocabulary, writing tasks, and real-life practice.</p>

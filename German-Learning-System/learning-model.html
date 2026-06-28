@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Model | German Learning System</title>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --ink: #18181b;
+      --muted: #71717a;
+      --line: #e8e4dc;
+      --card: #ffffff;
+      --teal: #11b5a4;
+      --blue: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 34px 28px 80px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 42px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--teal);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-family: Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .toplinks {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .toplinks a {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .toplinks a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--teal);
+    }
+
+    .hero {
+      max-width: 840px;
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 0.94;
+      margin: 0 0 20px;
+      letter-spacing: -0.025em;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: #3f3f46;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 18px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .panel {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .panel-title {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .doc-link,
+    .toc-link {
+      display: block;
+      color: #52525b;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 10px;
+      border-radius: 7px;
+    }
+
+    .doc-link:hover,
+    .toc-link:hover {
+      color: var(--ink);
+      background: #f4f4f5;
+    }
+
+    .doc-link.active {
+      color: #fff;
+      background: var(--teal);
+    }
+
+    .toc-link.level-3 { padding-left: 22px; font-weight: 650; }
+    .toc-link.level-4 { padding-left: 34px; font-weight: 600; color: var(--muted); }
+
+    article {
+      min-width: 0;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 44px;
+    }
+
+    article h1 {
+      font-size: clamp(38px, 6vw, 62px);
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      line-height: 1.08;
+      margin: 50px 0 16px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 1.2;
+      margin: 34px 0 12px;
+    }
+
+    h4 {
+      color: var(--blue);
+      font-size: 16px;
+      margin: 26px 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    p, li {
+      color: #3f3f46;
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding-left: 22px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 28px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #f4f4f5;
+      color: #27272a;
+    }
+
+    pre {
+      overflow-x: auto;
+      background: #18181b;
+      color: #fafafa;
+      border-radius: 8px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      line-height: 1.5;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    p code, li code {
+      background: #f4f4f5;
+      color: #27272a;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+
+    strong { color: var(--ink); }
+
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .panel.toc { max-height: 280px; overflow: auto; }
+    }
+
+    @media (max-width: 680px) {
+      .shell { padding: 24px 14px 54px; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .toplinks { flex-wrap: wrap; }
+      article { padding: 26px 18px; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+  <link rel="stylesheet" href="styles/design-system.css">
+</head>
+<body class="reference-page">
+  <main class="shell">
+    <nav class="topbar" aria-label="Project navigation">
+      <a class="brand" href="index.html">
+        <span class="mark">D</span>
+        <span>German Learning System</span>
+      </a>
+      <div class="toplinks">
+        <a href="foundation-reference.html">Foundation</a>
+        <a href="situation-library.html">Situations</a>
+        <a href="design-system.html">Design System</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="eyebrow">Reference System</div>
+      <h1>Learning Model</h1>
+      <p class="lead">How a lesson moves from real life to confidence.</p>
+    </section>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section class="panel">
+          <div class="panel-title">Reference Docs</div>
+<a class="doc-link" href="foundation-reference.html">Foundation Reference</a>
+<a class="doc-link" href="grammar-map.html">Grammar Map</a>
+<a class="doc-link" href="sentence-architecture-map.html">Sentence Architecture Map</a>
+<a class="doc-link" href="communication-functions.html">Communication Functions</a>
+<a class="doc-link active" href="learning-model.html">Learning Model</a>
+<a class="doc-link" href="lesson-blueprint.html">Lesson Blueprint</a>
+        </section>
+        <section class="panel toc">
+          <div class="panel-title">On This Page</div>
+<a class="toc-link level-2" href="#product-design-specification">Product Design Specification</a>
+<a class="toc-link level-2" href="#lesson-journey-overview">Lesson Journey Overview</a>
+<a class="toc-link level-2" href="#1-real-life-situation">1. Real-Life Situation</a>
+<a class="toc-link level-3" href="#purpose">Purpose</a>
+<a class="toc-link level-3" href="#learner-experience">Learner Experience</a>
+<a class="toc-link level-3" href="#example-activities">Example Activities</a>
+<a class="toc-link level-3" href="#expected-outcomes">Expected Outcomes</a>
+<a class="toc-link level-2" href="#2-communication-goal">2. Communication Goal</a>
+<a class="toc-link level-3" href="#purpose-2">Purpose</a>
+<a class="toc-link level-3" href="#learner-experience-2">Learner Experience</a>
+<a class="toc-link level-3" href="#example-activities-2">Example Activities</a>
+<a class="toc-link level-3" href="#expected-outcomes-2">Expected Outcomes</a>
+<a class="toc-link level-2" href="#3-core-vocabulary">3. Core Vocabulary</a>
+<a class="toc-link level-3" href="#purpose-3">Purpose</a>
+<a class="toc-link level-3" href="#learner-experience-3">Learner Experience</a>
+<a class="toc-link level-3" href="#example-activities-3">Example Activities</a>
+<a class="toc-link level-3" href="#expected-outcomes-3">Expected Outcomes</a>
+<a class="toc-link level-2" href="#4-useful-phrases">4. Useful Phrases</a>
+<a class="toc-link level-3" href="#purpose-4">Purpose</a>
+<a class="toc-link level-3" href="#learner-experience-4">Learner Experience</a>
+<a class="toc-link level-3" href="#example-activities-4">Example Activities</a>
+<a class="toc-link level-3" href="#expected-outcomes-4">Expected Outcomes</a>
+<a class="toc-link level-2" href="#5-guided-speaking">5. Guided Speaking</a>
+<a class="toc-link level-3" href="#purpose-5">Purpose</a>
+<a class="toc-link level-3" href="#learner-experience-5">Learner Experience</a>
+<a class="toc-link level-3" href="#example-activities-5">Example Activities</a>
+<a class="toc-link level-3" href="#expected-outcomes-5">Expected Outcomes</a>
+<a class="toc-link level-2" href="#6-guided-writing">6. Guided Writing</a>
+<a class="toc-link level-3" href="#purpose-6">Purpose</a>
+<a class="toc-link level-3" href="#learner-experience-6">Learner Experience</a>
+<a class="toc-link level-3" href="#example-activities-6">Example Activities</a>
+<a class="toc-link level-3" href="#expected-outcomes-6">Expected Outcomes</a>
+<a class="toc-link level-2" href="#7-grammar-in-context">7. Grammar in Context</a>
+<a class="toc-link level-3" href="#purpose-7">Purpose</a>
+<a class="toc-link level-3" href="#learner-experience-7">Learner Experience</a>
+<a class="toc-link level-3" href="#example-activities-7">Example Activities</a>
+<a class="toc-link level-3" href="#expected-outcomes-7">Expected Outcomes</a>
+<a class="toc-link level-2" href="#8-retrieval-practice">8. Retrieval Practice</a>
+<a class="toc-link level-3" href="#purpose-8">Purpose</a>
+<a class="toc-link level-3" href="#learner-experience-8">Learner Experience</a>
+<a class="toc-link level-3" href="#example-activities-8">Example Activities</a>
+<a class="toc-link level-3" href="#expected-outcomes-8">Expected Outcomes</a>
+<a class="toc-link level-2" href="#9-real-world-challenge">9. Real-World Challenge</a>
+<a class="toc-link level-3" href="#purpose-9">Purpose</a>
+<a class="toc-link level-3" href="#learner-experience-9">Learner Experience</a>
+<a class="toc-link level-3" href="#example-activities-9">Example Activities</a>
+<a class="toc-link level-3" href="#expected-outcomes-9">Expected Outcomes</a>
+<a class="toc-link level-2" href="#10-reflection-and-confidence-building">10. Reflection and Confidence Building</a>
+<a class="toc-link level-3" href="#purpose-10">Purpose</a>
+<a class="toc-link level-3" href="#learner-experience-10">Learner Experience</a>
+<a class="toc-link level-3" href="#example-activities-10">Example Activities</a>
+<a class="toc-link level-3" href="#expected-outcomes-10">Expected Outcomes</a>
+<a class="toc-link level-2" href="#lesson-quality-checklist">Lesson Quality Checklist</a>
+<a class="toc-link level-2" href="#product-outcome">Product Outcome</a>
+        </section>
+      </aside>
+
+      <article>
+<h1 id="learning-model">Learning Model</h1>
+<h2 id="product-design-specification">Product Design Specification</h2>
+<p>German Learning System is built around real-life communication. A lesson is not a grammar chapter with exercises attached. It is a guided journey from a recognizable situation to a usable communication outcome.</p>
+<p>Each lesson should help the learner answer four product questions:</p>
+<ul>
+<li>Where would I use this?</li>
+<li>What can I say or understand now?</li>
+<li>How does the language fit together?</li>
+<li>Do I feel more confident using German in real life?</li>
+</ul>
+<h2 id="lesson-journey-overview">Lesson Journey Overview</h2>
+<p>Every lesson follows the same core flow:</p>
+<p>1. Real-life situation</p>
+<p>2. Communication goal</p>
+<p>3. Core vocabulary</p>
+<p>4. Useful phrases</p>
+<p>5. Guided speaking</p>
+<p>6. Guided writing</p>
+<p>7. Grammar in context</p>
+<p>8. Retrieval practice</p>
+<p>9. Real-world challenge</p>
+<p>10. Reflection and confidence building</p>
+<p>This consistent structure gives learners grounding. They know what kind of experience to expect, while the topic, language, and challenge evolve across levels.</p>
+<h2 id="1-real-life-situation">1. Real-Life Situation</h2>
+<h3 id="purpose">Purpose</h3>
+<p>Anchor the lesson in a concrete moment from daily life, work, travel, health, housing, shopping, family, education, or social interaction.</p>
+<p>The situation gives the learner a reason to care. It turns German from abstract study into a tool for action.</p>
+<h3 id="learner-experience">Learner Experience</h3>
+<p>The learner recognizes the scenario and understands why the language matters. They should think, &quot;I might actually need this.&quot;</p>
+<p>The situation should feel specific enough to be useful, but broad enough to transfer to similar contexts.</p>
+<h3 id="example-activities">Example Activities</h3>
+<ul>
+<li>Read a short scenario: &quot;You are at the Apotheke and need something for a sore throat.&quot;</li>
+<li>Look at a photo, receipt, message, sign, or short dialogue from the situation.</li>
+<li>Choose what the learner needs to accomplish in the scenario.</li>
+<li>Identify what feels easy, difficult, or unfamiliar before learning begins.</li>
+</ul>
+<h3 id="expected-outcomes">Expected Outcomes</h3>
+<ul>
+<li>The learner understands the practical context.</li>
+<li>The learner can connect the lesson to a real need.</li>
+<li>The system creates motivation before introducing language.</li>
+</ul>
+<h2 id="2-communication-goal">2. Communication Goal</h2>
+<h3 id="purpose-2">Purpose</h3>
+<p>Define the observable outcome of the lesson. The communication goal tells the learner what they will be able to do by the end.</p>
+<p>This keeps the lesson focused and prevents vocabulary, grammar, and activities from feeling disconnected.</p>
+<h3 id="learner-experience-2">Learner Experience</h3>
+<p>The learner sees a clear target. They are not simply &quot;learning dative&quot; or &quot;studying health words.&quot; They are learning to explain a symptom, ask for help, compare options, or make a request.</p>
+<h3 id="example-activities-2">Example Activities</h3>
+<ul>
+<li>Present one can-do statement: &quot;I can ask for medicine and explain one symptom.&quot;</li>
+<li>Show a short success example at the learner&#x27;s level.</li>
+<li>Ask the learner to choose a personal version of the goal.</li>
+<li>Preview the final speaking or writing task.</li>
+</ul>
+<h3 id="expected-outcomes-2">Expected Outcomes</h3>
+<ul>
+<li>The learner knows what success looks like.</li>
+<li>The lesson has a clear product outcome.</li>
+<li>All later activities can be evaluated against the same goal.</li>
+</ul>
+<h2 id="3-core-vocabulary">3. Core Vocabulary</h2>
+<h3 id="purpose-3">Purpose</h3>
+<p>Introduce the minimum useful vocabulary needed for the situation. Vocabulary should be selected for immediate communicative value, not completeness.</p>
+<p>The goal is to give learners enough language to act, not overwhelm them with every related word.</p>
+<h3 id="learner-experience-3">Learner Experience</h3>
+<p>The learner meets words in meaningful groups and examples. They see how the words behave inside sentences and short exchanges.</p>
+<h3 id="example-activities-3">Example Activities</h3>
+<ul>
+<li>Match words to images, actions, or short definitions.</li>
+<li>Sort vocabulary by function: symptoms, items, places, people, actions.</li>
+<li>Complete short sentence frames with new words.</li>
+<li>Listen and identify key words in a short dialogue.</li>
+<li>Mark words as &quot;I know,&quot; &quot;I recognize,&quot; or &quot;I need to practice.&quot;</li>
+</ul>
+<h3 id="expected-outcomes-3">Expected Outcomes</h3>
+<ul>
+<li>The learner can recognize and use the most important words for the situation.</li>
+<li>Vocabulary is connected to actions, not memorized as an isolated list.</li>
+<li>The learner has enough language to begin guided production.</li>
+</ul>
+<h2 id="4-useful-phrases">4. Useful Phrases</h2>
+<h3 id="purpose-4">Purpose</h3>
+<p>Give learners ready-to-use language chunks that help them communicate before they can build every sentence from scratch.</p>
+<p>Useful phrases reduce friction and support early confidence.</p>
+<h3 id="learner-experience-4">Learner Experience</h3>
+<p>The learner practices natural phrases they can reuse immediately. They begin to feel that German can be functional even when their grammar is still developing.</p>
+<h3 id="example-activities-4">Example Activities</h3>
+<ul>
+<li>Repeat and personalize phrase frames.</li>
+<li>Choose the right phrase for a short situation.</li>
+<li>Build mini-dialogues from phrase blocks.</li>
+<li>Practice polite requests, clarification phrases, and repair strategies.</li>
+<li>Swap one detail in a phrase to create new meaning.</li>
+</ul>
+<h3 id="expected-outcomes-4">Expected Outcomes</h3>
+<ul>
+<li>The learner can use several practical phrases in the target situation.</li>
+<li>The learner has language for starting, continuing, and repairing communication.</li>
+<li>Speaking feels possible earlier in the lesson.</li>
+</ul>
+<h2 id="5-guided-speaking">5. Guided Speaking</h2>
+<h3 id="purpose-5">Purpose</h3>
+<p>Move the learner from recognition into spoken use with support. Guided speaking turns input into action.</p>
+<p>This step builds confidence through controlled success before asking for freer communication.</p>
+<h3 id="learner-experience-5">Learner Experience</h3>
+<p>The learner speaks in small, manageable steps. They are not asked to improvise too early. Support gradually decreases as confidence increases.</p>
+<h3 id="example-activities-5">Example Activities</h3>
+<ul>
+<li>Repeat short model lines with natural rhythm and pronunciation.</li>
+<li>Complete spoken sentence frames.</li>
+<li>Answer simple prompted questions.</li>
+<li>Practice a role play with visible support.</li>
+<li>Choose from phrase options to respond in a dialogue.</li>
+<li>Record and compare two attempts to notice improvement.</li>
+</ul>
+<h3 id="expected-outcomes-5">Expected Outcomes</h3>
+<ul>
+<li>The learner can say key phrases aloud with growing fluency.</li>
+<li>The learner can participate in a short supported exchange.</li>
+<li>The learner experiences speaking as practice, not performance.</li>
+</ul>
+<h2 id="6-guided-writing">6. Guided Writing</h2>
+<h3 id="purpose-6">Purpose</h3>
+<p>Use writing to slow down, organize language, and strengthen communication. Writing gives learners a second path to produce German clearly.</p>
+<p>The writing task should support the same real-life situation as the speaking task.</p>
+<h3 id="learner-experience-6">Learner Experience</h3>
+<p>The learner builds a useful text with structure and examples. They see how spoken language can become a message, note, form response, email, or short explanation.</p>
+<h3 id="example-activities-6">Example Activities</h3>
+<ul>
+<li>Complete a short text message using a model.</li>
+<li>Fill in a form or appointment note.</li>
+<li>Write three sentences about the situation.</li>
+<li>Turn a spoken role play into a written message.</li>
+<li>Use a checklist to revise for clarity, key information, and tone.</li>
+</ul>
+<h3 id="expected-outcomes-6">Expected Outcomes</h3>
+<ul>
+<li>The learner can produce a short written response for the situation.</li>
+<li>The learner reinforces vocabulary and phrases through another mode.</li>
+<li>The learner gains a concrete artifact of progress.</li>
+</ul>
+<h2 id="7-grammar-in-context">7. Grammar in Context</h2>
+<h3 id="purpose-7">Purpose</h3>
+<p>Reveal the grammar pattern that helps the learner communicate more accurately or flexibly in the situation.</p>
+<p>Grammar appears after the learner has seen and used meaningful language. It explains how the pieces fit together.</p>
+<h3 id="learner-experience-7">Learner Experience</h3>
+<p>The learner notices a pattern inside familiar examples. The explanation should feel like a helpful key, not a detour into theory.</p>
+<h3 id="example-activities-7">Example Activities</h3>
+<ul>
+<li>Highlight the pattern in the dialogue or phrases.</li>
+<li>Compare two examples and identify what changes.</li>
+<li>Complete a small pattern table based on lesson language.</li>
+<li>Fix common errors connected to the situation.</li>
+<li>Rebuild sentences by changing person, time, place, or object.</li>
+</ul>
+<h3 id="expected-outcomes-7">Expected Outcomes</h3>
+<ul>
+<li>The learner understands one focused grammar pattern in context.</li>
+<li>The learner can use the pattern to create new sentences.</li>
+<li>Grammar supports communication instead of interrupting it.</li>
+</ul>
+<h2 id="8-retrieval-practice">8. Retrieval Practice</h2>
+<h3 id="purpose-8">Purpose</h3>
+<p>Strengthen memory by bringing back language from earlier in the lesson and from previous lessons.</p>
+<p>Retrieval practice helps learners connect scattered knowledge and build long-term fluency.</p>
+<h3 id="learner-experience-8">Learner Experience</h3>
+<p>The learner recalls language actively instead of only rereading it. The task should feel short, achievable, and clearly connected to the communication goal.</p>
+<h3 id="example-activities-8">Example Activities</h3>
+<ul>
+<li>Recall five useful words without looking.</li>
+<li>Rebuild a dialogue from prompts.</li>
+<li>Answer mixed review questions from current and past topics.</li>
+<li>Choose the right phrase for a familiar situation.</li>
+<li>Transform old language for the new scenario.</li>
+<li>Complete a quick &quot;Can I still say this?&quot; check.</li>
+</ul>
+<h3 id="expected-outcomes-8">Expected Outcomes</h3>
+<ul>
+<li>The learner can retrieve key language with less support.</li>
+<li>Older vocabulary and grammar remain active.</li>
+<li>The learner sees that new lessons build on what they already know.</li>
+</ul>
+<h2 id="9-real-world-challenge">9. Real-World Challenge</h2>
+<h3 id="purpose-9">Purpose</h3>
+<p>Transfer lesson language into an authentic or near-authentic task. This step connects classroom success to everyday confidence.</p>
+<p>The challenge should be realistic, level-appropriate, and optional to complete in the real world when possible.</p>
+<h3 id="learner-experience-9">Learner Experience</h3>
+<p>The learner applies German to something that feels useful beyond the lesson. They may complete the task independently, with a partner, or as a simulation.</p>
+<h3 id="example-activities-9">Example Activities</h3>
+<ul>
+<li>Prepare and say one sentence at a cafe, shop, or Apotheke.</li>
+<li>Write a real or simulated message to make an appointment.</li>
+<li>Ask someone a simple question in German.</li>
+<li>Read a real sign, menu, receipt, website, or notice and identify key information.</li>
+<li>Role-play an unscripted version of the situation with new details.</li>
+<li>Create a personal phrase card for the next real encounter.</li>
+</ul>
+<h3 id="expected-outcomes-9">Expected Outcomes</h3>
+<ul>
+<li>The learner can transfer lesson language beyond the exercise format.</li>
+<li>The learner becomes less dependent on last-minute lookup.</li>
+<li>The lesson creates a bridge between practice and lived experience.</li>
+</ul>
+<h2 id="10-reflection-and-confidence-building">10. Reflection and Confidence Building</h2>
+<h3 id="purpose-10">Purpose</h3>
+<p>Help the learner notice progress, name what is becoming easier, and identify the next useful step.</p>
+<p>Reflection turns a lesson into visible growth. Confidence is treated as a product outcome, not a side effect.</p>
+<h3 id="learner-experience-10">Learner Experience</h3>
+<p>The learner ends with a sense of completion and direction. They should leave knowing what they can do, what still needs practice, and where this language could help them next.</p>
+<h3 id="example-activities-10">Example Activities</h3>
+<ul>
+<li>Complete a confidence rating before and after the lesson.</li>
+<li>Answer: &quot;What can I do now that I could not do before?&quot;</li>
+<li>Choose one phrase to use in real life this week.</li>
+<li>Identify one word, phrase, or pattern to review later.</li>
+<li>Write a short learner reflection.</li>
+<li>Mark the communication goal as &quot;not yet,&quot; &quot;with support,&quot; or &quot;independently.&quot;</li>
+</ul>
+<h3 id="expected-outcomes-10">Expected Outcomes</h3>
+<ul>
+<li>The learner can name their progress.</li>
+<li>The learner has a clear next action.</li>
+<li>The system reinforces motivation, agency, and confidence.</li>
+</ul>
+<h2 id="lesson-quality-checklist">Lesson Quality Checklist</h2>
+<p>A lesson is ready when it meets these criteria:</p>
+<ul>
+<li>The real-life situation is clear in the first minute.</li>
+<li>The communication goal is observable.</li>
+<li>Vocabulary is useful, limited, and contextual.</li>
+<li>Phrases are natural and reusable.</li>
+<li>Speaking begins before the learner has mastered every rule.</li>
+<li>Writing supports the same communication goal.</li>
+<li>Grammar explains a pattern the learner has already met.</li>
+<li>Retrieval practice includes both new and previous language.</li>
+<li>The real-world challenge feels possible.</li>
+<li>Reflection helps the learner see progress.</li>
+</ul>
+<h2 id="product-outcome">Product Outcome</h2>
+<p>The lesson should leave the learner with more than new information. It should leave them with a small but real increase in ability.</p>
+<p>The desired end state is:</p>
+<ul>
+<li>I understand where this language belongs.</li>
+<li>I can say or write something useful.</li>
+<li>I can connect this lesson to what I already know.</li>
+<li>I am more ready to use German outside the lesson.</li>
+</ul>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

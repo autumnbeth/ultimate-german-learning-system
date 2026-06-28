@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apotheke | German Learning System</title>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --ink: #18181b;
+      --muted: #71717a;
+      --line: #e8e4dc;
+      --card: #ffffff;
+      --accent: var(--pink);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 38px 24px 80px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+
+    .back {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back:hover { color: var(--accent); }
+
+    .source {
+      color: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      text-align: right;
+      word-break: break-word;
+    }
+
+    article {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 44px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(40px, 8vw, 68px);
+      line-height: 0.95;
+      margin: 0 0 28px;
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      line-height: 1.1;
+      margin: 46px 0 16px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    h3 {
+      font-size: 21px;
+      line-height: 1.2;
+      margin: 30px 0 12px;
+    }
+
+    h4 {
+      font-size: 16px;
+      margin: 24px 0 10px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    p, li {
+      color: #3f3f46;
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding-left: 22px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 26px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #f4f4f5;
+      color: #27272a;
+    }
+
+    pre {
+      overflow-x: auto;
+      background: #18181b;
+      color: #fafafa;
+      border-radius: 8px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      line-height: 1.5;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    p code, li code {
+      background: #f4f4f5;
+      color: #27272a;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+
+    strong { color: #18181b; }
+    em { color: #52525b; }
+
+    @media (max-width: 680px) {
+      .shell { padding: 24px 14px 52px; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .source { text-align: left; }
+      article { padding: 26px 18px; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+  <link rel="stylesheet" href="../../styles/design-system.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="topbar" aria-label="Situation navigation">
+      <a class="back" href="../../situation-library.html">Back to Situation Library</a>
+      <div class="source">situations/healthcare/apotheke.md</div>
+    </nav>
+    <article>
+<h1>Apotheke</h1>
+<h2>Situation Metadata</h2>
+<pre><code class="language-text">Situation Name: Apotheke
+Situation Category: Survival and Daily Life / Healthcare
+Description: A learner goes to a German pharmacy to ask for help, describe symptoms, request medicine or advice, understand usage instructions, compare options, and ask follow-up questions.
+Typical Participants: learner/customer, pharmacist, pharmacy assistant, family member, child, caregiver
+Typical Communication Functions: asking for help, describing symptoms, making requests, asking questions, understanding advice, giving reasons, comparing options, thanking
+Typical Grammar: present tense, haben, brauchen, modal verbs, accusative objects, dative pronouns, seit, weil clauses, dass clauses, Perfekt, comparatives, Konjunktiv II for polite requests
+Typical Sentence Architecture: Hauptsatz, yes-no questions, W-questions, modal verb brackets, Perfekt brackets, Nebensatz with weil, relative clauses for product descriptions
+Typical CEFR Range: A1-B2
+Related Foundation Reference Sections: Questions; Hauptsatz; Nebensatz; Modal Verbs; Perfekt; Verb Brackets; Cases; Pronouns; Giving Reasons; Making Suggestions; Information Flow
+Possible Lesson Topics: asking for help at the pharmacy; describing basic symptoms; asking how to take medicine; buying medicine for a child; comparing pharmacy options; explaining what has already happened
+Confidence Outcome: I can go to a German pharmacy, explain what I need, understand basic advice, and ask follow-up questions without looking up every word first.</code></pre>
+<h2>Purpose</h2>
+<p>Apotheke is a high-value healthcare situation because it combines immediate real-life need, practical vocabulary, polite requests, and listening for instructions.</p>
+<p>This situation is not one lesson. It can appear repeatedly from A1 through B2. At lower levels, the learner may ask for help and name one symptom. At higher levels, the learner can explain duration, previous actions, constraints, side effects, product preferences, and follow-up questions.</p>
+<h2>Why This Situation Matters</h2>
+<p>Adult learners often need German most when something is uncomfortable, urgent, or uncertain. A pharmacy interaction can feel pressured because the learner may be sick, caring for someone else, or trying to understand instructions that matter.</p>
+<p>This situation helps learners build confidence in:</p>
+<ul>
+<li>asking for help quickly</li>
+<li>naming symptoms</li>
+<li>saying who the medicine is for</li>
+<li>asking how to take something</li>
+<li>understanding dosage and timing</li>
+<li>explaining constraints or concerns</li>
+<li>comparing options</li>
+<li>ending the interaction politely</li>
+</ul>
+<h2>CEFR Progression</h2>
+<table><thead><tr><th>Level</th><th>Learner Capability</th><th>Example Language</th></tr></thead><tbody><tr><td>A1</td><td>Ask for help and name one basic symptom or need.</td><td>Können Sie mir helfen? Ich habe Husten.</td></tr>
+<tr><td>A2</td><td>Describe simple symptoms, duration, and ask for something.</td><td>Ich habe seit gestern Halsschmerzen. Haben Sie etwas dagegen?</td></tr>
+<tr><td>B1</td><td>Explain what happened, ask how to take medicine, and understand basic advice.</td><td>Ich habe schon Tee getrunken, aber es ist nicht besser geworden. Wie oft soll ich das nehmen?</td></tr>
+<tr><td>B2</td><td>Compare options, explain constraints, and ask for a suitable recommendation.</td><td>Ich suche etwas, das nicht müde macht, weil ich heute noch arbeiten muss.</td></tr></tbody></table>
+<h2>Communication Functions</h2>
+<h3>Primary Functions</h3>
+<ul>
+<li>asking for help</li>
+<li>describing symptoms</li>
+<li>making requests</li>
+<li>asking questions</li>
+<li>understanding advice</li>
+</ul>
+<h3>Supporting Functions</h3>
+<ul>
+<li>giving reasons</li>
+<li>explaining context</li>
+<li>comparing options</li>
+<li>asking for clarification</li>
+<li>thanking</li>
+<li>confirming instructions</li>
+</ul>
+<h2>Pattern Inventory</h2>
+<table><thead><tr><th>Pattern</th><th>Importance</th></tr></thead><tbody><tr><td>Questions</td><td>Very High</td></tr>
+<tr><td>Symptom Description</td><td>Very High</td></tr>
+<tr><td>Making Requests</td><td>Very High</td></tr>
+<tr><td>Modal Verbs</td><td>High</td></tr>
+<tr><td>Giving Reasons</td><td>Medium</td></tr>
+<tr><td>Instructions / Advice</td><td>High</td></tr>
+<tr><td>Dosage And Frequency</td><td>High</td></tr>
+<tr><td>Formal and Polite Language</td><td>Medium</td></tr>
+<tr><td>Storytelling / Explaining Context</td><td>Medium</td></tr>
+<tr><td>Comparing Options</td><td>Medium</td></tr></tbody></table>
+<h2>Situation Complexity</h2>
+<table><thead><tr><th>Dimension</th><th>Complexity</th></tr></thead><tbody><tr><td>Social Complexity</td><td>Medium</td></tr>
+<tr><td>Emotional Complexity</td><td>Medium to High</td></tr>
+<tr><td>Vocabulary Complexity</td><td>Medium</td></tr>
+<tr><td>Grammar Complexity</td><td>Medium</td></tr>
+<tr><td>Cultural Complexity</td><td>Medium</td></tr>
+<tr><td>Real-Life Pressure</td><td>High</td></tr></tbody></table>
+<h2>Real-Life Variations</h2>
+<ul>
+<li>Asking for something for a cough, cold, or sore throat</li>
+<li>Asking for medicine for a child</li>
+<li>Asking how often to take medicine</li>
+<li>Asking whether medicine makes you tired</li>
+<li>Asking about side effects</li>
+<li>Asking for something without a prescription</li>
+<li>Picking up a prescription</li>
+<li>Explaining that symptoms have lasted several days</li>
+<li>Comparing tablets, spray, syrup, or tea</li>
+<li>Asking what to do if symptoms do not improve</li>
+<li>Asking for help when you do not understand the instructions</li>
+</ul>
+<h2>Foundation Reference Connections</h2>
+<table><thead><tr><th>Foundation Reference Section</th><th>How It Appears In This Situation</th></tr></thead><tbody><tr><td>Hauptsatz</td><td>State symptoms and needs: &quot;Ich habe Halsschmerzen.&quot;</td></tr>
+<tr><td>Questions</td><td>Ask for help, dosage, price, side effects, and recommendations.</td></tr>
+<tr><td>Nebensatz</td><td>Explain constraints or reasons with weil and dass.</td></tr>
+<tr><td>Modal Verbs</td><td>Ask what you can, should, or must take.</td></tr>
+<tr><td>Perfekt</td><td>Explain what has already happened or what you have already tried.</td></tr>
+<tr><td>Verb Brackets</td><td>Use modal verbs and Perfekt in realistic pharmacy sentences.</td></tr>
+<tr><td>Cases</td><td>Use accusative objects for requested items and dative pronouns in help phrases.</td></tr>
+<tr><td>Pronouns</td><td>Use mir, Ihnen, es, das, and sie to avoid repeating nouns.</td></tr>
+<tr><td>Giving Reasons</td><td>Explain why a certain medicine is or is not suitable.</td></tr>
+<tr><td>Making Suggestions</td><td>Understand or make next-step suggestions.</td></tr>
+<tr><td>Information Flow</td><td>Put symptoms, time, or constraints first when needed.</td></tr></tbody></table>
+<h2>Common Grammar</h2>
+<ul>
+<li>present tense for current symptoms and needs</li>
+<li>haben for symptoms: Ich habe Kopfschmerzen.</li>
+<li>brauchen and möchte for requests</li>
+<li>modal verbs: können, sollen, müssen, dürfen</li>
+<li>accusative objects: etwas gegen Husten, einen Hustensaft</li>
+<li>dative pronouns: Können Sie mir helfen?</li>
+<li>seit for duration: seit gestern, seit drei Tagen</li>
+<li>Perfekt for previous actions: Ich habe schon etwas genommen.</li>
+<li>weil clauses for reasons: weil ich arbeiten muss</li>
+<li>dass clauses for advice or reported information</li>
+<li>relative clauses at B2 for describing suitable products</li>
+<li>comparatives for choosing between options</li>
+</ul>
+<h2>Common Sentence Architecture</h2>
+<pre><code class="language-text">Hauptsatz:
+Ich habe Halsschmerzen.
+
+Yes-no question:
+Haben Sie etwas gegen Husten?
+
+W-question:
+Wie oft soll ich das nehmen?
+
+Modal verb bracket:
+Ich moechte etwas gegen Kopfschmerzen kaufen.
+
+Perfekt bracket:
+Ich habe schon Tee getrunken.
+
+Nebensatz with weil:
+Ich brauche etwas, weil ich heute noch arbeiten muss.
+
+Relative clause:
+Ich suche etwas, das nicht muede macht.</code></pre>
+<h2>Core Vocabulary Themes</h2>
+<ul>
+<li>symptoms: der Husten, meist Singular; die Halsschmerzen (Plural); die Kopfschmerzen (Plural); das Fieber, meist Singular; die Bauchschmerzen (Plural); die Erkältung, die Erkältungen</li>
+<li>medicine forms: die Tablette, die Tabletten; der Saft, die Säfte; das Spray, die Sprays; der Tropfen, die Tropfen; die Salbe, die Salben; der Tee, die Tees</li>
+<li>pharmacy actions: helfen, nehmen, einnehmen, empfehlen, brauchen, suchen, kaufen</li>
+<li>dosage and timing: einmal, zweimal, dreimal, täglich, morgens, abends, vor dem Essen, nach dem Essen</li>
+<li>people: für mich, für mein Kind, für meinen Mann, für meine Frau</li>
+<li>constraints: müde machen, allergisch sein, schwanger sein, arbeiten müssen, Auto fahren müssen</li>
+<li>instructions: mit Wasser, nicht zu viel, bei Bedarf, wenn es schlimmer wird</li>
+</ul>
+<h2>Useful Phrase Patterns</h2>
+<h3>A1-A2</h3>
+<pre><code class="language-text">Koennen Sie mir helfen?
+Ich habe Husten.
+Ich habe Halsschmerzen.
+Ich brauche etwas gegen ...
+Haben Sie etwas gegen ...?
+Wie viel kostet das?
+Danke. Auf Wiedersehen.</code></pre>
+<h3>B1</h3>
+<pre><code class="language-text">Ich habe seit gestern ...
+Ich habe schon ... genommen.
+Es ist nicht besser geworden.
+Wie oft soll ich das nehmen?
+Muss ich das vor oder nach dem Essen nehmen?
+Ist das auch fuer Kinder?</code></pre>
+<h3>B2</h3>
+<pre><code class="language-text">Ich suche etwas, das nicht muede macht.
+Ich brauche etwas, weil ich heute noch arbeiten muss.
+Gibt es eine Alternative, die besser vertraeglich ist?
+Welche Nebenwirkungen koennen auftreten?
+Was wuerden Sie empfehlen, wenn die Beschwerden nicht besser werden?</code></pre>
+<h2>Possible Lesson Topics</h2>
+<table><thead><tr><th>Lesson Topic</th><th>Level Range</th><th>Communication Goal</th></tr></thead><tbody><tr><td>Asking For Help At The Apotheke</td><td>A1</td><td>I can ask for help and name one symptom.</td></tr>
+<tr><td>Asking For Something Against A Symptom</td><td>A1-A2</td><td>I can ask for something for a cough, headache, or sore throat.</td></tr>
+<tr><td>Describing Duration</td><td>A2</td><td>I can say how long I have had a symptom.</td></tr>
+<tr><td>Asking How To Take Medicine</td><td>A2-B1</td><td>I can ask how often and when to take medicine.</td></tr>
+<tr><td>Buying Medicine For A Child</td><td>A2-B1</td><td>I can say who the medicine is for and ask if it is suitable.</td></tr>
+<tr><td>Explaining What I Already Tried</td><td>B1</td><td>I can explain what I already took or did.</td></tr>
+<tr><td>Understanding Pharmacy Advice</td><td>B1</td><td>I can understand simple dosage and warning instructions.</td></tr>
+<tr><td>Comparing Options</td><td>B1-B2</td><td>I can compare tablets, spray, syrup, or tea and choose one.</td></tr>
+<tr><td>Asking About Side Effects</td><td>B2</td><td>I can ask about side effects, tiredness, and compatibility.</td></tr>
+<tr><td>Explaining Constraints Politely</td><td>B2</td><td>I can explain why I need a suitable option and ask for a recommendation.</td></tr></tbody></table>
+<h2>Lesson Blueprint Notes</h2>
+<p>Every Apotheke lesson should begin with a concrete real-life moment, not a list of health words.</p>
+<p>Strong lesson situations:</p>
+<ul>
+<li>You have a sore throat and need help choosing something.</li>
+<li>Your child has a cough and you need to ask what is suitable.</li>
+<li>You bought medicine but do not understand how often to take it.</li>
+<li>You have had symptoms for several days and need advice.</li>
+<li>You need something that will not make you tired because you still have to work.</li>
+</ul>
+<p>Each lesson should include:</p>
+<ul>
+<li>Real-life situation</li>
+<li>Communication goal</li>
+<li>Communication functions</li>
+<li>Vocabulary layer</li>
+<li>Phrase pattern layer</li>
+<li>Speaking layer</li>
+<li>Writing layer when relevant</li>
+<li>Grammar in context</li>
+<li>Sentence architecture</li>
+<li>Retrieval practice</li>
+<li>Real-world challenge</li>
+<li>Confidence milestone</li>
+</ul>
+<h2>Retrieval Opportunities</h2>
+<p>Apotheke should reuse patterns from other situations:</p>
+<ul>
+<li>asking questions from public transport and office lessons</li>
+<li>polite requests from restaurant and appointment lessons</li>
+<li>giving reasons from school email and work update lessons</li>
+<li>Perfekt from storytelling and doctor appointment lessons</li>
+<li>comparing options from shopping and housing lessons</li>
+<li>repair language from first-day-at-work and government office lessons</li>
+</ul>
+<h2>Practice Dialogues</h2>
+<h3>Dialogue 1: Typical Situation</h3>
+<p><strong>Apotheker/Apothekerin:</strong> Guten Tag. Wie kann ich Ihnen helfen?</p>
+<p><em>Pharmacist:</em> Good day. How can I help you?</p>
+<p><strong>Kunde/Kundin:</strong> Guten Tag. Ich habe Halsschmerzen.</p>
+<p><em>Customer:</em> Good day. I have a sore throat.</p>
+<p><strong>Apotheker/Apothekerin:</strong> Seit wann haben Sie die Schmerzen?</p>
+<p><em>Pharmacist:</em> Since when have you had the pain?</p>
+<p><strong>Kunde/Kundin:</strong> Seit gestern Abend. Ich habe auch etwas Husten.</p>
+<p><em>Customer:</em> Since yesterday evening. I also have a bit of a cough.</p>
+<p><strong>Apotheker/Apothekerin:</strong> Haben Sie Fieber?</p>
+<p><em>Pharmacist:</em> Do you have a fever?</p>
+<p><strong>Kunde/Kundin:</strong> Nein, kein Fieber. Nur Halsschmerzen und Husten.</p>
+<p><em>Customer:</em> No, no fever. Only a sore throat and cough.</p>
+<p><strong>Apotheker/Apothekerin:</strong> Dann kann ich Ihnen diese Lutschtabletten empfehlen.</p>
+<p><em>Pharmacist:</em> Then I can recommend these lozenges.</p>
+<p><strong>Kunde/Kundin:</strong> Wie oft soll ich sie nehmen?</p>
+<p><em>Customer:</em> How often should I take them?</p>
+<p><strong>Apotheker/Apothekerin:</strong> Alle zwei bis drei Stunden eine Tablette.</p>
+<p><em>Pharmacist:</em> One tablet every two to three hours.</p>
+<p><strong>Kunde/Kundin:</strong> Danke. Dann nehme ich die.</p>
+<p><em>Customer:</em> Thank you. Then I will take those.</p>
+<p>Communication Functions Practiced</p>
+<ul>
+<li>Greeting politely</li>
+<li>Describing a symptom</li>
+<li>Answering health questions</li>
+<li>Asking about dosage</li>
+<li>Making a purchase decision</li>
+</ul>
+<h3>Dialogue 2: Common Variation</h3>
+<p><strong>Kunde/Kundin:</strong> Entschuldigung, ich habe eine Frage zu diesem Medikament.</p>
+<p><em>Customer:</em> Excuse me, I have a question about this medicine.</p>
+<p><strong>Apotheker/Apothekerin:</strong> Ja, gern. Was möchten Sie wissen?</p>
+<p><em>Pharmacist:</em> Yes, gladly. What would you like to know?</p>
+<p><strong>Kunde/Kundin:</strong> Wie oft muss ich das nehmen?</p>
+<p><em>Customer:</em> How often do I have to take this?</p>
+<p><strong>Apotheker/Apothekerin:</strong> Zweimal am Tag, morgens und abends.</p>
+<p><em>Pharmacist:</em> Twice a day, morning and evening.</p>
+<p><strong>Kunde/Kundin:</strong> Vor dem Essen oder nach dem Essen?</p>
+<p><em>Customer:</em> Before food or after food?</p>
+<p><strong>Apotheker/Apothekerin:</strong> Bitte nach dem Essen und mit viel Wasser.</p>
+<p><em>Pharmacist:</em> Please after food and with plenty of water.</p>
+<p><strong>Kunde/Kundin:</strong> Macht das Medikament müde?</p>
+<p><em>Customer:</em> Does the medicine make you tired?</p>
+<p><strong>Apotheker/Apothekerin:</strong> Normalerweise nicht. Aber lesen Sie bitte die Packungsbeilage.</p>
+<p><em>Pharmacist:</em> Normally not. But please read the package leaflet.</p>
+<p><strong>Kunde/Kundin:</strong> Gut. Wenn es nicht besser wird, was soll ich tun?</p>
+<p><em>Customer:</em> Good. If it does not get better, what should I do?</p>
+<p><strong>Apotheker/Apothekerin:</strong> Dann gehen Sie bitte zum Arzt.</p>
+<p><em>Pharmacist:</em> Then please go to the doctor.</p>
+<p>Communication Functions Practiced</p>
+<ul>
+<li>Asking for information</li>
+<li>Understanding instructions</li>
+<li>Asking about timing</li>
+<li>Asking about side effects</li>
+<li>Clarifying next steps</li>
+</ul>
+<h3>Dialogue 3: Real-World Challenge</h3>
+<p><strong>Apotheker/Apothekerin:</strong> Guten Tag. Was kann ich für Sie tun?</p>
+<p><em>Pharmacist:</em> Good day. What can I do for you?</p>
+<p><strong>Kunde/Kundin:</strong> Ich brauche etwas gegen Kopfschmerzen, aber ich habe Allergien.</p>
+<p><em>Customer:</em> I need something for headaches, but I have allergies.</p>
+<p><strong>Apotheker/Apothekerin:</strong> Gegen welche Stoffe sind Sie allergisch?</p>
+<p><em>Pharmacist:</em> Which substances are you allergic to?</p>
+<p><strong>Kunde/Kundin:</strong> Ich bin gegen Ibuprofen allergisch.</p>
+<p><em>Customer:</em> I am allergic to ibuprofen.</p>
+<p><strong>Apotheker/Apothekerin:</strong> Danke für die Information. Nehmen Sie andere Medikamente?</p>
+<p><em>Pharmacist:</em> Thank you for the information. Do you take other medicines?</p>
+<p><strong>Kunde/Kundin:</strong> Nein, im Moment nicht. Aber ich möchte etwas gut Verträgliches.</p>
+<p><em>Customer:</em> No, not at the moment. But I would like something well tolerated.</p>
+<p><strong>Apotheker/Apothekerin:</strong> Dann zeige ich Ihnen eine andere Option.</p>
+<p><em>Pharmacist:</em> Then I will show you another option.</p>
+<p><strong>Kunde/Kundin:</strong> Ist das auch vegan und glutenfrei?</p>
+<p><em>Customer:</em> Is that also vegan and gluten-free?</p>
+<p><strong>Apotheker/Apothekerin:</strong> Ich prüfe das kurz. Ja, dieses Produkt passt.</p>
+<p><em>Pharmacist:</em> I will check that briefly. Yes, this product is suitable.</p>
+<p><strong>Kunde/Kundin:</strong> Vielen Dank. Das ist sehr hilfreich.</p>
+<p><em>Customer:</em> Thank you very much. That is very helpful.</p>
+<p>Communication Functions Practiced</p>
+<ul>
+<li>Explaining a health constraint</li>
+<li>Asking about allergies</li>
+<li>Asking about product needs</li>
+<li>Comparing options</li>
+<li>Thanking politely</li>
+</ul>
+<h2>Real-World Challenges</h2>
+<h3>Low-Pressure</h3>
+<p>Practice asking for help and naming one symptom aloud.</p>
+<h3>Practical</h3>
+<p>Write a short phrase card with three symptoms and three questions you could ask at the pharmacy.</p>
+<h3>Real-World</h3>
+<p>Ask one prepared question in a real Apotheke.</p>
+<h3>Stretch</h3>
+<p>Explain a symptom, say how long you have had it, ask how to take the medicine, and confirm the instructions without reading from a script.</p>
+<h2>Confidence Milestones</h2>
+<table><thead><tr><th>Level</th><th>Confidence Milestone</th></tr></thead><tbody><tr><td>A1</td><td>I can ask for help and name one basic symptom.</td></tr>
+<tr><td>A2</td><td>I can ask for something against a symptom and say how long I have had it.</td></tr>
+<tr><td>B1</td><td>I can explain what I already tried and ask how to take medicine.</td></tr>
+<tr><td>B2</td><td>I can compare options, explain constraints, and ask for a suitable recommendation.</td></tr></tbody></table>
+<h2>Product Principle</h2>
+<p>Apotheke is not a vocabulary topic to finish.</p>
+<p>It is a real-life situation where learners repeatedly reuse German patterns:</p>
+<ul>
+<li>questions</li>
+<li>symptom descriptions</li>
+<li>polite requests</li>
+<li>modal verbs</li>
+<li>dosage language</li>
+<li>reasons and constraints</li>
+<li>pharmacy advice</li>
+</ul>
+<p>The goal is for the learner to walk into a German pharmacy with more calm, more language, and more confidence each time the situation returns.</p>
+    </article>
+  </main>
+</body>
+</html>

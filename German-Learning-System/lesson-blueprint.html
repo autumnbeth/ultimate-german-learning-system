@@ -1,0 +1,1101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson Blueprint | German Learning System</title>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --ink: #18181b;
+      --muted: #71717a;
+      --line: #e8e4dc;
+      --card: #ffffff;
+      --teal: #11b5a4;
+      --blue: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 34px 28px 80px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 42px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--teal);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-family: Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .toplinks {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .toplinks a {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .toplinks a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--teal);
+    }
+
+    .hero {
+      max-width: 840px;
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 0.94;
+      margin: 0 0 20px;
+      letter-spacing: -0.025em;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: #3f3f46;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 18px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .panel {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .panel-title {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .doc-link,
+    .toc-link {
+      display: block;
+      color: #52525b;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 10px;
+      border-radius: 7px;
+    }
+
+    .doc-link:hover,
+    .toc-link:hover {
+      color: var(--ink);
+      background: #f4f4f5;
+    }
+
+    .doc-link.active {
+      color: #fff;
+      background: var(--teal);
+    }
+
+    .toc-link.level-3 { padding-left: 22px; font-weight: 650; }
+    .toc-link.level-4 { padding-left: 34px; font-weight: 600; color: var(--muted); }
+
+    article {
+      min-width: 0;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 44px;
+    }
+
+    article h1 {
+      font-size: clamp(38px, 6vw, 62px);
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      line-height: 1.08;
+      margin: 50px 0 16px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 1.2;
+      margin: 34px 0 12px;
+    }
+
+    h4 {
+      color: var(--blue);
+      font-size: 16px;
+      margin: 26px 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    p, li {
+      color: #3f3f46;
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding-left: 22px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 28px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #f4f4f5;
+      color: #27272a;
+    }
+
+    pre {
+      overflow-x: auto;
+      background: #18181b;
+      color: #fafafa;
+      border-radius: 8px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      line-height: 1.5;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    p code, li code {
+      background: #f4f4f5;
+      color: #27272a;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+
+    strong { color: var(--ink); }
+
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .panel.toc { max-height: 280px; overflow: auto; }
+    }
+
+    @media (max-width: 680px) {
+      .shell { padding: 24px 14px 54px; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .toplinks { flex-wrap: wrap; }
+      article { padding: 26px 18px; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+  <link rel="stylesheet" href="styles/design-system.css">
+</head>
+<body class="reference-page">
+  <main class="shell">
+    <nav class="topbar" aria-label="Project navigation">
+      <a class="brand" href="index.html">
+        <span class="mark">D</span>
+        <span>German Learning System</span>
+      </a>
+      <div class="toplinks">
+        <a href="foundation-reference.html">Foundation</a>
+        <a href="situation-library.html">Situations</a>
+        <a href="design-system.html">Design System</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="eyebrow">Reference System</div>
+      <h1>Lesson Blueprint</h1>
+      <p class="lead">The repeatable structure for every situation lesson.</p>
+    </section>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section class="panel">
+          <div class="panel-title">Reference Docs</div>
+<a class="doc-link" href="foundation-reference.html">Foundation Reference</a>
+<a class="doc-link" href="grammar-map.html">Grammar Map</a>
+<a class="doc-link" href="sentence-architecture-map.html">Sentence Architecture Map</a>
+<a class="doc-link" href="communication-functions.html">Communication Functions</a>
+<a class="doc-link" href="learning-model.html">Learning Model</a>
+<a class="doc-link active" href="lesson-blueprint.html">Lesson Blueprint</a>
+        </section>
+        <section class="panel toc">
+          <div class="panel-title">On This Page</div>
+<a class="toc-link level-2" href="#1-purpose">1. Purpose</a>
+<a class="toc-link level-2" href="#2-core-lesson-structure">2. Core Lesson Structure</a>
+<a class="toc-link level-3" href="#real-life-situation">Real-Life Situation</a>
+<a class="toc-link level-3" href="#communication-goal">Communication Goal</a>
+<a class="toc-link level-3" href="#communication-functions">Communication Functions</a>
+<a class="toc-link level-3" href="#vocabulary-layer">Vocabulary Layer</a>
+<a class="toc-link level-3" href="#phrase-pattern-layer">Phrase Pattern Layer</a>
+<a class="toc-link level-3" href="#speaking-layer">Speaking Layer</a>
+<a class="toc-link level-3" href="#writing-layer">Writing Layer</a>
+<a class="toc-link level-3" href="#grammar-layer">Grammar Layer</a>
+<a class="toc-link level-3" href="#sentence-architecture-layer">Sentence Architecture Layer</a>
+<a class="toc-link level-3" href="#retrieval-practice-layer">Retrieval Practice Layer</a>
+<a class="toc-link level-3" href="#real-world-challenge">Real-World Challenge</a>
+<a class="toc-link level-3" href="#confidence-milestone">Confidence Milestone</a>
+<a class="toc-link level-2" href="#3-lesson-metadata-template">3. Lesson Metadata Template</a>
+<a class="toc-link level-3" href="#how-metadata-supports-lesson-generation">How Metadata Supports Lesson Generation</a>
+<a class="toc-link level-2" href="#standard-situation-template">Standard Situation Template</a>
+<a class="toc-link level-2" href="#overview">Overview</a>
+<a class="toc-link level-2" href="#communication-functions-practiced">Communication Functions Practiced</a>
+<a class="toc-link level-2" href="#key-language-patterns">Key Language Patterns</a>
+<a class="toc-link level-2" href="#vocabulary-in-context">Vocabulary In Context</a>
+<a class="toc-link level-2" href="#practice-dialogues">Practice Dialogues</a>
+<a class="toc-link level-3" href="#dialogue-1-typical-situation">Dialogue 1: Typical Situation</a>
+<a class="toc-link level-3" href="#dialogue-2-common-variation">Dialogue 2: Common Variation</a>
+<a class="toc-link level-3" href="#dialogue-3-real-world-challenge">Dialogue 3: Real-World Challenge</a>
+<a class="toc-link level-2" href="#writing-task">Writing Task</a>
+<a class="toc-link level-3" href="#example">Example</a>
+<a class="toc-link level-2" href="#real-life-challenge">Real-Life Challenge</a>
+<a class="toc-link level-3" href="#beginner">Beginner</a>
+<a class="toc-link level-3" href="#intermediate">Intermediate</a>
+<a class="toc-link level-3" href="#advanced">Advanced</a>
+<a class="toc-link level-2" href="#related-situations">Related Situations</a>
+<a class="toc-link level-2" href="#4-situational-learning-framework">4. Situational Learning Framework</a>
+<a class="toc-link level-3" href="#daily-life">Daily Life</a>
+<a class="toc-link level-3" href="#family-and-school">Family And School</a>
+<a class="toc-link level-3" href="#social-life">Social Life</a>
+<a class="toc-link level-3" href="#work">Work</a>
+<a class="toc-link level-3" href="#telc-exam-contexts">TELC Exam Contexts</a>
+<a class="toc-link level-3" href="#storytelling">Storytelling</a>
+<a class="toc-link level-2" href="#5-grammar-through-situations-matrix">5. Grammar Through Situations Matrix</a>
+<a class="toc-link level-2" href="#6-sentence-architecture-through-situations-matrix">6. Sentence Architecture Through Situations Matrix</a>
+<a class="toc-link level-2" href="#7-confidence-milestone-framework">7. Confidence Milestone Framework</a>
+<a class="toc-link level-2" href="#8-lesson-creation-workflow">8. Lesson Creation Workflow</a>
+<a class="toc-link level-3" href="#workflow-output">Workflow Output</a>
+<a class="toc-link level-2" href="#9-product-principles">9. Product Principles</a>
+<a class="toc-link level-3" href="#how-adults-actually-learn-languages">How Adults Actually Learn Languages</a>
+        </section>
+      </aside>
+
+      <article>
+<h1 id="lesson-blueprint">Lesson Blueprint</h1>
+<h2 id="1-purpose">1. Purpose</h2>
+<p>The Lesson Blueprint is the reusable framework that turns the German Learning System architecture into lessons.</p>
+<p>It connects the system&#x27;s core documents:</p>
+<ul>
+<li><code>VISION.md</code>: the promise of turning scattered knowledge into usable communication.</li>
+<li><code>LEARNING_MODEL.md</code>: the learner journey from real-life situation to confidence.</li>
+<li><code>GRAMMAR_MAP.md</code>: the connected grammar system.</li>
+<li><code>SENTENCE_ARCHITECTURE_MAP.md</code>: how German sentences are built and how ideas connect.</li>
+<li><code>COMMUNICATION_FUNCTIONS.md</code>: what learners need to do with German.</li>
+</ul>
+<p>Every lesson should connect:</p>
+<ul>
+<li>Real-life situations</li>
+<li>Communication functions</li>
+<li>Vocabulary</li>
+<li>Phrase patterns</li>
+<li>Grammar</li>
+<li>Sentence architecture</li>
+<li>Speaking</li>
+<li>Writing</li>
+<li>Retrieval practice</li>
+<li>Confidence building</li>
+</ul>
+<p>The system philosophy is:</p>
+<ul>
+<li>Start with communication, not grammar.</li>
+<li>Start with a real-life situation, not vocabulary lists.</li>
+<li>Grammar exists to support communication.</li>
+<li>Sentence architecture exists to connect ideas.</li>
+<li>Confidence is a primary learning outcome.</li>
+<li>Every lesson should help learners do something meaningful in German.</li>
+</ul>
+<h2 id="2-core-lesson-structure">2. Core Lesson Structure</h2>
+<pre class="system-map"><code class="language-text">Lesson
+├── Real-Life Situation
+├── Communication Goal
+├── Communication Functions
+├── Vocabulary Layer
+├── Phrase Pattern Layer
+├── Speaking Layer
+├── Writing Layer
+├── Grammar Layer
+├── Sentence Architecture Layer
+├── Retrieval Practice Layer
+├── Real-World Challenge
+└── Confidence Milestone</code></pre>
+<h3 id="real-life-situation">Real-Life Situation</h3>
+<p>Purpose: Anchor the lesson in a recognizable adult-life context.</p>
+<p>Why it matters: Learners need to know where the language belongs before they are asked to study it.</p>
+<p>Design principles:</p>
+<ul>
+<li>Make the situation specific.</li>
+<li>Choose contexts learners are likely to encounter.</li>
+<li>Use the situation to create a natural need for grammar, vocabulary, and sentence structure.</li>
+<li>Avoid beginning with a rule or list.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>You are at the Apotheke and need help choosing something for a cough.</li>
+<li>You need to email a teacher because your child is absent.</li>
+<li>You are in a work meeting and need to ask a clarifying question.</li>
+<li>You missed an appointment and need to explain why.</li>
+</ul>
+<h3 id="communication-goal">Communication Goal</h3>
+<p>Purpose: Define what the learner can do by the end of the lesson.</p>
+<p>Why it matters: The goal keeps the lesson focused on capability instead of content coverage.</p>
+<p>Design principles:</p>
+<ul>
+<li>Use a can-do statement.</li>
+<li>Make the outcome observable.</li>
+<li>Connect the goal to speaking, writing, or both.</li>
+<li>Keep the goal appropriate for the CEFR level.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>I can ask for help at an Apotheke and describe one symptom.</li>
+<li>I can change an appointment and give a reason.</li>
+<li>I can write a short email explaining a problem.</li>
+<li>I can give my opinion and support it with an example.</li>
+</ul>
+<h3 id="communication-functions">Communication Functions</h3>
+<p>Purpose: Identify the actions the learner performs with the language.</p>
+<p>Why it matters: Functions are the bridge between language knowledge and real-life use.</p>
+<p>Design principles:</p>
+<ul>
+<li>Choose one primary function.</li>
+<li>Add one to three supporting functions.</li>
+<li>Reuse functions across different topics and levels.</li>
+<li>Connect each function to phrases, grammar, sentence architecture, and confidence.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>asking for help</li>
+<li>explaining a problem</li>
+<li>giving reasons</li>
+<li>making suggestions</li>
+<li>agreeing and disagreeing</li>
+<li>telling a past event</li>
+</ul>
+<h3 id="vocabulary-layer">Vocabulary Layer</h3>
+<p>Purpose: Give the learner the words needed to act in the situation.</p>
+<p>Why it matters: Vocabulary should support use, not become an isolated memorization task.</p>
+<p>Design principles:</p>
+<ul>
+<li>Keep the word count limited.</li>
+<li>Group vocabulary by use.</li>
+<li>For every German noun, include gender and plural form as a standard rule.</li>
+<li>Use the format <code>der Termin, die Termine</code>, <code>die Adresse, die Adressen</code>, or <code>das Formular, die Formulare</code>.</li>
+<li>For nouns that are normally plural-only or mostly singular, mark them clearly, such as <code>die Schmerzen (Plural)</code> or <code>das Wasser, meist Singular</code>.</li>
+<li>Put words inside phrases or example sentences.</li>
+<li>Separate required vocabulary from optional expansion.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>Apotheke: die Halsschmerzen (Plural), der Husten, meist Singular, das Fieber, meist Singular, etwas gegen...</li>
+<li>Appointment: der Termin, die Termine, verschieben, absagen, frei, passen</li>
+<li>Housing: die Heizung, die Heizungen, reparieren, der Vermieter, die Vermieter, dringend</li>
+</ul>
+<h3 id="phrase-pattern-layer">Phrase Pattern Layer</h3>
+<p>Purpose: Give learners reusable chunks they can use before they can build every sentence independently.</p>
+<p>Why it matters: Phrase patterns reduce friction and make early communication possible.</p>
+<p>Design principles:</p>
+<ul>
+<li>Include phrases for starting, continuing, repairing, and ending the interaction.</li>
+<li>Use adaptable slots.</li>
+<li>Include polite forms where appropriate.</li>
+<li>Connect phrases to communication functions.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>Können Sie mir bitte helfen?</li>
+<li>Ich habe ein Problem mit...</li>
+<li>Ich möchte einen Termin...</li>
+<li>Ich kann leider nicht kommen, weil...</li>
+<li>Wäre es möglich, ...?</li>
+</ul>
+<h3 id="speaking-layer">Speaking Layer</h3>
+<p>Purpose: Move the learner from recognition into spoken use.</p>
+<p>Why it matters: Confidence grows through supported attempts, not silent understanding.</p>
+<p>Design principles:</p>
+<ul>
+<li>Start with repetition and substitution.</li>
+<li>Move toward guided role play.</li>
+<li>Include repair phrases.</li>
+<li>Make the speaking task match the communication goal.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>Repeat useful phrases with different symptoms.</li>
+<li>Ask and answer appointment questions.</li>
+<li>Role-play a short conversation with a landlord.</li>
+<li>Explain a problem in three sentences.</li>
+</ul>
+<h3 id="writing-layer">Writing Layer</h3>
+<p>Purpose: Help the learner organize language into a useful written form.</p>
+<p>Why it matters: Adult learners often need written German for emails, forms, messages, exams, school, work, and offices.</p>
+<p>Design principles:</p>
+<ul>
+<li>Use realistic formats.</li>
+<li>Provide a model first.</li>
+<li>Give sentence starters.</li>
+<li>Include a revision checklist.</li>
+<li>Match tone to context.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>Write a short message changing an appointment.</li>
+<li>Complete a school absence note.</li>
+<li>Write a formal complaint.</li>
+<li>Summarize what happened yesterday.</li>
+</ul>
+<h3 id="grammar-layer">Grammar Layer</h3>
+<p>Purpose: Explain the grammar needed for the communication goal.</p>
+<p>Why it matters: Grammar becomes meaningful when learners see what it helps them do.</p>
+<p>Design principles:</p>
+<ul>
+<li>Teach grammar after the situation and model language.</li>
+<li>Focus on one primary grammar pattern.</li>
+<li>Use examples from the lesson.</li>
+<li>Explain only what is needed for communication.</li>
+<li>Connect the pattern to the broader grammar map.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>Modal verbs for asking for help.</li>
+<li>Perfekt for telling what happened.</li>
+<li>Dative pronouns for asking someone for help.</li>
+<li>weil clauses for giving reasons.</li>
+<li>Konjunktiv II for polite requests.</li>
+</ul>
+<h3 id="sentence-architecture-layer">Sentence Architecture Layer</h3>
+<p>Purpose: Show how the sentence is built and where the conjugated verb goes.</p>
+<p>Why it matters: Learners need to connect ideas, not only know grammar pieces.</p>
+<p>Design principles:</p>
+<ul>
+<li>Tag sentence type.</li>
+<li>Mark verb position.</li>
+<li>Identify connector type.</li>
+<li>Use simple word-order diagrams.</li>
+<li>Connect structure to function.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>W-question: Wo ist die Apotheke?</li>
+<li>Modal verb bracket: Ich möchte einen Termin machen.</li>
+<li>Nebensatz: Ich kann nicht kommen, weil ich krank bin.</li>
+<li>Relative clause: Das ist der Kurs, der mir hilft.</li>
+</ul>
+<h3 id="retrieval-practice-layer">Retrieval Practice Layer</h3>
+<p>Purpose: Bring back previous language and connect it to the new lesson.</p>
+<p>Why it matters: Retrieval turns isolated lessons into a growing system.</p>
+<p>Design principles:</p>
+<ul>
+<li>Recall before rereading.</li>
+<li>Mix old and new language.</li>
+<li>Reuse earlier phrases in new situations.</li>
+<li>Keep review short and targeted.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>Recall three ways to ask for help.</li>
+<li>Reuse an appointment phrase in a doctor context.</li>
+<li>Choose between weil, denn, and deshalb.</li>
+<li>Rebuild a Perfekt sentence from prompts.</li>
+</ul>
+<h3 id="real-world-challenge">Real-World Challenge</h3>
+<p>Purpose: Transfer lesson language into life or a realistic simulation.</p>
+<p>Why it matters: The system promises usable German, not only completed exercises.</p>
+<p>Design principles:</p>
+<ul>
+<li>Make the challenge concrete.</li>
+<li>Include a low-pressure option.</li>
+<li>Include a real-world option when possible.</li>
+<li>Include a stretch option for confident learners.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>Practice the Apotheke dialogue aloud.</li>
+<li>Ask one real question in a shop.</li>
+<li>Write a real or simulated appointment email.</li>
+<li>Explain a past event to a partner without reading.</li>
+</ul>
+<h3 id="confidence-milestone">Confidence Milestone</h3>
+<p>Purpose: Make progress visible as capability.</p>
+<p>Why it matters: Adult learners need proof that they are becoming more able to use German.</p>
+<p>Design principles:</p>
+<ul>
+<li>Write milestones as can-do outcomes.</li>
+<li>Focus on real-life confidence, not abstract knowledge.</li>
+<li>Include a with-support and independent version when helpful.</li>
+<li>Tie the milestone to the communication goal.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>I can ask for help at an Apotheke without translating every sentence first.</li>
+<li>I can write a short email explaining why I missed an appointment.</li>
+<li>I can give my opinion and one reason in a conversation.</li>
+</ul>
+<h2 id="3-lesson-metadata-template">3. Lesson Metadata Template</h2>
+<pre class="system-map"><code class="language-text">Lesson Name:
+Real-Life Situation:
+Communication Goal:
+Communication Functions:
+CEFR Level:
+Grammar Focus:
+Sentence Architecture Focus:
+Vocabulary Count:
+Estimated Time:
+Confidence Milestone:</code></pre>
+<h3 id="how-metadata-supports-lesson-generation">How Metadata Supports Lesson Generation</h3>
+<p>Metadata makes lessons easier to create, sequence, search, and reuse.</p>
+<p>For lesson generation, metadata defines the constraints before content is written. It keeps the lesson aligned with the system architecture and prevents drift into generic textbook material.</p>
+<p>For curriculum planning, metadata makes it possible to track:</p>
+<ul>
+<li>which real-life situations are covered</li>
+<li>which communication functions are practiced</li>
+<li>which grammar concepts have been introduced</li>
+<li>which sentence structures have been reinforced</li>
+<li>which vocabulary themes are repeated</li>
+<li>which confidence milestones learners are building toward</li>
+<li>how lessons progress across CEFR levels</li>
+</ul>
+<p>The metadata should be completed before drafting the lesson.</p>
+<h2 id="standard-situation-template">Standard Situation Template</h2>
+<p>Use this template when creating or updating situation files. A situation file is not a single lesson. It is a reusable context that can contain many lessons, dialogues, writing tasks, challenges, and links to related situations.</p>
+<h2 id="overview">Overview</h2>
+<p>Explain what the situation is, who participates, why it matters, and how it can deepen across levels.</p>
+<h2 id="communication-functions-practiced">Communication Functions Practiced</h2>
+<p>List the main actions learners practice in the situation.</p>
+<p>Examples:</p>
+<ul>
+<li>asking for help</li>
+<li>describing a problem</li>
+<li>giving reasons</li>
+<li>making requests</li>
+<li>clarifying next steps</li>
+</ul>
+<h2 id="key-language-patterns">Key Language Patterns</h2>
+<p>Name the reusable grammar and sentence patterns learners will meet repeatedly.</p>
+<p>Examples:</p>
+<ul>
+<li>W-questions</li>
+<li>modal verbs</li>
+<li>Perfekt</li>
+<li>weil clauses</li>
+<li>polite request frames</li>
+</ul>
+<h2 id="vocabulary-in-context">Vocabulary In Context</h2>
+<p>Group vocabulary by real use inside the situation, not as an isolated list.</p>
+<p>Every noun should show gender and plural form in the German column.</p>
+<p>Examples:</p>
+<ul>
+<li>symptoms and medicine in an Apotheke situation</li>
+<li>grades, homework, and support language in an Elternabend situation</li>
+<li>documents, appointments, and forms in a Bürgeramt situation</li>
+</ul>
+<h2 id="practice-dialogues">Practice Dialogues</h2>
+<p>Every situation should include short, practical dialogues that learners can reuse or adapt.</p>
+<h3 id="dialogue-1-typical-situation">Dialogue 1: Typical Situation</h3>
+<p>Use the most common version of the situation.</p>
+<h3 id="dialogue-2-common-variation">Dialogue 2: Common Variation</h3>
+<p>Show a realistic variation, complication, or follow-up question.</p>
+<h3 id="dialogue-3-real-world-challenge">Dialogue 3: Real-World Challenge</h3>
+<p>Add slightly more pressure, uncertainty, emotion, or complexity while staying level-appropriate.</p>
+<h2 id="writing-task">Writing Task</h2>
+<p>Include a writing task when the situation naturally involves messages, notes, forms, emails, or preparation.</p>
+<h3 id="example">Example</h3>
+<p>Provide a short model text or prompt that learners can adapt.</p>
+<h2 id="real-life-challenge">Real-Life Challenge</h2>
+<p>Give learners a way to transfer the language beyond the lesson.</p>
+<h3 id="beginner">Beginner</h3>
+<p>Use a low-pressure practice task.</p>
+<h3 id="intermediate">Intermediate</h3>
+<p>Use a realistic simulated or prepared task.</p>
+<h3 id="advanced">Advanced</h3>
+<p>Use a real-world task or a more spontaneous challenge.</p>
+<h2 id="related-situations">Related Situations</h2>
+<p>List situations that reuse the same patterns, vocabulary, functions, or confidence goals.</p>
+<p>Examples:</p>
+<ul>
+<li>Apotheke relates to doctor appointments, explaining symptoms, and asking for help.</li>
+<li>Elternabend relates to school emails, speaking with a teacher, and requesting support.</li>
+<li>Bürgeramt relates to forms, appointments, documents, and clarification questions.</li>
+</ul>
+<h2 id="4-situational-learning-framework">4. Situational Learning Framework</h2>
+<p>Grammar should always be taught through situations.</p>
+<p>A learner should not encounter &quot;the dative&quot; as an isolated topic. They should encounter a situation where the dative helps them ask someone for help, give something to someone, talk to a doctor, describe a location, or understand a sentence in real life.</p>
+<h3 id="daily-life">Daily Life</h3>
+<p>Examples:</p>
+<ul>
+<li>Apotheke</li>
+<li>Doctor</li>
+<li>Supermarket</li>
+<li>Restaurant</li>
+<li>Public Transport</li>
+<li>Post Office</li>
+<li>Landlord</li>
+<li>Bank</li>
+</ul>
+<p>Typical communication functions:</p>
+<ul>
+<li>asking for help</li>
+<li>asking for information</li>
+<li>making requests</li>
+<li>describing symptoms</li>
+<li>buying something</li>
+<li>understanding instructions</li>
+<li>solving problems</li>
+</ul>
+<p>Typical grammar:</p>
+<ul>
+<li>modal verbs</li>
+<li>accusative objects</li>
+<li>dative pronouns</li>
+<li>imperative forms</li>
+<li>present tense</li>
+<li>Perfekt for what happened</li>
+<li>polite Konjunktiv II at higher levels</li>
+</ul>
+<p>Typical sentence architecture:</p>
+<ul>
+<li>yes-no questions</li>
+<li>W-questions</li>
+<li>main clauses</li>
+<li>modal verb brackets</li>
+<li>simple subordinate clauses with weil and wenn</li>
+</ul>
+<p>Typical CEFR levels:</p>
+<ul>
+<li>A1-A2 for basic survival</li>
+<li>B1 for independent problem solving</li>
+<li>B2-C1 for formal complaints, institutions, and nuanced explanations</li>
+</ul>
+<h3 id="family-and-school">Family And School</h3>
+<p>Examples:</p>
+<ul>
+<li>Elternabend</li>
+<li>Speaking with a teacher</li>
+<li>Reporting a child&#x27;s absence</li>
+<li>Asking about grades</li>
+<li>Scheduling appointments</li>
+<li>School emails</li>
+</ul>
+<p>Typical communication functions:</p>
+<ul>
+<li>explaining a problem</li>
+<li>asking for information</li>
+<li>making appointments</li>
+<li>apologizing</li>
+<li>giving reasons</li>
+<li>understanding instructions</li>
+<li>requesting clarification</li>
+</ul>
+<p>Typical grammar:</p>
+<ul>
+<li>Perfekt</li>
+<li>modal verbs</li>
+<li>weil and dass clauses</li>
+<li>dative and accusative pronouns</li>
+<li>Konjunktiv II for polite requests</li>
+<li>indirect questions</li>
+</ul>
+<p>Typical sentence architecture:</p>
+<ul>
+<li>main clause plus subordinate clause</li>
+<li>W-questions</li>
+<li>formal email structure</li>
+<li>connector contrasts: weil, denn, deshalb</li>
+<li>verb-final word order in Nebensätze</li>
+</ul>
+<p>Typical CEFR levels:</p>
+<ul>
+<li>A2 for simple school communication</li>
+<li>B1 for emails and explanations</li>
+<li>B2-C1 for meetings, feedback, and nuanced advocacy</li>
+</ul>
+<h3 id="social-life">Social Life</h3>
+<p>Examples:</p>
+<ul>
+<li>Meeting new people</li>
+<li>Making friends</li>
+<li>Invitations</li>
+<li>Small talk</li>
+<li>Hobbies</li>
+<li>Joining a club</li>
+</ul>
+<p>Typical communication functions:</p>
+<ul>
+<li>introducing yourself</li>
+<li>talking about yourself</li>
+<li>inviting someone</li>
+<li>accepting invitations</li>
+<li>declining invitations</li>
+<li>apologizing</li>
+<li>making small talk</li>
+<li>expressing opinions</li>
+</ul>
+<p>Typical grammar:</p>
+<ul>
+<li>present tense</li>
+<li>modal verbs</li>
+<li>Perfekt for experiences</li>
+<li>comparatives</li>
+<li>weil clauses</li>
+<li>reflexive verbs</li>
+<li>Konjunktiv II for polite or soft phrasing</li>
+</ul>
+<p>Typical sentence architecture:</p>
+<ul>
+<li>main clauses</li>
+<li>yes-no questions</li>
+<li>W-questions</li>
+<li>simple connectors: und, aber, oder</li>
+<li>subordinate clauses with weil, wenn, dass</li>
+</ul>
+<p>Typical CEFR levels:</p>
+<ul>
+<li>A1 for introductions and simple small talk</li>
+<li>A2-B1 for invitations, experiences, and opinions</li>
+<li>B2-C1 for nuanced relationships, humor, and social flow</li>
+</ul>
+<h3 id="work">Work</h3>
+<p>Examples:</p>
+<ul>
+<li>Meeting a new team</li>
+<li>Introducing yourself</li>
+<li>Giving updates</li>
+<li>Asking questions</li>
+<li>Presentations</li>
+<li>Feedback conversations</li>
+<li>Negotiating priorities</li>
+</ul>
+<p>Typical communication functions:</p>
+<ul>
+<li>introducing yourself professionally</li>
+<li>asking clarifying questions</li>
+<li>giving updates</li>
+<li>explaining a process</li>
+<li>making suggestions</li>
+<li>agreeing and disagreeing</li>
+<li>giving feedback</li>
+<li>reaching agreement</li>
+</ul>
+<p>Typical grammar:</p>
+<ul>
+<li>present tense</li>
+<li>Perfekt and Prateritum for updates</li>
+<li>passive voice for processes</li>
+<li>Konjunktiv II for diplomacy</li>
+<li>subordinate clauses</li>
+<li>infinitive clauses</li>
+<li>nominalization at higher levels</li>
+</ul>
+<p>Typical sentence architecture:</p>
+<ul>
+<li>structured main clauses</li>
+<li>question forms</li>
+<li>connector chains</li>
+<li>relative clauses</li>
+<li>discourse markers</li>
+<li>formal and professional information flow</li>
+</ul>
+<p>Typical CEFR levels:</p>
+<ul>
+<li>A2-B1 for basic workplace participation</li>
+<li>B2 for meetings, feedback, and professional explanation</li>
+<li>C1 for leadership, negotiation, and formal presentations</li>
+</ul>
+<h3 id="telc-exam-contexts">TELC Exam Contexts</h3>
+<p>Examples:</p>
+<ul>
+<li>Explaining a problem</li>
+<li>Giving reasons</li>
+<li>Making suggestions</li>
+<li>Requesting information</li>
+<li>Writing formal emails</li>
+<li>Planning discussions</li>
+</ul>
+<p>Typical communication functions:</p>
+<ul>
+<li>explaining a problem</li>
+<li>giving reasons</li>
+<li>apologizing</li>
+<li>requesting information</li>
+<li>making suggestions</li>
+<li>agreeing and disagreeing</li>
+<li>reaching agreement</li>
+</ul>
+<p>Typical grammar:</p>
+<ul>
+<li>Perfekt</li>
+<li>modal verbs</li>
+<li>weil, dass, wenn, obwohl</li>
+<li>Konjunktiv II</li>
+<li>connectors for sequence and argument</li>
+<li>adjective endings and formal noun phrases at higher levels</li>
+</ul>
+<p>Typical sentence architecture:</p>
+<ul>
+<li>email paragraph structure</li>
+<li>main clause plus Nebensatz</li>
+<li>connector contrasts</li>
+<li>question forms</li>
+<li>argumentation structure</li>
+<li>discourse markers</li>
+</ul>
+<p>Typical CEFR levels:</p>
+<ul>
+<li>B1 for core TELC writing and speaking tasks</li>
+<li>B2-C1 for advanced argumentation and formal writing</li>
+</ul>
+<h3 id="storytelling">Storytelling</h3>
+<p>Examples:</p>
+<ul>
+<li>Talking about childhood</li>
+<li>Describing a trip</li>
+<li>Reporting an accident</li>
+<li>Telling what happened yesterday</li>
+<li>Describing an important experience</li>
+</ul>
+<p>Typical communication functions:</p>
+<ul>
+<li>talking about the past</li>
+<li>telling a story</li>
+<li>describing a sequence</li>
+<li>explaining what happened first, next, and later</li>
+<li>describing experiences</li>
+<li>reporting what someone said</li>
+</ul>
+<p>Typical grammar:</p>
+<ul>
+<li>Perfekt</li>
+<li>Prateritum</li>
+<li>Plusquamperfekt</li>
+<li>time expressions</li>
+<li>connectors for sequence</li>
+<li>reported speech at higher levels</li>
+</ul>
+<p>Typical sentence architecture:</p>
+<ul>
+<li>Perfekt verb bracket</li>
+<li>sequence connectors: zuerst, dann, danach, später</li>
+<li>subordinate clauses with nachdem, bevor, als, weil</li>
+<li>complex sentence chains at higher levels</li>
+</ul>
+<p>Typical CEFR levels:</p>
+<ul>
+<li>A2 for simple past events</li>
+<li>B1 for connected stories</li>
+<li>B2-C1 for nuanced narration and reporting</li>
+</ul>
+<h2 id="5-grammar-through-situations-matrix">5. Grammar Through Situations Matrix</h2>
+<p>Grammar should be introduced when it solves a communication problem.</p>
+<table><thead><tr><th>Grammar Concept</th><th>Situation</th><th>Communication Task</th><th>Typical CEFR Level</th></tr></thead><tbody><tr><td>Modal verbs</td><td>Asking for help at the Apotheke</td><td>Say what you need or ask what you can do</td><td>A1-A2</td></tr>
+<tr><td>weil clauses</td><td>Explaining why you missed an appointment</td><td>Give a reason</td><td>A2-B1</td></tr>
+<tr><td>Perfekt</td><td>Telling what happened yesterday</td><td>Describe a past event</td><td>A2</td></tr>
+<tr><td>Dative pronouns</td><td>Asking someone for help</td><td>Say who receives help or information</td><td>A2</td></tr>
+<tr><td>Accusative objects</td><td>Ordering food</td><td>Say what you want, need, buy, or order</td><td>A1</td></tr>
+<tr><td>Relative clauses</td><td>Describing a person</td><td>Identify or describe someone with more detail</td><td>B1</td></tr>
+<tr><td>Konjunktiv II</td><td>Polite requests and suggestions</td><td>Ask diplomatically or propose a solution</td><td>B1-B2</td></tr>
+<tr><td>Separable verbs</td><td>Daily routines and appointments</td><td>Talk about calling, shopping, getting up, bringing along</td><td>A1-A2</td></tr>
+<tr><td>Two-way prepositions</td><td>Housing and directions</td><td>Explain where something is or where it goes</td><td>A2</td></tr>
+<tr><td>Passive voice</td><td>Explaining a process or complaint</td><td>Describe what is done, repaired, delivered, or decided</td><td>B1-B2</td></tr>
+<tr><td>Adjective endings</td><td>Describing products, people, apartments</td><td>Add precise detail to nouns</td><td>B1</td></tr>
+<tr><td>Genitive</td><td>Formal writing and institutions</td><td>Show possession, relationship, or formal connection</td><td>B2-C1</td></tr>
+<tr><td>Infinitive clauses with zu</td><td>Making plans or suggestions</td><td>Express intention, difficulty, preference, or proposal</td><td>B1</td></tr>
+<tr><td>Comparative and superlative</td><td>Comparing options</td><td>Choose between services, apartments, jobs, products</td><td>A2-B1</td></tr>
+<tr><td>Reported speech</td><td>Reporting what someone said</td><td>Summarize conversations or information</td><td>B2-C1</td></tr></tbody></table>
+<p>Product rule: no grammar concept should be introduced without a communication task attached.</p>
+<h2 id="6-sentence-architecture-through-situations-matrix">6. Sentence Architecture Through Situations Matrix</h2>
+<p>Sentence architecture grows naturally from communication needs.</p>
+<table><thead><tr><th>Sentence Architecture</th><th>Situation</th><th>Communication Need</th><th>Typical CEFR Level</th></tr></thead><tbody><tr><td>Yes-no questions</td><td>Asking for information</td><td>Confirm if something is possible or true</td><td>A1</td></tr>
+<tr><td>W-questions</td><td>Shops, offices, transport, school</td><td>Ask for specific information</td><td>A1</td></tr>
+<tr><td>Main clauses</td><td>Introductions and simple statements</td><td>Say who you are, what you need, what happened</td><td>A1</td></tr>
+<tr><td>Modal verb bracket</td><td>Requests and obligations</td><td>Say what you can, must, want, or should do</td><td>A1-A2</td></tr>
+<tr><td>Perfekt bracket</td><td>Storytelling and explanations</td><td>Say what happened</td><td>A2</td></tr>
+<tr><td>Separable verb bracket</td><td>Daily life and appointments</td><td>Describe common actions</td><td>A1-A2</td></tr>
+<tr><td>Hauptsatz + Nebensatz</td><td>Giving reasons</td><td>Connect action and reason</td><td>A2-B1</td></tr>
+<tr><td>Subordinate clauses with dass</td><td>Reporting information</td><td>Say what someone knows, says, thinks, or hopes</td><td>A2-B1</td></tr>
+<tr><td>Adverbial connectors</td><td>Telling a story</td><td>Sequence events and show consequence</td><td>A2-B1</td></tr>
+<tr><td>Relative clauses</td><td>Describing people and objects</td><td>Add identifying detail</td><td>B1</td></tr>
+<tr><td>Infinitive clauses</td><td>Suggestions and plans</td><td>Express intention, difficulty, or purpose</td><td>B1</td></tr>
+<tr><td>Discourse markers</td><td>Discussions and opinions</td><td>Structure viewpoints and arguments</td><td>B2-C1</td></tr>
+<tr><td>Embedded clauses</td><td>Formal writing and academic discussion</td><td>Connect complex ideas precisely</td><td>C1</td></tr>
+<tr><td>Stylistic word order</td><td>Professional and academic communication</td><td>Control emphasis, rhythm, and information flow</td><td>B2-C1</td></tr></tbody></table>
+<p>Product rule: sentence architecture should be visible whenever learners need to connect ideas.</p>
+<h2 id="7-confidence-milestone-framework">7. Confidence Milestone Framework</h2>
+<p>Success should be measured by capability rather than grammar knowledge.</p>
+<p>Bad milestone:</p>
+<pre class="pattern-block"><code class="language-text">I understand dative pronouns.</code></pre>
+<p>Good milestone:</p>
+<pre class="pattern-block"><code class="language-text">I can ask for help at an Apotheke without translating every sentence first.</code></pre>
+<p>Strong confidence milestones:</p>
+<p>1. I can introduce myself in a new group without reading from a script.</p>
+<p>2. I can order food and ask one follow-up question.</p>
+<p>3. I can ask for help at an Apotheke and describe one simple symptom.</p>
+<p>4. I can make a simple appointment by phone or message.</p>
+<p>5. I can change an appointment and give a reason.</p>
+<p>6. I can ask someone to repeat or explain something more slowly.</p>
+<p>7. I can write a short message to a teacher or office.</p>
+<p>8. I can explain a problem with my apartment and ask for help.</p>
+<p>9. I can describe what happened yesterday in a clear order.</p>
+<p>10. I can tell a short story about a trip or experience.</p>
+<p>11. I can give my opinion and support it with one reason.</p>
+<p>12. I can politely disagree without stopping the conversation.</p>
+<p>13. I can write a clear B1-style email explaining a problem.</p>
+<p>14. I can make a suggestion and explain why it might help.</p>
+<p>15. I can compare two options and choose one.</p>
+<p>16. I can participate in a simple workplace update.</p>
+<p>17. I can ask clarifying questions in a meeting or class.</p>
+<p>18. I can write a polite complaint and request a solution.</p>
+<p>19. I can summarize a conversation and name the next step.</p>
+<p>20. I can use German in a real situation even when I do not know every word.</p>
+<p>Confidence milestones should be used in lesson metadata, lesson reflection, curriculum tracking, and learner progress maps.</p>
+<h2 id="8-lesson-creation-workflow">8. Lesson Creation Workflow</h2>
+<p>Use this process to create a new lesson:</p>
+<p>1. Choose situation.</p>
+<p>Select a real-life context where the learner needs German.</p>
+<p>2. Define communication goal.</p>
+<p>Write one clear can-do outcome.</p>
+<p>3. Identify communication functions.</p>
+<p>Choose the primary function and supporting functions.</p>
+<p>4. Select required vocabulary.</p>
+<p>Choose only the words needed to perform the task.</p>
+<p>5. Select phrase patterns.</p>
+<p>Add reusable chunks that help learners communicate early.</p>
+<p>6. Select grammar needed.</p>
+<p>Choose the grammar that supports the goal.</p>
+<p>7. Select sentence architecture needed.</p>
+<p>Identify sentence types, connector types, and verb position patterns.</p>
+<p>8. Build speaking activities.</p>
+<p>Move from supported repetition to realistic role play.</p>
+<p>9. Build writing activities.</p>
+<p>Create a written task that matches the situation.</p>
+<p>10. Create retrieval practice.</p>
+<p>Bring back previous vocabulary, phrases, grammar, or sentence structures.</p>
+<p>11. Define real-world challenge.</p>
+<p>Give the learner a realistic way to use or simulate the language.</p>
+<p>12. Define confidence milestone.</p>
+<p>Write the capability the learner should feel after the lesson.</p>
+<h3 id="workflow-output">Workflow Output</h3>
+<p>At the end of the workflow, the lesson should have:</p>
+<ul>
+<li>a situation</li>
+<li>a can-do goal</li>
+<li>function tags</li>
+<li>vocabulary</li>
+<li>phrase patterns</li>
+<li>grammar in context</li>
+<li>sentence architecture</li>
+<li>speaking practice</li>
+<li>writing practice</li>
+<li>retrieval practice</li>
+<li>a real-world challenge</li>
+<li>a confidence milestone</li>
+</ul>
+<h2 id="9-product-principles">9. Product Principles</h2>
+<h3 id="how-adults-actually-learn-languages">How Adults Actually Learn Languages</h3>
+<p>Adults learn best when language is meaningful, usable, and connected to real life.</p>
+<p>Product principles:</p>
+<ul>
+<li>Communication before perfection</li>
+<li>Pattern before rule</li>
+<li>Meaning before memorization</li>
+<li>Confidence before complexity</li>
+<li>Retrieval before review</li>
+<li>Real life before exercises</li>
+<li>Situations before grammar</li>
+<li>Use before mastery</li>
+</ul>
+<p>These principles should shape every lesson decision.</p>
+<p>Do not ask first:</p>
+<pre class="pattern-block"><code class="language-text">What grammar chapter should this lesson teach?</code></pre>
+<p>Ask first:</p>
+<pre class="pattern-block"><code class="language-text">What does the learner need to do in German?</code></pre>
+<p>Then design the vocabulary, phrases, grammar, sentence architecture, speaking, writing, retrieval, challenge, and confidence milestone around that need.</p>
+<p>The goal is not to know German.</p>
+<p>The goal is to live part of your life in German.</p>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
