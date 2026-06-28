@@ -50,6 +50,18 @@ Use it to keep interface work consistent across:
 * confidence milestones
 * real-world challenge callouts
 
+## Updating The Situation Library
+
+The situation library page is generated from the Markdown files in `situations/`.
+
+After adding or editing a situation file, run this from the repository root:
+
+```bash
+python3 scripts/generate_situation_library.py
+```
+
+This refreshes `German-Learning-System/situation-library.html` automatically.
+
 ## Goal
 
 Help adult learners build usable German from the start by connecting words, grammar, situations, and confidence into one coherent learning experience.
