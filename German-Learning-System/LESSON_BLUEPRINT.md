@@ -331,6 +331,98 @@ For curriculum planning, metadata makes it possible to track:
 
 The metadata should be completed before drafting the lesson.
 
+## Standard Situation Template
+
+Use this template when creating or updating situation files. A situation file is not a single lesson. It is a reusable context that can contain many lessons, dialogues, writing tasks, challenges, and links to related situations.
+
+## Overview
+
+Explain what the situation is, who participates, why it matters, and how it can deepen across levels.
+
+## Communication Functions Practiced
+
+List the main actions learners practice in the situation.
+
+Examples:
+
+- asking for help
+- describing a problem
+- giving reasons
+- making requests
+- clarifying next steps
+
+## Key Language Patterns
+
+Name the reusable grammar and sentence patterns learners will meet repeatedly.
+
+Examples:
+
+- W-questions
+- modal verbs
+- Perfekt
+- weil clauses
+- polite request frames
+
+## Vocabulary In Context
+
+Group vocabulary by real use inside the situation, not as an isolated list.
+
+Examples:
+
+- symptoms and medicine in an Apotheke situation
+- grades, homework, and support language in an Elternabend situation
+- documents, appointments, and forms in a Bürgeramt situation
+
+## Practice Dialogues
+
+Every situation should include short, practical dialogues that learners can reuse or adapt.
+
+### Dialogue 1: Typical Situation
+
+Use the most common version of the situation.
+
+### Dialogue 2: Common Variation
+
+Show a realistic variation, complication, or follow-up question.
+
+### Dialogue 3: Real-World Challenge
+
+Add slightly more pressure, uncertainty, emotion, or complexity while staying level-appropriate.
+
+## Writing Task
+
+Include a writing task when the situation naturally involves messages, notes, forms, emails, or preparation.
+
+### Example
+
+Provide a short model text or prompt that learners can adapt.
+
+## Real-Life Challenge
+
+Give learners a way to transfer the language beyond the lesson.
+
+### Beginner
+
+Use a low-pressure practice task.
+
+### Intermediate
+
+Use a realistic simulated or prepared task.
+
+### Advanced
+
+Use a real-world task or a more spontaneous challenge.
+
+## Related Situations
+
+List situations that reuse the same patterns, vocabulary, functions, or confidence goals.
+
+Examples:
+
+- Apotheke relates to doctor appointments, explaining symptoms, and asking for help.
+- Elternabend relates to school emails, speaking with a teacher, and requesting support.
+- Bürgeramt relates to forms, appointments, documents, and clarification questions.
+
 ## 4. Situational Learning Framework
 
 Grammar should always be taught through situations.
